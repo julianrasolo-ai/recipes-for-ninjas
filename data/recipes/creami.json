@@ -37,7 +37,9 @@
   "cond": "Sweetened condensed milk",
   "matcha": "Matcha",
   "booze": "Spirits or liqueur",
-  "sf": "Sugar-free pudding mix or syrup"
+  "sf": "Sugar-free pudding mix or syrup",
+  "mascarpone": "Mascarpone",
+  "wine": "Wine or sparkling wine"
  },
  "groups": [
   [
@@ -6276,33 +6278,36 @@
   {
    "id": "r102",
    "cat": "adult",
-   "title": "Bourbon vanilla ice cream",
-   "level": "Easy",
+   "title": "Bourbon vanilla custard ice cream",
+   "level": "Medium",
    "emoji": "🥃",
-   "blurb": "Vanilla custard-style ice cream with a warm bourbon finish. 21+.",
+   "blurb": "Rich vanilla bean custard with real bourbon, made like the luxury 21+ pints. 21+.",
    "spin": "2 min",
-   "prep": "10 min",
+   "prep": "15 min",
    "freeze": "24 hours",
    "makes": "1 pint",
    "ing": [
-    "1 cup whole milk",
-    "¾ cup heavy cream",
+    "1 cup heavy cream",
+    "½ cup whole milk",
     "⅓ cup sugar",
-    "1 tbsp cream cheese, soft",
-    "1 tsp vanilla",
-    "1½ tbsp bourbon"
+    "2 egg yolks",
+    "1½ tsp vanilla bean paste",
+    "Pinch of salt",
+    "3 tbsp bourbon (up to 4 tbsp for a stronger pint)"
    ],
    "steps": [
-    "Whisk the cream cheese and sugar, then whisk in milk, cream, vanilla and bourbon.",
-    "Pour into the pint (base closed).",
-    "Lid on. Freeze flat for 24 hours.",
-    "Press Scoop, then Ice Cream.",
-    "Don't add more than 2 tbsp of alcohol per pint, or it won't freeze firm."
+    "Whisk the egg yolks with the sugar until pale.",
+    "Heat the cream, milk, vanilla and salt until steaming (don't boil). Slowly whisk it into the yolks.",
+    "Pour back into the pan and stir over low heat until it coats a spoon, about 5 minutes. Strain and chill at least 4 hours.",
+    "Stir the bourbon into the cold base. Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours. Boozy bases freeze a little softer; that's normal.",
+    "Press Scoop, then Frozen Custard.",
+    "Too soft? Lid on and back in the freezer for 1–2 hours, then Re-spin."
    ],
    "tags": [
-    "milk",
     "cream",
-    "ccheese",
+    "milk",
+    "egg",
     "booze"
    ],
    "healthy": false,
@@ -6311,14 +6316,18 @@
    "listTitle": "You need",
    "notes": [
     [
+     "Strength",
+     "About 3.6% ABV with 3 tbsp bourbon, about 4.7% with 4 tbsp (close to the 4.9% luxury shops use, but softer). See our guide to alcohol in the Creami."
+    ],
+    [
      "Adults only",
-     "Contains alcohol that isn't cooked off. Not for kids or anyone who shouldn't drink."
+     "Contains alcohol that isn't cooked off. Not for kids, pregnancy, or anyone who shouldn't drink."
     ]
    ],
-   "press": "Scoop, then Ice Cream",
+   "press": "Scoop, then Frozen Custard",
    "badge": "🥄 Scoop",
    "chips": [
-    "Prep 10 min",
+    "Prep 15 min",
     "Freeze 24 hours",
     "Spin 2 min",
     "1 pint"
@@ -6332,8 +6341,9 @@
    "video": null,
    "members": false,
    "ben": [],
-   "healthier": "Use half-and-half instead of cream and keep the scoop small.",
-   "adult": true
+   "healthier": "Use half-and-half for the cream and keep scoops small.",
+   "adult": true,
+   "abv": 3.6
   },
   {
    "id": "r103",
@@ -6520,6 +6530,765 @@
    "ben": [],
    "healthier": "Use light coconut milk and skip the rum for a kid-friendly version.",
    "adult": true
+  },
+  {
+   "id": "r106",
+   "cat": "adult",
+   "title": "Agave dulce de leche tequila ice cream",
+   "level": "Medium",
+   "emoji": "🌵",
+   "blurb": "Caramel-y dulce de leche custard with a smooth reposado tequila finish. 21+.",
+   "spin": "2 min",
+   "prep": "15 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup heavy cream",
+    "½ cup whole milk",
+    "⅓ cup dulce de leche",
+    "2 egg yolks",
+    "Pinch of salt",
+    "3 tbsp reposado tequila"
+   ],
+   "steps": [
+    "Whisk the egg yolks with the dulce de leche until pale.",
+    "Heat the cream, milk and salt until steaming (don't boil). Slowly whisk it into the yolks.",
+    "Pour back into the pan and stir over low heat until it coats a spoon, about 5 minutes. Strain and chill at least 4 hours.",
+    "Stir the tequila into the cold base. Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours. Boozy bases freeze a little softer; that's normal.",
+    "Press Scoop, then Frozen Custard.",
+    "Too soft? Lid on and back in the freezer for 1–2 hours, then Re-spin."
+   ],
+   "tags": [
+    "cream",
+    "milk",
+    "egg",
+    "cond",
+    "booze"
+   ],
+   "healthy": false,
+   "dfree": false,
+   "img": "/img/ice/r106.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Strength",
+     "About 3.6% ABV, similar to a light beer. See our guide to alcohol in the Creami."
+    ],
+    [
+     "Adults only",
+     "Contains alcohol that isn't cooked off. Not for kids, pregnancy, or anyone who shouldn't drink."
+    ]
+   ],
+   "press": "Scoop, then Frozen Custard",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 15 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "agave-dulce-de-leche-tequila-ice-cream",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Use 2 tbsp tequila and swap half the cream for whole milk.",
+   "adult": true,
+   "abv": 3.6
+  },
+  {
+   "id": "r107",
+   "cat": "adult",
+   "title": "Passion fruit margarita sorbet",
+   "level": "Medium",
+   "emoji": "🍹",
+   "blurb": "Tart passion fruit, lime and tequila. A frozen margarita you eat with a spoon. 21+.",
+   "spin": "2 min",
+   "prep": "15 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup passion fruit purée (frozen packs, thawed)",
+    "½ cup water",
+    "½ cup sugar",
+    "Juice of 1 lime",
+    "2 tbsp blanco tequila",
+    "1 tbsp orange liqueur",
+    "Tajín or salt for the rim"
+   ],
+   "steps": [
+    "Warm the water and sugar until dissolved. Cool.",
+    "Stir in the passion fruit, lime juice, tequila and orange liqueur. Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then Sorbet. Re-spin if crumbly.",
+    "Serve in rimmed glasses."
+   ],
+   "tags": [
+    "lemon",
+    "booze",
+    "sweet"
+   ],
+   "healthy": false,
+   "dfree": false,
+   "img": "/img/ice/r107.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Strength",
+     "About 3.9% ABV, similar to a light beer. See our guide to alcohol in the Creami."
+    ],
+    [
+     "Adults only",
+     "Contains alcohol that isn't cooked off. Not for kids, pregnancy, or anyone who shouldn't drink."
+    ]
+   ],
+   "press": "Scoop, then Sorbet",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 15 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "passion-fruit-margarita-sorbet",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Cut the sugar to ⅓ cup and serve small scoops.",
+   "adult": true,
+   "abv": 3.9
+  },
+  {
+   "id": "r108",
+   "cat": "adult",
+   "title": "Scotch chocolate truffle ice cream",
+   "level": "Medium",
+   "emoji": "🥃",
+   "blurb": "Dark chocolate ice cream with a smoky single-malt finish. 21+.",
+   "spin": "2 min",
+   "prep": "15 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup heavy cream",
+    "½ cup whole milk",
+    "⅓ cup sugar",
+    "3 tbsp cocoa powder",
+    "2 oz dark chocolate, melted",
+    "Pinch of salt",
+    "3 tbsp Scotch whisky"
+   ],
+   "steps": [
+    "Whisk the sugar, cocoa and salt into the milk until smooth. Whisk in the melted chocolate, then the cream.",
+    "Chill 1 hour.",
+    "Stir the whisky into the cold base. Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours. Boozy bases freeze a little softer; that's normal.",
+    "Press Scoop, then Ice Cream.",
+    "Too soft? Lid on and back in the freezer for 1–2 hours, then Re-spin."
+   ],
+   "tags": [
+    "cream",
+    "milk",
+    "cocoa",
+    "choc",
+    "booze"
+   ],
+   "healthy": false,
+   "dfree": false,
+   "img": "/img/ice/r108.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Strength",
+     "About 3.6% ABV, similar to a light beer. See our guide to alcohol in the Creami."
+    ],
+    [
+     "Adults only",
+     "Contains alcohol that isn't cooked off. Not for kids, pregnancy, or anyone who shouldn't drink."
+    ]
+   ],
+   "press": "Scoop, then Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 15 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "scotch-chocolate-truffle-ice-cream",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Use whole milk instead of half the cream and serve with berries.",
+   "adult": true,
+   "abv": 3.6
+  },
+  {
+   "id": "r109",
+   "cat": "adult",
+   "title": "White Russian ice cream",
+   "level": "Medium",
+   "emoji": "☕",
+   "blurb": "Coffee-liqueur ice cream with vodka, like the cocktail on ice. 21+.",
+   "spin": "2 min",
+   "prep": "15 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup heavy cream",
+    "½ cup whole milk",
+    "¼ cup sugar",
+    "1 tsp instant espresso",
+    "Pinch of salt",
+    "2 tbsp vodka",
+    "3 tbsp coffee liqueur"
+   ],
+   "steps": [
+    "Whisk the sugar, espresso and salt into the milk until dissolved, then whisk in the cream. Chill 1 hour.",
+    "Stir the vodka and coffee liqueur into the cold base. Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours. Boozy bases freeze a little softer; that's normal.",
+    "Press Scoop, then Ice Cream.",
+    "Too soft? Lid on and back in the freezer for 1–2 hours, then Re-spin."
+   ],
+   "tags": [
+    "cream",
+    "milk",
+    "coffee",
+    "booze"
+   ],
+   "healthy": false,
+   "dfree": false,
+   "img": "/img/ice/r109.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Strength",
+     "About 4.2% ABV, similar to a light beer. See our guide to alcohol in the Creami."
+    ],
+    [
+     "Adults only",
+     "Contains alcohol that isn't cooked off. Not for kids, pregnancy, or anyone who shouldn't drink."
+    ]
+   ],
+   "press": "Scoop, then Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 15 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "white-russian-ice-cream",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Use half-and-half for the cream.",
+   "adult": true,
+   "abv": 4.2
+  },
+  {
+   "id": "r110",
+   "cat": "adult",
+   "title": "Espresso martini ice cream",
+   "level": "Medium",
+   "emoji": "🍸",
+   "blurb": "Strong espresso ice cream with vodka and a chocolate-covered bean crunch. 21+.",
+   "spin": "2 min",
+   "prep": "15 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup heavy cream",
+    "½ cup whole milk",
+    "¼ cup sugar",
+    "2 tsp instant espresso",
+    "Pinch of salt",
+    "2 tbsp vodka",
+    "2 tbsp coffee liqueur",
+    "Mix-in: 2 tbsp chocolate-covered espresso beans, chopped"
+   ],
+   "steps": [
+    "Whisk the sugar, espresso and salt into the milk until dissolved, then whisk in the cream. Chill 1 hour.",
+    "Stir the vodka and coffee liqueur into the cold base. Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours. Boozy bases freeze a little softer; that's normal.",
+    "Press Scoop, then Ice Cream.",
+    "Too soft? Lid on and back in the freezer for 1–2 hours, then Re-spin.",
+    "Make a 1½-inch hole, add the espresso beans, then press Mix-In."
+   ],
+   "tags": [
+    "cream",
+    "milk",
+    "coffee",
+    "choc",
+    "booze"
+   ],
+   "healthy": false,
+   "dfree": false,
+   "img": "/img/ice/r110.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Strength",
+     "About 3.7% ABV, similar to a light beer. See our guide to alcohol in the Creami."
+    ],
+    [
+     "Adults only",
+     "Contains alcohol that isn't cooked off. Not for kids, pregnancy, or anyone who shouldn't drink."
+    ]
+   ],
+   "press": "Scoop, then Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 15 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "espresso-martini-ice-cream",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Skip the espresso beans and use half-and-half.",
+   "adult": true,
+   "abv": 3.7
+  },
+  {
+   "id": "r111",
+   "cat": "adult",
+   "title": "Rum tiramisu ice cream",
+   "level": "Medium",
+   "emoji": "🍮",
+   "blurb": "Mascarpone ice cream with dark rum, espresso and ladyfinger crumbs. 21+.",
+   "spin": "2 min",
+   "prep": "15 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "½ cup mascarpone",
+    "¾ cup heavy cream",
+    "½ cup whole milk",
+    "⅓ cup sugar",
+    "1 tsp instant espresso",
+    "3 tbsp dark rum",
+    "Mix-in: 2 ladyfingers, crumbled",
+    "Cocoa powder to dust"
+   ],
+   "steps": [
+    "Whisk the mascarpone and sugar until smooth. Dissolve the espresso in the milk and whisk in with the cream. Chill 1 hour.",
+    "Stir the rum into the cold base. Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours. Boozy bases freeze a little softer; that's normal.",
+    "Press Scoop, then Gelato.",
+    "Too soft? Lid on and back in the freezer for 1–2 hours, then Re-spin.",
+    "Make a 1½-inch hole, add the ladyfinger crumbs, dust with cocoa, then press Mix-In."
+   ],
+   "tags": [
+    "mascarpone",
+    "cream",
+    "milk",
+    "coffee",
+    "cookie",
+    "booze"
+   ],
+   "healthy": false,
+   "dfree": false,
+   "img": "/img/ice/r111.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Strength",
+     "About 3.6% ABV, similar to a light beer. See our guide to alcohol in the Creami."
+    ],
+    [
+     "Adults only",
+     "Contains alcohol that isn't cooked off. Not for kids, pregnancy, or anyone who shouldn't drink."
+    ]
+   ],
+   "press": "Scoop, then Gelato",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 15 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "rum-tiramisu-ice-cream",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Use light cream cheese for half the mascarpone.",
+   "adult": true,
+   "abv": 3.6
+  },
+  {
+   "id": "r112",
+   "cat": "adult",
+   "title": "Irish cream brownie ice cream",
+   "level": "Medium",
+   "emoji": "🍀",
+   "blurb": "Irish cream ice cream with chewy brownie bits. 21+.",
+   "spin": "2 min",
+   "prep": "15 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup heavy cream",
+    "½ cup whole milk",
+    "3 tbsp sugar",
+    "⅓ cup Irish cream liqueur",
+    "1 tbsp Irish whiskey",
+    "Pinch of salt",
+    "Mix-in: ¼ cup brownie bits"
+   ],
+   "steps": [
+    "Whisk the sugar and salt into the milk until dissolved, then whisk in the cream. Chill 1 hour.",
+    "Stir the Irish cream and whiskey into the cold base. Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours. Boozy bases freeze a little softer; that's normal.",
+    "Press Scoop, then Ice Cream.",
+    "Too soft? Lid on and back in the freezer for 1–2 hours, then Re-spin.",
+    "Make a 1½-inch hole, add the brownie bits, then press Mix-In."
+   ],
+   "tags": [
+    "cream",
+    "milk",
+    "cookie",
+    "booze"
+   ],
+   "healthy": false,
+   "dfree": false,
+   "img": "/img/ice/r112.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Strength",
+     "About 3.9% ABV, similar to a light beer. See our guide to alcohol in the Creami."
+    ],
+    [
+     "Adults only",
+     "Contains alcohol that isn't cooked off. Not for kids, pregnancy, or anyone who shouldn't drink."
+    ]
+   ],
+   "press": "Scoop, then Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 15 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "irish-cream-brownie-ice-cream",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Use half the brownie and add raspberries.",
+   "adult": true,
+   "abv": 3.9
+  },
+  {
+   "id": "r113",
+   "cat": "adult",
+   "title": "Dark chocolate amaretto ice cream",
+   "level": "Medium",
+   "emoji": "🍫",
+   "blurb": "Dark chocolate and almond liqueur with toasted almonds. 21+.",
+   "spin": "2 min",
+   "prep": "15 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup heavy cream",
+    "½ cup whole milk",
+    "¼ cup sugar",
+    "3 tbsp cocoa powder",
+    "Pinch of salt",
+    "¼ cup amaretto",
+    "Mix-in: 2 tbsp toasted slivered almonds"
+   ],
+   "steps": [
+    "Whisk the sugar, cocoa and salt into the milk until smooth, then whisk in the cream. Chill 1 hour.",
+    "Stir the amaretto into the cold base. Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours. Boozy bases freeze a little softer; that's normal.",
+    "Press Scoop, then Ice Cream.",
+    "Too soft? Lid on and back in the freezer for 1–2 hours, then Re-spin.",
+    "Make a 1½-inch hole, add the almonds, then press Mix-In."
+   ],
+   "tags": [
+    "cream",
+    "milk",
+    "cocoa",
+    "nuts",
+    "booze"
+   ],
+   "healthy": false,
+   "dfree": false,
+   "img": "/img/ice/r113.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Strength",
+     "About 3.4% ABV, similar to a light beer. See our guide to alcohol in the Creami."
+    ],
+    [
+     "Adults only",
+     "Contains alcohol that isn't cooked off. Not for kids, pregnancy, or anyone who shouldn't drink."
+    ]
+   ],
+   "press": "Scoop, then Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 15 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "dark-chocolate-amaretto-ice-cream",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Use whole milk for half the cream.",
+   "adult": true,
+   "abv": 3.4
+  },
+  {
+   "id": "r114",
+   "cat": "adult",
+   "title": "Strawberry rosé champagne sorbet",
+   "level": "Medium",
+   "emoji": "🍓",
+   "blurb": "Strawberries, brut bubbly and a hint of rose. Party in a pint. 21+.",
+   "spin": "2 min",
+   "prep": "15 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup puréed strawberries",
+    "⅓ cup sugar",
+    "½ cup brut sparkling wine",
+    "1 tbsp lemon juice",
+    "1 tsp rose water (optional)"
+   ],
+   "steps": [
+    "Stir the sugar into the strawberry purée until dissolved.",
+    "Stir in the sparkling wine, lemon and rose water gently. Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then Sorbet. Re-spin if crumbly."
+   ],
+   "tags": [
+    "berry",
+    "wine",
+    "lemon",
+    "booze"
+   ],
+   "healthy": false,
+   "dfree": false,
+   "img": "/img/ice/r114.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Strength",
+     "About 3.3% ABV, similar to a light beer. See our guide to alcohol in the Creami."
+    ],
+    [
+     "Adults only",
+     "Contains alcohol that isn't cooked off. Not for kids, pregnancy, or anyone who shouldn't drink."
+    ]
+   ],
+   "press": "Scoop, then Sorbet",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 15 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "strawberry-ros-champagne-sorbet",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Use ¼ cup sugar and very ripe berries.",
+   "adult": true,
+   "abv": 3.3
+  },
+  {
+   "id": "r115",
+   "cat": "adult",
+   "title": "Mezcal Mexican chocolate ice cream",
+   "level": "Medium",
+   "emoji": "🌶️",
+   "blurb": "Chocolate, cinnamon, a pinch of chili and smoky mezcal. 21+.",
+   "spin": "2 min",
+   "prep": "15 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup heavy cream",
+    "½ cup whole milk",
+    "⅓ cup sugar",
+    "3 tbsp cocoa powder",
+    "1 tsp cinnamon",
+    "Pinch of cayenne",
+    "Pinch of salt",
+    "3 tbsp mezcal"
+   ],
+   "steps": [
+    "Whisk the sugar, cocoa, cinnamon, cayenne and salt into the milk until smooth, then whisk in the cream. Chill 1 hour.",
+    "Stir the mezcal into the cold base. Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours. Boozy bases freeze a little softer; that's normal.",
+    "Press Scoop, then Ice Cream.",
+    "Too soft? Lid on and back in the freezer for 1–2 hours, then Re-spin."
+   ],
+   "tags": [
+    "cream",
+    "milk",
+    "cocoa",
+    "booze"
+   ],
+   "healthy": false,
+   "dfree": false,
+   "img": "/img/ice/r115.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Strength",
+     "About 3.6% ABV, similar to a light beer. See our guide to alcohol in the Creami."
+    ],
+    [
+     "Adults only",
+     "Contains alcohol that isn't cooked off. Not for kids, pregnancy, or anyone who shouldn't drink."
+    ]
+   ],
+   "press": "Scoop, then Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 15 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "mezcal-mexican-chocolate-ice-cream",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Use whole milk for half the cream.",
+   "adult": true,
+   "abv": 3.6
+  },
+  {
+   "id": "r116",
+   "cat": "adult",
+   "title": "White chocolate merlot ice cream",
+   "level": "Medium",
+   "emoji": "🍷",
+   "blurb": "Creamy white chocolate with a fruity red wine swirl. 21+.",
+   "spin": "2 min",
+   "prep": "15 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup heavy cream",
+    "¼ cup whole milk",
+    "3 oz white chocolate, melted",
+    "2 tbsp sugar",
+    "⅓ cup merlot",
+    "Pinch of salt"
+   ],
+   "steps": [
+    "Warm the milk and whisk in the melted white chocolate, sugar and salt. Whisk in the cream. Chill 1 hour.",
+    "Stir the merlot into the cold base. Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours. Boozy bases freeze a little softer; that's normal.",
+    "Press Scoop, then Ice Cream.",
+    "Too soft? Lid on and back in the freezer for 1–2 hours, then Re-spin."
+   ],
+   "tags": [
+    "cream",
+    "milk",
+    "choc",
+    "wine",
+    "booze"
+   ],
+   "healthy": false,
+   "dfree": false,
+   "img": "/img/ice/r116.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Strength",
+     "About 2.3% ABV, similar to a light beer. See our guide to alcohol in the Creami."
+    ],
+    [
+     "Adults only",
+     "Contains alcohol that isn't cooked off. Not for kids, pregnancy, or anyone who shouldn't drink."
+    ]
+   ],
+   "press": "Scoop, then Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 15 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "white-chocolate-merlot-ice-cream",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Use half the white chocolate and serve with fresh cherries.",
+   "adult": true,
+   "abv": 2.3
   }
  ]
 }
