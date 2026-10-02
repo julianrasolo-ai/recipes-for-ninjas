@@ -1,51 +1,58 @@
 # Recipes for Ninjas
 
-Family recipe site. The homepage is an animated kitchen: a ninja chef with fruit and ice floating around him. Tap a machine and its ingredients fly into it, then the recipes open.
+Family recipe site for four Ninja machines. The homepage is an animated kitchen: a ninja chef with fruit orbiting around him; tap a machine and he throws its ingredients in, then the recipes open.
 
-- **Ice cream** (`/ice-cream/`): 78 Ninja Swirl by CREAMi recipes, carried over from the original single-file site.
-- **Juice** (`/juice/`): 42 Ninja NeverClog cold-press juices, filterable by ingredient and by benefit (energy, immunity, digestion, hydration and more).
+| Hub | Machine | Recipes |
+|---|---|---|
+| `/creami/` | Ninja Swirl by CREAMi | 78 |
+| `/juicer/` | Ninja NeverClog Cold Press Juicer | 42 |
+| `/blender/` | Ninja Detect Power Blender Pro | 24 |
+| `/wood-fire/` | Ninja Woodfire Outdoor Grill & Smoker | 24 |
 
-Both sections share the same design and features: menu tabs on one line (even at 320px), search, "What I have" picker, per-section shopping lists, and favorites for Julian, Charlyne, Leanne and Noah that sync across devices.
+Every recipe has its own page (`/blender/strawberry-banana/`) with Google Recipe schema, plus category pages, tag pages (`/tags/energy/`), site-wide search (`/search/`), a gear hub (`/gear/`), a shop (`/shop/`) and legal pages. Favorites for the family sync across devices.
 
 ## Run locally
 
-No Node? `python3 -m http.server 8888` works too (favorites then stay on that device).
+Needs Node 20+ (https://nodejs.org, LTS installer).
 
 ```bash
 npm install
-npm start          # http://localhost:8888
+npm run dev        # builds dist/ and serves http://localhost:8888
 ```
 
-`server.mjs` serves the site and a file-backed `/api/likes` (stored in `.data/likes.json`, git-ignored), so favorites work locally exactly like in production.
+`npm run build` also downloads and resizes the Higgsfield images (runs on Netlify). Locally, images that aren't downloaded load from the Higgsfield CDN instead.
 
-## Deploy to Netlify (one time, about 2 minutes)
+## Deploy (Netlify)
 
-1. Netlify → **Add new site → Import an existing project → GitHub** → pick `recipes-for-ninjas`.
-2. Branch: the one you want live. Build settings come from `netlify.toml`, so leave them as they are.
-3. Deploy. Every push to that branch redeploys.
+Import the GitHub repo in Netlify. Settings come from `netlify.toml` (build `npm run build`, publish `dist`). Favorites use Netlify Blobs through `netlify/functions/likes.mjs`; nothing to set up.
 
-Favorites use **Netlify Blobs** through `netlify/functions/likes.mjs`. It's free, needs no extra account and has no setup. The build step (`npm run build`) downloads the juice photos from Higgsfield into `img/juice/` and resizes them to 600px. If a download fails, the page falls back to the Higgsfield CDN copy, then to an emoji tile.
-
-## Project layout
+## Where things live
 
 ```
-index.html                 landing screen
-ice-cream/, juice/         section pages (generated: python3 scripts/pages.py)
-scripts/section.template.html  shared page template
-assets/app.css, app.js     shared design and app logic
-assets/likes.js            favorites sync client (offline queue + 30s refresh)
-data/ice.json, juice.json  recipes
-data/juice-images.json     Higgsfield photo URLs (juice recipes)
-data/home-images.json      Higgsfield homepage assets (ninja, machines, fruit)
-img/ice/                   ice cream photos (extracted from the original file)
-netlify/functions/likes.mjs  favorites API (Netlify Blobs)
-lib/likes-core.mjs         validation + toggle logic shared by API and dev server
-.claude/skills/            taste-skill, redesign-skill, scroll-craft (MIT)
+data/site.json            switches: ads, consent, analytics, email, members, shop, affiliate tag
+data/appliances.json      the four machines: names, labels, colours, homepage throw items
+data/recipes/*.json       recipes (one file per machine)
+data/products.json        every product + affiliate URL (one place); pages link via /go/<id>
+data/images.json          Higgsfield image sources
+build/                    static site generator (build.mjs + templates.mjs)
+assets/                   CSS + browser JS (app, recipe, search, site, likes)
+index.html                homepage scene (copied through the build)
+netlify/functions/likes.mjs  favorites API
 ```
 
-To edit a recipe, change the JSON in `data/`. To change page text, edit `scripts/pages.py` or the template, then run `npm run pages`.
+### Recipe fields
+`title, blurb, cat, ing[], steps[], prep, cook, makes, press, chips[], notes[[label,text]], tags[] (ingredients for "What I have"), ben[] (benefits), healthy, gear[] (product ids), video (YouTube/TikTok/Instagram URL), members (true = members only), img`.
 
-## Notes
+## Monetization: flip a switch in `data/site.json`, push, done
 
-- Juice recipes are original write-ups of common combinations, informed by the Ninja NeverClog usage guidance (2-inch pieces, peel citrus, black filter = less pulp, orange filter = lots of pulp) and popular recipes online. Benefit tags are general nutrition info, not medical advice.
-- The "NC701" PDF provided is the Ninja Swirl manual, not the NeverClog manual, and the "100 Juices" PDF is a Froothie/Optimum book. Neither is copied here.
+| Feature | How to turn it on |
+|---|---|
+| **Affiliate links** | Set `affiliate.amazonTag`; edit URLs in `data/products.json`. Disclosure shows in footer and next to links. Clicks tracked as `affiliate_click`. |
+| **Ads** | `ads.enabled: true`, set `client` and slot IDs. Slots on recipe pages (in-content + desktop sidebar) and hubs reserve their height, so no layout shift. Load only after consent. |
+| **Consent banner** | On automatically when ads or analytics are on. "Cookie settings" in the footer reopens it. |
+| **Analytics** | `analytics.enabled: true` + `plausibleDomain` or `ga4Id`. Events: `affiliate_click`, `signup`, `share`, `checkout_start`. |
+| **Email list** | `email.enabled: true`. `provider: "netlify"` collects signups in Netlify Forms with no account; for Beehiiv/ConvertKit set `action` to their form URL. Optional popup and lead magnet (`leadMagnet.url` = your PDF). |
+| **Members** | `members.enabled: true` and `"members": true` on a recipe. Today the gate is visual only; real enforcement needs a login provider (e.g. Netlify Identity/Supabase + an edge function). |
+| **Shop / Stripe** | `shop.enabled: true`; add items to `products.json` → `digital` with a Stripe Payment Link as `checkoutUrl`. Emailed secure downloads and order records need a Stripe webhook function (not built yet). |
+| **Physical products** | Add to `products.json` with `kind: "accessory"` and a Shopify/dropship link; they appear on `/gear/`. |
+| **Video** | Add `"video": "https://www.tiktok.com/..."` to a recipe; it embeds and is added to the schema. |

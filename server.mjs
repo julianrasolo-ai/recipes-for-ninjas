@@ -6,6 +6,7 @@ import { extname, join, normalize } from "node:path";
 import { applyToggle, validate } from "./lib/likes-core.mjs";
 
 const ROOT = process.cwd();
+const SITE = join(ROOT, "dist"); // run `npm run build` first
 const PORT = Number(process.env.PORT) || 8888;
 const DB = join(ROOT, ".data", "likes.json");
 const TYPES = { ".html": "text/html; charset=utf-8", ".css": "text/css", ".js": "text/javascript", ".mjs": "text/javascript",
@@ -32,9 +33,9 @@ http.createServer(async (req, res) => {
     return send(res, 200, JSON.stringify({ likes: db[op.s] }));
   }
   let p = normalize(decodeURIComponent(url.pathname)).replace(/^(\.\.[/\\])+/, "");
-  let file = join(ROOT, p);
-  if (!file.startsWith(ROOT) || /[/\\]\.(data|git)/.test(file)) return send(res, 403, "Forbidden", "text/plain");
+  let file = join(SITE, p);
+  if (!file.startsWith(SITE)) return send(res, 403, "Forbidden", "text/plain");
   try { if ((await stat(file)).isDirectory()) file = join(file, "index.html"); } catch {}
   try { send(res, 200, await readFile(file), TYPES[extname(file)] || "application/octet-stream"); }
-  catch { send(res, 404, await readFile(join(ROOT, "404.html")).catch(() => "Not found"), "text/html; charset=utf-8"); }
+  catch { send(res, 404, await readFile(join(SITE, "404.html")).catch(() => "Not found"), "text/html; charset=utf-8"); }
 }).listen(PORT, () => console.log(`Recipes for Ninjas on http://localhost:${PORT}`));

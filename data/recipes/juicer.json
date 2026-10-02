@@ -235,12 +235,26 @@
    "healthy": true,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": "Roll the spinach into a tight ball so the auger grabs it in one go.",
-   "swap": null,
    "img": "/img/juice/j01.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012147_d4d42ca4-68c8-45aa-b645-361c67797d9a_min.webp"
+   "notes": [
+    [
+     "Tip",
+     "Roll the spinach into a tight ball so the auger grabs it in one go."
+    ]
+   ],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "everyday-green",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j02",
@@ -275,12 +289,26 @@
    "healthy": true,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": "Too sour? Add a third apple. Too sweet? Add more cucumber.",
    "img": "/img/juice/j02.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012230_6a09618a-4d44-4d87-a2b9-f3210fab5ab2_min.webp"
+   "notes": [
+    [
+     "Adjust",
+     "Too sour? Add a third apple. Too sweet? Add more cucumber."
+    ]
+   ],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "green-lemonade",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j03",
@@ -311,12 +339,26 @@
    "healthy": true,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": "Short celery pieces are the secret. Long strings are what clog juicers.",
-   "swap": null,
    "img": "/img/juice/j03.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012230_2a439b5c-6016-4645-8a34-03664e6eb912_min.webp"
+   "notes": [
+    [
+     "Tip",
+     "Short celery pieces are the secret. Long strings are what clog juicers."
+    ]
+   ],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "celery-apple-and-ginger",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j04",
@@ -349,12 +391,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j04.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012230_f19c2141-a3ac-4acf-b357-822dd1c1a56b_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "apple-spinach-and-mint",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j05",
@@ -388,12 +439,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j05.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012230_8d66c915-2b77-425b-b596-d72e238095e2_min.webp"
+   "notes": [],
+   "press": "Orange filter · lots of pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "kiwi-cucumber-cooler",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j06",
@@ -427,12 +487,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j06.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012230_4537cf2a-4e04-4956-9588-2ac9bd239a49_min.webp"
+   "notes": [],
+   "press": "Orange filter · lots of pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "pineapple-kale-crush",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j07",
@@ -468,12 +537,21 @@
    "healthy": true,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j07.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012230_2e67c3a0-2a95-4caa-aedb-78fe0a3fec0a_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "green-glow",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j08",
@@ -506,12 +584,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j08.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012230_5d3c0663-3c20-4c83-b023-e54342f7a9ca_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "fennel-and-pear",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j09",
@@ -538,12 +625,26 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": "Want bits? Use the orange filter instead.",
-   "swap": null,
    "img": "/img/juice/j09.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012230_5fa16b2b-1062-4764-a6f3-2dc3086c67bf_min.webp"
+   "notes": [
+    [
+     "Tip",
+     "Want bits? Use the orange filter instead."
+    ]
+   ],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "fresh-pressed-oj",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j10",
@@ -575,12 +676,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j10.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012230_70e67c19-fb29-4962-9ecc-63d4160c76af_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "sunrise-carrot-orange",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j11",
@@ -611,12 +721,21 @@
    "healthy": true,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j11.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012230_4b821d29-989d-4baa-ba61-932fe5298840_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "pink-grapefruit-mint",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j12",
@@ -649,12 +768,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j12.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012230_2bb54fb2-c21f-4309-960d-5030e438ae1a_min.webp"
+   "notes": [],
+   "press": "Orange filter · lots of pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "strawberry-creamsicle-oj",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j13",
@@ -686,12 +814,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j13.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012230_28eae243-c9a6-4b44-b104-aac0dcbab005_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "lemon-ginger-zinger",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j14",
@@ -722,12 +859,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j14.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012240_60f1be4f-8f6a-4eef-a1b3-f7293b16453b_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "ruby-citrus",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j15",
@@ -759,12 +905,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j15.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012240_b1674e98-1bd6-4858-aa32-074ea6eb03e1_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "carrot-apple-ginger",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j16",
@@ -798,12 +953,26 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": "Wear an apron. Beet stains everything, the juicer included. Rinse right after.",
-   "swap": null,
    "img": "/img/juice/j16.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012240_e442f230-c918-4624-b57f-6a18e3a3a2b3_min.webp"
+   "notes": [
+    [
+     "Tip",
+     "Wear an apron. Beet stains everything, the juicer included. Rinse right after."
+    ]
+   ],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "abc-juice",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j17",
@@ -839,12 +1008,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j17.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012240_37cb32d5-36a3-48de-b49d-f2d1ea51e36a_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "heart-beet",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j18",
@@ -880,12 +1058,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j18.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012240_20dda175-7804-45a8-9685-eb9eeaf521e1_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "sweet-potato-pie",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j19",
@@ -918,12 +1105,26 @@
    "healthy": true,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": "Turmeric stains. Rinse the juicer parts straight away.",
-   "swap": null,
    "img": "/img/juice/j19.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012240_4543a50f-fd23-4272-9aa6-606eda799311_min.webp"
+   "notes": [
+    [
+     "Tip",
+     "Turmeric stains. Rinse the juicer parts straight away."
+    ]
+   ],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "golden-carrot-turmeric",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j20",
@@ -959,12 +1160,21 @@
    "healthy": true,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j20.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012240_4f8910f4-2b73-4618-9433-08b96069a8fa_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "red-root",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j21",
@@ -996,12 +1206,21 @@
    "healthy": true,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j21.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012240_f0a72de6-be58-493b-ab17-021d1f3c1910_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "red-pepper-sunset",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j22",
@@ -1032,12 +1251,26 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": "Close the anti-drip lever between glasses, watermelon keeps flowing.",
-   "swap": null,
    "img": "/img/juice/j22.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012240_f5c5565a-c8b0-4897-a212-c4483d2b34b2_min.webp"
+   "notes": [
+    [
+     "Tip",
+     "Close the anti-drip lever between glasses, watermelon keeps flowing."
+    ]
+   ],
+   "press": "Orange filter · lots of pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "watermelon-mint",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j23",
@@ -1067,12 +1300,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j23.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012240_fa152636-a854-4c1f-9cd7-c7541330bb3e_min.webp"
+   "notes": [],
+   "press": "Orange filter · lots of pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "apple-strawberry",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j24",
@@ -1105,12 +1347,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j24.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012240_120f5de2-02b5-4cc3-85a3-5e4cee67c1df_min.webp"
+   "notes": [],
+   "press": "Orange filter · lots of pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "pina-fresca",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j25",
@@ -1141,12 +1392,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j25.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012240_e5bdeff4-9407-4bd3-9ab7-183d6f33f0de_min.webp"
+   "notes": [],
+   "press": "Orange filter · lots of pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "purple-grape",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j26",
@@ -1177,12 +1437,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j26.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012250_bb3a5f3c-f3b2-4a45-8004-59edfd910fc3_min.webp"
+   "notes": [],
+   "press": "Orange filter · lots of pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "pear-ginger",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j27",
@@ -1213,12 +1482,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j27.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012250_86b116a3-070a-469f-a552-cebe2b1da9db_min.webp"
+   "notes": [],
+   "press": "Orange filter · lots of pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "melon-medley",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j28",
@@ -1249,12 +1527,26 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": "Tart cherries are a popular night-time drink.",
-   "swap": null,
    "img": "/img/juice/j28.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012250_194b3710-63cc-4383-91f3-33b2fcbc361a_min.webp"
+   "notes": [
+    [
+     "Tip",
+     "Tart cherries are a popular night-time drink."
+    ]
+   ],
+   "press": "Orange filter · lots of pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "cherry-limeade",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j29",
@@ -1286,12 +1578,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j29.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012250_144b0f5a-14a6-4900-9381-23fadd5e7579_min.webp"
+   "notes": [],
+   "press": "Orange filter · lots of pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "mango-sunrise",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j30",
@@ -1323,12 +1624,21 @@
    "healthy": true,
    "prep": "5 min",
    "makes": "4 small shots",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j30.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012250_e1acf5be-5f3a-4009-8ff1-b67b09776728_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "4 small shots"
+   ],
+   "slug": "ginger-lemon-shot",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j31",
@@ -1360,12 +1670,21 @@
    "healthy": true,
    "prep": "5 min",
    "makes": "4 small shots",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j31.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012250_36b26df7-ba41-48b4-a90e-260fad918360_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "4 small shots"
+   ],
+   "slug": "golden-turmeric-shot",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j32",
@@ -1398,12 +1717,21 @@
    "healthy": true,
    "prep": "5 min",
    "makes": "4 small shots",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j32.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012250_dd8f3bf3-b7f3-4f3f-914f-08e4b2ae49c3_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "4 small shots"
+   ],
+   "slug": "green-shot",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j33",
@@ -1436,12 +1764,21 @@
    "healthy": true,
    "prep": "5 min",
    "makes": "4 small shots",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j33.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012250_7433a010-8d58-4610-ae65-7ff50ffba04d_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "4 small shots"
+   ],
+   "slug": "fire-shot",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j34",
@@ -1470,12 +1807,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j34.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012250_730e1334-7d0e-4aac-b71a-f80332e35bf5_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "bunny-juice",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j35",
@@ -1506,12 +1852,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j35.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012250_e6ea5715-3a18-448c-91c4-63feeeac9134_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "hulk-juice",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j36",
@@ -1544,12 +1899,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "2 glasses",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j36.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012250_adc13dba-64a0-45e5-ae4d-b84fe8e9c069_min.webp"
+   "notes": [],
+   "press": "Orange filter · lots of pulp",
+   "chips": [
+    "Prep 5 min",
+    "2 glasses"
+   ],
+   "slug": "pink-lemonade",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j37",
@@ -1580,12 +1944,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "1 glass (about 350 ml)",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j37.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012250_1650027a-e618-4781-ad0a-14c3ddbd76e3_min.webp"
+   "notes": [],
+   "press": "Orange filter · lots of pulp",
+   "chips": [
+    "Prep 5 min",
+    "1 glass (about 350 ml)"
+   ],
+   "slug": "purple-power",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j38",
@@ -1617,12 +1990,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "2 glasses",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j38.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012255_3c2c07ac-3cbd-424b-8af7-81e63096a7de_min.webp"
+   "notes": [],
+   "press": "Orange filter · lots of pulp",
+   "chips": [
+    "Prep 5 min",
+    "2 glasses"
+   ],
+   "slug": "watermelon-lime-fresca",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j39",
@@ -1656,12 +2038,21 @@
    "healthy": true,
    "prep": "5 min",
    "makes": "2 glasses",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j39.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012255_ddbc7734-c8e2-4373-b477-69f2c417295d_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "2 glasses"
+   ],
+   "slug": "cucumber-mint-spritz",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j40",
@@ -1694,12 +2085,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "2 glasses",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j40.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012255_1019a810-27c7-4660-a0e9-c927023c3488_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 5 min",
+    "2 glasses"
+   ],
+   "slug": "apple-ginger-fizz",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j41",
@@ -1730,12 +2130,21 @@
    "healthy": false,
    "prep": "10 min",
    "makes": "2 glasses",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j41.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012256_a1de6c73-ad6f-48ed-9776-973b6fd6c550_min.webp"
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "chips": [
+    "Prep 10 min",
+    "2 glasses"
+   ],
+   "slug": "warm-spiced-apple",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   },
   {
    "id": "j42",
@@ -1769,12 +2178,21 @@
    "healthy": false,
    "prep": "5 min",
    "makes": "2 glasses",
-   "tip": null,
-   "swap": null,
    "img": "/img/juice/j42.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "cdn": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012255_681e732d-7d8b-4732-8dbd-eacdfe88398c_min.webp"
+   "notes": [],
+   "press": "Orange filter · lots of pulp",
+   "chips": [
+    "Prep 5 min",
+    "2 glasses"
+   ],
+   "slug": "spicy-pineapple-margarita",
+   "gear": [
+    "ninja-neverclog"
+   ],
+   "video": null,
+   "members": false
   }
  ]
 }

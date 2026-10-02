@@ -1,0 +1,1294 @@
+{
+ "labels": {
+  "chicken": "Chicken",
+  "wings": "Chicken wings",
+  "beef": "Steak",
+  "ground": "Ground beef",
+  "pork": "Pork",
+  "ribs": "Pork ribs",
+  "sausage": "Sausages",
+  "salmon": "Salmon",
+  "shrimp": "Shrimp",
+  "corn": "Corn on the cob",
+  "pepper": "Bell peppers",
+  "zucchini": "Zucchini",
+  "potato": "Potatoes",
+  "onion": "Onions",
+  "mushroom": "Mushrooms",
+  "broccoli": "Broccoli",
+  "cabbage": "Cabbage",
+  "tomato": "Tomatoes",
+  "peach": "Peaches",
+  "pine": "Pineapple",
+  "banana": "Bananas",
+  "apple": "Apples",
+  "lemon": "Lemons",
+  "lime": "Limes",
+  "garlic": "Garlic",
+  "bbq": "BBQ sauce",
+  "rub": "BBQ rub",
+  "oil": "Olive oil",
+  "butter": "Butter",
+  "honey": "Honey",
+  "soy": "Soy sauce",
+  "cheese": "Cheese",
+  "dough": "Pizza dough",
+  "bun": "Buns",
+  "tortilla": "Tortillas",
+  "mallow": "Marshmallows",
+  "choc": "Chocolate",
+  "cracker": "Graham crackers",
+  "icecream": "Vanilla ice cream",
+  "cinnamon": "Cinnamon",
+  "herbs": "Fresh herbs"
+ },
+ "groups": [
+  [
+   "Meat & fish",
+   [
+    "chicken",
+    "wings",
+    "beef",
+    "ground",
+    "pork",
+    "ribs",
+    "sausage",
+    "salmon",
+    "shrimp"
+   ]
+  ],
+  [
+   "Veg",
+   [
+    "corn",
+    "pepper",
+    "zucchini",
+    "potato",
+    "onion",
+    "mushroom",
+    "broccoli",
+    "cabbage",
+    "tomato",
+    "garlic",
+    "herbs"
+   ]
+  ],
+  [
+   "Fruit",
+   [
+    "peach",
+    "pine",
+    "banana",
+    "apple",
+    "lemon",
+    "lime"
+   ]
+  ],
+  [
+   "Pantry",
+   [
+    "bbq",
+    "rub",
+    "oil",
+    "butter",
+    "honey",
+    "soy",
+    "cheese",
+    "dough",
+    "bun",
+    "tortilla",
+    "mallow",
+    "choc",
+    "cracker",
+    "icecream",
+    "cinnamon"
+   ]
+  ]
+ ],
+ "cats": [
+  {
+   "k": "grill",
+   "n": "Grill",
+   "e": "🔥",
+   "d": "Hot, fast and charred. Preheat until the display says Add Food.",
+   "s": "Grill"
+  },
+  {
+   "k": "smoke",
+   "n": "Smoker",
+   "e": "💨",
+   "d": "Low and slow with real wood pellets. ½ cup is enough.",
+   "s": "Smoke"
+  },
+  {
+   "k": "crisp",
+   "n": "Air crisp",
+   "e": "🍟",
+   "d": "Crispy wings, fries and snacks with a hint of smoke.",
+   "s": "Crisp"
+  },
+  {
+   "k": "bake",
+   "n": "Bake",
+   "e": "🍕",
+   "d": "Pizza, flatbreads and cobbler outdoors.",
+   "s": "Bake"
+  },
+  {
+   "k": "veg",
+   "n": "Veggies",
+   "e": "🌽",
+   "d": "Sides that steal the show.",
+   "s": "Veggies"
+  },
+  {
+   "k": "sweet",
+   "n": "Desserts",
+   "e": "🍑",
+   "d": "Grilled fruit, s'mores and campfire treats.",
+   "s": "Desserts"
+  }
+ ],
+ "recipes": [
+  {
+   "id": "w01",
+   "cat": "grill",
+   "title": "Smoky garlic butter steak",
+   "emoji": "🥩",
+   "blurb": "Charred outside, juicy inside, with a whisper of hardwood smoke.",
+   "ing": [
+    "2 ribeye or strip steaks, 1 inch thick",
+    "1 tbsp oil",
+    "Salt and pepper",
+    "2 tbsp butter mixed with 1 grated garlic clove and parsley"
+   ],
+   "steps": [
+    "Take steaks out 30 minutes early. Oil and season well.",
+    "Fill the smoke box with pellets and press Woodfire Flavor. Select Grill, HI, and preheat.",
+    "Grill 4–5 minutes per side for medium-rare (130°F on a thermometer).",
+    "Rest 5 minutes topped with the garlic butter."
+   ],
+   "tags": [
+    "beef",
+    "oil",
+    "butter",
+    "garlic"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "10 min",
+   "cook": "10 min",
+   "makes": "2–4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "USDA safe minimum for steak is 145°F plus a 3-minute rest. Many people prefer 130–135°F; your call."
+    ]
+   ],
+   "press": "Grill · HI + Woodfire flavor",
+   "chips": [
+    "Prep 10 min",
+    "Cook 10 min",
+    "2–4 servings"
+   ],
+   "img": "/img/fire/w01.jpg",
+   "slug": "smoky-garlic-butter-steak",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets",
+    "meat-thermometer"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w02",
+   "cat": "grill",
+   "title": "Classic backyard burgers",
+   "emoji": "🍔",
+   "blurb": "Juicy smash-style burgers with smoky edges.",
+   "ing": [
+    "1½ lbs ground beef (80/20)",
+    "Salt and pepper",
+    "4 slices cheese",
+    "4 buns, toppings"
+   ],
+   "steps": [
+    "Form 4 patties slightly wider than the buns. Press a dimple in the centre.",
+    "Fill the smoke box with pellets and press Woodfire Flavor. Grill on HI and preheat.",
+    "Grill 4–5 minutes per side to 160°F. Add cheese for the last minute.",
+    "Toast buns on the grate 30 seconds."
+   ],
+   "tags": [
+    "ground",
+    "cheese",
+    "bun"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "10 min",
+   "cook": "12 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Grill · HI + Woodfire flavor",
+   "chips": [
+    "Prep 10 min",
+    "Cook 12 min",
+    "4 servings"
+   ],
+   "img": "/img/fire/w02.jpg",
+   "slug": "classic-backyard-burgers",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets",
+    "meat-thermometer"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w03",
+   "cat": "grill",
+   "title": "Honey lime chicken thighs",
+   "emoji": "🍗",
+   "blurb": "Sticky, sweet and a little charred. Kids' favourite.",
+   "ing": [
+    "8 boneless chicken thighs",
+    "3 tbsp honey",
+    "Juice of 2 limes",
+    "2 tbsp soy sauce",
+    "2 garlic cloves, grated"
+   ],
+   "steps": [
+    "Mix honey, lime, soy and garlic. Marinate the chicken 30 minutes (or overnight).",
+    "Fill the smoke box with pellets and press Woodfire Flavor. Grill on MED and preheat.",
+    "Grill 6–7 minutes per side until 165°F inside.",
+    "Brush with leftover marinade only in the first half of cooking."
+   ],
+   "tags": [
+    "chicken",
+    "honey",
+    "lime",
+    "soy",
+    "garlic"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "35 min",
+   "cook": "15 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Grill · MED + Woodfire flavor",
+   "chips": [
+    "Prep 35 min",
+    "Cook 15 min",
+    "4 servings"
+   ],
+   "img": "/img/fire/w03.jpg",
+   "slug": "honey-lime-chicken-thighs",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets",
+    "meat-thermometer"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w04",
+   "cat": "grill",
+   "title": "Shrimp & veggie skewers",
+   "emoji": "🍤",
+   "blurb": "Fast weeknight skewers. Lemon, garlic and smoke.",
+   "ing": [
+    "1 lb large shrimp, peeled",
+    "1 zucchini and 1 bell pepper, in chunks",
+    "1 red onion, in chunks",
+    "3 tbsp olive oil",
+    "2 garlic cloves",
+    "Juice of 1 lemon",
+    "Salt, paprika"
+   ],
+   "steps": [
+    "Toss everything with oil, garlic, lemon and spices. Thread onto skewers.",
+    "Fill the smoke box with pellets and press Woodfire Flavor. Grill on HI and preheat.",
+    "Grill 2–3 minutes per side until shrimp are pink and opaque.",
+    "Squeeze more lemon on top."
+   ],
+   "tags": [
+    "shrimp",
+    "zucchini",
+    "pepper",
+    "onion",
+    "oil",
+    "garlic",
+    "lemon"
+   ],
+   "ben": [],
+   "healthy": true,
+   "prep": "10 min",
+   "cook": "8 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Grill · HI + Woodfire flavor",
+   "chips": [
+    "Prep 10 min",
+    "Cook 8 min",
+    "4 servings"
+   ],
+   "img": "/img/fire/w04.jpg",
+   "slug": "shrimp-and-veggie-skewers",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets",
+    "meat-thermometer"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w05",
+   "cat": "smoke",
+   "title": "Smoked pulled pork",
+   "emoji": "🐖",
+   "blurb": "The weekend project. Fall-apart tender with real bark.",
+   "ing": [
+    "4–5 lb pork shoulder (Boston butt)",
+    "¼ cup BBQ rub",
+    "Buns, slaw and BBQ sauce to serve"
+   ],
+   "steps": [
+    "Rub the pork all over. Rest 1 hour or overnight in the fridge.",
+    "Fill the smoke box with pellets. Select Smoker at 250°F and preheat.",
+    "Smoke until the internal temperature reaches 200–203°F, about 8–10 hours. Wrap in foil at 165°F if the bark looks dark enough.",
+    "Rest 30 minutes wrapped, then shred with forks."
+   ],
+   "tags": [
+    "pork",
+    "rub",
+    "bbq",
+    "bun"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "20 min",
+   "cook": "9 hours",
+   "makes": "10 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Top up pellets only if the smoke stops in the first few hours; after that the bark is set."
+    ]
+   ],
+   "press": "Smoker · 250°F + Woodfire flavor",
+   "chips": [
+    "Prep 20 min",
+    "Cook 9 hours",
+    "10 servings"
+   ],
+   "img": "/img/fire/w05.jpg",
+   "slug": "smoked-pulled-pork",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets",
+    "meat-thermometer"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w06",
+   "cat": "smoke",
+   "title": "Smoked baby back ribs",
+   "emoji": "🍖",
+   "blurb": "Tender ribs with a sticky glaze, no fuss.",
+   "ing": [
+    "2 racks baby back ribs",
+    "¼ cup BBQ rub",
+    "½ cup BBQ sauce",
+    "2 tbsp honey"
+   ],
+   "steps": [
+    "Pull the membrane off the back of the ribs. Season with rub.",
+    "Fill the smoke box. Smoker at 250°F, preheat.",
+    "Smoke 3 hours, wrap in foil with a splash of apple juice for 1½ hours.",
+    "Unwrap, brush with sauce mixed with honey, smoke 30 more minutes until tacky."
+   ],
+   "tags": [
+    "ribs",
+    "rub",
+    "bbq",
+    "honey"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "15 min",
+   "cook": "5 hours",
+   "makes": "4–6 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Smoker · 250°F + Woodfire flavor",
+   "chips": [
+    "Prep 15 min",
+    "Cook 5 hours",
+    "4–6 servings"
+   ],
+   "img": "/img/fire/w06.jpg",
+   "slug": "smoked-baby-back-ribs",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets",
+    "meat-thermometer"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w07",
+   "cat": "smoke",
+   "title": "Smoked salmon fillet",
+   "emoji": "🐟",
+   "blurb": "Flaky, smoky and done in under an hour.",
+   "ing": [
+    "2 lb salmon fillet, skin on",
+    "2 tbsp brown sugar",
+    "1 tbsp salt",
+    "1 tsp pepper",
+    "Lemon slices, dill"
+   ],
+   "steps": [
+    "Mix sugar, salt and pepper. Rub on the salmon flesh and rest 30 minutes in the fridge. Pat dry.",
+    "Fill the smoke box. Smoker at 250°F, preheat.",
+    "Smoke skin-side down 45–60 minutes until 145°F.",
+    "Serve with lemon and dill."
+   ],
+   "tags": [
+    "salmon",
+    "lemon",
+    "herbs"
+   ],
+   "ben": [],
+   "healthy": true,
+   "prep": "35 min",
+   "cook": "50 min",
+   "makes": "6 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Smoker · 250°F + Woodfire flavor",
+   "chips": [
+    "Prep 35 min",
+    "Cook 50 min",
+    "6 servings"
+   ],
+   "img": "/img/fire/w07.jpg",
+   "slug": "smoked-salmon-fillet",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets",
+    "meat-thermometer"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w08",
+   "cat": "smoke",
+   "title": "Smoked mac & cheese",
+   "emoji": "🧀",
+   "blurb": "Creamy mac that picks up smoke on top. Party side.",
+   "ing": [
+    "1 lb elbow pasta, cooked al dente",
+    "3 cups shredded cheddar",
+    "1 cup milk + 1 cup cream",
+    "2 tbsp butter",
+    "1 tsp mustard powder, salt"
+   ],
+   "steps": [
+    "Mix pasta with milk, cream, butter, 2 cups cheese and seasoning in a foil pan.",
+    "Top with the rest of the cheese.",
+    "Fill the smoke box. Smoker at 250°F. Smoke uncovered 1 hour, stirring once."
+   ],
+   "tags": [
+    "cheese",
+    "butter"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "20 min",
+   "cook": "1 hour",
+   "makes": "8 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Smoker · 250°F + Woodfire flavor",
+   "chips": [
+    "Prep 20 min",
+    "Cook 1 hour",
+    "8 servings"
+   ],
+   "img": "/img/fire/w08.jpg",
+   "slug": "smoked-mac-and-cheese",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w09",
+   "cat": "crisp",
+   "title": "Smoky crispy wings",
+   "emoji": "🍗",
+   "blurb": "Air-crisped wings with a smoke kiss. No deep fryer.",
+   "ing": [
+    "2 lbs chicken wings, patted very dry",
+    "1 tbsp baking powder",
+    "1 tsp salt",
+    "1 tsp smoked paprika",
+    "Buffalo or BBQ sauce"
+   ],
+   "steps": [
+    "Toss wings with baking powder, salt and paprika.",
+    "Fill the smoke box, select Air Crisp at 390°F with the crisper basket, preheat.",
+    "Cook 25–30 minutes, shaking halfway, until 165°F and crispy.",
+    "Toss in sauce."
+   ],
+   "tags": [
+    "wings",
+    "bbq"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "10 min",
+   "cook": "30 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Air Crisp · 390°F + Woodfire flavor",
+   "chips": [
+    "Prep 10 min",
+    "Cook 30 min",
+    "4 servings"
+   ],
+   "img": "/img/fire/w09.jpg",
+   "slug": "smoky-crispy-wings",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets",
+    "meat-thermometer"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w10",
+   "cat": "crisp",
+   "title": "Woodfire fries",
+   "emoji": "🍟",
+   "blurb": "Hand-cut fries with a smoky edge.",
+   "ing": [
+    "3 russet potatoes, cut into sticks",
+    "1 tbsp oil",
+    "Salt, garlic powder"
+   ],
+   "steps": [
+    "Soak fries in cold water 30 minutes. Dry very well.",
+    "Toss with oil.",
+    "Air Crisp at 390°F in the basket 20–25 minutes, shaking twice. Salt straight away."
+   ],
+   "tags": [
+    "potato",
+    "oil"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "35 min",
+   "cook": "25 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Air Crisp · 390°F",
+   "chips": [
+    "Prep 35 min",
+    "Cook 25 min",
+    "4 servings"
+   ],
+   "img": "/img/fire/w10.jpg",
+   "slug": "woodfire-fries",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w11",
+   "cat": "crisp",
+   "title": "Crispy smashed potatoes",
+   "emoji": "🥔",
+   "blurb": "Boiled baby potatoes, smashed and crisped.",
+   "ing": [
+    "1½ lbs baby potatoes",
+    "2 tbsp olive oil",
+    "2 garlic cloves, grated",
+    "Salt, rosemary, Parmesan"
+   ],
+   "steps": [
+    "Boil potatoes 15 minutes until tender. Drain and smash flat with a glass.",
+    "Brush with garlic oil, season.",
+    "Air Crisp at 390°F for 15–18 minutes. Sprinkle Parmesan."
+   ],
+   "tags": [
+    "potato",
+    "oil",
+    "garlic",
+    "cheese",
+    "herbs"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "10 min",
+   "cook": "35 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Air Crisp · 390°F + Woodfire flavor",
+   "chips": [
+    "Prep 10 min",
+    "Cook 35 min",
+    "4 servings"
+   ],
+   "img": "/img/fire/w11.jpg",
+   "slug": "crispy-smashed-potatoes",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w12",
+   "cat": "crisp",
+   "title": "Sausage & pepper hoagies",
+   "emoji": "🌭",
+   "blurb": "Juicy sausages and sweet peppers, crisped in one basket.",
+   "ing": [
+    "6 Italian sausages",
+    "2 bell peppers, sliced",
+    "1 onion, sliced",
+    "1 tbsp oil",
+    "6 hoagie rolls"
+   ],
+   "steps": [
+    "Toss peppers and onion with oil.",
+    "Fill the smoke box with pellets and press Woodfire Flavor. Air Crisp at 375°F, preheat.",
+    "Cook sausages and veg 15–18 minutes, shaking once, until sausages reach 160°F.",
+    "Pile into rolls."
+   ],
+   "tags": [
+    "sausage",
+    "pepper",
+    "onion",
+    "oil",
+    "bun"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "10 min",
+   "cook": "18 min",
+   "makes": "6 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Air Crisp · 375°F + Woodfire flavor",
+   "chips": [
+    "Prep 10 min",
+    "Cook 18 min",
+    "6 servings"
+   ],
+   "img": "/img/fire/w12.jpg",
+   "slug": "sausage-and-pepper-hoagies",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets",
+    "meat-thermometer"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w13",
+   "cat": "bake",
+   "title": "Woodfire margherita pizza",
+   "emoji": "🍕",
+   "blurb": "Pizza-oven vibes in the backyard.",
+   "ing": [
+    "1 ball pizza dough",
+    "½ cup tomato sauce",
+    "1 ball fresh mozzarella, torn",
+    "Fresh basil",
+    "Olive oil"
+   ],
+   "steps": [
+    "Stretch dough to fit the grill plate. Top with sauce and mozzarella.",
+    "Fill the smoke box with pellets and press Woodfire Flavor. Bake at 450°F, preheat.",
+    "Bake 10–12 minutes until the crust is golden.",
+    "Finish with basil and oil."
+   ],
+   "tags": [
+    "dough",
+    "tomato",
+    "cheese",
+    "herbs",
+    "oil"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "10 min",
+   "cook": "12 min",
+   "makes": "2–3 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Bake · 450°F + Woodfire flavor",
+   "chips": [
+    "Prep 10 min",
+    "Cook 12 min",
+    "2–3 servings"
+   ],
+   "img": "/img/fire/w13.jpg",
+   "slug": "woodfire-margherita-pizza",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w14",
+   "cat": "bake",
+   "title": "Garlic herb flatbread",
+   "emoji": "🫓",
+   "blurb": "Blistered flatbread for dips and grilled meats.",
+   "ing": [
+    "1 ball pizza dough",
+    "3 tbsp butter melted with 2 garlic cloves",
+    "Parsley, flaky salt"
+   ],
+   "steps": [
+    "Stretch dough thin and dimple with fingers. Brush with garlic butter.",
+    "Fill the smoke box with pellets and press Woodfire Flavor. Bake at 425°F, preheat.",
+    "Bake 8–10 minutes. Brush with more butter and sprinkle parsley and salt."
+   ],
+   "tags": [
+    "dough",
+    "butter",
+    "garlic",
+    "herbs"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "10 min",
+   "cook": "10 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Bake · 425°F + Woodfire flavor",
+   "chips": [
+    "Prep 10 min",
+    "Cook 10 min",
+    "4 servings"
+   ],
+   "img": "/img/fire/w14.jpg",
+   "slug": "garlic-herb-flatbread",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w15",
+   "cat": "bake",
+   "title": "Skillet cornbread",
+   "emoji": "🌽",
+   "blurb": "Golden cornbread with a crisp crust and a little smoke.",
+   "ing": [
+    "1 box cornbread mix + egg and milk as directed",
+    "2 tbsp butter",
+    "Honey to serve"
+   ],
+   "steps": [
+    "Melt butter in a small cast iron pan in the preheating grill.",
+    "Pour in the batter.",
+    "Bake at 375°F for 18–22 minutes until a toothpick comes out clean. Drizzle honey."
+   ],
+   "tags": [
+    "butter",
+    "honey"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "10 min",
+   "cook": "22 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Bake · 375°F",
+   "chips": [
+    "Prep 10 min",
+    "Cook 22 min",
+    "4 servings"
+   ],
+   "img": "/img/fire/w15.jpg",
+   "slug": "skillet-cornbread",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w16",
+   "cat": "bake",
+   "title": "BBQ chicken quesadillas",
+   "emoji": "🌮",
+   "blurb": "Leftover smoked chicken? This is where it goes.",
+   "ing": [
+    "2 cups cooked shredded chicken",
+    "¼ cup BBQ sauce",
+    "2 cups shredded cheese",
+    "4 large tortillas",
+    "Sliced onion"
+   ],
+   "steps": [
+    "Toss chicken with BBQ sauce.",
+    "Fill half of each tortilla with chicken, onion and cheese; fold.",
+    "Bake at 400°F for 6–8 minutes, flipping once, until crisp and melty."
+   ],
+   "tags": [
+    "chicken",
+    "bbq",
+    "cheese",
+    "tortilla",
+    "onion"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "10 min",
+   "cook": "8 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Bake · 400°F + Woodfire flavor",
+   "chips": [
+    "Prep 10 min",
+    "Cook 8 min",
+    "4 servings"
+   ],
+   "img": "/img/fire/w16.jpg",
+   "slug": "bbq-chicken-quesadillas",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets",
+    "meat-thermometer"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w17",
+   "cat": "veg",
+   "title": "Charred street corn",
+   "emoji": "🌽",
+   "blurb": "Elote-style: mayo, cheese, lime and chili.",
+   "ing": [
+    "4 corn cobs, husked",
+    "2 tbsp mayo",
+    "¼ cup crumbled cotija or feta",
+    "1 lime",
+    "Chili powder, cilantro"
+   ],
+   "steps": [
+    "Fill the smoke box with pellets and press Woodfire Flavor. Grill on HI, preheat.",
+    "Grill corn 10–12 minutes, turning, until charred in spots.",
+    "Brush with mayo, roll in cheese, dust with chili and squeeze lime."
+   ],
+   "tags": [
+    "corn",
+    "cheese",
+    "lime"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "10 min",
+   "cook": "12 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Grill · HI + Woodfire flavor",
+   "chips": [
+    "Prep 10 min",
+    "Cook 12 min",
+    "4 servings"
+   ],
+   "img": "/img/fire/w17.jpg",
+   "slug": "charred-street-corn",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w18",
+   "cat": "veg",
+   "title": "Grilled veggie platter",
+   "emoji": "🫑",
+   "blurb": "Zucchini, peppers, mushrooms and onions with balsamic.",
+   "ing": [
+    "2 zucchini, sliced lengthwise",
+    "2 bell peppers, in wide strips",
+    "8 mushrooms",
+    "1 red onion, in thick rings",
+    "3 tbsp olive oil",
+    "Balsamic, salt, herbs"
+   ],
+   "steps": [
+    "Toss veg with oil and salt.",
+    "Fill the smoke box with pellets and press Woodfire Flavor. Grill on MED, preheat.",
+    "Grill in batches 3–5 minutes per side.",
+    "Drizzle balsamic and scatter herbs."
+   ],
+   "tags": [
+    "zucchini",
+    "pepper",
+    "mushroom",
+    "onion",
+    "oil",
+    "herbs"
+   ],
+   "ben": [],
+   "healthy": true,
+   "prep": "10 min",
+   "cook": "20 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Grill · MED + Woodfire flavor",
+   "chips": [
+    "Prep 10 min",
+    "Cook 20 min",
+    "4 servings"
+   ],
+   "img": "/img/fire/w18.jpg",
+   "slug": "grilled-veggie-platter",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w19",
+   "cat": "veg",
+   "title": "Smoky broccoli",
+   "emoji": "🥦",
+   "blurb": "Crispy-edged broccoli with lemon and Parmesan.",
+   "ing": [
+    "2 heads broccoli, in florets",
+    "2 tbsp olive oil",
+    "Salt, garlic powder",
+    "Lemon and Parmesan"
+   ],
+   "steps": [
+    "Toss broccoli with oil and seasoning.",
+    "Fill the smoke box with pellets and press Woodfire Flavor. Air Crisp at 390°F, preheat.",
+    "Cook 10–12 minutes, shaking once. Finish with lemon and Parmesan."
+   ],
+   "tags": [
+    "broccoli",
+    "oil",
+    "lemon",
+    "cheese"
+   ],
+   "ben": [],
+   "healthy": true,
+   "prep": "10 min",
+   "cook": "12 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Air Crisp · 390°F + Woodfire flavor",
+   "chips": [
+    "Prep 10 min",
+    "Cook 12 min",
+    "4 servings"
+   ],
+   "img": "/img/fire/w19.jpg",
+   "slug": "smoky-broccoli",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w20",
+   "cat": "veg",
+   "title": "Grilled cabbage steaks",
+   "emoji": "🥬",
+   "blurb": "Thick cabbage slices turn sweet and charred.",
+   "ing": [
+    "1 small cabbage, cut into 1-inch rounds",
+    "3 tbsp butter, melted",
+    "1 tsp BBQ rub",
+    "Salt"
+   ],
+   "steps": [
+    "Brush cabbage rounds with butter and season.",
+    "Fill the smoke box with pellets and press Woodfire Flavor. Grill on MED, preheat.",
+    "Grill 6–8 minutes per side until tender and charred."
+   ],
+   "tags": [
+    "cabbage",
+    "butter",
+    "rub"
+   ],
+   "ben": [],
+   "healthy": true,
+   "prep": "10 min",
+   "cook": "16 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Grill · MED + Woodfire flavor",
+   "chips": [
+    "Prep 10 min",
+    "Cook 16 min",
+    "4 servings"
+   ],
+   "img": "/img/fire/w20.jpg",
+   "slug": "grilled-cabbage-steaks",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w21",
+   "cat": "sweet",
+   "title": "Grilled honey peaches",
+   "emoji": "🍑",
+   "blurb": "Caramelised peaches with ice cream. Summer on a plate.",
+   "ing": [
+    "4 ripe peaches, halved and pitted",
+    "1 tbsp melted butter",
+    "2 tbsp honey",
+    "Cinnamon",
+    "Vanilla ice cream"
+   ],
+   "steps": [
+    "Brush cut sides with butter.",
+    "Grill on MED cut-side down 4–5 minutes, flip, drizzle honey and cinnamon, 2 more minutes.",
+    "Serve warm with ice cream."
+   ],
+   "tags": [
+    "peach",
+    "butter",
+    "honey",
+    "cinnamon",
+    "icecream"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "10 min",
+   "cook": "7 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Grill · MED",
+   "chips": [
+    "Prep 10 min",
+    "Cook 7 min",
+    "4 servings"
+   ],
+   "img": "/img/fire/w21.jpg",
+   "slug": "grilled-honey-peaches",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w22",
+   "cat": "sweet",
+   "title": "Pineapple with cinnamon sugar",
+   "emoji": "🍍",
+   "blurb": "Charred pineapple spears, sweet and tangy.",
+   "ing": [
+    "1 pineapple, cut into spears",
+    "2 tbsp brown sugar",
+    "1 tsp cinnamon",
+    "Lime zest"
+   ],
+   "steps": [
+    "Toss spears with sugar and cinnamon.",
+    "Grill on HI 3 minutes per side until marked.",
+    "Finish with lime zest."
+   ],
+   "tags": [
+    "pine",
+    "cinnamon",
+    "lime"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "10 min",
+   "cook": "8 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Grill · HI",
+   "chips": [
+    "Prep 10 min",
+    "Cook 8 min",
+    "4 servings"
+   ],
+   "img": "/img/fire/w22.jpg",
+   "slug": "pineapple-with-cinnamon-sugar",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w23",
+   "cat": "sweet",
+   "title": "S'mores dip",
+   "emoji": "🍫",
+   "blurb": "Gooey chocolate and toasted marshmallow for dipping.",
+   "ing": [
+    "1½ cups chocolate chips",
+    "20 large marshmallows, halved",
+    "Graham crackers to dip"
+   ],
+   "steps": [
+    "Spread chocolate in a small cast iron pan. Cover with marshmallows, cut-side down.",
+    "Bake at 400°F for 6–8 minutes until marshmallows are golden.",
+    "Dip with graham crackers. Careful, it's hot."
+   ],
+   "tags": [
+    "choc",
+    "mallow",
+    "cracker"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "10 min",
+   "cook": "8 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Bake · 400°F",
+   "chips": [
+    "Prep 10 min",
+    "Cook 8 min",
+    "4 servings"
+   ],
+   "img": "/img/fire/w23.jpg",
+   "slug": "s-mores-dip",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets"
+   ],
+   "video": null,
+   "members": false
+  },
+  {
+   "id": "w24",
+   "cat": "sweet",
+   "title": "Campfire banana boats",
+   "emoji": "🍌",
+   "blurb": "Bananas stuffed with chocolate and marshmallow, baked in foil.",
+   "ing": [
+    "4 bananas, unpeeled",
+    "¼ cup chocolate chips",
+    "¼ cup mini marshmallows",
+    "Foil"
+   ],
+   "steps": [
+    "Slit each banana lengthwise through the peel, not all the way through.",
+    "Stuff with chocolate and marshmallows. Wrap in foil.",
+    "Bake at 375°F for 8–10 minutes. Eat with a spoon."
+   ],
+   "tags": [
+    "banana",
+    "choc",
+    "mallow"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "10 min",
+   "cook": "10 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Bake · 375°F",
+   "chips": [
+    "Prep 10 min",
+    "Cook 10 min",
+    "4 servings"
+   ],
+   "img": "/img/fire/w24.jpg",
+   "slug": "campfire-banana-boats",
+   "gear": [
+    "ninja-woodfire-grill",
+    "woodfire-pellets"
+   ],
+   "video": null,
+   "members": false
+  }
+ ]
+}

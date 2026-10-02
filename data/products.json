@@ -1,0 +1,15 @@
+{
+ "_readme": "One place for every product and affiliate link. Pages link to /go/<id>, so changing url here updates the whole site. Amazon links get site.json affiliate.amazonTag added automatically.",
+ "products": [
+  {"id":"ninja-swirl","kind":"appliance","name":"Ninja Swirl by CREAMi","image":"/img/home/icecream-machine.webp","url":"https://www.amazon.com/s?k=Ninja+Swirl+by+CREAMi","price":"","note":"Soft serve, ice cream, sorbet and shakes from frozen pints."},
+  {"id":"ninja-neverclog","kind":"appliance","name":"Ninja NeverClog Cold Press Juicer","image":"/img/home/juicer.webp","url":"https://www.amazon.com/s?k=Ninja+NeverClog+Cold+Press+Juicer","price":"","note":"Two pulp filters, easy clean, no clogging on greens."},
+  {"id":"ninja-detect-blender","kind":"appliance","name":"Ninja Detect Power Blender Pro","image":"/img/home/blender.webp","url":"https://www.amazon.com/s?k=Ninja+Detect+Power+Blender+Pro+TB201","price":"","note":"BlendSense picks speed and time for you."},
+  {"id":"ninja-woodfire-grill","kind":"appliance","name":"Ninja Woodfire Outdoor Grill & Smoker","image":"/img/home/grill.webp","url":"https://www.amazon.com/s?k=Ninja+Woodfire+Outdoor+Grill+Smoker","price":"","note":"Electric grill, smoker and air fryer with real wood pellet flavour."},
+  {"id":"creami-pints","kind":"accessory","name":"Extra CREAMi pints with lids","image":"","url":"https://www.amazon.com/s?k=Ninja+CREAMi+pints","price":"","note":"Keep a few pints frozen so dessert is always 5 minutes away."},
+  {"id":"woodfire-pellets","kind":"accessory","name":"Ninja Woodfire pellets","image":"","url":"https://www.amazon.com/s?k=Ninja+Woodfire+pellets","price":"","note":"Robust and All-purpose blends. ½ cup per cook."},
+  {"id":"meat-thermometer","kind":"accessory","name":"Instant-read meat thermometer","image":"","url":"https://www.amazon.com/s?k=instant+read+meat+thermometer","price":"","note":"The one tool that makes grilling foolproof."},
+  {"id":"blender-cups","kind":"accessory","name":"Blender to-go cups","image":"","url":"https://www.amazon.com/s?k=Ninja+blender+to-go+cups","price":"","note":"Blend and walk out the door."}
+ ],
+ "digital": [],
+ "_digital_example": {"id":"recipe-card-pack","name":"Printable recipe card pack","price":"$5","image":"","checkoutUrl":"https://buy.stripe.com/your-payment-link","note":"Stripe Payment Link: paste it here and the Buy button appears."}
+}

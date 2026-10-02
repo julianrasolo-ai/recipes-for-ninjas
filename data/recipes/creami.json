@@ -165,8 +165,6 @@
    "prep": "2 min",
    "freeze": "None",
    "makes": "2 servings",
-   "program": "Soft Serve, then Re-Spin",
-   "mode": "Swirl",
    "ing": [
     "2 cups (1 pint) plain store-bought ice cream, gelato, sorbet or frozen yogurt (no chunks, swirls or cores)"
    ],
@@ -175,17 +173,41 @@
     "Press Soft Serve, then Re-Spin.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Use dairy-free ice cream, gelato or frozen yogurt.",
-   "lite": "Use lite, low-calorie, keto or reduced-sugar ice cream.",
-   "tip": null,
    "tags": [
     "ice"
    ],
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r01.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use dairy-free ice cream, gelato or frozen yogurt."
+    ],
+    [
+     "Lighter",
+     "Use lite, low-calorie, keto or reduced-sugar ice cream."
+    ]
+   ],
+   "press": "Soft Serve, then Re-Spin",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 2 min",
+    "Freeze None",
+    "Spin 1 min",
+    "2 servings"
+   ],
+   "cook": "1 min",
+   "wait": "None",
+   "slug": "store-bought-soft-serve",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r02",
@@ -198,8 +220,6 @@
    "prep": "5 min",
    "freeze": "None",
    "makes": "4 servings",
-   "program": "Scoop, then Milkshake",
-   "mode": "Scoop",
    "ing": [
     "1 1/4 cups vanilla ice cream",
     "1/4 cup whole milk",
@@ -214,9 +234,6 @@
     "Press Scoop, then Milkshake.",
     "Pour or spoon into a tall glass."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Top with extra crushed pretzels and the rest of the salt.",
    "tags": [
     "ice",
     "milk",
@@ -225,8 +242,31 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r02.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Top with extra crushed pretzels and the rest of the salt."
+    ]
+   ],
+   "press": "Scoop, then Milkshake",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze None",
+    "Spin 1.5 min",
+    "4 servings"
+   ],
+   "cook": "1.5 min",
+   "wait": "None",
+   "slug": "salted-caramel-pretzel-milkshake",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r03",
@@ -239,8 +279,6 @@
    "prep": "2 min",
    "freeze": "24 hours",
    "makes": "varies",
-   "program": "See each idea",
-   "mode": "Either",
    "ing": [
     "Canned pineapple, mango, tropical fruit or mandarins: fill with fruit, top with the can juice. Spin Scoop, Sorbet or Soft Serve, Fruit Whip.",
     "Pie filling (cherry, blueberry, lemon, strawberry, apple): fill to the line. Scoop, Sorbet or Soft Serve, Fruit Whip.",
@@ -256,9 +294,6 @@
     "Pour or spoon into the pint (base closed, below the MAX FILL line).",
     "Freeze 24 hours, then spin with the program listed."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Canned fruit packed in water doesn't work. Pick fruit in juice or light syrup.",
    "tags": [
     "canfruit",
     "apple",
@@ -269,8 +304,31 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r03.jpg",
-   "manual": false,
-   "listTitle": "Ideas"
+   "listTitle": "Ideas",
+   "notes": [
+    [
+     "Tip",
+     "Canned fruit packed in water doesn't work. Pick fruit in juice or light syrup."
+    ]
+   ],
+   "press": "See each idea",
+   "badge": "⚡ Quick",
+   "chips": [
+    "Prep 2 min",
+    "Freeze 24 hours",
+    "Spin varies",
+    "varies"
+   ],
+   "cook": "varies",
+   "wait": "24 hours",
+   "slug": "pantry-one-pint-ideas",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r04",
@@ -283,8 +341,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Ice Cream",
-   "mode": "Swirl",
    "ing": [
     "1/3 cup granulated sugar",
     "1 tbsp vanilla instant pudding mix",
@@ -300,9 +356,6 @@
     "Press Soft Serve, then Ice Cream.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Use unsweetened oat milk for the whole milk and unsweetened coconut cream for the heavy cream.",
-   "lite": "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream.",
-   "tip": null,
    "tags": [
     "milk",
     "cream",
@@ -311,8 +364,35 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r04.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use unsweetened oat milk for the whole milk and unsweetened coconut cream for the heavy cream."
+    ],
+    [
+     "Lighter",
+     "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
+    ]
+   ],
+   "press": "Soft Serve, then Ice Cream",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 5 min",
+    "4 servings"
+   ],
+   "cook": "5 min",
+   "wait": "24 hours",
+   "slug": "easy-vanilla-soft-serve",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r05",
@@ -325,8 +405,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Ice Cream",
-   "mode": "Swirl",
    "ing": [
     "1/3 cup granulated sugar",
     "1 tbsp chocolate instant pudding mix",
@@ -343,9 +421,6 @@
     "Press Soft Serve, then Ice Cream.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Use unsweetened oat milk for the whole milk and unsweetened coconut cream for the heavy cream.",
-   "lite": "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream.",
-   "tip": null,
    "tags": [
     "milk",
     "cream",
@@ -355,8 +430,35 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r05.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use unsweetened oat milk for the whole milk and unsweetened coconut cream for the heavy cream."
+    ],
+    [
+     "Lighter",
+     "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
+    ]
+   ],
+   "press": "Soft Serve, then Ice Cream",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 5 min",
+    "4 servings"
+   ],
+   "cook": "5 min",
+   "wait": "24 hours",
+   "slug": "chocolate-soft-serve",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r06",
@@ -369,8 +471,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Ice Cream",
-   "mode": "Swirl",
    "ing": [
     "1 tbsp vanilla instant pudding mix",
     "Pinch of salt (optional)",
@@ -388,9 +488,6 @@
     "Press Soft Serve, then Ice Cream.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Use unsweetened oat milk for the whole milk and unsweetened coconut cream for the heavy cream.",
-   "lite": null,
-   "tip": null,
    "tags": [
     "milk",
     "cream",
@@ -399,8 +496,31 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r06.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use unsweetened oat milk for the whole milk and unsweetened coconut cream for the heavy cream."
+    ]
+   ],
+   "press": "Soft Serve, then Ice Cream",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 5 min",
+    "4 servings"
+   ],
+   "cook": "5 min",
+   "wait": "24 hours",
+   "slug": "salted-caramel-soft-serve",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r07",
@@ -413,8 +533,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Ice Cream",
-   "mode": "Swirl",
    "ing": [
     "1/3 cup granulated sugar",
     "1 tbsp vanilla instant pudding mix",
@@ -431,9 +549,6 @@
     "Press Soft Serve, then Ice Cream.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Already dairy-free. Want dairy? Use whole milk and heavy cream.",
-   "lite": "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream.",
-   "tip": null,
    "tags": [
     "oat",
     "coco",
@@ -442,8 +557,38 @@
    "healthy": false,
    "dfree": true,
    "img": "/img/ice/r07.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Already dairy-free. Want dairy? Use whole milk and heavy cream."
+    ],
+    [
+     "Lighter",
+     "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
+    ]
+   ],
+   "press": "Soft Serve, then Ice Cream",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 5 min",
+    "4 servings"
+   ],
+   "cook": "5 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "dairy-free-chai-soft-serve",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r08",
@@ -456,8 +601,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Ice Cream",
-   "mode": "Swirl",
    "ing": [
     "1/3 cup granulated sugar",
     "3 tbsp non-fat dry milk powder",
@@ -475,9 +618,6 @@
     "Press Soft Serve, then Ice Cream.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Use coconut or oat milk powder, unsweetened coconut cream and unsweetened oat milk.",
-   "lite": "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream.",
-   "tip": "No xanthan gum? Use 1 tbsp instant pudding mix instead.",
    "tags": [
     "milk",
     "cream",
@@ -486,8 +626,39 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r08.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use coconut or oat milk powder, unsweetened coconut cream and unsweetened oat milk."
+    ],
+    [
+     "Lighter",
+     "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
+    ],
+    [
+     "Tip",
+     "No xanthan gum? Use 1 tbsp instant pudding mix instead."
+    ]
+   ],
+   "press": "Soft Serve, then Ice Cream",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 5 min",
+    "4 servings"
+   ],
+   "cook": "5 min",
+   "wait": "24 hours",
+   "slug": "signature-vanilla-soft-serve",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r09",
@@ -500,8 +671,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Ice Cream",
-   "mode": "Swirl",
    "ing": [
     "1/3 cup granulated sugar",
     "3 tbsp non-fat dry milk powder",
@@ -521,9 +690,6 @@
     "Press Soft Serve, then Ice Cream.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Use coconut or oat milk powder, unsweetened coconut cream and unsweetened oat milk.",
-   "lite": "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream.",
-   "tip": "No xanthan gum? Use 1 tbsp chocolate instant pudding mix.",
    "tags": [
     "milk",
     "cream",
@@ -534,8 +700,39 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r09.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use coconut or oat milk powder, unsweetened coconut cream and unsweetened oat milk."
+    ],
+    [
+     "Lighter",
+     "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
+    ],
+    [
+     "Tip",
+     "No xanthan gum? Use 1 tbsp chocolate instant pudding mix."
+    ]
+   ],
+   "press": "Soft Serve, then Ice Cream",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 5 min",
+    "4 servings"
+   ],
+   "cook": "5 min",
+   "wait": "24 hours",
+   "slug": "chocolate-peanut-butter-soft-serve",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r10",
@@ -548,8 +745,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Ice Cream",
-   "mode": "Swirl",
    "ing": [
     "1/3 cup granulated sugar",
     "3 tbsp non-fat dry milk powder",
@@ -568,9 +763,6 @@
     "Press Soft Serve, then Ice Cream.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Use coconut or oat milk powder, unsweetened coconut cream and unsweetened oat milk.",
-   "lite": "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream.",
-   "tip": "No xanthan gum? Use 1 tbsp vanilla instant pudding mix.",
    "tags": [
     "milk",
     "cream",
@@ -579,8 +771,39 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r10.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use coconut or oat milk powder, unsweetened coconut cream and unsweetened oat milk."
+    ],
+    [
+     "Lighter",
+     "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
+    ],
+    [
+     "Tip",
+     "No xanthan gum? Use 1 tbsp vanilla instant pudding mix."
+    ]
+   ],
+   "press": "Soft Serve, then Ice Cream",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 5 min",
+    "4 servings"
+   ],
+   "cook": "5 min",
+   "wait": "24 hours",
+   "slug": "root-beer-float-soft-serve",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r11",
@@ -593,8 +816,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Frozen Yogurt",
-   "mode": "Swirl",
    "ing": [
     "2 cups yogurt (any fruit flavor)"
    ],
@@ -605,17 +826,41 @@
     "Press Soft Serve, then Frozen Yogurt.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Use cashew, almond or other plant-based yogurt.",
-   "lite": null,
-   "tip": "Looks crumbly? Press Re-Spin once.",
    "tags": [
     "yog"
    ],
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r11.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use cashew, almond or other plant-based yogurt."
+    ],
+    [
+     "Tip",
+     "Looks crumbly? Press Re-Spin once."
+    ]
+   ],
+   "press": "Soft Serve, then Frozen Yogurt",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "one-ingredient-frozen-yogurt",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r12",
@@ -628,8 +873,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Frozen Yogurt",
-   "mode": "Swirl",
    "ing": [
     "1 1/2 cups plain whole-milk yogurt",
     "1/4 cup low-fat buttermilk",
@@ -644,9 +887,6 @@
     "Press Soft Serve, then Frozen Yogurt.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "yog",
     "lemon"
@@ -654,8 +894,26 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r12.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Soft Serve, then Frozen Yogurt",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "classic-tart-frozen-yogurt",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r13",
@@ -668,8 +926,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Frozen Yogurt",
-   "mode": "Swirl",
    "ing": [
     "1 3/4 cups Greek whole-milk yogurt",
     "1/4 cup heavy cream",
@@ -684,9 +940,6 @@
     "Press Soft Serve, then Frozen Yogurt.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "yog",
     "cream"
@@ -694,8 +947,26 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r13.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Soft Serve, then Frozen Yogurt",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "birthday-cake-frozen-yogurt",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r14",
@@ -708,8 +979,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Frozen Yogurt",
-   "mode": "Scoop",
    "ing": [
     "1 1/2 cups plain whole-milk yogurt",
     "1 tsp vanilla extract",
@@ -723,9 +992,6 @@
     "Press Scoop, then Frozen Yogurt.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "yog",
     "cocoa"
@@ -733,8 +999,26 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r14.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Frozen Yogurt",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "chocolate-hazelnut-frozen-yogurt",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r15",
@@ -747,8 +1031,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then CreamiFit",
-   "mode": "Scoop",
    "ing": [
     "1 ready-made ultra-filtered chocolate protein shake (14 oz), or 1 3/4 cups chocolate milk or almond milk + 1 scoop protein powder",
     "2 tbsp cocoa powder",
@@ -762,9 +1044,6 @@
     "Press Scoop, then CreamiFit.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "For a sweeter protein ice cream, add 1 tbsp monkfruit sweetener. For soft serve, choose Soft Serve, then CreamiFit.",
    "tags": [
     "prot",
     "cocoa",
@@ -773,8 +1052,31 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r15.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "For a sweeter protein ice cream, add 1 tbsp monkfruit sweetener. For soft serve, choose Soft Serve, then CreamiFit."
+    ]
+   ],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "chocolate-protein-ice-cream",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r16",
@@ -787,8 +1089,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then CreamiFit",
-   "mode": "Scoop",
    "ing": [
     "1 3/4 cups strawberry milk or almond milk + 1 scoop protein powder",
     "1 tsp strawberry extract",
@@ -804,9 +1104,6 @@
     "Press Scoop, then CreamiFit.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Using almond milk? Add 1/2 tsp more strawberry extract. For soft serve, skip the mix-in and sprinkle crumbs on top instead. For a sweeter protein ice cream, add 1 tbsp monkfruit sweetener.",
    "tags": [
     "prot",
     "pud",
@@ -815,8 +1112,31 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r16.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Using almond milk? Add 1/2 tsp more strawberry extract. For soft serve, skip the mix-in and sprinkle crumbs on top instead. For a sweeter protein ice cream, add 1 tbsp monkfruit sweetener."
+    ]
+   ],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "strawberry-cheesecake-protein-ice-cream",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r17",
@@ -829,8 +1149,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then CreamiFit",
-   "mode": "Swirl",
    "ing": [
     "1 ready-made ultra-filtered chocolate protein shake (14 oz), or 1 3/4 cups low-fat chocolate milk or chocolate almond milk + 1 scoop protein powder",
     "1 tbsp instant coffee",
@@ -847,9 +1165,6 @@
     "Press Soft Serve, then CreamiFit.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "For a sweeter protein ice cream, add 1 tbsp monkfruit sweetener. Want scoops? Choose Scoop, then CreamiFit.",
    "tags": [
     "prot",
     "coffee",
@@ -859,8 +1174,31 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r17.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "For a sweeter protein ice cream, add 1 tbsp monkfruit sweetener. Want scoops? Choose Scoop, then CreamiFit."
+    ]
+   ],
+   "press": "Soft Serve, then CreamiFit",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "peppermint-mocha-protein-soft-serve",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r18",
@@ -873,8 +1211,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then CreamiFit",
-   "mode": "Swirl",
    "ing": [
     "1 ready-made ultra-filtered vanilla protein shake (14 oz), or 1 3/4 cups low-fat milk or almond milk + 1 scoop protein powder",
     "1 tbsp pistachio instant pudding mix",
@@ -889,9 +1225,6 @@
     "Press Soft Serve, then CreamiFit.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "For a sweeter protein ice cream, add 1 tbsp monkfruit sweetener. Want scoops? Choose Scoop, then CreamiFit.",
    "tags": [
     "prot",
     "pud",
@@ -900,8 +1233,31 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r18.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "For a sweeter protein ice cream, add 1 tbsp monkfruit sweetener. Want scoops? Choose Scoop, then CreamiFit."
+    ]
+   ],
+   "press": "Soft Serve, then CreamiFit",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "pistachio-protein-soft-serve",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r19",
@@ -914,8 +1270,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve or Scoop, then CreamiFit",
-   "mode": "Swirl",
    "ing": [
     "BASE: Vanilla = 1 ready-made vanilla protein shake (14 oz) or 1 3/4 cups low-fat milk/almond milk + 1 scoop vanilla protein powder.",
     "BASE: Chocolate = 1 ready-made chocolate protein shake (14 oz) or 1 3/4 cups chocolate milk + 1 scoop chocolate protein powder.",
@@ -939,9 +1293,6 @@
     "Press Soft Serve or Scoop, then CreamiFit.",
     "Swirl it out, or scoop it."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Mix-ins only work for scooped pints. For soft serve, put toppings on after swirling.",
    "tags": [
     "prot",
     "pud"
@@ -949,8 +1300,31 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r19.jpg",
-   "manual": false,
-   "listTitle": "Base, then a flavor"
+   "listTitle": "Base, then a flavor",
+   "notes": [
+    [
+     "Tip",
+     "Mix-ins only work for scooped pints. For soft serve, put toppings on after swirling."
+    ]
+   ],
+   "press": "Soft Serve or Scoop, then CreamiFit",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "protein-flavor-mix-and-match",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r20",
@@ -963,8 +1337,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Fruit Whip",
-   "mode": "Swirl",
    "ing": [
     "1 cup fresh or frozen pineapple, in 1/2-inch pieces",
     "1/2 fresh or frozen banana, in 1/2-inch pieces",
@@ -979,9 +1351,6 @@
     "Press Soft Serve, then Fruit Whip.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Swap the coconut milk for oat milk, plain yogurt or heavy cream if you like.",
    "tags": [
     "pine",
     "ban",
@@ -991,8 +1360,34 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r20.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Swap the coconut milk for oat milk, plain yogurt or heavy cream if you like."
+    ]
+   ],
+   "press": "Soft Serve, then Fruit Whip",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "tropical-fruit-whip",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r21",
@@ -1005,8 +1400,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Fruit Whip",
-   "mode": "Swirl",
    "ing": [
     "1 cup canned sliced peaches in juice, drained (save the juice)",
     "1 cup canned diced mango in juice, drained (save the juice)",
@@ -1021,9 +1414,6 @@
     "Press Soft Serve, then Fruit Whip.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "canfruit",
     "peach",
@@ -1033,8 +1423,29 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r21.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Soft Serve, then Fruit Whip",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "peach-mango-fruit-whip",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r22",
@@ -1047,8 +1458,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Fruit Whip",
-   "mode": "Swirl",
    "ing": [
     "1/2 cup kiwi, peeled, in 1/2-inch pieces",
     "1 1/2 cups fresh or frozen strawberries, in 1/2-inch pieces",
@@ -1064,9 +1473,6 @@
     "Press Soft Serve, then Fruit Whip.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "berry",
     "kiwi",
@@ -1077,8 +1483,29 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r22.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Soft Serve, then Fruit Whip",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "strawberry-kiwi-fruit-whip",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r23",
@@ -1091,8 +1518,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Fruit Whip",
-   "mode": "Swirl",
    "ing": [
     "3 ripe bananas, mashed",
     "3 tbsp cocoa powder",
@@ -1106,9 +1531,6 @@
     "Press Soft Serve, then Fruit Whip.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Swap in coconut milk, plain yogurt or heavy cream for the oat milk if you like.",
    "tags": [
     "ban",
     "cocoa",
@@ -1117,8 +1539,34 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r23.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Swap in coconut milk, plain yogurt or heavy cream for the oat milk if you like."
+    ]
+   ],
+   "press": "Soft Serve, then Fruit Whip",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "chocolate-banana-fruit-whip",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r24",
@@ -1131,8 +1579,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Sorbet",
-   "mode": "Scoop",
    "ing": [
     "1 can (8 to 20 oz) canned fruit: pineapple chunks, peaches, mixed fruit, mango slices or fruit cups"
    ],
@@ -1143,9 +1589,6 @@
     "Press Scoop, then Sorbet.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Pick fruit in juice or syrup. Fruit packed in water won't work. For a soft swirl, use Soft Serve, then Fruit Whip.",
    "tags": [
     "canfruit",
     "pine",
@@ -1155,8 +1598,34 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r24.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Pick fruit in juice or syrup. Fruit packed in water won't work. For a soft swirl, use Soft Serve, then Fruit Whip."
+    ]
+   ],
+   "press": "Scoop, then Sorbet",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 4 min",
+    "4 servings"
+   ],
+   "cook": "4 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "one-ingredient-fruit-sorbet",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r25",
@@ -1169,8 +1638,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Lite Ice Cream",
-   "mode": "Swirl",
    "ing": [
     "1 tbsp vanilla sugar-free instant pudding mix",
     "2 tbsp agave nectar",
@@ -1187,9 +1654,6 @@
     "Press Soft Serve, then Lite Ice Cream.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Already dairy-free. Want dairy? Use whole milk and heavy cream.",
-   "lite": null,
-   "tip": null,
    "tags": [
     "oat",
     "coco",
@@ -1199,8 +1663,34 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r25.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Already dairy-free. Want dairy? Use whole milk and heavy cream."
+    ]
+   ],
+   "press": "Soft Serve, then Lite Ice Cream",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 5 min",
+    "4 servings"
+   ],
+   "cook": "5 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "dairy-free-mint-lite-soft-serve",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r26",
@@ -1213,8 +1703,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Lite Ice Cream",
-   "mode": "Swirl",
    "ing": [
     "3 tbsp non-fat dry milk powder",
     "1/4 tsp xanthan gum",
@@ -1234,9 +1722,6 @@
     "Press Soft Serve, then Lite Ice Cream.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Use coconut or oat milk powder, unsweetened coconut cream and unsweetened oat milk.",
-   "lite": null,
-   "tip": "No xanthan gum? Use 1 tbsp vanilla instant pudding mix.",
    "tags": [
     "milk",
     "cream",
@@ -1247,8 +1732,35 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r26.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use coconut or oat milk powder, unsweetened coconut cream and unsweetened oat milk."
+    ],
+    [
+     "Tip",
+     "No xanthan gum? Use 1 tbsp vanilla instant pudding mix."
+    ]
+   ],
+   "press": "Soft Serve, then Lite Ice Cream",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 5 min",
+    "4 servings"
+   ],
+   "cook": "5 min",
+   "wait": "24 hours",
+   "slug": "butter-pecan-lite-soft-serve",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r27",
@@ -1261,8 +1773,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Lite Ice Cream",
-   "mode": "Scoop",
    "ing": [
     "3/4 cup unsweetened coconut cream",
     "1/4 cup monkfruit sweetener with erythritol",
@@ -1281,9 +1791,6 @@
     "Press Scoop, then Lite Ice Cream.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "coco",
     "coffee",
@@ -1293,8 +1800,29 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r27.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Lite Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 4.5 min",
+    "4 servings"
+   ],
+   "cook": "4.5 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "dairy-free-lite-coffee-chip-ice-cream",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r28",
@@ -1307,8 +1835,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Ice Cream",
-   "mode": "Scoop",
    "ing": [
     "1 tbsp (1/2 oz) cream cheese",
     "1/3 cup granulated sugar",
@@ -1327,9 +1853,6 @@
     "Press Scoop, then Ice Cream.",
     "Take the pint out and scoop."
    ],
-   "df": "Use vegan cream cheese, unsweetened coconut cream (whisk it smooth first) and unsweetened oat milk.",
-   "lite": "Use 1/2 tsp stevia and 2 1/2 tbsp agave for the sugar. Spin on Scoop, Lite Ice Cream.",
-   "tip": null,
    "tags": [
     "ccheese",
     "cream",
@@ -1339,8 +1862,35 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r28.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use vegan cream cheese, unsweetened coconut cream (whisk it smooth first) and unsweetened oat milk."
+    ],
+    [
+     "Lighter",
+     "Use 1/2 tsp stevia and 2 1/2 tbsp agave for the sugar. Spin on Scoop, Lite Ice Cream."
+    ]
+   ],
+   "press": "Scoop, then Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 1.5 min",
+    "4 servings"
+   ],
+   "cook": "1.5 min",
+   "wait": "24 hours",
+   "slug": "vanilla-ice-cream-with-chocolate-chips",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r29",
@@ -1353,8 +1903,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Ice Cream",
-   "mode": "Scoop",
    "ing": [
     "1 can (14 oz) full-fat unsweetened coconut milk",
     "1/2 cup granulated sugar",
@@ -1368,17 +1916,40 @@
     "Press Scoop, then Ice Cream.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": "Use 1/4 cup stevia/cane sugar blend. Spin on Scoop, Lite Ice Cream.",
-   "tip": null,
    "tags": [
     "coco"
    ],
    "healthy": false,
    "dfree": true,
    "img": "/img/ice/r29.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Lighter",
+     "Use 1/4 cup stevia/cane sugar blend. Spin on Scoop, Lite Ice Cream."
+    ]
+   ],
+   "press": "Scoop, then Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "4 servings"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "dairy-free-vanilla-coconut-ice-cream",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r30",
@@ -1391,8 +1962,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, Ice Cream, then Mix-In",
-   "mode": "Scoop",
    "ing": [
     "Chocolate chip cookie dough: 1/4 cup edible cookie dough chunks + 1 tbsp mini chocolate chips.",
     "Cookies & cream: 3 broken chocolate sandwich cookies.",
@@ -1418,9 +1987,6 @@
     "Press Scoop, Ice Cream, then Mix-In.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Skip fresh fruit, sauces and spreads as mix-ins. They water things down. Use frozen fruit or a topping after.",
    "tags": [
     "cream",
     "milk",
@@ -1431,8 +1997,31 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r30.jpg",
-   "manual": false,
-   "listTitle": "Pick a flavor"
+   "listTitle": "Pick a flavor",
+   "notes": [
+    [
+     "Tip",
+     "Skip fresh fruit, sauces and spreads as mix-ins. They water things down. Use frozen fruit or a topping after."
+    ]
+   ],
+   "press": "Scoop, Ice Cream, then Mix-In",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 1.5 min",
+    "4 servings"
+   ],
+   "cook": "1.5 min",
+   "wait": "24 hours",
+   "slug": "ice-cream-flavor-menu",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r31",
@@ -1445,8 +2034,6 @@
    "prep": "15 min + 10 min cook",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Frozen Custard",
-   "mode": "Swirl",
    "ing": [
     "3 large egg yolks",
     "1 tbsp light corn syrup",
@@ -1465,9 +2052,6 @@
     "Press Soft Serve, then Frozen Custard.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Use unsweetened coconut cream and unsweetened oat milk.",
-   "lite": null,
-   "tip": "Keep the heat between 165 and 175 degrees F. Eggs need 165 to be safe, and too hot makes them scramble.",
    "tags": [
     "egg",
     "cream",
@@ -1477,8 +2061,35 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r31.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use unsweetened coconut cream and unsweetened oat milk."
+    ],
+    [
+     "Tip",
+     "Keep the heat between 165 and 175 degrees F. Eggs need 165 to be safe, and too hot makes them scramble."
+    ]
+   ],
+   "press": "Soft Serve, then Frozen Custard",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 15 min + 10 min cook",
+    "Freeze 24 hours",
+    "Spin 3 min",
+    "4 servings"
+   ],
+   "cook": "3 min",
+   "wait": "24 hours",
+   "slug": "cookies-and-cream-frozen-custard",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r32",
@@ -1491,8 +2102,6 @@
    "prep": "5 min + 15 to 30 min soak + 10 min cook",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Frozen Custard",
-   "mode": "Swirl",
    "ing": [
     "1 1/4 cups heavy cream",
     "1 cup whole milk",
@@ -1513,9 +2122,6 @@
     "Press Soft Serve, then Frozen Custard.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Use unsweetened coconut cream and unsweetened oat milk.",
-   "lite": null,
-   "tip": "Keep the heat between 165 and 175 degrees F. Eggs need 165 to be safe, and too hot makes them scramble.",
    "tags": [
     "egg",
     "cream",
@@ -1525,8 +2131,35 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r32.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use unsweetened coconut cream and unsweetened oat milk."
+    ],
+    [
+     "Tip",
+     "Keep the heat between 165 and 175 degrees F. Eggs need 165 to be safe, and too hot makes them scramble."
+    ]
+   ],
+   "press": "Soft Serve, then Frozen Custard",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min + 15 to 30 min soak + 10 min cook",
+    "Freeze 24 hours",
+    "Spin 3 min",
+    "4 servings"
+   ],
+   "cook": "3 min",
+   "wait": "24 hours",
+   "slug": "cinnamon-sugar-cereal-frozen-custard",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r33",
@@ -1539,8 +2172,6 @@
    "prep": "15 min + 10 min cook",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Frozen Custard",
-   "mode": "Swirl",
    "ing": [
     "3 large egg yolks",
     "1 tbsp smooth peanut butter or peanut butter powder",
@@ -1560,9 +2191,6 @@
     "Press Soft Serve, then Frozen Custard.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Use unsweetened coconut cream and unsweetened oat milk.",
-   "lite": null,
-   "tip": "Keep the heat between 165 and 175 degrees F. Eggs need 165 to be safe, and too hot makes them scramble.",
    "tags": [
     "egg",
     "cream",
@@ -1572,8 +2200,35 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r33.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use unsweetened coconut cream and unsweetened oat milk."
+    ],
+    [
+     "Tip",
+     "Keep the heat between 165 and 175 degrees F. Eggs need 165 to be safe, and too hot makes them scramble."
+    ]
+   ],
+   "press": "Soft Serve, then Frozen Custard",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 15 min + 10 min cook",
+    "Freeze 24 hours",
+    "Spin 3 min",
+    "4 servings"
+   ],
+   "cook": "3 min",
+   "wait": "24 hours",
+   "slug": "pb-and-j-frozen-custard",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r34",
@@ -1586,8 +2241,6 @@
    "prep": "5 min + 2 min cook",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Gelato",
-   "mode": "Scoop",
    "ing": [
     "4 large egg yolks",
     "1/3 cup dark brown sugar",
@@ -1607,9 +2260,6 @@
     "Press Scoop, then Gelato.",
     "Take the pint out and scoop."
    ],
-   "df": "Use vegan fudge, vegan chocolate chunks, unsweetened coconut cream (whisked smooth) and oat milk.",
-   "lite": null,
-   "tip": "Keep the heat between 165 and 175 degrees F. Eggs need 165 to be safe, and too hot makes them scramble.",
    "tags": [
     "egg",
     "cream",
@@ -1620,8 +2270,35 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r34.jpg",
-   "manual": true,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use vegan fudge, vegan chocolate chunks, unsweetened coconut cream (whisked smooth) and oat milk."
+    ],
+    [
+     "Tip",
+     "Keep the heat between 165 and 175 degrees F. Eggs need 165 to be safe, and too hot makes them scramble."
+    ]
+   ],
+   "press": "Scoop, then Gelato",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min + 2 min cook",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "4 servings"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "triple-chocolate-gelato",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r35",
@@ -1634,8 +2311,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Fruit Whip",
-   "mode": "Swirl",
    "ing": [
     "1 1/2 cups fresh or frozen mango, in 1/2-inch pieces",
     "3/4 cup unsweetened canned coconut milk",
@@ -1650,9 +2325,6 @@
     "Press Soft Serve, then Fruit Whip.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Swap the coconut milk for oat milk or plain yogurt if you like.",
    "tags": [
     "mango",
     "coco",
@@ -1662,8 +2334,34 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r35.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Swap the coconut milk for oat milk or plain yogurt if you like."
+    ]
+   ],
+   "press": "Soft Serve, then Fruit Whip",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "mango-lime-fruit-whip",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r36",
@@ -1676,8 +2374,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Fruit Whip",
-   "mode": "Swirl",
    "ing": [
     "1 1/2 cups fresh or frozen strawberries, in 1/2-inch pieces",
     "1/2 fresh or frozen banana, in 1/2-inch pieces",
@@ -1692,9 +2388,6 @@
     "Press Soft Serve, then Fruit Whip.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Swap the coconut milk for oat milk, plain yogurt or heavy cream if you like.",
    "tags": [
     "berry",
     "ban",
@@ -1704,8 +2397,34 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r36.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Swap the coconut milk for oat milk, plain yogurt or heavy cream if you like."
+    ]
+   ],
+   "press": "Soft Serve, then Fruit Whip",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "strawberry-banana-fruit-whip",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r37",
@@ -1718,8 +2437,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Fruit Whip",
-   "mode": "Swirl",
    "ing": [
     "1 1/2 cups fresh or frozen raspberries",
     "3/4 cup unsweetened canned coconut milk",
@@ -1734,9 +2451,6 @@
     "Press Soft Serve, then Fruit Whip.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "berry",
     "coco",
@@ -1746,8 +2460,29 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r37.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Soft Serve, then Fruit Whip",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "raspberry-lemon-fruit-whip",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r38",
@@ -1760,8 +2495,6 @@
    "prep": "2 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Sorbet",
-   "mode": "Scoop",
    "ing": [
     "Applesauce, enough to fill the pint to the MAX FILL line"
    ],
@@ -1771,17 +2504,40 @@
     "Press Scoop, then Sorbet.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Want a soft swirl? Use Soft Serve, then Fruit Whip.",
    "tags": [
     "apple"
    ],
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r38.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Want a soft swirl? Use Soft Serve, then Fruit Whip."
+    ]
+   ],
+   "press": "Scoop, then Sorbet",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 2 min",
+    "Freeze 24 hours",
+    "Spin 4 min",
+    "4 servings"
+   ],
+   "cook": "4 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "applesauce-sorbet",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r39",
@@ -1794,8 +2550,6 @@
    "prep": "2 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Sorbet",
-   "mode": "Scoop",
    "ing": [
     "1 can fruit pie filling (cherry, blueberry, lemon, strawberry or apple)"
    ],
@@ -1805,9 +2559,6 @@
     "Press Scoop, then Sorbet.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Want a soft swirl? Use Soft Serve, then Fruit Whip.",
    "tags": [
     "canfruit",
     "cherry",
@@ -1816,8 +2567,34 @@
    "healthy": false,
    "dfree": true,
    "img": "/img/ice/r39.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Want a soft swirl? Use Soft Serve, then Fruit Whip."
+    ]
+   ],
+   "press": "Scoop, then Sorbet",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 2 min",
+    "Freeze 24 hours",
+    "Spin 4 min",
+    "4 servings"
+   ],
+   "cook": "4 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "pie-filling-sorbet",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r40",
@@ -1830,8 +2607,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Lite Ice Cream",
-   "mode": "Swirl",
    "ing": [
     "2 tbsp agave nectar",
     "1 tbsp vanilla sugar-free instant pudding mix",
@@ -1847,9 +2622,6 @@
     "Press Soft Serve, then Lite Ice Cream.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Use unsweetened oat milk and unsweetened coconut cream.",
-   "lite": null,
-   "tip": null,
    "tags": [
     "milk",
     "cream",
@@ -1859,8 +2631,31 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r40.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use unsweetened oat milk and unsweetened coconut cream."
+    ]
+   ],
+   "press": "Soft Serve, then Lite Ice Cream",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 5 min",
+    "4 servings"
+   ],
+   "cook": "5 min",
+   "wait": "24 hours",
+   "slug": "light-vanilla-soft-serve",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r41",
@@ -1873,8 +2668,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Lite Ice Cream",
-   "mode": "Swirl",
    "ing": [
     "2 tbsp agave nectar",
     "1 tbsp chocolate sugar-free instant pudding mix",
@@ -1891,9 +2684,6 @@
     "Press Soft Serve, then Lite Ice Cream.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Use unsweetened oat milk and unsweetened coconut cream.",
-   "lite": null,
-   "tip": null,
    "tags": [
     "milk",
     "cream",
@@ -1904,8 +2694,31 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r41.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use unsweetened oat milk and unsweetened coconut cream."
+    ]
+   ],
+   "press": "Soft Serve, then Lite Ice Cream",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 5 min",
+    "4 servings"
+   ],
+   "cook": "5 min",
+   "wait": "24 hours",
+   "slug": "light-chocolate-soft-serve",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r42",
@@ -1918,8 +2731,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Frozen Yogurt",
-   "mode": "Swirl",
    "ing": [
     "1 3/4 cups plain Greek yogurt",
     "2 tbsp honey",
@@ -1931,9 +2742,6 @@
     "Press Soft Serve, then Frozen Yogurt.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Use plain plant-based yogurt and agave.",
-   "lite": null,
-   "tip": "Top with fresh berries after swirling.",
    "tags": [
     "yog",
     "sweet"
@@ -1941,8 +2749,35 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r42.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use plain plant-based yogurt and agave."
+    ],
+    [
+     "Tip",
+     "Top with fresh berries after swirling."
+    ]
+   ],
+   "press": "Soft Serve, then Frozen Yogurt",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "honey-greek-frozen-yogurt",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r43",
@@ -1955,8 +2790,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Frozen Yogurt",
-   "mode": "Swirl",
    "ing": [
     "3/4 cup frozen dark sweet cherries",
     "1 cup vanilla Greek yogurt"
@@ -1968,9 +2801,6 @@
     "Press Soft Serve, then Frozen Yogurt.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Frozen fruit has to be blended with the yogurt first. Don't drop whole frozen cherries in the pint.",
    "tags": [
     "cherry",
     "yog"
@@ -1978,8 +2808,31 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r43.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Frozen fruit has to be blended with the yogurt first. Don't drop whole frozen cherries in the pint."
+    ]
+   ],
+   "press": "Soft Serve, then Frozen Yogurt",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "cherry-vanilla-frozen-yogurt",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r44",
@@ -1992,8 +2845,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Fruit Whip",
-   "mode": "Swirl",
    "ing": [
     "2 ripe bananas, mashed",
     "1 tbsp peanut butter",
@@ -2007,9 +2858,6 @@
     "Press Soft Serve, then Fruit Whip.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Want scoops instead? Use Scoop, then Lite Ice Cream.",
    "tags": [
     "ban",
     "pb",
@@ -2018,8 +2866,34 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r44.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Want scoops instead? Use Scoop, then Lite Ice Cream."
+    ]
+   ],
+   "press": "Soft Serve, then Fruit Whip",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "banana-peanut-butter-swirl",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r45",
@@ -2032,8 +2906,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then CreamiFit",
-   "mode": "Scoop",
    "ing": [
     "1 1/4 cups low-fat milk or almond milk",
     "1 scoop vanilla protein powder",
@@ -2046,9 +2918,6 @@
     "Press Scoop, then CreamiFit.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "For soft serve, choose Soft Serve, then CreamiFit. Add 1 tbsp monkfruit sweetener if you want it sweeter.",
    "tags": [
     "prot",
     "berry",
@@ -2057,8 +2926,31 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r45.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "For soft serve, choose Soft Serve, then CreamiFit. Add 1 tbsp monkfruit sweetener if you want it sweeter."
+    ]
+   ],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "berry-protein-ice-cream",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r46",
@@ -2071,8 +2963,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Lite Ice Cream",
-   "mode": "Scoop",
    "ing": [
     "1 can (14 oz) full-fat unsweetened coconut milk",
     "1/4 cup stevia/cane sugar blend",
@@ -2086,17 +2976,35 @@
     "Press Scoop, then Lite Ice Cream.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "coco"
    ],
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r46.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Lite Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "4 servings"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "lite-coconut-ice-cream",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r47",
@@ -2109,8 +3017,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Fruit Whip",
-   "mode": "Swirl",
    "ing": [
     "1 can (20 oz) pineapple chunks in juice",
     "1/2 cup canned coconut milk",
@@ -2123,9 +3029,6 @@
     "Press Soft Serve, then Fruit Whip.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Crumbly? Add a splash of coconut milk and Re-Spin.",
    "tags": [
     "pine",
     "coco",
@@ -2135,8 +3038,34 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r47.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Crumbly? Add a splash of coconut milk and Re-Spin."
+    ]
+   ],
+   "press": "Soft Serve, then Fruit Whip",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "pineapple-coconut-whip",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r48",
@@ -2149,8 +3078,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Sorbet",
-   "mode": "Scoop",
    "ing": [
     "2 cups fresh or frozen strawberries",
     "1/4 cup water",
@@ -2164,9 +3091,6 @@
     "Press Scoop, then Sorbet.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Want it swirled? Use Soft Serve, then Fruit Whip.",
    "tags": [
     "berry",
     "lemon",
@@ -2175,8 +3099,34 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r48.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Want it swirled? Use Soft Serve, then Fruit Whip."
+    ]
+   ],
+   "press": "Scoop, then Sorbet",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 4 min",
+    "4 servings"
+   ],
+   "cook": "4 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "strawberry-sorbet",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r49",
@@ -2189,8 +3139,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Sorbet",
-   "mode": "Scoop",
    "ing": [
     "3 cups seedless watermelon, cubed",
     "1 tbsp lime juice",
@@ -2203,9 +3151,6 @@
     "Press Scoop, then Sorbet.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Ripe, sweet watermelon makes the best sorbet.",
    "tags": [
     "melon",
     "lemon",
@@ -2214,8 +3159,34 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r49.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Ripe, sweet watermelon makes the best sorbet."
+    ]
+   ],
+   "press": "Scoop, then Sorbet",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 4 min",
+    "4 servings"
+   ],
+   "cook": "4 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "watermelon-lime-sorbet",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r50",
@@ -2228,8 +3199,6 @@
    "prep": "10 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Sorbet",
-   "mode": "Scoop",
    "ing": [
     "1/2 cup fresh lemon juice",
     "1 cup water",
@@ -2244,17 +3213,35 @@
     "Press Scoop, then Sorbet.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "lemon"
    ],
    "healthy": false,
    "dfree": true,
    "img": "/img/ice/r50.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Sorbet",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 4 min",
+    "4 servings"
+   ],
+   "cook": "4 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "classic-lemon-sorbet",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r51",
@@ -2267,8 +3254,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Sorbet",
-   "mode": "Scoop",
    "ing": [
     "2 cups frozen mango chunks",
     "3/4 cup coconut water",
@@ -2281,9 +3266,6 @@
     "Press Scoop, then Sorbet.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Want it swirled? Use Soft Serve, then Fruit Whip.",
    "tags": [
     "mango",
     "lemon"
@@ -2291,8 +3273,34 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r51.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Want it swirled? Use Soft Serve, then Fruit Whip."
+    ]
+   ],
+   "press": "Scoop, then Sorbet",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 4 min",
+    "4 servings"
+   ],
+   "cook": "4 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "mango-coconut-sorbet",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r52",
@@ -2305,8 +3313,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Sorbet",
-   "mode": "Scoop",
    "ing": [
     "2 cups frozen mixed berries",
     "1/3 cup water or apple juice",
@@ -2320,9 +3326,6 @@
     "Press Scoop, then Sorbet.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "berry",
     "sweet",
@@ -2331,8 +3334,29 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r52.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Sorbet",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 4 min",
+    "4 servings"
+   ],
+   "cook": "4 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "mixed-berry-sorbet",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r53",
@@ -2345,8 +3369,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Sorbet",
-   "mode": "Scoop",
    "ing": [
     "1 cup green grapes",
     "1 cup lemonade, left open to go flat"
@@ -2359,9 +3381,6 @@
     "Press Scoop, then Sorbet.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "grape",
     "lemon"
@@ -2369,8 +3388,29 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r53.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Sorbet",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 4 min",
+    "4 servings"
+   ],
+   "cook": "4 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "green-grape-lemonade-sorbet",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r54",
@@ -2383,8 +3423,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Sorbet",
-   "mode": "Scoop",
    "ing": [
     "5 ripe kiwis, peeled",
     "2 tbsp honey",
@@ -2397,9 +3435,6 @@
     "Press Scoop, then Sorbet.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Blend just until smooth so the seeds don't turn bitter.",
    "tags": [
     "kiwi",
     "sweet"
@@ -2407,8 +3442,34 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r54.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Blend just until smooth so the seeds don't turn bitter."
+    ]
+   ],
+   "press": "Scoop, then Sorbet",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 4 min",
+    "4 servings"
+   ],
+   "cook": "4 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "kiwi-sorbet",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r55",
@@ -2421,8 +3482,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Fruit Whip",
-   "mode": "Swirl",
    "ing": [
     "1 packet (3.5 oz) frozen unsweetened açaí, softened",
     "1 ripe banana",
@@ -2437,9 +3496,6 @@
     "Press Soft Serve, then Fruit Whip.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Swirl into a bowl and top with granola, banana and berries.",
    "tags": [
     "acai",
     "ban",
@@ -2450,8 +3506,34 @@
    "healthy": true,
    "dfree": true,
    "img": "/img/ice/r55.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Swirl into a bowl and top with granola, banana and berries."
+    ]
+   ],
+   "press": "Soft Serve, then Fruit Whip",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "acai-bowl-swirl",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r56",
@@ -2464,8 +3546,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Lite Ice Cream",
-   "mode": "Scoop",
    "ing": [
     "1 cup full-fat cottage cheese",
     "3/4 cup milk",
@@ -2481,9 +3561,6 @@
     "Press Scoop, then Lite Ice Cream.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Crumbly after the first spin is normal. Add 1 to 2 tbsp milk and Re-Spin.",
    "tags": [
     "cottage",
     "milk",
@@ -2493,8 +3570,31 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r56.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Crumbly after the first spin is normal. Add 1 to 2 tbsp milk and Re-Spin."
+    ]
+   ],
+   "press": "Scoop, then Lite Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 4 min",
+    "4 servings"
+   ],
+   "cook": "4 min",
+   "wait": "24 hours",
+   "slug": "cottage-cheese-vanilla-ice-cream",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r57",
@@ -2507,8 +3607,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Lite Ice Cream",
-   "mode": "Scoop",
    "ing": [
     "1 cup full-fat cottage cheese",
     "3/4 cup milk",
@@ -2525,9 +3623,6 @@
     "Press Scoop, then Lite Ice Cream.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Crumbly after the first spin is normal. Add 1 to 2 tbsp milk and Re-Spin.",
    "tags": [
     "cottage",
     "milk",
@@ -2538,8 +3633,31 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r57.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Crumbly after the first spin is normal. Add 1 to 2 tbsp milk and Re-Spin."
+    ]
+   ],
+   "press": "Scoop, then Lite Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 4 min",
+    "4 servings"
+   ],
+   "cook": "4 min",
+   "wait": "24 hours",
+   "slug": "chocolate-cottage-cheese-ice-cream",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r58",
@@ -2552,8 +3670,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Frozen Yogurt",
-   "mode": "Swirl",
    "ing": [
     "1 1/2 cups vanilla Greek yogurt",
     "1/2 cup strawberries, mashed or blended",
@@ -2566,9 +3682,6 @@
     "Press Soft Serve, then Frozen Yogurt.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "yog",
     "berry",
@@ -2577,8 +3690,26 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r58.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Soft Serve, then Frozen Yogurt",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "strawberry-greek-frozen-yogurt",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r59",
@@ -2591,8 +3722,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Frozen Yogurt",
-   "mode": "Swirl",
    "ing": [
     "1 cup plain Greek yogurt",
     "3/4 cup mango purée (canned or blended)",
@@ -2606,9 +3735,6 @@
     "Press Soft Serve, then Frozen Yogurt.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "yog",
     "mango",
@@ -2617,8 +3743,26 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r59.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Soft Serve, then Frozen Yogurt",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "mango-lassi-frozen-yogurt",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r60",
@@ -2631,8 +3775,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then CreamiFit",
-   "mode": "Swirl",
    "ing": [
     "1 1/2 cups chocolate milk (ultra-filtered milk has more protein)",
     "1 tbsp chocolate instant pudding mix"
@@ -2644,9 +3786,6 @@
     "Press Soft Serve, then CreamiFit.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "For a thicker, shake-like texture, add 1 to 2 tbsp chocolate milk and Re-Spin.",
    "tags": [
     "milk",
     "pud"
@@ -2654,8 +3793,31 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r60.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "For a thicker, shake-like texture, add 1 to 2 tbsp chocolate milk and Re-Spin."
+    ]
+   ],
+   "press": "Soft Serve, then CreamiFit",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "drive-thru-chocolate-frosty",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r61",
@@ -2668,8 +3830,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then CreamiFit",
-   "mode": "Swirl",
    "ing": [
     "1/2 cup 2% ultra-filtered milk",
     "1/2 cup unsweetened almond milk",
@@ -2685,9 +3845,6 @@
     "Press Soft Serve, then CreamiFit.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Still powdery? Add 2 tbsp milk and Re-Spin.",
    "tags": [
     "milk",
     "oat",
@@ -2698,8 +3855,31 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r61.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Still powdery? Add 2 tbsp milk and Re-Spin."
+    ]
+   ],
+   "press": "Soft Serve, then CreamiFit",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "high-protein-chocolate-frosty",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r62",
@@ -2712,8 +3892,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then CreamiFit",
-   "mode": "Scoop",
    "ing": [
     "1 cup 2% ultra-filtered milk",
     "1 cup frozen strawberries",
@@ -2727,9 +3905,6 @@
     "Press Scoop, then CreamiFit.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "milk",
     "berry",
@@ -2739,8 +3914,26 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r62.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "strawberry-protein-ice-cream",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r63",
@@ -2753,8 +3946,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then CreamiFit",
-   "mode": "Scoop",
    "ing": [
     "1 1/4 cups high-protein milk",
     "1 scoop vanilla protein powder",
@@ -2769,9 +3960,6 @@
     "Press Scoop, then CreamiFit.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "milk",
     "prot",
@@ -2781,8 +3969,26 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r63.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "cookies-and-cream-protein-ice-cream",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r64",
@@ -2795,8 +4001,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then CreamiFit",
-   "mode": "Scoop",
    "ing": [
     "1 1/4 cups high-protein milk",
     "1 scoop vanilla protein powder",
@@ -2812,9 +4016,6 @@
     "Press Scoop, then CreamiFit.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "milk",
     "prot",
@@ -2824,8 +4025,26 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r64.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "cookie-butter-protein-ice-cream",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r65",
@@ -2838,8 +4057,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then CreamiFit",
-   "mode": "Scoop",
    "ing": [
     "1 1/4 cups high-protein milk",
     "1 scoop chocolate or vanilla protein powder",
@@ -2855,9 +4072,6 @@
     "Press Scoop, then CreamiFit.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "milk",
     "prot",
@@ -2868,8 +4082,26 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r65.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "peanut-butter-cup-protein-ice-cream",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r66",
@@ -2882,8 +4114,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then CreamiFit",
-   "mode": "Swirl",
    "ing": [
     "1 cup high-protein milk",
     "1/2 cup cold brew coffee",
@@ -2897,9 +4127,6 @@
     "Press Soft Serve, then CreamiFit.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "milk",
     "coffee",
@@ -2909,8 +4136,26 @@
    "healthy": true,
    "dfree": false,
    "img": "/img/ice/r66.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Soft Serve, then CreamiFit",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 6 min",
+    "4 servings"
+   ],
+   "cook": "6 min",
+   "wait": "24 hours",
+   "slug": "iced-coffee-protein-soft-serve",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r67",
@@ -2923,8 +4168,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Ice Cream",
-   "mode": "Swirl",
    "ing": [
     "1/3 cup granulated sugar",
     "1 tbsp vanilla instant pudding mix",
@@ -2940,9 +4183,6 @@
     "Press Soft Serve, then Ice Cream.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Use unsweetened oat milk for the whole milk and unsweetened coconut cream for the heavy cream.",
-   "lite": "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream.",
-   "tip": null,
    "tags": [
     "milk",
     "cream",
@@ -2952,8 +4192,35 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r67.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use unsweetened oat milk for the whole milk and unsweetened coconut cream for the heavy cream."
+    ],
+    [
+     "Lighter",
+     "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
+    ]
+   ],
+   "press": "Soft Serve, then Ice Cream",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 5 min",
+    "4 servings"
+   ],
+   "cook": "5 min",
+   "wait": "24 hours",
+   "slug": "matcha-soft-serve",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r68",
@@ -2966,8 +4233,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Ice Cream",
-   "mode": "Swirl",
    "ing": [
     "1/3 cup granulated sugar",
     "1 tbsp vanilla instant pudding mix",
@@ -2984,9 +4249,6 @@
     "Press Soft Serve, then Ice Cream.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Use unsweetened oat milk for the whole milk and unsweetened coconut cream for the heavy cream.",
-   "lite": "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream.",
-   "tip": null,
    "tags": [
     "milk",
     "cream",
@@ -2996,8 +4258,35 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r68.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use unsweetened oat milk for the whole milk and unsweetened coconut cream for the heavy cream."
+    ],
+    [
+     "Lighter",
+     "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
+    ]
+   ],
+   "press": "Soft Serve, then Ice Cream",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 5 min",
+    "4 servings"
+   ],
+   "cook": "5 min",
+   "wait": "24 hours",
+   "slug": "coffee-soft-serve",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r69",
@@ -3010,8 +4299,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Soft Serve, then Ice Cream",
-   "mode": "Swirl",
    "ing": [
     "1/3 cup granulated sugar",
     "1 tbsp vanilla instant pudding mix",
@@ -3026,9 +4313,6 @@
     "Press Soft Serve, then Ice Cream.",
     "Snap on the swirl lid, then pull the handle to swirl into a cone or chilled bowl."
    ],
-   "df": "Use unsweetened oat milk for the whole milk and unsweetened coconut cream for the heavy cream.",
-   "lite": "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream.",
-   "tip": null,
    "tags": [
     "milk",
     "cream",
@@ -3038,8 +4322,35 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r69.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use unsweetened oat milk for the whole milk and unsweetened coconut cream for the heavy cream."
+    ],
+    [
+     "Lighter",
+     "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
+    ]
+   ],
+   "press": "Soft Serve, then Ice Cream",
+   "badge": "🍦 Swirl",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 5 min",
+    "4 servings"
+   ],
+   "cook": "5 min",
+   "wait": "24 hours",
+   "slug": "strawberry-soft-serve",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r70",
@@ -3052,8 +4363,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Ice Cream",
-   "mode": "Scoop",
    "ing": [
     "1 tbsp cream cheese, softened",
     "1/3 cup sugar",
@@ -3072,9 +4381,6 @@
     "Press Scoop, then Ice Cream.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "ccheese",
     "cream",
@@ -3085,8 +4391,26 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r70.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 1.5 min",
+    "4 servings"
+   ],
+   "cook": "1.5 min",
+   "wait": "24 hours",
+   "slug": "strawberry-cheesecake-ice-cream",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r71",
@@ -3099,8 +4423,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Ice Cream",
-   "mode": "Scoop",
    "ing": [
     "1/2 cup sweetened condensed milk",
     "3/4 cup heavy cream",
@@ -3117,9 +4439,6 @@
     "Press Scoop, then Ice Cream.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "cond",
     "cream",
@@ -3130,8 +4449,26 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r71.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 1.5 min",
+    "4 servings"
+   ],
+   "cook": "1.5 min",
+   "wait": "24 hours",
+   "slug": "key-lime-pie-ice-cream",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r72",
@@ -3144,8 +4481,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Ice Cream",
-   "mode": "Scoop",
    "ing": [
     "1/2 cup pumpkin purée",
     "1/3 cup brown sugar",
@@ -3162,9 +4497,6 @@
     "Press Scoop, then Ice Cream.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": "Top with crushed gingersnaps or a drizzle of caramel.",
    "tags": [
     "pumpkin",
     "pud",
@@ -3174,8 +4506,31 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r72.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Top with crushed gingersnaps or a drizzle of caramel."
+    ]
+   ],
+   "press": "Scoop, then Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 1.5 min",
+    "4 servings"
+   ],
+   "cook": "1.5 min",
+   "wait": "24 hours",
+   "slug": "pumpkin-pie-ice-cream",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r73",
@@ -3188,8 +4543,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Ice Cream",
-   "mode": "Scoop",
    "ing": [
     "1 ripe banana",
     "1/3 cup sugar",
@@ -3206,9 +4559,6 @@
     "Press Scoop, then Ice Cream.",
     "Take the pint out and scoop."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "ban",
     "pud",
@@ -3219,8 +4569,26 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r73.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 1.5 min",
+    "4 servings"
+   ],
+   "cook": "1.5 min",
+   "wait": "24 hours",
+   "slug": "banana-pudding-ice-cream",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r74",
@@ -3233,8 +4601,6 @@
    "prep": "5 min",
    "freeze": "24 hours",
    "makes": "4 servings",
-   "program": "Scoop, then Ice Cream",
-   "mode": "Scoop",
    "ing": [
     "1 tbsp cream cheese, softened",
     "1/3 cup sugar",
@@ -3251,9 +4617,6 @@
     "Press Scoop, then Ice Cream.",
     "Take the pint out and scoop."
    ],
-   "df": "Use vegan cream cheese, coconut cream and oat milk.",
-   "lite": null,
-   "tip": null,
    "tags": [
     "ccheese",
     "coffee",
@@ -3263,8 +4626,31 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r74.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Dairy-free",
+     "Use vegan cream cheese, coconut cream and oat milk."
+    ]
+   ],
+   "press": "Scoop, then Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 1.5 min",
+    "4 servings"
+   ],
+   "cook": "1.5 min",
+   "wait": "24 hours",
+   "slug": "coffee-ice-cream",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r75",
@@ -3277,8 +4663,6 @@
    "prep": "5 min",
    "freeze": "None",
    "makes": "4 servings",
-   "program": "Scoop, then Milkshake",
-   "mode": "Scoop",
    "ing": [
     "1 1/2 cups vanilla ice cream",
     "1/2 cup milk"
@@ -3289,9 +4673,6 @@
     "Press Scoop, then Milkshake.",
     "Pour or spoon into a tall glass."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "ice",
     "milk"
@@ -3299,8 +4680,26 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r75.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Milkshake",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze None",
+    "Spin 1.5 min",
+    "4 servings"
+   ],
+   "cook": "1.5 min",
+   "wait": "None",
+   "slug": "classic-vanilla-milkshake",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r76",
@@ -3313,8 +4712,6 @@
    "prep": "5 min",
    "freeze": "None",
    "makes": "4 servings",
-   "program": "Scoop, then Milkshake",
-   "mode": "Scoop",
    "ing": [
     "1 1/2 cups chocolate ice cream",
     "1/2 cup milk",
@@ -3326,9 +4723,6 @@
     "Press Scoop, then Milkshake.",
     "Pour or spoon into a tall glass."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "ice",
     "milk",
@@ -3337,8 +4731,26 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r76.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Milkshake",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze None",
+    "Spin 1.5 min",
+    "4 servings"
+   ],
+   "cook": "1.5 min",
+   "wait": "None",
+   "slug": "chocolate-peanut-butter-shake",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r77",
@@ -3351,8 +4763,6 @@
    "prep": "5 min",
    "freeze": "None",
    "makes": "4 servings",
-   "program": "Scoop, then Milkshake",
-   "mode": "Scoop",
    "ing": [
     "1 1/2 cups strawberry ice cream",
     "1/2 cup milk",
@@ -3364,9 +4774,6 @@
     "Press Scoop, then Milkshake.",
     "Pour or spoon into a tall glass."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "ice",
     "milk"
@@ -3374,8 +4781,26 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r77.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Milkshake",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze None",
+    "Spin 1.5 min",
+    "4 servings"
+   ],
+   "cook": "1.5 min",
+   "wait": "None",
+   "slug": "strawberry-marshmallow-shake",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   },
   {
    "id": "r78",
@@ -3388,8 +4813,6 @@
    "prep": "5 min",
    "freeze": "None",
    "makes": "4 servings",
-   "program": "Scoop, then Milkshake",
-   "mode": "Scoop",
    "ing": [
     "1 1/2 cups cookies & cream ice cream",
     "1/2 cup milk",
@@ -3402,9 +4825,6 @@
     "Press Scoop, then Milkshake.",
     "Pour or spoon into a tall glass."
    ],
-   "df": null,
-   "lite": null,
-   "tip": null,
    "tags": [
     "ice",
     "milk",
@@ -3414,8 +4834,26 @@
    "healthy": false,
    "dfree": false,
    "img": "/img/ice/r78.jpg",
-   "manual": false,
-   "listTitle": "You need"
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Milkshake",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze None",
+    "Spin 1.5 min",
+    "4 servings"
+   ],
+   "cook": "1.5 min",
+   "wait": "None",
+   "slug": "cookies-and-cream-cheesecake-shake",
+   "gear": [
+    "ninja-swirl",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": []
   }
  ]
 }
