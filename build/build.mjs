@@ -81,7 +81,10 @@ for (const [path, html] of pages) {
 
 // Data the browser needs: per-appliance recipe JSON (tools sheets) and the site-wide search index.
 await mkdir(join(OUT, "data"), { recursive: true });
-for (const a of appliances) await writeFile(join(OUT, "data", `${a.key}.json`), JSON.stringify(a.data));
+for (const a of appliances) {
+  const recipes = a.data.recipes.map((r) => ({ ...r, gearItems: (r.gear || []).map((id) => products[id]).filter(Boolean).map((p) => ({ id: p.id, name: p.name, icon: p.icon, note: p.note, href: p.href })) }));
+  await writeFile(join(OUT, "data", `${a.key}.json`), JSON.stringify({ ...a.data, recipes, pressLabel: a.pressLabel, toggleChip: a.toggleChip, disclosure: site.affiliate.disclosure }));
+}
 await writeFile(join(OUT, "search-index.json"), JSON.stringify(all.map(({ r, a }) => ({
   t: r.title, u: r.url, a: a.key, c: a.catMap[r.cat]?.n || "", i: r.img, cdn: r.cdn || "", e: r.emoji,
   s: [r.title, r.blurb, r.ing.join(" "), (r.ben || []).map((b) => a.benMap[b]?.[2]).join(" "), a.name, a.catMap[r.cat]?.n].join(" ").toLowerCase(),

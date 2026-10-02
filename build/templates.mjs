@@ -77,7 +77,7 @@ function footer(ctx) {
   return `<footer class="foot-site">
   <nav class="fnav" aria-label="Appliances">${appliances.map((a) => `<a href="${a.url}">${a.emoji} ${esc(a.name)}</a>`).join("")}</nav>
   <nav class="fnav small" aria-label="More">
-    <a href="/search/">Search</a><a href="/gear/">Gear I use</a>${site.shop.enabled ? '<a href="/shop/">Shop</a>' : ""}
+    <a href="/search/">Search</a><a href="/gear/">Accessories</a>${site.shop.enabled ? '<a href="/shop/">Shop</a>' : ""}
     <a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/disclosure/">Affiliate disclosure</a>
     <button type="button" class="linkbtn" data-consent-open>Cookie settings</button>
   </nav>
@@ -93,7 +93,7 @@ export function badge(a, r) {
   return `${a.catMap[r.cat]?.e || ""} ${esc(r.press.split(/[ ·(]/)[0])}`;
 }
 function meta(a, r) {
-  if (a.key === "creami") return r.freeze === "None" ? "Ready in " + r.prep : r.prep + " prep + freeze";
+  if (a.key === "creami") return r.freeze === "None" ? "Ready in " + r.prep : r.prep.includes("+") ? r.prep + " + freeze" : r.prep + " prep + freeze";
   if (a.key === "juicer") return r.prep + " · " + (r.makes.includes("shot") ? "shots" : r.makes.includes("2 glasses") ? "serves 2" : "1 glass");
   return r.prep + (r.cook ? " + " + r.cook : "") + " · " + r.makes;
 }
@@ -151,15 +151,15 @@ function video(v) {
 function gearBlock(ctx, r) {
   const items = (r.gear || []).map((id) => ctx.products[id]).filter(Boolean);
   if (!items.length) return "";
-  return `<section class="gear-used"><h3>Gear used</h3>
+  return `<section class="gear-used"><h3>Handy for this recipe</h3>
   <div class="gear-row">${items.map((p) => productCard(p, "recipe")).join("")}</div>
   <p class="disc">${esc(ctx.site.affiliate.disclosure)}</p></section>`;
 }
 export function productCard(p, where) {
-  const pic = p.image ? `<img src="${p.image}" alt="" loading="lazy"${p.cdn ? ` data-cdn="${p.cdn}"` : ""} data-emo="🧰">` : `<div class="emo">🧰</div>`;
+  const pic = p.image ? `<img src="${p.image}" alt="" loading="lazy"${p.cdn ? ` data-cdn="${p.cdn}"` : ""} data-emo="${p.icon || "🧰"}">` : `<div class="emo">${p.icon || "🧰"}</div>`;
   const inner = `<span class="gp">${pic}</span><span class="gt"><b>${esc(p.name)}</b>${p.note ? `<small>${esc(p.note)}</small>` : ""}${p.price ? `<small class="price">${esc(p.price)}</small>` : ""}</span>`;
   return p.href
-    ? `<a class="gcard" href="${p.href}" rel="sponsored noopener" target="_blank" data-aff="${p.id}" data-where="${where}">${inner}<span class="go">View ›</span></a>`
+    ? `<a class="gcard" href="${p.href}" rel="sponsored noopener" target="_blank" data-aff="${p.id}" data-where="${where}">${inner}<span class="go">Check price ›</span></a>`
     : `<div class="gcard">${inner}</div>`;
 }
 
@@ -200,6 +200,7 @@ ${grid(list.map((r) => ({ a, r })))}
   <div id="sections">${secs}</div>
   <p class="empty" id="empty" hidden>No recipes match. Try another word.</p>
   <p class="foot">${esc(a.foot)}</p>
+  ${accessoryStrip(ctx, a)}
   ${emailBox(ctx.site, "hub-" + a.key)}
 </div>
 <dialog class="sheet" id="sheet" aria-label="Details"><div class="sheet-in" id="sheetIn"></div></dialog>`,
@@ -291,15 +292,27 @@ export function search(ctx) {
   <h2 class="h3">Browse by tag</h2><div class="chips">${(ctx.tags || []).map((t) => `<a class="chip" href="/tags/${t.k}/">${t.emoji} ${esc(t.label)}</a>`).join("")}</div>`,
     scripts: [`<script>window.APPLIANCES=${json(Object.fromEntries(ctx.appliances.map((a) => [a.key, a.emoji + " " + a.short])))};</script>`, "/assets/search.js"] });
 }
+export function accessoryStrip(ctx, a, limit = 3) {
+  const l = Object.values(ctx.products).filter((p) => p.appliance === a.key).sort((x, y) => x.rank - y.rank).slice(0, limit);
+  if (!l.length) return "";
+  return `<section class="acc-strip"><div class="sh"><h2 class="h3">🧰 Accessories for your ${esc(a.short.toLowerCase())}</h2><a class="shop-btn" href="/gear/#${a.key}">See all</a></div>
+  <div class="gear-grid">${l.map((p) => productCard(p, "hub")).join("")}</div><p class="disc">${esc(ctx.site.affiliate.disclosure)}</p></section>`;
+}
+function compatTable(c) {
+  return `<div class="compat"><h3>${esc(c.title)}</h3><table><thead><tr><th>Your machine</th><th>Pints that fit</th></tr></thead><tbody>${c.rows.map((r) => `<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join("")}</tbody></table><p class="disc">${esc(c.note)}</p></div>`;
+}
 export function gear(ctx, catalog) {
   const ps = Object.values(ctx.products);
-  const sec = (kind, title, lead) => {
-    const l = ps.filter((p) => p.kind === kind);
-    return l.length ? `<section class="sec"><h2 class="h3">${title}</h2><p class="sd">${lead}</p><div class="gear-grid">${l.map((p) => productCard(p, "gear")).join("")}</div></section>` : "";
-  };
-  return listing(ctx, { title: "Gear I use", desc: "The Ninja machines and accessories behind every recipe on this site.", path: "/gear/", h1: "🧰 Gear I use",
-    lead: "The machines and tools behind every recipe here.",
-    inner: `<p class="disc box">${esc(ctx.site.affiliate.disclosure)}</p>${sec("appliance", "The machines", "Each one has its own recipe book on this site.")}${sec("accessory", "Accessories", "Small things that make a big difference.")}` });
+  const secs = ctx.appliances.map((a) => {
+    const l = ps.filter((p) => p.appliance === a.key).sort((x, y) => x.rank - y.rank);
+    if (!l.length) return "";
+    return `<section class="sec" id="${a.key}"><h2 class="h3">${a.emoji} ${esc(a.device)}</h2>
+    <div class="gear-grid">${l.map((p) => productCard(p, "gear")).join("")}</div>
+    ${a.key === "creami" && catalog.compat ? compatTable(catalog.compat) : ""}</section>`;
+  }).join("");
+  return listing(ctx, { title: "Accessories we use", desc: "Pints, cups, pellets and the small extras that make Ninja machines easier to live with.", path: "/gear/", h1: "🧰 Accessories we use",
+    lead: "You already have the machine. These are the extras we actually reach for.",
+    inner: `<nav class="chips">${ctx.appliances.map((a) => `<a class="chip" href="#${a.key}">${a.emoji} ${esc(a.short)}</a>`).join("")}</nav><p class="disc box">${esc(ctx.site.affiliate.disclosure)}</p>${secs}` });
 }
 export function shop(ctx, catalog) {
   const items = catalog.digital || [];

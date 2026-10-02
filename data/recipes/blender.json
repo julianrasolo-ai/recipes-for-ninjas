@@ -250,8 +250,8 @@
    "img": "/img/blender/b01.jpg",
    "slug": "strawberry-banana",
    "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
+    "blender-cups",
+    "blender-extractor-blades"
    ],
    "video": null,
    "members": false
@@ -301,8 +301,8 @@
    "img": "/img/blender/b02.jpg",
    "slug": "green-machine",
    "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
+    "blender-cups",
+    "blender-extractor-blades"
    ],
    "video": null,
    "members": false
@@ -352,8 +352,8 @@
    "img": "/img/blender/b03.jpg",
    "slug": "peanut-butter-cup",
    "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
+    "blender-cups",
+    "blender-extractor-blades"
    ],
    "video": null,
    "members": false
@@ -400,8 +400,8 @@
    "img": "/img/blender/b04.jpg",
    "slug": "tropical-sunrise",
    "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
+    "blender-cups",
+    "blender-extractor-blades"
    ],
    "video": null,
    "members": false
@@ -452,8 +452,8 @@
    "img": "/img/blender/b05.jpg",
    "slug": "berry-oat-breakfast",
    "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
+    "blender-cups",
+    "blender-extractor-blades"
    ],
    "video": null,
    "members": false
@@ -501,8 +501,8 @@
    "img": "/img/blender/b06.jpg",
    "slug": "ginger-glow",
    "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
+    "blender-cups",
+    "blender-extractor-blades"
    ],
    "video": null,
    "members": false
@@ -548,10 +548,7 @@
    ],
    "img": "/img/blender/b07.jpg",
    "slug": "acai-bowl",
-   "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   },
@@ -596,10 +593,7 @@
    ],
    "img": "/img/blender/b08.jpg",
    "slug": "pitaya-pink-bowl",
-   "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   },
@@ -647,10 +641,7 @@
    ],
    "img": "/img/blender/b09.jpg",
    "slug": "green-protein-bowl",
-   "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   },
@@ -693,10 +684,7 @@
    ],
    "img": "/img/blender/b10.jpg",
    "slug": "chocolate-pb-nice-cream",
-   "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   },
@@ -739,8 +727,8 @@
    "img": "/img/blender/b11.jpg",
    "slug": "strawberry-lemonade-slush",
    "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
+    "blender-cups",
+    "blender-extractor-blades"
    ],
    "video": null,
    "members": false
@@ -786,8 +774,8 @@
    "img": "/img/blender/b12.jpg",
    "slug": "iced-mocha-frappe",
    "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
+    "blender-cups",
+    "blender-extractor-blades"
    ],
    "video": null,
    "members": false
@@ -827,8 +815,8 @@
    "img": "/img/blender/b13.jpg",
    "slug": "cookies-and-cream-shake",
    "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
+    "blender-cups",
+    "blender-extractor-blades"
    ],
    "video": null,
    "members": false
@@ -877,8 +865,8 @@
    "img": "/img/blender/b14.jpg",
    "slug": "watermelon-mint-frosty",
    "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
+    "blender-cups",
+    "blender-extractor-blades"
    ],
    "video": null,
    "members": false
@@ -926,10 +914,7 @@
    ],
    "img": "/img/blender/b15.jpg",
    "slug": "restaurant-style-salsa",
-   "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   },
@@ -974,10 +959,7 @@
    ],
    "img": "/img/blender/b16.jpg",
    "slug": "basil-pesto",
-   "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   },
@@ -1025,10 +1007,7 @@
    ],
    "img": "/img/blender/b17.jpg",
    "slug": "silky-hummus",
-   "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   },
@@ -1077,10 +1056,7 @@
    ],
    "img": "/img/blender/b18.jpg",
    "slug": "green-goddess-dressing",
-   "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   },
@@ -1133,10 +1109,7 @@
    ],
    "img": "/img/blender/b19.jpg",
    "slug": "roasted-tomato-basil-soup",
-   "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   },
@@ -1184,10 +1157,7 @@
    ],
    "img": "/img/blender/b20.jpg",
    "slug": "butternut-squash-soup",
-   "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   },
@@ -1235,10 +1205,7 @@
    ],
    "img": "/img/blender/b21.jpg",
    "slug": "chilled-gazpacho",
-   "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   },
@@ -1283,10 +1250,7 @@
    ],
    "img": "/img/blender/b22.jpg",
    "slug": "fluffy-blender-pancakes",
-   "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   },
@@ -1332,10 +1296,7 @@
    ],
    "img": "/img/blender/b23.jpg",
    "slug": "banana-oat-pancakes",
-   "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   },
@@ -1379,10 +1340,7 @@
    ],
    "img": "/img/blender/b24.jpg",
    "slug": "easy-crepes",
-   "gear": [
-    "ninja-detect-blender",
-    "blender-cups"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   }

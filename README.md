@@ -9,7 +9,7 @@ Family recipe site for four Ninja machines. The homepage is an animated kitchen:
 | `/blender/` | Ninja Detect Power Blender Pro | 24 |
 | `/wood-fire/` | Ninja Woodfire Outdoor Grill & Smoker | 24 |
 
-Every recipe has its own page (`/blender/strawberry-banana/`) with Google Recipe schema, plus category pages, tag pages (`/tags/energy/`), site-wide search (`/search/`), a gear hub (`/gear/`), a shop (`/shop/`) and legal pages. Favorites for the family sync across devices.
+On the hubs, tapping a recipe opens the familiar pop-up sheet (and the address bar shows its page URL). Every recipe also has its own page (`/blender/strawberry-banana/`) with Google Recipe schema, plus category pages, tag pages (`/tags/energy/`), site-wide search (`/search/`), an accessories page (`/gear/`, grouped by machine, with a CREAMi pint compatibility table), a shop (`/shop/`) and legal pages. Favorites for the family sync across devices.
 
 ## Run locally
 
@@ -47,11 +47,11 @@ netlify/functions/likes.mjs  favorites API
 
 | Feature | How to turn it on |
 |---|---|
-| **Affiliate links** | Set `affiliate.amazonTag`; edit URLs in `data/products.json`. Disclosure shows in footer and next to links. Clicks tracked as `affiliate_click`. |
+| **Affiliate links** | Accessories only (people already own the machine). Set `affiliate.amazonTag`; swap the Amazon search URLs in `data/products.json` for exact product links when you have them. Don't add Amazon prices (Amazon requires live API prices); buttons say "Check price". Clicks tracked as `affiliate_click`. |
 | **Ads** | `ads.enabled: true`, set `client` and slot IDs. Slots on recipe pages (in-content + desktop sidebar) and hubs reserve their height, so no layout shift. Load only after consent. |
 | **Consent banner** | On automatically when ads or analytics are on. "Cookie settings" in the footer reopens it. |
 | **Analytics** | `analytics.enabled: true` + `plausibleDomain` or `ga4Id`. Events: `affiliate_click`, `signup`, `share`, `checkout_start`. |
-| **Email list** | `email.enabled: true`. `provider: "netlify"` collects signups in Netlify Forms with no account; for Beehiiv/ConvertKit set `action` to their form URL. Optional popup and lead magnet (`leadMagnet.url` = your PDF). |
+| **Email list (Beehiiv)** | `email.enabled: true` and paste your Beehiiv subscribe form URL into `email.action`. Or `provider: "netlify"` collects signups in Netlify Forms with no account; for Beehiiv/ConvertKit set `action` to their form URL. Optional popup and lead magnet (`leadMagnet.url` = your PDF). |
 | **Members** | `members.enabled: true` and `"members": true` on a recipe. Today the gate is visual only; real enforcement needs a login provider (e.g. Netlify Identity/Supabase + an edge function). |
 | **Shop / Stripe** | `shop.enabled: true`; add items to `products.json` → `digital` with a Stripe Payment Link as `checkoutUrl`. Emailed secure downloads and order records need a Stripe webhook function (not built yet). |
 | **Physical products** | Add to `products.json` with `kind: "accessory"` and a Shopify/dropship link; they appear on `/gear/`. |

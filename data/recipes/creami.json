@@ -202,7 +202,6 @@
    "wait": "None",
    "slug": "store-bought-soft-serve",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -261,8 +260,8 @@
    "wait": "None",
    "slug": "salted-caramel-pretzel-milkshake",
    "gear": [
-    "ninja-swirl",
-    "creami-pints"
+    "creami-pints",
+    "creami-mixin-tool"
    ],
    "video": null,
    "members": false,
@@ -323,7 +322,6 @@
    "wait": "24 hours",
    "slug": "pantry-one-pint-ideas",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -387,7 +385,6 @@
    "wait": "24 hours",
    "slug": "easy-vanilla-soft-serve",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -453,7 +450,6 @@
    "wait": "24 hours",
    "slug": "chocolate-soft-serve",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -515,7 +511,6 @@
    "wait": "24 hours",
    "slug": "salted-caramel-soft-serve",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -583,7 +578,6 @@
    ],
    "slug": "dairy-free-chai-soft-serve",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -653,7 +647,6 @@
    "wait": "24 hours",
    "slug": "signature-vanilla-soft-serve",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -727,7 +720,6 @@
    "wait": "24 hours",
    "slug": "chocolate-peanut-butter-soft-serve",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -798,7 +790,6 @@
    "wait": "24 hours",
    "slug": "root-beer-float-soft-serve",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -855,7 +846,6 @@
    "wait": "24 hours",
    "slug": "one-ingredient-frozen-yogurt",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -908,7 +898,6 @@
    "wait": "24 hours",
    "slug": "classic-tart-frozen-yogurt",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -961,7 +950,6 @@
    "wait": "24 hours",
    "slug": "birthday-cake-frozen-yogurt",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -1013,7 +1001,6 @@
    "wait": "24 hours",
    "slug": "chocolate-hazelnut-frozen-yogurt",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -1071,7 +1058,6 @@
    "wait": "24 hours",
    "slug": "chocolate-protein-ice-cream",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -1131,8 +1117,8 @@
    "wait": "24 hours",
    "slug": "strawberry-cheesecake-protein-ice-cream",
    "gear": [
-    "ninja-swirl",
-    "creami-pints"
+    "creami-pints",
+    "creami-mixin-tool"
    ],
    "video": null,
    "members": false,
@@ -1193,7 +1179,6 @@
    "wait": "24 hours",
    "slug": "peppermint-mocha-protein-soft-serve",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -1252,8 +1237,8 @@
    "wait": "24 hours",
    "slug": "pistachio-protein-soft-serve",
    "gear": [
-    "ninja-swirl",
-    "creami-pints"
+    "creami-pints",
+    "creami-mixin-tool"
    ],
    "video": null,
    "members": false,
@@ -1319,7 +1304,6 @@
    "wait": "24 hours",
    "slug": "protein-flavor-mix-and-match",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -1382,7 +1366,6 @@
    ],
    "slug": "tropical-fruit-whip",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -1440,7 +1423,6 @@
    ],
    "slug": "peach-mango-fruit-whip",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -1500,7 +1482,6 @@
    ],
    "slug": "strawberry-kiwi-fruit-whip",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -1561,7 +1542,6 @@
    ],
    "slug": "chocolate-banana-fruit-whip",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -1620,7 +1600,6 @@
    ],
    "slug": "one-ingredient-fruit-sorbet",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -1685,7 +1664,6 @@
    ],
    "slug": "dairy-free-mint-lite-soft-serve",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -1755,8 +1733,8 @@
    "wait": "24 hours",
    "slug": "butter-pecan-lite-soft-serve",
    "gear": [
-    "ninja-swirl",
-    "creami-pints"
+    "creami-pints",
+    "creami-mixin-tool"
    ],
    "video": null,
    "members": false,
@@ -1817,8 +1795,8 @@
    ],
    "slug": "dairy-free-lite-coffee-chip-ice-cream",
    "gear": [
-    "ninja-swirl",
-    "creami-pints"
+    "creami-pints",
+    "creami-mixin-tool"
    ],
    "video": null,
    "members": false,
@@ -1885,8 +1863,8 @@
    "wait": "24 hours",
    "slug": "vanilla-ice-cream-with-chocolate-chips",
    "gear": [
-    "ninja-swirl",
-    "creami-pints"
+    "creami-pints",
+    "creami-mixin-tool"
    ],
    "video": null,
    "members": false,
@@ -1944,7 +1922,6 @@
    ],
    "slug": "dairy-free-vanilla-coconut-ice-cream",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -2016,8 +1993,8 @@
    "wait": "24 hours",
    "slug": "ice-cream-flavor-menu",
    "gear": [
-    "ninja-swirl",
-    "creami-pints"
+    "creami-pints",
+    "creami-mixin-tool"
    ],
    "video": null,
    "members": false,
@@ -2084,8 +2061,8 @@
    "wait": "24 hours",
    "slug": "cookies-and-cream-frozen-custard",
    "gear": [
-    "ninja-swirl",
-    "creami-pints"
+    "creami-pints",
+    "creami-mixin-tool"
    ],
    "video": null,
    "members": false,
@@ -2154,8 +2131,8 @@
    "wait": "24 hours",
    "slug": "cinnamon-sugar-cereal-frozen-custard",
    "gear": [
-    "ninja-swirl",
-    "creami-pints"
+    "creami-pints",
+    "creami-mixin-tool"
    ],
    "video": null,
    "members": false,
@@ -2223,7 +2200,6 @@
    "wait": "24 hours",
    "slug": "pb-and-j-frozen-custard",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -2293,8 +2269,8 @@
    "wait": "24 hours",
    "slug": "triple-chocolate-gelato",
    "gear": [
-    "ninja-swirl",
-    "creami-pints"
+    "creami-pints",
+    "creami-mixin-tool"
    ],
    "video": null,
    "members": false,
@@ -2356,7 +2332,6 @@
    ],
    "slug": "mango-lime-fruit-whip",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -2419,7 +2394,6 @@
    ],
    "slug": "strawberry-banana-fruit-whip",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -2477,7 +2451,6 @@
    ],
    "slug": "raspberry-lemon-fruit-whip",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -2532,7 +2505,6 @@
    ],
    "slug": "applesauce-sorbet",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -2589,7 +2561,6 @@
    ],
    "slug": "pie-filling-sorbet",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -2650,7 +2621,6 @@
    "wait": "24 hours",
    "slug": "light-vanilla-soft-serve",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -2713,7 +2683,6 @@
    "wait": "24 hours",
    "slug": "light-chocolate-soft-serve",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -2772,7 +2741,6 @@
    "wait": "24 hours",
    "slug": "honey-greek-frozen-yogurt",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -2827,7 +2795,6 @@
    "wait": "24 hours",
    "slug": "cherry-vanilla-frozen-yogurt",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -2888,7 +2855,6 @@
    ],
    "slug": "banana-peanut-butter-swirl",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -2945,7 +2911,6 @@
    "wait": "24 hours",
    "slug": "berry-protein-ice-cream",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -2999,7 +2964,6 @@
    ],
    "slug": "lite-coconut-ice-cream",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -3060,7 +3024,6 @@
    ],
    "slug": "pineapple-coconut-whip",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -3121,7 +3084,6 @@
    ],
    "slug": "strawberry-sorbet",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -3181,7 +3143,6 @@
    ],
    "slug": "watermelon-lime-sorbet",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -3236,7 +3197,6 @@
    ],
    "slug": "classic-lemon-sorbet",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -3295,7 +3255,6 @@
    ],
    "slug": "mango-coconut-sorbet",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -3351,7 +3310,6 @@
    ],
    "slug": "mixed-berry-sorbet",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -3405,7 +3363,6 @@
    ],
    "slug": "green-grape-lemonade-sorbet",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -3464,7 +3421,6 @@
    ],
    "slug": "kiwi-sorbet",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -3528,7 +3484,6 @@
    ],
    "slug": "acai-bowl-swirl",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -3589,7 +3544,6 @@
    "wait": "24 hours",
    "slug": "cottage-cheese-vanilla-ice-cream",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -3652,7 +3606,6 @@
    "wait": "24 hours",
    "slug": "chocolate-cottage-cheese-ice-cream",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -3704,7 +3657,6 @@
    "wait": "24 hours",
    "slug": "strawberry-greek-frozen-yogurt",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -3757,7 +3709,6 @@
    "wait": "24 hours",
    "slug": "mango-lassi-frozen-yogurt",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -3812,7 +3763,6 @@
    "wait": "24 hours",
    "slug": "drive-thru-chocolate-frosty",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -3874,7 +3824,6 @@
    "wait": "24 hours",
    "slug": "high-protein-chocolate-frosty",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -3928,7 +3877,6 @@
    "wait": "24 hours",
    "slug": "strawberry-protein-ice-cream",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -3983,8 +3931,8 @@
    "wait": "24 hours",
    "slug": "cookies-and-cream-protein-ice-cream",
    "gear": [
-    "ninja-swirl",
-    "creami-pints"
+    "creami-pints",
+    "creami-mixin-tool"
    ],
    "video": null,
    "members": false,
@@ -4039,8 +3987,8 @@
    "wait": "24 hours",
    "slug": "cookie-butter-protein-ice-cream",
    "gear": [
-    "ninja-swirl",
-    "creami-pints"
+    "creami-pints",
+    "creami-mixin-tool"
    ],
    "video": null,
    "members": false,
@@ -4096,8 +4044,8 @@
    "wait": "24 hours",
    "slug": "peanut-butter-cup-protein-ice-cream",
    "gear": [
-    "ninja-swirl",
-    "creami-pints"
+    "creami-pints",
+    "creami-mixin-tool"
    ],
    "video": null,
    "members": false,
@@ -4150,7 +4098,6 @@
    "wait": "24 hours",
    "slug": "iced-coffee-protein-soft-serve",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -4215,7 +4162,6 @@
    "wait": "24 hours",
    "slug": "matcha-soft-serve",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -4281,7 +4227,6 @@
    "wait": "24 hours",
    "slug": "coffee-soft-serve",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -4345,7 +4290,6 @@
    "wait": "24 hours",
    "slug": "strawberry-soft-serve",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -4405,8 +4349,8 @@
    "wait": "24 hours",
    "slug": "strawberry-cheesecake-ice-cream",
    "gear": [
-    "ninja-swirl",
-    "creami-pints"
+    "creami-pints",
+    "creami-mixin-tool"
    ],
    "video": null,
    "members": false,
@@ -4463,8 +4407,8 @@
    "wait": "24 hours",
    "slug": "key-lime-pie-ice-cream",
    "gear": [
-    "ninja-swirl",
-    "creami-pints"
+    "creami-pints",
+    "creami-mixin-tool"
    ],
    "video": null,
    "members": false,
@@ -4525,7 +4469,6 @@
    "wait": "24 hours",
    "slug": "pumpkin-pie-ice-cream",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -4583,8 +4526,8 @@
    "wait": "24 hours",
    "slug": "banana-pudding-ice-cream",
    "gear": [
-    "ninja-swirl",
-    "creami-pints"
+    "creami-pints",
+    "creami-mixin-tool"
    ],
    "video": null,
    "members": false,
@@ -4645,7 +4588,6 @@
    "wait": "24 hours",
    "slug": "coffee-ice-cream",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -4694,7 +4636,6 @@
    "wait": "None",
    "slug": "classic-vanilla-milkshake",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -4745,7 +4686,6 @@
    "wait": "None",
    "slug": "chocolate-peanut-butter-shake",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -4795,7 +4735,6 @@
    "wait": "None",
    "slug": "strawberry-marshmallow-shake",
    "gear": [
-    "ninja-swirl",
     "creami-pints"
    ],
    "video": null,
@@ -4848,8 +4787,8 @@
    "wait": "None",
    "slug": "cookies-and-cream-cheesecake-shake",
    "gear": [
-    "ninja-swirl",
-    "creami-pints"
+    "creami-pints",
+    "creami-mixin-tool"
    ],
    "video": null,
    "members": false,

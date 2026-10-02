@@ -196,9 +196,8 @@
    "img": "/img/fire/w01.jpg",
    "slug": "smoky-garlic-butter-steak",
    "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets",
-    "meat-thermometer"
+    "woodfire-pellets-variety",
+    "woodfire-thermometer"
    ],
    "video": null,
    "members": false
@@ -243,9 +242,8 @@
    "img": "/img/fire/w02.jpg",
    "slug": "classic-backyard-burgers",
    "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets",
-    "meat-thermometer"
+    "woodfire-pellets-variety",
+    "woodfire-thermometer"
    ],
    "video": null,
    "members": false
@@ -293,9 +291,8 @@
    "img": "/img/fire/w03.jpg",
    "slug": "honey-lime-chicken-thighs",
    "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets",
-    "meat-thermometer"
+    "woodfire-pellets-variety",
+    "woodfire-thermometer"
    ],
    "video": null,
    "members": false
@@ -347,9 +344,8 @@
    "img": "/img/fire/w04.jpg",
    "slug": "shrimp-and-veggie-skewers",
    "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets",
-    "meat-thermometer"
+    "woodfire-pellets-variety",
+    "woodfire-thermometer"
    ],
    "video": null,
    "members": false
@@ -399,9 +395,8 @@
    "img": "/img/fire/w05.jpg",
    "slug": "smoked-pulled-pork",
    "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets",
-    "meat-thermometer"
+    "woodfire-pellets-variety",
+    "woodfire-thermometer"
    ],
    "video": null,
    "members": false
@@ -447,9 +442,8 @@
    "img": "/img/fire/w06.jpg",
    "slug": "smoked-baby-back-ribs",
    "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets",
-    "meat-thermometer"
+    "woodfire-pellets-variety",
+    "woodfire-thermometer"
    ],
    "video": null,
    "members": false
@@ -495,9 +489,8 @@
    "img": "/img/fire/w07.jpg",
    "slug": "smoked-salmon-fillet",
    "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets",
-    "meat-thermometer"
+    "woodfire-pellets-variety",
+    "woodfire-thermometer"
    ],
    "video": null,
    "members": false
@@ -541,8 +534,7 @@
    "img": "/img/fire/w08.jpg",
    "slug": "smoked-mac-and-cheese",
    "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets"
+    "woodfire-pellets-variety"
    ],
    "video": null,
    "members": false
@@ -587,9 +579,8 @@
    "img": "/img/fire/w09.jpg",
    "slug": "smoky-crispy-wings",
    "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets",
-    "meat-thermometer"
+    "woodfire-pellets-variety",
+    "woodfire-thermometer"
    ],
    "video": null,
    "members": false
@@ -630,10 +621,7 @@
    ],
    "img": "/img/fire/w10.jpg",
    "slug": "woodfire-fries",
-   "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   },
@@ -678,8 +666,7 @@
    "img": "/img/fire/w11.jpg",
    "slug": "crispy-smashed-potatoes",
    "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets"
+    "woodfire-pellets-variety"
    ],
    "video": null,
    "members": false
@@ -727,9 +714,8 @@
    "img": "/img/fire/w12.jpg",
    "slug": "sausage-and-pepper-hoagies",
    "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets",
-    "meat-thermometer"
+    "woodfire-pellets-variety",
+    "woodfire-thermometer"
    ],
    "video": null,
    "members": false
@@ -777,8 +763,7 @@
    "img": "/img/fire/w13.jpg",
    "slug": "woodfire-margherita-pizza",
    "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets"
+    "woodfire-pellets-variety"
    ],
    "video": null,
    "members": false
@@ -822,8 +807,7 @@
    "img": "/img/fire/w14.jpg",
    "slug": "garlic-herb-flatbread",
    "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets"
+    "woodfire-pellets-variety"
    ],
    "video": null,
    "members": false
@@ -864,10 +848,7 @@
    ],
    "img": "/img/fire/w15.jpg",
    "slug": "skillet-cornbread",
-   "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   },
@@ -913,9 +894,8 @@
    "img": "/img/fire/w16.jpg",
    "slug": "bbq-chicken-quesadillas",
    "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets",
-    "meat-thermometer"
+    "woodfire-pellets-variety",
+    "woodfire-thermometer"
    ],
    "video": null,
    "members": false
@@ -960,8 +940,7 @@
    "img": "/img/fire/w17.jpg",
    "slug": "charred-street-corn",
    "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets"
+    "woodfire-pellets-variety"
    ],
    "video": null,
    "members": false
@@ -1011,8 +990,7 @@
    "img": "/img/fire/w18.jpg",
    "slug": "grilled-veggie-platter",
    "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets"
+    "woodfire-pellets-variety"
    ],
    "video": null,
    "members": false
@@ -1057,8 +1035,7 @@
    "img": "/img/fire/w19.jpg",
    "slug": "smoky-broccoli",
    "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets"
+    "woodfire-pellets-variety"
    ],
    "video": null,
    "members": false
@@ -1102,8 +1079,7 @@
    "img": "/img/fire/w20.jpg",
    "slug": "grilled-cabbage-steaks",
    "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets"
+    "woodfire-pellets-variety"
    ],
    "video": null,
    "members": false
@@ -1149,10 +1125,7 @@
    ],
    "img": "/img/fire/w21.jpg",
    "slug": "grilled-honey-peaches",
-   "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   },
@@ -1194,10 +1167,7 @@
    ],
    "img": "/img/fire/w22.jpg",
    "slug": "pineapple-with-cinnamon-sugar",
-   "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   },
@@ -1238,10 +1208,7 @@
    ],
    "img": "/img/fire/w23.jpg",
    "slug": "s-mores-dip",
-   "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   },
@@ -1283,10 +1250,7 @@
    ],
    "img": "/img/fire/w24.jpg",
    "slug": "campfire-banana-boats",
-   "gear": [
-    "ninja-woodfire-grill",
-    "woodfire-pellets"
-   ],
+   "gear": [],
    "video": null,
    "members": false
   }

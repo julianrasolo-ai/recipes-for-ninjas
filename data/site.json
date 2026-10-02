@@ -1,42 +1,61 @@
 {
-  "_readme": "Everything monetization-related is a switch here. Flip enabled:true, fill in the IDs, push. No code changes needed.",
-  "name": "Recipes for Ninjas",
-  "tagline": "Our family recipe book for Ninja kitchen machines.",
-  "url": "https://recipes-for-ninjas.netlify.app",
-  "contactEmail": "",
-  "ownerName": "Recipes for Ninjas",
-  "family": ["Julian", "Charlyne", "Leanne", "Noah"],
-
-  "affiliate": {
-    "amazonTag": "",
-    "disclosure": "Some links on this page are affiliate links. If you buy through them we may earn a small commission at no extra cost to you. As an Amazon Associate we earn from qualifying purchases."
+ "_readme": "Everything monetization-related is a switch here. Flip enabled:true, fill in the IDs, push. No code changes needed.",
+ "name": "Recipes for Ninjas",
+ "tagline": "Our family recipe book for Ninja kitchen machines.",
+ "url": "https://recipes-for-ninjas.netlify.app",
+ "contactEmail": "",
+ "ownerName": "Recipes for Ninjas",
+ "family": [
+  "Julian",
+  "Charlyne",
+  "Leanne",
+  "Noah"
+ ],
+ "affiliate": {
+  "amazonTag": "",
+  "disclosure": "Some links on this page are affiliate links. If you buy through them we may earn a small commission at no extra cost to you. As an Amazon Associate we earn from qualifying purchases."
+ },
+ "ads": {
+  "enabled": false,
+  "provider": "adsense",
+  "client": "ca-pub-XXXXXXXXXXXXXXXX",
+  "slots": {
+   "recipe-in-content": "",
+   "recipe-sidebar": "",
+   "hub-in-feed": ""
+  }
+ },
+ "consent": {
+  "enabled": true
+ },
+ "analytics": {
+  "enabled": false,
+  "provider": "plausible",
+  "plausibleDomain": "",
+  "ga4Id": ""
+ },
+ "email": {
+  "enabled": false,
+  "provider": "beehiiv",
+  "_providers": "beehiiv: paste your Beehiiv embed/subscribe form URL into action. netlify = Netlify Forms (no account). convertkit/resend also work with their form URL.",
+  "action": "",
+  "headline": "Get one new Ninja recipe a week",
+  "popup": {
+   "enabled": false,
+   "delaySeconds": 40
   },
-  "ads": {
-    "enabled": false,
-    "provider": "adsense",
-    "client": "ca-pub-XXXXXXXXXXXXXXXX",
-    "slots": { "recipe-in-content": "", "recipe-sidebar": "", "hub-in-feed": "" }
-  },
-  "consent": { "enabled": true },
-  "analytics": {
-    "enabled": false,
-    "provider": "plausible",
-    "plausibleDomain": "",
-    "ga4Id": ""
-  },
-  "email": {
-    "enabled": false,
-    "provider": "netlify",
-    "_providers": "netlify = Netlify Forms (no account needed); beehiiv/convertkit/resend = set action to the form endpoint they give you",
-    "action": "",
-    "headline": "Get one new Ninja recipe a week",
-    "popup": { "enabled": false, "delaySeconds": 40 },
-    "leadMagnet": { "title": "Free printable: 10 family-favourite Ninja recipes", "url": "" }
-  },
-  "members": {
-    "enabled": false,
-    "_note": "Mark a recipe members:true in its data file. Until a login provider is connected the gate is visual only.",
-    "joinUrl": ""
-  },
-  "shop": { "enabled": false, "currency": "USD" }
+  "leadMagnet": {
+   "title": "Free printable: 10 family-favourite Ninja recipes",
+   "url": ""
+  }
+ },
+ "members": {
+  "enabled": false,
+  "_note": "Mark a recipe members:true in its data file. Until a login provider is connected the gate is visual only.",
+  "joinUrl": ""
+ },
+ "shop": {
+  "enabled": false,
+  "currency": "USD"
+ }
 }

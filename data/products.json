@@ -1,15 +1,25 @@
 {
- "_readme": "One place for every product and affiliate link. Pages link to /go/<id>, so changing url here updates the whole site. Amazon links get site.json affiliate.amazonTag added automatically.",
+ "_readme": "Accessories only (people already own the machine). One place for every affiliate link: pages link to /go/<id>, and Amazon links get site.json affiliate.amazonTag added. Don't show Amazon prices on the site: Amazon's rules require live prices from their API, so 'price' stays empty and the button says Check price.",
+ "_research": "From Julian's research: CREAMi pints 4-pack ~$30 official, ~7K/mo, 6.7K reviews (top seller). Outer lid ~$20, paddle ~$24 (3rd-party $29-43), weak volume. Mix-in tool $13. Blender 24oz Sip & Seal cups 2-pack $22-25, ~2K/mo, 3K+ reviews. Extractor blades 2-pack ~$27, ~1K/mo. Kona pellet variety pack $40, 2,400+ reviews, 1K+/mo; official Ninja pellets $18. Woodfire covers: no volume data. Thermometer $23, pellet scoop $18. Juicer brush $14, jug $17: no volume data.",
  "products": [
-  {"id":"ninja-swirl","kind":"appliance","name":"Ninja Swirl by CREAMi","image":"/img/home/icecream-machine.webp","url":"https://www.amazon.com/s?k=Ninja+Swirl+by+CREAMi","price":"","note":"Soft serve, ice cream, sorbet and shakes from frozen pints."},
-  {"id":"ninja-neverclog","kind":"appliance","name":"Ninja NeverClog Cold Press Juicer","image":"/img/home/juicer.webp","url":"https://www.amazon.com/s?k=Ninja+NeverClog+Cold+Press+Juicer","price":"","note":"Two pulp filters, easy clean, no clogging on greens."},
-  {"id":"ninja-detect-blender","kind":"appliance","name":"Ninja Detect Power Blender Pro","image":"/img/home/blender.webp","url":"https://www.amazon.com/s?k=Ninja+Detect+Power+Blender+Pro+TB201","price":"","note":"BlendSense picks speed and time for you."},
-  {"id":"ninja-woodfire-grill","kind":"appliance","name":"Ninja Woodfire Outdoor Grill & Smoker","image":"/img/home/grill.webp","url":"https://www.amazon.com/s?k=Ninja+Woodfire+Outdoor+Grill+Smoker","price":"","note":"Electric grill, smoker and air fryer with real wood pellet flavour."},
-  {"id":"creami-pints","kind":"accessory","name":"Extra CREAMi pints with lids","image":"","url":"https://www.amazon.com/s?k=Ninja+CREAMi+pints","price":"","note":"Keep a few pints frozen so dessert is always 5 minutes away."},
-  {"id":"woodfire-pellets","kind":"accessory","name":"Ninja Woodfire pellets","image":"","url":"https://www.amazon.com/s?k=Ninja+Woodfire+pellets","price":"","note":"Robust and All-purpose blends. ½ cup per cook."},
-  {"id":"meat-thermometer","kind":"accessory","name":"Instant-read meat thermometer","image":"","url":"https://www.amazon.com/s?k=instant+read+meat+thermometer","price":"","note":"The one tool that makes grilling foolproof."},
-  {"id":"blender-cups","kind":"accessory","name":"Blender to-go cups","image":"","url":"https://www.amazon.com/s?k=Ninja+blender+to-go+cups","price":"","note":"Blend and walk out the door."}
+  {"id":"creami-pints","appliance":"creami","rank":1,"name":"CREAMi pints with lids (4-pack)","icon":"🥡","note":"Freeze tomorrow's dessert today. Pint size depends on your model, check the table below.","compat":true,"url":"https://www.amazon.com/s?k=Ninja+CREAMi+pints+4+pack"},
+  {"id":"creami-lid-paddle","appliance":"creami","rank":2,"name":"Outer bowl lid and paddle","icon":"🌀","note":"A spare paddle means you can spin a second pint while the first is in the dishwasher.","url":"https://www.amazon.com/s?k=Ninja+CREAMi+outer+bowl+lid+paddle"},
+  {"id":"creami-mixin-tool","appliance":"creami","rank":3,"name":"Mix-in tool","icon":"🍪","note":"Makes the hole for cookies, chips and swirls before you press Mix-In.","url":"https://www.amazon.com/s?k=Ninja+CREAMi+mix-in+tool"},
+  {"id":"blender-cups","appliance":"blender","rank":1,"name":"24 oz cups with Sip & Seal lids (2-pack)","icon":"🥤","note":"Blend in the cup, flip, lid on, out the door.","url":"https://www.amazon.com/s?k=Ninja+24+oz+cups+sip+and+seal+lids"},
+  {"id":"blender-extractor-blades","appliance":"blender","rank":2,"name":"Extractor blade assembly (2-pack)","icon":"🔪","note":"Fresh blades keep smoothies silky. Check it fits your cup size.","url":"https://www.amazon.com/s?k=Ninja+extractor+blades+2+pack"},
+  {"id":"woodfire-pellets-variety","appliance":"wood-fire","rank":1,"name":"Grilling pellet variety pack","icon":"🪵","note":"Try hickory, cherry and more to find your favourite smoke.","url":"https://www.amazon.com/s?k=Kona+grilling+pellets+variety+pack"},
+  {"id":"woodfire-pellets","appliance":"wood-fire","rank":2,"name":"Ninja Woodfire pellets","icon":"🔥","note":"Official Robust and All-purpose blends. ½ cup per cook.","url":"https://www.amazon.com/s?k=Ninja+Woodfire+pellets"},
+  {"id":"woodfire-thermometer","appliance":"wood-fire","rank":3,"name":"Meat thermometer","icon":"🌡️","note":"The one tool that makes grilling foolproof: 165°F chicken, 145°F pork and fish.","url":"https://www.amazon.com/s?k=Ninja+Woodfire+thermometer"},
+  {"id":"woodfire-scoop","appliance":"wood-fire","rank":4,"name":"Pellet scoop","icon":"🥄","note":"Exactly the right amount of pellets, no mess.","url":"https://www.amazon.com/s?k=Ninja+Woodfire+pellet+scoop"},
+  {"id":"woodfire-cover","appliance":"wood-fire","rank":5,"name":"Grill cover","icon":"☂️","note":"Keeps it dry between cookouts.","url":"https://www.amazon.com/s?k=Ninja+Woodfire+outdoor+grill+cover"},
+  {"id":"juicer-brush","appliance":"juicer","rank":1,"name":"Cleaning brush","icon":"🧽","note":"Gets pulp out of the filter in seconds, the part everyone hates cleaning.","url":"https://www.amazon.com/s?k=Ninja+NeverClog+juicer+cleaning+brush"},
+  {"id":"juicer-jug","appliance":"juicer","rank":2,"name":"Spare juice jug","icon":"🫙","note":"Juice two batches back to back.","url":"https://www.amazon.com/s?k=Ninja+NeverClog+juice+jug"}
  ],
+ "compat": {
+  "title": "Which CREAMi pints fit my machine?",
+  "note": "Pints don't swap between families. Check the model number on the bottom of your machine before buying.",
+  "rows": [["NC299 / NC300 series (original)","16 oz original pints"],["NC301 series","16 oz pints made for the NC301"],["NC500 / NC501 (Deluxe)","24 oz Deluxe pints"],["NC701 (Swirl)","16 oz Swirl pints"]]
+ },
  "digital": [],
  "_digital_example": {"id":"recipe-card-pack","name":"Printable recipe card pack","price":"$5","image":"","checkoutUrl":"https://buy.stripe.com/your-payment-link","note":"Stripe Payment Link: paste it here and the Buy button appears."}
 }

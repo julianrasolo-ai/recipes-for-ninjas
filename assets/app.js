@@ -50,11 +50,11 @@
   paintLikes();
 
   /* ---------- tool sheets (need the full recipe data) ---------- */
-  var D=null, byId={}, L={}, catMap={};
+  var D=null, byId={}, L={}, catMap={}, benMap={};
   function data(cb){
     if(D)return cb();
     fetch(SITE.data).then(function(r){return r.json()}).then(function(d){
-      D=d; L=d.labels; d.recipes.forEach(function(r){byId[r.id]=r}); d.cats.forEach(function(c){catMap[c.k]=c}); cb();
+      D=d; L=d.labels; d.recipes.forEach(function(r){byId[r.id]=r}); d.cats.forEach(function(c){catMap[c.k]=c}); (d.bens||[]).forEach(function(b){benMap[b[0]]=b}); cb();
     }).catch(function(){open(bar()+'<div class="sbody"><p class="empty">Could not load recipes. Check your connection and try again.</p></div>')});
   }
   var dlg=$('#sheet'), sin=$('#sheetIn'), refreshOpen=null;
@@ -63,9 +63,11 @@
     if(!dlg.open){ if(dlg.showModal)dlg.showModal(); else dlg.setAttribute('open',''); }
     sin.scrollTop=0; $$('[data-close]',sin).forEach(function(b){b.onclick=close});
   }
+  var pushed=false;
   function close(){refreshOpen=null; if(dlg.close)dlg.close(); else dlg.removeAttribute('open')}
   dlg.addEventListener('click',function(e){if(e.target===dlg)close()});
-  dlg.addEventListener('close',function(){refreshOpen=null});
+  dlg.addEventListener('close',function(){refreshOpen=null; if(pushed){pushed=false;history.back()}});
+  addEventListener('popstate',function(){if(pushed&&dlg.open){pushed=false;close()}});
   function bar(){return '<div class="sbar"><span></span><button class="ibtn" data-close type="button" aria-label="Close">✕</button></div>'}
   function copy(txt,st){
     var done=function(ok){st.textContent=ok?'Copied':'Could not copy here. Long-press to select.'};
@@ -73,13 +75,47 @@
   }
   function thumb(r){return r.img?'<img src="'+r.img+'" alt=""'+(r.cdn?' data-cdn="'+r.cdn+'"':'')+' data-emo="'+r.emoji+'">':r.emoji}
   function miniRow(r,extra){
-    return '<a class="mini" href="/'+SITE.key+'/'+r.slug+'/"><span class="mt">'+thumb(r)+'</span><span><b>'+esc(r.title)+'</b>'+(extra||'')+'</span></a>';
+    return '<a class="mini" data-id="'+r.id+'" href="/'+SITE.key+'/'+r.slug+'/"><span class="mt">'+thumb(r)+'</span><span><b>'+esc(r.title)+'</b>'+(extra||'')+'</span></a>';
   }
   function syncLine(){var st=Likes.status();return '<p class="sync" data-s="'+st+'">'+(st==='off'?'Offline: saved on this device, will sync when back online.':'Shared with the whole family.')+'</p>'}
 
+  function plainClick(e){return !(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button>0)}
   $('#sections').addEventListener('click',function(e){
-    var s=e.target.closest('[data-shop]'); if(s)data(function(){showShop(s.dataset.shop)});
+    var s=e.target.closest('[data-shop]'); if(s){data(function(){showShop(s.dataset.shop)});return}
+    var c=e.target.closest('.card'); if(c&&plainClick(e)){e.preventDefault();data(function(){showRecipe(c.dataset.id)})}
   });
+  /* recipe rows inside the tool sheets open in the sheet too */
+  sin.addEventListener('click',function(e){
+    var m=e.target.closest('a.mini[data-id]'); if(m&&plainClick(e)){e.preventDefault();showRecipe(m.dataset.id)}
+  });
+
+  /* ---------- recipe sheet (same look as before; the URL changes so it can be shared) ---------- */
+  function showRecipe(id){
+    var r=byId[id], c=catMap[r.cat], url='/'+SITE.key+'/'+r.slug+'/';
+    refreshOpen=function(){showRecipe(id)};
+    var liked=likedBy(r.id);
+    var h=bar()+'<div class="shero">'+thumb(r)+'</div><div class="sbody">'+
+      '<div class="chips"><span class="chip">'+c.e+' '+esc(c.n)+'</span>'+(r.badge?'<span class="chip">'+r.badge+'</span>':'')+(r.healthy?'<span class="chip g">'+esc(D.toggleChip)+'</span>':'')+(r.dfree?'<span class="chip g">Dairy-free</span>':'')+'<span class="chip">'+esc(r.level)+'</span></div>'+
+      '<h2>'+esc(r.title)+'</h2><p class="lead">'+esc(r.blurb)+'</p>'+
+      ((r.ben||[]).length?'<div class="chips">'+r.ben.map(function(b){return '<span class="chip b">'+benMap[b][1]+' '+esc(benMap[b][2])+'</span>'}).join('')+'</div>':'')+
+      '<div class="chips">'+r.chips.map(function(x){return '<span class="chip">'+esc(x)+'</span>'}).join('')+'</div>'+
+      '<div class="press"><small>'+esc(D.pressLabel)+'</small> '+esc(r.press)+'</div>'+
+      '<div class="likebox"><b>❤️ Who likes this?</b><div class="who">'+PEOPLE.map(function(p){return '<button class="who-b" type="button" data-p="'+p+'" data-like="'+p+'" aria-pressed="'+(liked.indexOf(p)>-1)+'">'+p+'</button>'}).join('')+'</div>'+syncLine()+'</div>'+
+      '<h3>'+esc(r.listTitle||'You need')+'</h3><ul class="ingl">'+r.ing.map(function(x){return '<li><label><input type="checkbox"><span>'+esc(x)+'</span></label></li>'}).join('')+'</ul>'+
+      '<div class="row"><button class="btn" id="cp" type="button">Copy shopping list</button><span class="status" id="cps" aria-live="polite"></span></div>'+
+      '<h3>Steps</h3><ol class="steps">'+r.steps.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ol>'+
+      r.notes.map(function(n){return '<p class="note"><b>'+esc(n[0])+':</b> '+esc(n[1])+'</p>'}).join('')+
+      ((r.ben||[]).length?'<p class="disclaim">Benefit tags are general nutrition info, not medical advice.</p>':'')+
+      ((r.gearItems||[]).length?'<h3>Handy for this recipe</h3><div class="gear-row">'+r.gearItems.map(function(p){
+        return p.href?'<a class="gcard" href="'+p.href+'" rel="sponsored noopener" target="_blank" data-aff="'+p.id+'" data-where="sheet"><span class="gp"><div class="emo">'+(p.icon||'🧰')+'</div></span><span class="gt"><b>'+esc(p.name)+'</b><small>'+esc(p.note||'')+'</small></span><span class="go">Check price ›</span></a>':'';
+      }).join('')+'</div><p class="disc">'+esc(D.disclosure)+'</p>':'')+
+      '<a class="open-page" href="'+url+'">Open full page ›</a></div>';
+    var keep=dlg.open?sin.scrollTop:0;
+    open(h,r.cat); if(keep)sin.scrollTop=keep;
+    if(!pushed){history.pushState({rid:id},'',url);pushed=true}else history.replaceState({rid:id},'',url);
+    $$('[data-like]',sin).forEach(function(b){b.onclick=function(){Likes.toggle(r.id,b.dataset.like);paintLikes();b.setAttribute('aria-pressed',likedBy(r.id).indexOf(b.dataset.like)>-1)}});
+    $('#cp',sin).onclick=function(){copy(r.title+'\n'+r.ing.map(function(x){return '- '+x}).join('\n'),$('#cps',sin))};
+  }
   function showShop(k){
     var c=catMap[k], list=D.recipes.filter(function(r){return r.cat===k}), freq={};
     list.forEach(function(r){r.tags.forEach(function(t){freq[t]=(freq[t]||0)+1})});

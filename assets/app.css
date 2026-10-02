@@ -341,3 +341,11 @@ dialog.pop{max-width:520px}
 .foot-site .disc{margin:6px auto 0}
 .top.brand .h{font-size:20px}.top.brand{padding-bottom:0}
 @media (min-width:1160px){body:has(.has-side) .top{max-width:1420px}}
+.acc-strip{margin-top:28px}
+.compat{margin:16px 0 0;background:var(--card);border-radius:18px;padding:14px 16px;box-shadow:var(--shadow)}
+.compat h3{font-family:"Fredoka",sans-serif;margin:0 0 8px;font-size:19px}
+.compat table{width:100%;border-collapse:collapse;font-size:15px}
+.compat th,.compat td{text-align:left;padding:8px 6px;border-bottom:1px dashed var(--line)}
+.compat th{font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.sbody .gear-row{margin-top:6px}
+.sheet .open-page{display:inline-block;margin-top:14px;font-weight:800;color:var(--ink)}
