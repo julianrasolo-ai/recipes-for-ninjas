@@ -1,6 +1,6 @@
 # Recipes for Ninjas
 
-Family recipe site with two sections picked from an animated landing screen:
+Family recipe site. The homepage is an animated kitchen: a ninja chef with fruit and ice floating around him. Tap a machine and its ingredients fly into it, then the recipes open.
 
 - **Ice cream** (`/ice-cream/`): 78 Ninja Swirl by CREAMi recipes, carried over from the original single-file site.
 - **Juice** (`/juice/`): 42 Ninja NeverClog cold-press juices, filterable by ingredient and by benefit (energy, immunity, digestion, hydration and more).
@@ -8,6 +8,8 @@ Family recipe site with two sections picked from an animated landing screen:
 Both sections share the same design and features: menu tabs on one line (even at 320px), search, "What I have" picker, per-section shopping lists, and favorites for Julian, Charlyne, Leanne and Noah that sync across devices.
 
 ## Run locally
+
+No Node? `python3 -m http.server 8888` works too (favorites then stay on that device).
 
 ```bash
 npm install
@@ -33,7 +35,8 @@ scripts/section.template.html  shared page template
 assets/app.css, app.js     shared design and app logic
 assets/likes.js            favorites sync client (offline queue + 30s refresh)
 data/ice.json, juice.json  recipes
-data/juice-images.json     Higgsfield photo URLs
+data/juice-images.json     Higgsfield photo URLs (juice recipes)
+data/home-images.json      Higgsfield homepage assets (ninja, machines, fruit)
 img/ice/                   ice cream photos (extracted from the original file)
 netlify/functions/likes.mjs  favorites API (Netlify Blobs)
 lib/likes-core.mjs         validation + toggle logic shared by API and dev server

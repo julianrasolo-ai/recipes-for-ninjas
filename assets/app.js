@@ -5,44 +5,8 @@
   function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))}
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
   var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var touch=window.matchMedia&&matchMedia('(hover: none)').matches;
 
-  /* ---------- HERO scroll scrub ---------- */
-  var spr=$('#sprinkles'), cols=['var(--pink)','var(--sky)','var(--sun)','var(--mint)','var(--grape)'], bits=[];
-  for(var i=0;i<16;i++){
-    var s=document.createElement('span'); s.className='sprinkle';
-    s.style.background=cols[i%5]; s.style.left=(Math.random()*100)+'%'; s.style.top=(Math.random()*100)+'%';
-    s.dataset.r=(Math.random()*360)|0; s.dataset.v=(0.4+Math.random()*1.2).toFixed(2);
-    s.style.transform='rotate('+s.dataset.r+'deg)'; spr.appendChild(s); bits.push(s);
-  }
-  var words=$$('#h1 .word'), cone=$('#cone'), blobs=$$('.blob');
-  function render(p){
-    if(reduce)return;
-    var N=words.length;
-    words.forEach(function(el,i){
-      var o=Math.min(1,Math.max(0,(p+0.25-(i/N)*0.45)/0.2));
-      el.style.opacity=0.15+o*0.85; el.style.filter='blur('+((1-o)*6)+'px)';
-      el.style.transform='translateY('+((1-o)*18)+'px)';
-    });
-    cone.style.transform='scale('+(0.82+p*0.38)+') rotate('+(-10+p*16)+'deg)';
-    blobs.forEach(function(b,i){b.style.transform='translate('+((i%2?-1:1)*p*40)+'px,'+(p*(60+i*30))+'px)'});
-    bits.forEach(function(b){b.style.transform='translateY('+(-p*220*b.dataset.v)+'px) rotate('+(+b.dataset.r+p*180)+'deg)'});
-  }
-  render(0);
-  var hero=$('#hero');
-  function prog(){var r=hero.getBoundingClientRect(),h=hero.offsetHeight-innerHeight;return Math.min(1,Math.max(0,-r.top/Math.max(1,h)))}
-  if(window.gsap&&window.ScrollTrigger&&!reduce){
-    gsap.registerPlugin(ScrollTrigger);
-    ScrollTrigger.create({trigger:'#hero',start:'top top',end:'bottom bottom',scrub:true,invalidateOnRefresh:true,onUpdate:function(self){render(self.progress)}});
-    if(window.Lenis&&!touch){
-      try{var lenis=new Lenis({lerp:0.12});lenis.on('scroll',ScrollTrigger.update);
-        gsap.ticker.add(function(t){lenis.raf(t*1000)});gsap.ticker.lagSmoothing(0);window.__lenis=lenis}catch(e){}
-    }
-  }else{
-    var tick=false;addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(function(){render(prog());tick=false})}},{passive:true});
-  }
-  function goTo(el,off){if(window.__lenis)window.__lenis.scrollTo(el,{offset:off});else el.scrollIntoView({behavior:reduce?'auto':'smooth'})}
-  $('.cta').addEventListener('click',function(e){e.preventDefault();goTo($('#menu'),-10)});
+  function goTo(el,off){var y=el.getBoundingClientRect().top+scrollY+(off||0);scrollTo({top:y,behavior:reduce?'auto':'smooth'})}
 
   fetch(SITE.data).then(function(r){return r.json()}).then(start).catch(function(){
     $('#sections').innerHTML='<p class="empty">Could not load recipes. Check your connection and reload.</p>';
@@ -260,6 +224,6 @@
   }
   $('#openFav').addEventListener('click',function(){stack=[];showFav()});
   $('#openHave').addEventListener('click',function(){stack=[];showHave()});
-  if(location.hash==='#favorites'){goTo($('#menu'),-10);showFav()}
+  if(location.hash==='#favorites')showFav()
   }
 })();

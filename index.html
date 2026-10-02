@@ -8,126 +8,197 @@
 <meta property="og:title" content="Recipes for Ninjas">
 <meta property="og:description" content="Our family recipe book: Ninja Swirl ice cream and Ninja NeverClog juices.">
 <meta property="og:image" content="/img/ice/hero.jpg">
+<meta name="theme-color" content="#fff4e8">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#fff6fa; --card:#ffffff; --ink:#22174a; --muted:#6b5f8f; --line:#f1dcea;
-  --pink:#ff4f9a; --sky:#2ba8ff; --sun:#ffc83d; --mint:#14a77c; --grape:#7a5cff;
-  --pinkt:#ffe1ee; --skyt:#dcf0ff; --sunt:#fff1c7; --mintt:#d4f5e9;
-  --shadow:0 18px 40px rgba(34,23,74,.12);
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#171230; --card:#221b45; --ink:#fbf7ff; --muted:#b9b0dc; --line:#352c63;
-    --pink:#ff79b3; --sky:#62c0ff; --sun:#ffd76a; --mint:#46d6a8; --grape:#a48fff;
-    --pinkt:#3c2040; --skyt:#16304a; --sunt:#3a3214; --mintt:#143a2f;
-    --shadow:0 18px 40px rgba(0,0,0,.4);
-  }
-}
-:root[data-theme="dark"]{
-  --bg:#171230; --card:#221b45; --ink:#fbf7ff; --muted:#b9b0dc; --line:#352c63;
-  --pink:#ff79b3; --sky:#62c0ff; --sun:#ffd76a; --mint:#46d6a8; --grape:#a48fff;
-  --pinkt:#3c2040; --skyt:#16304a; --sunt:#3a3214; --mintt:#143a2f;
-  --shadow:0 18px 40px rgba(0,0,0,.4);
-}
+/* The scene is a lit kitchen, so it stays light in dark mode: the white-backed fruit images blend into it. */
+:root{--ink:#22174a;--muted:#6b5f8f;--pink:#ff4f9a;--mint:#14a77c;--cream:#fff4e8;--peach:#ffe3d1;--counter:#f3e6d6;--edge:#e6d2bd}
 *,*::before,*::after{box-sizing:border-box}
-html,body{margin:0;min-height:100%}
-body{background:var(--bg);color:var(--ink);font-family:"Nunito",system-ui,sans-serif;overflow-x:hidden}
-h1,.name{font-family:"Fredoka","Nunito",system-ui,sans-serif}
-.stage{position:relative;min-height:100vh;min-height:100dvh;display:grid;place-items:center;padding:calc(24px + env(safe-area-inset-top,0px)) 16px calc(24px + env(safe-area-inset-bottom,0px));overflow:hidden}
-.blob{position:absolute;border-radius:50%;filter:blur(2px);animation:drift 14s ease-in-out infinite alternate}
-.b1{width:52vmax;height:52vmax;background:var(--pinkt);left:-18vmax;top:-16vmax}
-.b2{width:44vmax;height:44vmax;background:var(--mintt);right:-16vmax;bottom:-14vmax;animation-delay:-5s}
-.b3{width:24vmax;height:24vmax;background:var(--sunt);right:8vw;top:-6vmax;animation-delay:-9s}
-@keyframes drift{to{transform:translate(4vmax,3vmax) scale(1.06)}}
-.float{position:absolute;font-size:clamp(22px,4vw,34px);opacity:.75;animation:bob 7s ease-in-out infinite;pointer-events:none}
-@keyframes bob{50%{transform:translateY(-18px) rotate(12deg)}}
-.inner{position:relative;z-index:2;width:min(980px,100%);display:grid;gap:18px}
-header{text-align:center}
-.kicker{display:inline-block;background:var(--card);color:var(--pink);font:700 14px "Fredoka",sans-serif;padding:6px 14px;border-radius:999px;box-shadow:var(--shadow)}
-h1{font-size:clamp(40px,10vw,92px);line-height:.95;margin:12px 0 6px;letter-spacing:-.02em;text-wrap:balance}
-h1 span{display:inline-block;animation:pop .7s cubic-bezier(.2,1.4,.4,1) both}
+html,body{margin:0;height:100%}
+body{background:var(--cream);color:var(--ink);font-family:"Nunito",system-ui,sans-serif;overflow:hidden;-webkit-tap-highlight-color:transparent}
+h1,.label b{font-family:"Fredoka","Nunito",system-ui,sans-serif}
+
+.stage{position:relative;height:100vh;height:100dvh;overflow:hidden;isolation:isolate;
+  background:
+    radial-gradient(42vmax 42vmax at 50% 44%,#fff9ef 0,#ffeedd 45%,transparent 70%),
+    radial-gradient(70vmax 50vmax at 0% 0%,#ffe1ec 0,transparent 60%),
+    radial-gradient(70vmax 50vmax at 100% 10%,#dff5e8 0,transparent 60%),
+    var(--cream)}
+.stage{--px:0;--py:0}
+
+/* headline */
+.head{position:absolute;z-index:6;left:0;right:0;top:calc(env(safe-area-inset-top,0px) + 18px);text-align:center;padding:0 16px;pointer-events:none}
+.kicker{display:inline-block;background:#fff;color:var(--pink);font:700 13px "Fredoka",sans-serif;padding:5px 12px;border-radius:999px;box-shadow:0 6px 18px rgba(34,23,74,.08)}
+h1{font-size:clamp(34px,8.6vw,76px);line-height:.95;margin:10px 0 0;letter-spacing:-.02em;text-wrap:balance}
+h1 span{display:inline-block;animation:pop .7s cubic-bezier(.2,1.4,.4,1) backwards}
 h1 span:nth-child(2){animation-delay:.08s;color:var(--pink)}
 h1 span:nth-child(3){animation-delay:.16s;color:var(--mint)}
-@keyframes pop{from{opacity:0;transform:translateY(24px) scale(.95)}}
-.sub{color:var(--muted);font-weight:700;margin:0;font-size:clamp(15px,2.4vw,18px)}
-.choices{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-@media (max-width:640px){.choices{grid-template-columns:1fr;gap:12px}}
-.choice{--a:var(--pink);--t:var(--pinkt);position:relative;display:grid;grid-template-columns:1fr;text-decoration:none;color:var(--ink);background:var(--card);border-radius:28px;padding:18px;box-shadow:var(--shadow);overflow:hidden;animation:rise .8s cubic-bezier(.2,1,.3,1) backwards;transition:transform .2s,box-shadow .2s;transform-style:preserve-3d}
-.choice.juice{--a:var(--mint);--t:var(--mintt);animation-delay:.12s}
-.choice:hover{box-shadow:0 26px 60px rgba(34,23,74,.18)}
-.choice:active{transform:scale(.98)}
-.choice:focus-visible{outline:3px solid var(--sky);outline-offset:4px}
-@keyframes rise{from{opacity:0;transform:translateY(40px)}}
-.pic{position:relative;aspect-ratio:1;width:min(100%,300px);justify-self:center;border-radius:50%;background:var(--t);border:8px solid var(--card);box-shadow:0 16px 40px color-mix(in srgb,var(--a) 30%,transparent);overflow:hidden;animation:spin 9s ease-in-out infinite alternate}
-.juice .pic{animation-delay:-4.5s}
-@keyframes spin{from{transform:rotate(-6deg) scale(.98)}to{transform:rotate(6deg) scale(1.02)}}
-.pic img{width:100%;height:100%;object-fit:cover;display:block}
-.pic .emo{position:absolute;inset:0;display:grid;place-items:center;font-size:96px}
-.meta{text-align:center;margin-top:12px}
-.name{font-size:clamp(28px,5vw,40px);font-weight:700;margin:0;line-height:1}
-.dev{color:var(--muted);font-weight:700;font-size:14px;margin:6px 0 10px}
-.go{display:inline-flex;align-items:center;gap:8px;background:var(--a);color:#fff;font-weight:800;padding:11px 20px;border-radius:999px;transition:transform .2s}
-.choice:hover .go{transform:translateX(4px)}
-.family{text-align:center;color:var(--muted);font-weight:700;font-size:14px;margin:4px 0 0}
-.family b{font-family:"Fredoka",sans-serif;font-weight:600}
-@media (max-width:640px){
-  .choice{grid-template-columns:120px 1fr;align-items:center;gap:14px;padding:14px;text-align:left}
-  .pic{width:120px;border-width:5px}
-  .pic .emo{font-size:56px}
-  .meta{text-align:left;margin:0}
-  .go{padding:9px 16px;font-size:14px}
+@keyframes pop{from{opacity:0;transform:translateY(22px) scale(.95)}}
+
+/* sun disc behind the chef */
+.sun{position:absolute;z-index:1;left:50%;top:44%;width:min(70vw,460px);aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle at 40% 35%,#fff 0,#ffe6c9 55%,#ffd2b0 100%);
+  translate:calc(-50% + var(--px)*-8px) calc(-50% + var(--py)*-6px);box-shadow:0 30px 80px rgba(255,150,90,.25)}
+
+/* chef */
+.chef{position:absolute;z-index:4;left:50%;top:46%;height:min(44vh,440px);width:auto;
+  translate:calc(-50% + var(--px)*14px) calc(-50% + var(--py)*8px);
+  transform-origin:50% 90%;animation:chefIn .9s cubic-bezier(.2,1.2,.4,1) .15s backwards, bob 4.8s ease-in-out 1.1s infinite;
+  filter:drop-shadow(0 24px 24px rgba(34,23,74,.18));transition:rotate .4s cubic-bezier(.3,1.4,.5,1);rotate:var(--lean,0deg)}
+div.chef{display:grid;place-items:center;font-size:min(22vh,200px);height:auto}
+@keyframes chefIn{from{opacity:0;transform:translateY(60px) scale(.85)}}
+@keyframes bob{50%{transform:translateY(-12px)}}
+
+/* floating fruit: depth --d drives size, blur and how much it follows the pointer */
+.fl{position:absolute;z-index:3;width:calc(var(--s,90px)*var(--d));height:auto;mix-blend-mode:multiply;pointer-events:none;
+  left:var(--x);top:var(--y);
+  translate:calc(-50% + var(--px)*var(--d)*26px) calc(-50% + var(--py)*var(--d)*18px);
+  animation:flIn 1s cubic-bezier(.2,1,.3,1) var(--dl,0s) backwards, float var(--t,6s) ease-in-out calc(var(--dl,0s) + 1s) infinite alternate;
+  transform:rotate(var(--r,0deg))}
+.fl.far{z-index:2;filter:blur(1.5px);opacity:.85}
+.fl.near{z-index:5;filter:blur(.6px)}
+div.fl{display:grid;place-items:center;font-size:calc(var(--s,90px)*var(--d)*.7);mix-blend-mode:normal}
+@keyframes flIn{from{opacity:0;transform:translate(calc((50vw - var(--x))*-.6),40vh) rotate(-120deg) scale(.4)}}
+@keyframes float{
+  from{transform:translate3d(0,0,0) rotate(var(--r,0deg))}
+  to{transform:translate3d(var(--fx,10px),var(--fy,-22px),0) rotate(calc(var(--r,0deg) + var(--rr,18deg)))}}
+
+/* counter + machines */
+.stage{--ch:calc(20vh + env(safe-area-inset-bottom,0px))}
+.counter{position:absolute;left:-5%;right:-5%;bottom:0;height:var(--ch);
+  background:linear-gradient(#fbf3ea,var(--counter));border-top:3px solid #fff;box-shadow:0 -10px 40px rgba(120,80,40,.08), inset 0 3px 0 var(--edge)}
+/* no z-index/transform on these wrappers: they would isolate the multiply blend and show white boxes */
+.machines{position:absolute;left:0;right:0;bottom:calc(var(--ch) - 2.5vh);display:flex;justify-content:space-between;align-items:flex-end;padding:0 max(4vw,12px);pointer-events:none}
+.machine{pointer-events:auto;position:relative;display:flex;flex-direction:column;align-items:center;text-decoration:none;color:var(--ink);width:min(44vw,300px);outline:none}
+.machine .m,.machine .label{animation:rise .9s cubic-bezier(.2,1,.3,1) .35s backwards}
+.machine.juice .m,.machine.juice .label{animation-delay:.45s}
+@keyframes rise{from{opacity:0;transform:translateY(70px)}}
+.machine .m{width:100%;height:auto;margin-bottom:-7%;/* renders keep ~7% white under the base */mix-blend-mode:multiply;transform-origin:50% 100%;transition:transform .25s cubic-bezier(.3,1.5,.5,1)}
+.machine div.m{display:grid;place-items:center;font-size:min(22vw,150px);mix-blend-mode:normal;aspect-ratio:1}
+.machine:hover .m,.machine:focus-visible .m{transform:translateY(-6px) scale(1.04)}
+.machine.go .m{animation:wobble .5s ease-in-out .55s 2}
+@keyframes wobble{25%{transform:rotate(-4deg) scale(1.03)}75%{transform:rotate(4deg) scale(1.03)}}
+.label{position:absolute;top:calc(100% + 4vh);display:flex;flex-direction:column;align-items:center;gap:2px;background:#fff;border-radius:18px;padding:8px 14px;box-shadow:0 10px 24px rgba(34,23,74,.12);transition:transform .2s}
+.label b{font-size:clamp(17px,4.6vw,24px);font-weight:700;line-height:1}
+.label small{font-size:12px;font-weight:800;color:var(--muted);white-space:nowrap}
+.ice .label b{color:var(--pink)}.juice .label b{color:var(--mint)}
+.machine:focus-visible .label{outline:3px solid #2ba8ff;outline-offset:3px}
+.machine:active .label{transform:scale(.96)}
+.family{position:absolute;z-index:6;left:0;right:0;bottom:calc(env(safe-area-inset-bottom,0px) + 8px);margin:0;text-align:center;font-size:12px;font-weight:800;color:var(--muted)}
+
+@media (min-width:900px){
+  .chef{top:50%;height:min(52vh,520px)}
+  .sun{top:50%}
+  .machines{padding:0 6vw}
+  .machine{width:min(26vw,330px)}
 }
+@media (max-height:640px){.chef{height:36vh}.machine{width:min(38vw,240px)}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 <script>
 document.addEventListener('error',function(e){
   var im=e.target; if(!im||im.tagName!=='IMG')return;
   if(im.dataset.cdn&&im.src.indexOf(im.dataset.cdn)<0){im.src=im.dataset.cdn;return}
-  if(im.dataset.emo){var d=document.createElement('div');d.className='emo';d.textContent=im.dataset.emo;im.replaceWith(d)}
+  if(im.dataset.emo){var d=document.createElement('div');d.className=im.className;d.id=im.id;d.style.cssText=im.style.cssText;for(var k in im.dataset)d.dataset[k]=im.dataset[k];d.textContent=im.dataset.emo;d.setAttribute('aria-hidden','true');im.replaceWith(d)}
 },true);
 </script>
 </head>
 <body>
-<main class="stage">
-  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
-  <span class="float" style="left:8%;top:18%" aria-hidden="true">🍓</span>
-  <span class="float" style="right:10%;top:12%;animation-delay:-2s" aria-hidden="true">🍋</span>
-  <span class="float" style="left:12%;bottom:12%;animation-delay:-4s" aria-hidden="true">🥕</span>
-  <span class="float" style="right:7%;bottom:20%;animation-delay:-1s" aria-hidden="true">🍦</span>
-  <div class="inner">
-    <header>
-      <span class="kicker">Recipes for Ninjas</span>
-      <h1><span>What</span> <span>are we</span> <span>making?</span></h1>
-      <p class="sub">Pick a machine.</p>
-    </header>
-    <div class="choices">
-      <a class="choice ice" href="/ice-cream/">
-        <div class="pic"><img src="/img/ice/hero.jpg" alt="A soft-serve swirl in a cone" data-emo="🍦"></div>
-        <div class="meta"><p class="name">Ice cream</p><p class="dev">Ninja Swirl by CREAMi · 78 recipes</p><span class="go">Let's swirl →</span></div>
-      </a>
-      <a class="choice juice" href="/juice/">
-        <div class="pic"><img src="/img/juice/hero.jpg" data-cdn="https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012255_e8a3bddf-7c69-44e3-9fca-bfddf01c5929_min.webp" alt="Three glasses of fresh juice" data-emo="🧃"></div>
-        <div class="meta"><p class="name">Juice</p><p class="dev">Ninja NeverClog · 42 recipes</p><span class="go">Let's press →</span></div>
-      </a>
-    </div>
-    <p class="family">Favorites saved for <b>Julian</b>, <b>Charlyne</b>, <b>Leanne</b> &amp; <b>Noah</b></p>
+<main class="stage" id="stage">
+  <div class="head">
+    <span class="kicker">Recipes for Ninjas</span>
+    <h1><span>What</span> <span>are we</span> <span>making?</span></h1>
   </div>
+  <div class="sun" aria-hidden="true"></div>
+  <div id="fruit" aria-hidden="true"></div>
+  <img class="chef" id="chef" src="/img/home/ninja.webp" data-emo="🥷" alt="Our ninja chef, waving">
+  <div class="counter" aria-hidden="true"></div>
+  <nav class="machines" aria-label="Choose a recipe book">
+    <a class="machine ice" href="/ice-cream/" data-k="ice">
+      <img class="m" src="/img/home/icecream-machine.webp" data-emo="🍦" alt="">
+      <span class="label"><b>Ice cream</b><small>Ninja Swirl · 78 recipes</small></span>
+    </a>
+    <a class="machine juice" href="/juice/" data-k="juice">
+      <img class="m" src="/img/home/juicer.webp" data-emo="🧃" alt="">
+      <span class="label"><b>Juice</b><small>NeverClog · 42 recipes</small></span>
+    </a>
+  </nav>
+  <p class="family">Favorites for Julian, Charlyne, Leanne &amp; Noah</p>
 </main>
 <script>
-/* Gentle tilt toward the pointer on desktop. */
 (function(){
-  if(matchMedia('(hover: none), (prefers-reduced-motion: reduce)').matches)return;
-  document.querySelectorAll('.choice').forEach(function(c){
-    c.addEventListener('pointermove',function(e){
-      var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
-      c.style.transform='perspective(900px) rotateY('+(x*8)+'deg) rotateX('+(-y*8)+'deg) translateY(-4px)';
-    });
-    c.addEventListener('pointerleave',function(){c.style.transform=''});
+  var CDN='https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_';
+  var MIN={ninja:'015047_1ecb3764-861c-4e1f-a86f-2d8bb558b94c_min.png','icecream-machine':'015020_780df443-14f6-4377-a1aa-fb1c7202570e_min.webp',
+    juicer:'015020_1a76da76-9b5d-4983-a5e8-fb78b118ec18_min.webp',strawberry:'015021_406baf4f-e3f5-4111-a907-bde18e43e5fd_min.webp',
+    lemon:'015020_60589b7f-d62c-4bec-b9a0-fceb54bc1b4e_min.webp',orange:'015020_a4306b92-53a8-4abf-a3ac-5be8cdae8359_min.webp',
+    kiwi:'015020_f0aa6b1f-4fb9-47a6-9627-3a65b335034a_min.webp',apple:'015020_7a35bfb8-07de-48be-bdd2-8f5bb0d432d8_min.webp',
+    carrot:'015020_1a166a5f-49c9-44eb-8fe4-5c75acb494fa_min.webp',ice:'015020_3c26ce78-5d5d-42bf-bbce-85d1f67a5a03_min.webp',
+    mint:'015020_bea762be-58df-4540-9e40-fc077a8ae3a8_min.webp',blueberry:'015020_ecb8f550-8e33-40e9-8baf-d9cded475288_min.webp',
+    banana:'015024_df404788-d963-4b7e-bd87-773b653ef25c_min.webp'};
+  var EMO={strawberry:'🍓',lemon:'🍋',orange:'🍊',kiwi:'🥝',apple:'🍏',carrot:'🥕',ice:'🧊',mint:'🌿',blueberry:'🫐',banana:'🍌'};
+  document.querySelectorAll('img[src^="/img/home/"]').forEach(function(im){var k=im.src.split('/').pop().replace('.webp','');if(MIN[k])im.dataset.cdn=CDN+MIN[k]});
+
+  /* name, x, y, depth, which machine it flies into. Depth < .6 = far (small, blurred), > 1.1 = near. */
+  var PIECES=[
+    ['strawberry','14%','30%',1.0,'ice'],['banana','84%','27%',.9,'ice'],['blueberry','24%','55%',.7,'ice'],['ice','70%','58%',.75,'ice'],
+    ['mint','8%','62%',1.25,'ice'],['orange','88%','46%',1.2,'juice'],['carrot','18%','42%',.55,'juice'],['apple','78%','36%',.5,'juice'],
+    ['kiwi','32%','24%',.45,'juice'],['lemon','64%','22%',.6,'juice'],['strawberry','92%','64%',.4,'ice'],['ice','40%','64%',.5,'juice']];
+  var box=document.getElementById('fruit');
+  PIECES.forEach(function(p,i){
+    var im=document.createElement('img'); im.src='/img/home/'+p[0]+'.webp'; im.dataset.cdn=CDN+MIN[p[0]]; im.dataset.emo=EMO[p[0]]; im.alt='';
+    im.className='fl'+(p[3]<.6?' far':p[3]>1.1?' near':''); im.dataset.k=p[4];
+    var s=im.style; s.setProperty('--x',p[1]); s.setProperty('--y',p[2]); s.setProperty('--d',p[3]);
+    s.setProperty('--dl',(.25+i*.06).toFixed(2)+'s'); s.setProperty('--t',(5+(i%4)*1.3)+'s'); s.setProperty('--r',((i*47)%60-30)+'deg');
+    s.setProperty('--fx',((i%3)-1)*14+'px'); s.setProperty('--fy',-(14+(i%4)*7)+'px'); s.setProperty('--rr',(i%2?1:-1)*(10+i*2)+'deg');
+    box.appendChild(im);
   });
+
+  var stage=document.getElementById('stage'), chef=document.getElementById('chef');
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* pointer depth (desktop) */
+  if(!reduce&&matchMedia('(hover: hover)').matches){
+    var raf=0;
+    stage.addEventListener('pointermove',function(e){
+      if(raf)return; raf=requestAnimationFrame(function(){raf=0;
+        stage.style.setProperty('--px',(e.clientX/innerWidth-.5)*2);
+        stage.style.setProperty('--py',(e.clientY/innerHeight-.5)*2);
+      });
+    });
+  }
+  /* the chef leans toward the machine you're about to pick */
+  document.querySelectorAll('.machine').forEach(function(a){
+    a.addEventListener('pointerenter',function(){(document.getElementById('chef')||chef).style.setProperty('--lean',a.dataset.k==='ice'?'-7deg':'7deg')});
+    a.addEventListener('pointerleave',function(){(document.getElementById('chef')||chef).style.setProperty('--lean','0deg')});
+    a.addEventListener('click',function(e){
+      if(reduce||e.metaKey||e.ctrlKey||e.shiftKey||!Element.prototype.animate)return;
+      e.preventDefault(); fly(a);
+    });
+  });
+
+  /* Signature move: the machine's ingredients arc into it, it wobbles, then the recipes open. */
+  var busy=false;
+  function fly(a){
+    if(busy)return; busy=true; a.classList.add('go');
+    var m=a.querySelector('.m').getBoundingClientRect(), tx=m.left+m.width*.5, ty=m.top+m.height*.22;
+    var els=[].slice.call(document.querySelectorAll('#fruit .fl')), mine=els.filter(function(el){return el.dataset.k===a.dataset.k});
+    mine.forEach(function(el,i){
+      var r=el.getBoundingClientRect(), cx=r.left+r.width/2, cy=r.top+r.height/2;
+      var dx=tx-cx, dy=ty-cy, cur=getComputedStyle(el).transform; if(cur==='none')cur='';
+      el.style.animation='none'; el.style.transform=cur; el.style.zIndex=7;
+      el.animate([
+        {transform:cur+' translate(0,0) scale(1)'},
+        {transform:'translate('+dx*.5+'px,'+(Math.min(dy,0)*.5-90)+'px) rotate(200deg) scale(.9)',offset:.5},
+        {transform:'translate('+dx+'px,'+dy+'px) rotate(420deg) scale(.15)',opacity:.2}
+      ],{duration:650,delay:i*70,easing:'cubic-bezier(.45,0,.55,1)',fill:'forwards'});
+    });
+    els.filter(function(el){return mine.indexOf(el)<0}).forEach(function(el){el.animate([{opacity:getComputedStyle(el).opacity},{opacity:.25}],{duration:400,fill:'forwards'})});
+    setTimeout(function(){location.href=a.href},650+mine.length*70+420);
+  }
+  /* coming back with the browser's back button: reset the scene */
+  addEventListener('pageshow',function(e){if(e.persisted)location.reload()});
 })();
 </script>
 </body>

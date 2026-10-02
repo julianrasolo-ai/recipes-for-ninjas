@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Swirl Club · Ninja Swirl recipes</title>
+<title>Ice cream · Recipes for Ninjas</title>
 <meta name="description" content="78 easy family recipes for the Ninja Swirl by CREAMi: fruit, healthy, protein and real soft serve.">
-<meta property="og:title" content="Swirl Club · Ninja Swirl recipes">
+<meta property="og:title" content="Ice cream · Recipes for Ninjas">
 <meta property="og:description" content="78 easy family recipes for the Ninja Swirl by CREAMi: fruit, healthy, protein and real soft serve.">
-<meta property="og:image" content="/img/ice/hero.jpg">
+<meta property="og:image" content="/img/home/og.jpg">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,28 +22,16 @@ document.addEventListener('error',function(e){
 },true);
 </script>
 </head>
-<body>
+<body data-site="ice">
 <a class="skip" href="#menu">Skip to recipes</a>
 
-<section class="hero" id="hero" aria-label="Swirl Club">
-  <div class="hero-pin">
-    <nav class="topbar" aria-label="Site"><a href="/">← Home</a><a href="/juice/">🧃 Juice</a></nav>
-    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
-    <div id="sprinkles" aria-hidden="true"></div>
-    <div class="hero-inner">
-      <div class="txt">
-        <span class="brand">Swirl Club</span>
-        <h1 id="h1"><span class="word w1">Swirl</span> <span class="word w2">it.</span></h1>
-        <p class="lede">78 easy recipes for your Ninja Swirl. Fruit, healthy, protein and real soft serve.</p>
-        <a class="cta" href="#menu">See the menu ↓</a>
-      </div>
-      <div class="cone" id="cone"><img src="/img/ice/hero.jpg" alt="A tall vanilla soft-serve swirl in a cone"></div>
-    </div>
-    <div class="scrollcue">Scroll</div>
-  </div>
-</section>
+<header class="top">
+  <a class="ibtn home" href="/" aria-label="Home">←</a>
+  <div class="ttl"><p class="kick">Ninja Swirl by CREAMi · 78 recipes</p><h1>🍦 Ice cream</h1></div>
+  <a class="switch" href="/juice/">🧃 Juice</a>
+</header>
 
-<main class="menu" id="menu">
+<main class="menu" id="menu" tabindex="-1">
   <div class="wrap">
     <div class="tools">
       <input class="search" id="q" type="search" placeholder="Search mango, chocolate, protein…" aria-label="Search recipes" autocomplete="off">
@@ -66,9 +54,6 @@ document.addEventListener('error',function(e){
 </dialog>
 
 <script>window.SITE={"key": "ice", "data": "/data/ice.json", "pantry": "Sugar, vanilla extract, salt", "haveNote": "Tap everything in your kitchen. Sugar, vanilla and salt are assumed.", "focus": [["all", "Anything"], ["healthy", "🌿 Healthy"], ["fruit", "🍓 Fruit"]], "haveColor": "healthy", "favColor": "fruit"};</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
 <script src="/assets/likes.js"></script>
 <script src="/assets/app.js"></script>
 </body>

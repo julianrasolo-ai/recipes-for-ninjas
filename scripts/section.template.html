@@ -7,7 +7,7 @@
 <meta name="description" content="{{desc}}">
 <meta property="og:title" content="{{title}}">
 <meta property="og:description" content="{{desc}}">
-<meta property="og:image" content="{{hero}}">
+<meta property="og:image" content="/img/home/og.jpg">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,28 +22,16 @@ document.addEventListener('error',function(e){
 },true);
 </script>
 </head>
-<body>
+<body data-site="{{key}}">
 <a class="skip" href="#menu">Skip to recipes</a>
 
-<section class="hero" id="hero" aria-label="{{brand}}">
-  <div class="hero-pin">
-    <nav class="topbar" aria-label="Site"><a href="/">← Home</a><a href="{{other}}">{{otherLabel}}</a></nav>
-    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
-    <div id="sprinkles" aria-hidden="true"></div>
-    <div class="hero-inner">
-      <div class="txt">
-        <span class="brand">{{brand}}</span>
-        <h1 id="h1"><span class="word w1">{{w1}}</span> <span class="word w2">{{w2}}</span></h1>
-        <p class="lede">{{lede}}</p>
-        <a class="cta" href="#menu">See the menu ↓</a>
-      </div>
-      <div class="cone" id="cone"><img src="{{hero}}"{{cdnAttr}} alt="{{heroAlt}}"></div>
-    </div>
-    <div class="scrollcue">Scroll</div>
-  </div>
-</section>
+<header class="top">
+  <a class="ibtn home" href="/" aria-label="Home">←</a>
+  <div class="ttl"><p class="kick">{{device}}</p><h1>{{h1}}</h1></div>
+  <a class="switch" href="{{other}}">{{otherLabel}}</a>
+</header>
 
-<main class="menu" id="menu">
+<main class="menu" id="menu" tabindex="-1">
   <div class="wrap">
     <div class="tools">
       <input class="search" id="q" type="search" placeholder="{{search}}" aria-label="Search recipes" autocomplete="off">
@@ -66,9 +54,6 @@ document.addEventListener('error',function(e){
 </dialog>
 
 <script>window.SITE={{site}};</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
 <script src="/assets/likes.js"></script>
 <script src="/assets/app.js"></script>
 </body>

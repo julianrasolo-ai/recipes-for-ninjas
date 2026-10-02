@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Press Club · Ninja NeverClog juices</title>
+<title>Juice · Recipes for Ninjas</title>
 <meta name="description" content="42 cold-pressed juices for the Ninja NeverClog juicer, searchable by ingredient and by benefit.">
-<meta property="og:title" content="Press Club · Ninja NeverClog juices">
+<meta property="og:title" content="Juice · Recipes for Ninjas">
 <meta property="og:description" content="42 cold-pressed juices for the Ninja NeverClog juicer, searchable by ingredient and by benefit.">
-<meta property="og:image" content="/img/juice/hero.jpg">
+<meta property="og:image" content="/img/home/og.jpg">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,28 +22,16 @@ document.addEventListener('error',function(e){
 },true);
 </script>
 </head>
-<body>
+<body data-site="juice">
 <a class="skip" href="#menu">Skip to recipes</a>
 
-<section class="hero" id="hero" aria-label="Press Club">
-  <div class="hero-pin">
-    <nav class="topbar" aria-label="Site"><a href="/">← Home</a><a href="/ice-cream/">🍦 Ice cream</a></nav>
-    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
-    <div id="sprinkles" aria-hidden="true"></div>
-    <div class="hero-inner">
-      <div class="txt">
-        <span class="brand">Press Club</span>
-        <h1 id="h1"><span class="word w1">Press</span> <span class="word w2">it.</span></h1>
-        <p class="lede">42 cold-pressed juices for your Ninja NeverClog. Greens, citrus, shots and mocktails.</p>
-        <a class="cta" href="#menu">See the menu ↓</a>
-      </div>
-      <div class="cone" id="cone"><img src="/img/juice/hero.jpg" data-cdn="https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012255_e8a3bddf-7c69-44e3-9fca-bfddf01c5929_min.webp" alt="Three glasses of fresh green, orange and pink juice"></div>
-    </div>
-    <div class="scrollcue">Scroll</div>
-  </div>
-</section>
+<header class="top">
+  <a class="ibtn home" href="/" aria-label="Home">←</a>
+  <div class="ttl"><p class="kick">Ninja NeverClog · 42 recipes</p><h1>🧃 Juice</h1></div>
+  <a class="switch" href="/ice-cream/">🍦 Ice cream</a>
+</header>
 
-<main class="menu" id="menu">
+<main class="menu" id="menu" tabindex="-1">
   <div class="wrap">
     <div class="tools">
       <input class="search" id="q" type="search" placeholder="Search apple, ginger, energy…" aria-label="Search recipes" autocomplete="off">
@@ -66,9 +54,6 @@ document.addEventListener('error',function(e){
 </dialog>
 
 <script>window.SITE={"key": "juice", "data": "/data/juice.json", "pantry": "", "haveNote": "Tap everything in your fridge and fruit bowl.", "focus": [["all", "Anything"], ["healthy", "🌿 Low sugar"], ["kids", "🧒 Kids"]], "haveColor": "green", "favColor": "fruit"};</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
 <script src="/assets/likes.js"></script>
 <script src="/assets/app.js"></script>
 </body>
