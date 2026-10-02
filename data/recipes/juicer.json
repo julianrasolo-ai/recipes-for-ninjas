@@ -2235,6 +2235,336 @@
    "video": null,
    "members": false,
    "healthier": "Use plain sparkling water, never tonic or soda, and fill the glass with more ice than juice."
+  },
+  {
+   "id": "j43",
+   "cat": "green",
+   "title": "Healthy start",
+   "emoji": "🥬",
+   "blurb": "A veggie-heavy morning juice with just enough apple.",
+   "ing": [
+    "2 green apples",
+    "2 celery stalks",
+    "1 cucumber",
+    "1 cup spinach",
+    "½ lemon, peeled",
+    "1 inch ginger"
+   ],
+   "steps": [
+    "Fit the black filter. Wash everything and cut to fit the feed chute.",
+    "Juice the spinach between the apple pieces so it all gets pressed.",
+    "Stir and drink right away."
+   ],
+   "tags": [
+    "apple",
+    "celery",
+    "cuke",
+    "spinach",
+    "lemon",
+    "ginger"
+   ],
+   "ben": [
+    "energy",
+    "digest",
+    "hydrate"
+   ],
+   "healthy": true,
+   "prep": "10 min",
+   "makes": "2 glasses",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "img": "/img/juice/j43.jpg",
+   "slug": "healthy-start",
+   "gear": [
+    "juicer-brush"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Swap one apple for another cucumber to cut the sugar.",
+   "filter": "black",
+   "chips": [
+    "Prep 10 min",
+    "2 glasses"
+   ]
+  },
+  {
+   "id": "j44",
+   "cat": "green",
+   "title": "Cucumber apple mint",
+   "emoji": "🥒",
+   "blurb": "Light and cooling. Tastes like a spa day.",
+   "ing": [
+    "2 cucumbers",
+    "2 green apples",
+    "1 small handful mint",
+    "½ lime, peeled"
+   ],
+   "steps": [
+    "Fit the black filter. Cut cucumbers and apples to fit.",
+    "Juice the mint between apple pieces.",
+    "Pour over ice."
+   ],
+   "tags": [
+    "cuke",
+    "apple",
+    "mint",
+    "lime"
+   ],
+   "ben": [
+    "hydrate",
+    "skin"
+   ],
+   "healthy": true,
+   "prep": "5 min",
+   "makes": "2 glasses",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "img": "/img/juice/j44.jpg",
+   "slug": "cucumber-apple-mint",
+   "gear": [
+    "juicer-brush"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Use 3 cucumbers and 1 apple.",
+   "filter": "black",
+   "chips": [
+    "Prep 5 min",
+    "2 glasses"
+   ]
+  },
+  {
+   "id": "j45",
+   "cat": "citrus",
+   "title": "Orange pineapple",
+   "emoji": "🍍",
+   "blurb": "Sweet, sunny and pulpy. Breakfast in a glass.",
+   "ing": [
+    "3 oranges, peeled",
+    "2 cups pineapple chunks"
+   ],
+   "steps": [
+    "Fit the orange filter for a pulpier juice.",
+    "Juice the oranges and pineapple, alternating.",
+    "Stir and serve cold."
+   ],
+   "tags": [
+    "orange",
+    "pine"
+   ],
+   "ben": [
+    "immune",
+    "digest"
+   ],
+   "healthy": false,
+   "prep": "5 min",
+   "makes": "2 glasses",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Orange filter · lots of pulp",
+   "img": "/img/juice/j45.jpg",
+   "slug": "orange-pineapple",
+   "gear": [
+    "juicer-brush"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Top half the glass with sparkling water.",
+   "filter": "orange",
+   "chips": [
+    "Prep 5 min",
+    "2 glasses"
+   ]
+  },
+  {
+   "id": "j46",
+   "cat": "fruit",
+   "title": "Apple mango",
+   "emoji": "🥭",
+   "blurb": "Thick, tropical and kid friendly.",
+   "ing": [
+    "3 apples",
+    "1 ripe mango, peeled and pitted"
+   ],
+   "steps": [
+    "Fit the orange filter. Cut apples to fit.",
+    "Juice the mango between apple pieces; soft fruit presses best that way.",
+    "Stir well."
+   ],
+   "tags": [
+    "apple",
+    "mango"
+   ],
+   "ben": [
+    "eyes",
+    "immune"
+   ],
+   "healthy": false,
+   "prep": "5 min",
+   "makes": "2 glasses",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Orange filter · lots of pulp",
+   "img": "/img/juice/j46.jpg",
+   "slug": "apple-mango",
+   "gear": [
+    "juicer-brush"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Add a carrot or two and use one less apple.",
+   "filter": "orange",
+   "chips": [
+    "Prep 5 min",
+    "2 glasses"
+   ]
+  },
+  {
+   "id": "j47",
+   "cat": "fruit",
+   "title": "Blackberry apple pear",
+   "emoji": "🫐",
+   "blurb": "Deep purple, gently sweet, very pretty.",
+   "ing": [
+    "1 cup blackberries",
+    "2 apples",
+    "1 pear"
+   ],
+   "steps": [
+    "Fit the black filter.",
+    "Juice the berries between apple and pear pieces.",
+    "Serve over ice."
+   ],
+   "tags": [
+    "berry",
+    "apple",
+    "pear"
+   ],
+   "ben": [
+    "skin",
+    "immune"
+   ],
+   "healthy": false,
+   "prep": "5 min",
+   "makes": "2 glasses",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "img": "/img/juice/j47.jpg",
+   "slug": "blackberry-apple-pear",
+   "gear": [
+    "juicer-brush"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Use a cucumber in place of the pear.",
+   "filter": "black",
+   "chips": [
+    "Prep 5 min",
+    "2 glasses"
+   ]
+  },
+  {
+   "id": "j48",
+   "cat": "fizz",
+   "title": "Pear raspberry ginger sparkler",
+   "emoji": "🍐",
+   "blurb": "Fizzy, pink and a little spicy. Great for parties.",
+   "ing": [
+    "2 pears",
+    "1 cup raspberries",
+    "1 inch ginger",
+    "Sparkling water"
+   ],
+   "steps": [
+    "Fit the black filter. Juice pears, raspberries and ginger.",
+    "Fill glasses halfway with juice.",
+    "Top with sparkling water and ice."
+   ],
+   "tags": [
+    "pear",
+    "berry",
+    "ginger",
+    "fizz"
+   ],
+   "ben": [
+    "digest"
+   ],
+   "healthy": false,
+   "prep": "5 min",
+   "makes": "4 glasses",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "img": "/img/juice/j48.jpg",
+   "slug": "pear-raspberry-ginger-sparkler",
+   "gear": [
+    "juicer-brush"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Make it one-third juice, two-thirds sparkling water.",
+   "filter": "black",
+   "chips": [
+    "Prep 5 min",
+    "4 glasses"
+   ]
+  },
+  {
+   "id": "j49",
+   "cat": "root",
+   "title": "Carrot zinger",
+   "emoji": "🥕",
+   "blurb": "Carrot, orange and a big hit of ginger.",
+   "ing": [
+    "6 carrots",
+    "1 orange, peeled",
+    "1½ inch ginger",
+    "½ lemon, peeled"
+   ],
+   "steps": [
+    "Fit the black filter. Trim the carrots.",
+    "Juice everything, ginger in the middle.",
+    "Stir and drink fresh."
+   ],
+   "tags": [
+    "carrot",
+    "orange",
+    "ginger",
+    "lemon"
+   ],
+   "ben": [
+    "eyes",
+    "immune"
+   ],
+   "healthy": true,
+   "prep": "5 min",
+   "makes": "2 glasses",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Black filter · less pulp",
+   "img": "/img/juice/j49.jpg",
+   "slug": "carrot-zinger",
+   "gear": [
+    "juicer-brush"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Already a good pick. Drink it with a meal so it's more filling.",
+   "filter": "black",
+   "chips": [
+    "Prep 5 min",
+    "2 glasses"
+   ]
   }
  ]
 }

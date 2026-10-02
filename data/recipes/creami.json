@@ -4822,6 +4822,429 @@
    "members": false,
    "ben": [],
    "healthier": "Start with a light or no-sugar-added ice cream. Use half the mix-ins and sprinkle them on top so a little goes further."
+  },
+  {
+   "id": "r79",
+   "cat": "rich",
+   "title": "Death by chocolate ice cream",
+   "emoji": "🍫",
+   "blurb": "Chocolate base, chocolate chunks, chocolate sauce. You were warned.",
+   "ing": [
+    "1 cup whole milk",
+    "¾ cup heavy cream",
+    "⅓ cup sugar",
+    "3 tbsp cocoa powder",
+    "1 tbsp cream cheese, soft",
+    "¼ cup chopped chocolate (mix-in)"
+   ],
+   "steps": [
+    "Whisk the cream cheese, sugar and cocoa until smooth.",
+    "Whisk in the milk and cream. Pour into the pint.",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then Ice Cream. Make a hole, add the chopped chocolate, then Mix-In.",
+    "Drizzle with chocolate sauce."
+   ],
+   "tags": [
+    "milk",
+    "cream",
+    "cocoa",
+    "choc",
+    "ccheese"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "10 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Ice Cream + Mix-in",
+   "img": "/img/ice/r79.jpg",
+   "slug": "death-by-chocolate-ice-cream",
+   "gear": [
+    "creami-pints",
+    "creami-mixin-tool"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Use whole milk instead of cream and skip the sauce.",
+   "spin": "2 min",
+   "freeze": "24 hours",
+   "cook": "2 min",
+   "wait": "24 hours",
+   "dfree": false,
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "4 servings"
+   ]
+  },
+  {
+   "id": "r80",
+   "cat": "rich",
+   "title": "Vanilla bean gelato",
+   "emoji": "🍨",
+   "blurb": "Dense, silky Italian-style gelato with real vanilla.",
+   "ing": [
+    "1 cup whole milk",
+    "⅓ cup heavy cream",
+    "3 egg yolks",
+    "⅓ cup sugar",
+    "1 vanilla bean, scraped (or 2 tsp paste)"
+   ],
+   "steps": [
+    "Whisk yolks and sugar. Heat milk, cream and vanilla until steaming.",
+    "Slowly whisk the hot milk into the yolks, then cook gently until it coats a spoon.",
+    "Cool completely, then pour into the pint.",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then Gelato."
+   ],
+   "tags": [
+    "milk",
+    "cream",
+    "egg"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "15 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Gelato",
+   "img": "/img/ice/r80.jpg",
+   "slug": "vanilla-bean-gelato",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Use 2 yolks and swap half the cream for milk.",
+   "spin": "2 min",
+   "freeze": "24 hours",
+   "cook": "2 min",
+   "wait": "24 hours",
+   "dfree": false,
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 15 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "4 servings"
+   ]
+  },
+  {
+   "id": "r81",
+   "cat": "fruit",
+   "title": "Pineapple dole whip",
+   "emoji": "🍍",
+   "blurb": "The theme-park favorite. Tangy, creamy, dairy-free.",
+   "ing": [
+    "1 can (20 oz) pineapple chunks in juice",
+    "¼ cup canned coconut milk",
+    "1 tbsp lime juice"
+   ],
+   "steps": [
+    "Blend everything until smooth, or pour straight into the pint.",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then Sorbet. Re-spin once if crumbly.",
+    "Pipe into cups for the swirl."
+   ],
+   "tags": [
+    "pine",
+    "coco",
+    "lemon"
+   ],
+   "ben": [],
+   "healthy": true,
+   "prep": "5 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Sorbet",
+   "img": "/img/ice/r81.jpg",
+   "slug": "pineapple-dole-whip",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Use light coconut milk.",
+   "spin": "2 min",
+   "freeze": "24 hours",
+   "cook": "2 min",
+   "wait": "24 hours",
+   "dfree": true,
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "4 servings"
+   ],
+   "flags": [
+    "dairy-free"
+   ]
+  },
+  {
+   "id": "r82",
+   "cat": "fruit",
+   "title": "Mango sorbet",
+   "emoji": "🥭",
+   "blurb": "Two ingredients, bright orange, pure mango.",
+   "ing": [
+    "3 cups frozen or fresh mango",
+    "½ cup water or orange juice",
+    "1–2 tbsp honey (optional)"
+   ],
+   "steps": [
+    "Blend the mango with the liquid until smooth.",
+    "Pour into the pint. Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then Sorbet."
+   ],
+   "tags": [
+    "mango",
+    "sweet"
+   ],
+   "ben": [],
+   "healthy": true,
+   "prep": "5 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Sorbet",
+   "img": "/img/ice/r82.jpg",
+   "slug": "mango-sorbet",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Skip the honey if the mango is ripe.",
+   "spin": "2 min",
+   "freeze": "24 hours",
+   "cook": "2 min",
+   "wait": "24 hours",
+   "dfree": true,
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "4 servings"
+   ],
+   "flags": [
+    "dairy-free"
+   ]
+  },
+  {
+   "id": "r83",
+   "cat": "fruit",
+   "title": "Lemon Italian ice",
+   "emoji": "🍋",
+   "blurb": "Fluffy, icy and super tart. Summer street-cart style.",
+   "ing": [
+    "1½ cups water",
+    "½ cup sugar",
+    "½ cup fresh lemon juice",
+    "Zest of 1 lemon"
+   ],
+   "steps": [
+    "Stir sugar into warm water until dissolved. Cool.",
+    "Add lemon juice and zest. Pour into the pint.",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then Lite Ice Cream for a fluffy, icy texture."
+   ],
+   "tags": [
+    "lemon",
+    "sweet"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "10 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Lite Ice Cream",
+   "img": "/img/ice/r83.jpg",
+   "slug": "lemon-italian-ice",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Use ¼ cup sugar plus a few drops of liquid stevia.",
+   "spin": "2 min",
+   "freeze": "24 hours",
+   "cook": "2 min",
+   "wait": "24 hours",
+   "dfree": true,
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "4 servings"
+   ],
+   "flags": [
+    "dairy-free"
+   ]
+  },
+  {
+   "id": "r84",
+   "cat": "fruit",
+   "title": "Easy pineapple sorbet",
+   "emoji": "🍍",
+   "blurb": "Literally one can of pineapple. Freeze, spin, done.",
+   "ing": [
+    "1 can (20 oz) pineapple in juice"
+   ],
+   "steps": [
+    "Pour the pineapple and its juice into the pint.",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then Sorbet. Re-spin if crumbly."
+   ],
+   "tags": [
+    "pine",
+    "canfruit"
+   ],
+   "ben": [],
+   "healthy": true,
+   "prep": "2 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Sorbet",
+   "img": "/img/ice/r84.jpg",
+   "slug": "easy-pineapple-sorbet",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Already about as light as it gets.",
+   "spin": "2 min",
+   "freeze": "24 hours",
+   "cook": "2 min",
+   "wait": "24 hours",
+   "dfree": true,
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 2 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "4 servings"
+   ],
+   "flags": [
+    "dairy-free"
+   ]
+  },
+  {
+   "id": "r85",
+   "cat": "pro",
+   "title": "Lite peanut butter ice cream",
+   "emoji": "🥜",
+   "blurb": "Peanut butter flavor, lighter base, extra protein.",
+   "ing": [
+    "1½ cups fairlife milk",
+    "3 tbsp powdered peanut butter",
+    "1 scoop vanilla protein powder",
+    "1 tbsp maple syrup"
+   ],
+   "steps": [
+    "Blend or shake everything until smooth.",
+    "Pour into the pint. Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then Lite Ice Cream. Add a splash of milk and Re-spin if powdery."
+   ],
+   "tags": [
+    "milk",
+    "pb",
+    "prot",
+    "sweet"
+   ],
+   "ben": [],
+   "healthy": true,
+   "prep": "5 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Lite Ice Cream",
+   "img": "/img/ice/r85.jpg",
+   "slug": "lite-peanut-butter-ice-cream",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Skip the maple syrup and use a sweetened protein powder.",
+   "spin": "2 min",
+   "freeze": "24 hours",
+   "cook": "2 min",
+   "wait": "24 hours",
+   "dfree": false,
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "4 servings"
+   ]
+  },
+  {
+   "id": "r86",
+   "cat": "healthy",
+   "title": "Fresh banana sorbet",
+   "emoji": "🍌",
+   "blurb": "Overripe bananas become creamy soft serve.",
+   "ing": [
+    "3 very ripe bananas",
+    "¼ cup milk of choice",
+    "½ tsp vanilla"
+   ],
+   "steps": [
+    "Mash or blend bananas with milk and vanilla.",
+    "Pour into the pint. Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then Sorbet. Re-spin with a splash of milk if crumbly."
+   ],
+   "tags": [
+    "ban",
+    "milk"
+   ],
+   "ben": [],
+   "healthy": true,
+   "prep": "5 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Scoop, then Sorbet",
+   "img": "/img/ice/r86.jpg",
+   "slug": "fresh-banana-sorbet",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Already naturally sweet with no added sugar.",
+   "spin": "2 min",
+   "freeze": "24 hours",
+   "cook": "2 min",
+   "wait": "24 hours",
+   "dfree": false,
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "4 servings"
+   ]
   }
  ]
 }

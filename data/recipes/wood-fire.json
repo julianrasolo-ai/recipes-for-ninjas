@@ -1277,6 +1277,488 @@
    "video": null,
    "members": false,
    "healthier": "Use dark chocolate chips and half the marshmallows."
+  },
+  {
+   "id": "w25",
+   "cat": "smoke",
+   "title": "Smoked beef brisket",
+   "emoji": "🥩",
+   "blurb": "The big one. Dark bark, juicy slices, worth the wait.",
+   "ing": [
+    "5–6 lb brisket flat, fat trimmed to ¼ inch",
+    "3 tbsp coarse salt",
+    "3 tbsp coarse black pepper",
+    "1 tbsp garlic powder"
+   ],
+   "steps": [
+    "Mix salt, pepper and garlic. Coat the brisket all over and rest 1 hour.",
+    "Fill the smoke box with pellets. Select Smoker at 250°F and preheat.",
+    "Smoke fat side up until the bark is dark and the inside reads 165°F, about 5 hours.",
+    "Wrap tightly in butcher paper or foil and keep cooking to 203°F, 2–3 hours more.",
+    "Rest wrapped for 1 hour, then slice across the grain."
+   ],
+   "tags": [
+    "beef",
+    "rub"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "20 min",
+   "makes": "10 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Tip",
+     "Slice only what you'll eat. Leftovers stay juicier as a whole piece."
+    ]
+   ],
+   "press": "Smoker · 250°F + Woodfire flavor",
+   "img": "/img/fire/w25.jpg",
+   "slug": "smoked-beef-brisket",
+   "gear": [
+    "woodfire-pellets-variety",
+    "woodfire-thermometer"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Choose the flat, trim the fat cap well and serve with grilled vegetables instead of bread.",
+   "cook": "8 hours",
+   "chips": [
+    "Prep 20 min",
+    "Cook 8 hours",
+    "10 servings"
+   ]
+  },
+  {
+   "id": "w26",
+   "cat": "smoke",
+   "title": "Smoked whole chicken",
+   "emoji": "🍗",
+   "blurb": "Golden skin, smoky meat, Sunday dinner without the oven.",
+   "ing": [
+    "1 whole chicken, about 4 lb",
+    "2 tbsp olive oil",
+    "2 tbsp BBQ rub",
+    "1 lemon, halved",
+    "A few garlic cloves"
+   ],
+   "steps": [
+    "Pat the chicken dry. Rub with oil and seasoning. Put lemon and garlic inside.",
+    "Fill the smoke box with pellets. Select Smoker at 250°F and preheat.",
+    "Smoke until the thickest part of the thigh reads 165°F, about 3 hours.",
+    "Switch to Grill HI for the last 5 minutes to crisp the skin.",
+    "Rest 10 minutes before carving."
+   ],
+   "tags": [
+    "chicken",
+    "rub",
+    "lemon",
+    "garlic"
+   ],
+   "ben": [],
+   "healthy": true,
+   "prep": "10 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Smoker · 250°F + Woodfire flavor",
+   "img": "/img/fire/w26.jpg",
+   "slug": "smoked-whole-chicken",
+   "gear": [
+    "woodfire-pellets-variety",
+    "woodfire-thermometer"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Remove the skin before eating and serve with a big salad.",
+   "cook": "3 hours",
+   "chips": [
+    "Prep 10 min",
+    "Cook 3 hours",
+    "4 servings"
+   ]
+  },
+  {
+   "id": "w27",
+   "cat": "smoke",
+   "title": "Smoked turkey breast",
+   "emoji": "🦃",
+   "blurb": "Holiday flavor any weekend. Great for sandwiches all week.",
+   "ing": [
+    "3 lb boneless turkey breast",
+    "2 tbsp melted butter",
+    "1 tbsp poultry seasoning",
+    "1 tsp salt",
+    "1 tsp smoked paprika"
+   ],
+   "steps": [
+    "Brush the turkey with butter and season all over.",
+    "Fill the smoke box with pellets. Select Smoker at 250°F and preheat.",
+    "Smoke until the center reads 160°F, about 2½ hours.",
+    "Tent with foil and rest 15 minutes. It climbs to 165°F."
+   ],
+   "tags": [
+    "butter",
+    "rub",
+    "herbs"
+   ],
+   "ben": [],
+   "healthy": true,
+   "prep": "10 min",
+   "makes": "8 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Smoker · 250°F + Woodfire flavor",
+   "img": "/img/fire/w27.jpg",
+   "slug": "smoked-turkey-breast",
+   "gear": [
+    "woodfire-pellets-variety",
+    "woodfire-thermometer"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Swap butter for olive oil and use the leftovers for lean lunch wraps.",
+   "cook": "2.5 hours",
+   "chips": [
+    "Prep 10 min",
+    "Cook 2.5 hours",
+    "8 servings"
+   ]
+  },
+  {
+   "id": "w28",
+   "cat": "smoke",
+   "title": "Smoked queso dip",
+   "emoji": "🧀",
+   "blurb": "Melty, smoky cheese dip. Party starter, no stovetop.",
+   "ing": [
+    "1 lb block processed cheese, cubed",
+    "1 cup shredded pepper jack",
+    "1 can diced tomatoes with green chiles",
+    "½ lb cooked ground beef or chorizo",
+    "Tortilla chips"
+   ],
+   "steps": [
+    "Put everything except the chips in a foil pan.",
+    "Fill the smoke box with pellets. Select Smoker at 250°F and preheat.",
+    "Smoke 1 hour, stirring every 20 minutes, until smooth.",
+    "Serve hot with chips."
+   ],
+   "tags": [
+    "cheese",
+    "ground",
+    "tomato"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "10 min",
+   "makes": "8 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Smoker · 250°F + Woodfire flavor",
+   "img": "/img/fire/w28.jpg",
+   "slug": "smoked-queso-dip",
+   "gear": [
+    "woodfire-pellets-variety"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Skip the meat, use half the cheese and add black beans. Serve with sliced peppers instead of chips.",
+   "cook": "1 hour",
+   "chips": [
+    "Prep 10 min",
+    "Cook 1 hour",
+    "8 servings"
+   ]
+  },
+  {
+   "id": "w29",
+   "cat": "grill",
+   "title": "Steak fajitas",
+   "emoji": "🌮",
+   "blurb": "Sizzling skirt steak, charred peppers, warm tortillas.",
+   "ing": [
+    "1½ lb skirt or flank steak",
+    "2 bell peppers, sliced",
+    "1 onion, sliced",
+    "2 tbsp fajita seasoning",
+    "2 tbsp oil",
+    "Juice of 1 lime",
+    "Tortillas and toppings"
+   ],
+   "steps": [
+    "Toss steak with half the oil, seasoning and lime. Rest 20 minutes.",
+    "Select Grill HI with Woodfire flavor and preheat until it says Add Food.",
+    "Grill steak 4 minutes per side. Rest while you cook the veg.",
+    "Grill peppers and onion in a grill basket 8–10 minutes, tossing once.",
+    "Slice the steak thinly across the grain and pile into tortillas."
+   ],
+   "tags": [
+    "beef",
+    "pepper",
+    "onion",
+    "lime",
+    "tortilla"
+   ],
+   "ben": [],
+   "healthy": true,
+   "prep": "25 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Grill · HI + Woodfire flavor",
+   "img": "/img/fire/w29.jpg",
+   "slug": "steak-fajitas",
+   "gear": [
+    "woodfire-thermometer"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Use lettuce cups or corn tortillas and load up on peppers.",
+   "cook": "20 min",
+   "chips": [
+    "Prep 25 min",
+    "Cook 20 min",
+    "4 servings"
+   ]
+  },
+  {
+   "id": "w30",
+   "cat": "grill",
+   "title": "Grilled pork chops",
+   "emoji": "🥩",
+   "blurb": "Thick, juicy chops with a brown sugar crust.",
+   "ing": [
+    "4 bone-in pork chops, 1 inch thick",
+    "1 tbsp brown sugar",
+    "1 tsp smoked paprika",
+    "1 tsp garlic powder",
+    "1 tsp salt",
+    "1 tbsp oil"
+   ],
+   "steps": [
+    "Mix the sugar and spices. Rub the chops with oil, then the spice mix.",
+    "Select Grill HI with Woodfire flavor and preheat.",
+    "Grill 5–6 minutes per side until 145°F inside.",
+    "Rest 5 minutes."
+   ],
+   "tags": [
+    "pork",
+    "rub",
+    "oil"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "5 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Grill · HI + Woodfire flavor",
+   "img": "/img/fire/w30.jpg",
+   "slug": "grilled-pork-chops",
+   "gear": [
+    "woodfire-thermometer"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Skip the sugar and serve with grilled apples and greens.",
+   "cook": "12 min",
+   "chips": [
+    "Prep 5 min",
+    "Cook 12 min",
+    "4 servings"
+   ]
+  },
+  {
+   "id": "w31",
+   "cat": "grill",
+   "title": "Grilled fish tacos",
+   "emoji": "🐟",
+   "blurb": "Flaky white fish, crunchy slaw, lime crema.",
+   "ing": [
+    "1 lb cod or mahi-mahi",
+    "1 tbsp oil",
+    "2 tsp chili-lime seasoning",
+    "2 cups shredded cabbage",
+    "¼ cup sour cream + juice of 1 lime",
+    "8 small tortillas"
+   ],
+   "steps": [
+    "Brush fish with oil and season.",
+    "Select Grill MED and preheat. Grill fish 3–4 minutes per side until it flakes.",
+    "Mix sour cream with lime juice.",
+    "Fill tortillas with fish, cabbage and lime crema."
+   ],
+   "tags": [
+    "cabbage",
+    "lime",
+    "tortilla",
+    "oil"
+   ],
+   "ben": [],
+   "healthy": true,
+   "prep": "10 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Grill · MED",
+   "img": "/img/fire/w31.jpg",
+   "slug": "grilled-fish-tacos",
+   "gear": [],
+   "video": null,
+   "members": false,
+   "healthier": "Use Greek yogurt in the crema and corn tortillas.",
+   "cook": "8 min",
+   "chips": [
+    "Prep 10 min",
+    "Cook 8 min",
+    "4 servings"
+   ]
+  },
+  {
+   "id": "w32",
+   "cat": "crisp",
+   "title": "Bacon jalapeño poppers",
+   "emoji": "🌶️",
+   "blurb": "Creamy, spicy, smoky. Gone in minutes.",
+   "ing": [
+    "12 jalapeños, halved and seeded",
+    "8 oz cream cheese, soft",
+    "½ cup shredded cheddar",
+    "12 slices bacon, halved"
+   ],
+   "steps": [
+    "Mix cream cheese and cheddar. Fill each jalapeño half.",
+    "Wrap each with a half slice of bacon.",
+    "Select Air Crisp at 375°F with Woodfire flavor and preheat.",
+    "Cook 12–15 minutes until the bacon is crisp."
+   ],
+   "tags": [
+    "pepper",
+    "cheese",
+    "pork"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "20 min",
+   "makes": "24 poppers",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Air Crisp · 375°F + Woodfire flavor",
+   "img": "/img/fire/w32.jpg",
+   "slug": "bacon-jalape-o-poppers",
+   "gear": [],
+   "video": null,
+   "members": false,
+   "healthier": "Use light cream cheese and turkey bacon, or skip the bacon and top with breadcrumbs.",
+   "cook": "15 min",
+   "chips": [
+    "Prep 20 min",
+    "Cook 15 min",
+    "24 poppers"
+   ]
+  },
+  {
+   "id": "w33",
+   "cat": "crisp",
+   "title": "BBQ chicken drumsticks",
+   "emoji": "🍗",
+   "blurb": "Crispy outside, sticky sauce, kid-approved.",
+   "ing": [
+    "8 chicken drumsticks",
+    "1 tbsp oil",
+    "2 tbsp BBQ rub",
+    "½ cup BBQ sauce"
+   ],
+   "steps": [
+    "Toss drumsticks with oil and rub.",
+    "Select Air Crisp at 390°F with Woodfire flavor and preheat.",
+    "Cook 25 minutes, turning halfway.",
+    "Brush with sauce and cook 3–5 minutes more until 175°F inside."
+   ],
+   "tags": [
+    "chicken",
+    "bbq",
+    "rub"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "5 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Air Crisp · 390°F + Woodfire flavor",
+   "img": "/img/fire/w33.jpg",
+   "slug": "bbq-chicken-drumsticks",
+   "gear": [
+    "woodfire-thermometer"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Pull the skin off before cooking and use a no-sugar-added sauce.",
+   "cook": "30 min",
+   "chips": [
+    "Prep 5 min",
+    "Cook 30 min",
+    "4 servings"
+   ]
+  },
+  {
+   "id": "w34",
+   "cat": "bake",
+   "title": "Smoky BBQ meatloaf",
+   "emoji": "🍖",
+   "blurb": "Classic meatloaf with a smoky glaze. Comfort on a weeknight.",
+   "ing": [
+    "2 lb ground beef",
+    "1 egg",
+    "½ cup breadcrumbs",
+    "½ onion, grated",
+    "1 tsp salt",
+    "½ cup BBQ sauce"
+   ],
+   "steps": [
+    "Mix beef, egg, breadcrumbs, onion and salt. Shape a loaf in a foil pan.",
+    "Select Bake at 350°F with Woodfire flavor and preheat.",
+    "Bake 45 minutes. Brush with BBQ sauce and bake 15 minutes more until 160°F.",
+    "Rest 10 minutes before slicing."
+   ],
+   "tags": [
+    "ground",
+    "onion",
+    "bbq"
+   ],
+   "ben": [],
+   "healthy": false,
+   "prep": "15 min",
+   "makes": "6 servings",
+   "level": "Easy",
+   "listTitle": "You need",
+   "notes": [],
+   "press": "Bake · 350°F + Woodfire flavor",
+   "img": "/img/fire/w34.jpg",
+   "slug": "smoky-bbq-meatloaf",
+   "gear": [
+    "woodfire-thermometer"
+   ],
+   "video": null,
+   "members": false,
+   "healthier": "Use half lean ground turkey and add grated zucchini to the mix.",
+   "cook": "1 hour",
+   "chips": [
+    "Prep 15 min",
+    "Cook 1 hour",
+    "6 servings"
+   ]
   }
  ]
 }

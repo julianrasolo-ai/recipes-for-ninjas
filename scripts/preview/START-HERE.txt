@@ -1,0 +1,11 @@
+Recipes By Ninjas - local preview
+
+In Terminal, paste these one at a time (if your zip is in Downloads):
+
+  cd ~/Downloads && unzip -o recipes-by-ninjas-preview.zip
+  cd ~/Downloads/recipes-by-ninjas
+  python3 -m http.server 8000 --bind 127.0.0.1
+
+Then open http://localhost:8000. Press Control + C in Terminal when done.
+
+Preview notes: Ask Ninjas answers from the recipe book only (no AI here). Sign-in, synced favorites and emails don't run in this preview. Photos load from the internet, so stay online.

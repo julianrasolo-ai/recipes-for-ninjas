@@ -203,6 +203,8 @@ export function home(ctx, html) {
 ${s.googleSiteVerification ? `<meta name="google-site-verification" content="${esc(s.googleSiteVerification)}">` : ""}
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">`;
+  // Keep the machine labels' recipe counts in sync with the data.
+  for (const a of ctx.appliances) html = html.replace(new RegExp(`(data-k="${a.key}"[^\\n]*?<small>)\\d+ recipes`), `$1${a.data.recipes.length} recipes`);
   return html.replace("<!--SOCIAL-->", social).replace("<!--SITE_CONFIG-->", cfg).replace("<!--SITE_JS-->", '<script src="/assets/site.js" defer></script>\n<script src="/assets/assistant.js" defer></script>' + (s.supabase ? '\n<script type="module" src="/assets/auth.js"></script>' : ""));
 }
 

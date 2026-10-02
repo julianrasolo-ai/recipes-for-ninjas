@@ -54,3 +54,13 @@ for (const [label, client, allowAi] of [["refusal", fake({}, { stop: "refusal" }
   assert.equal(i.meal, null); assert.deepEqual(i.chips, ["tired"]); assert.equal(i.text.length, 400);
 }
 console.log("assistant tests passed");
+
+// "Something else": excluded recipes are not picked again, and bad keys are ignored
+{
+  const first = await answer(cleanInput({ meal: "dinner", chips: ["quick"] }), { catalog, household: null, ai: { enabled: false } });
+  const keys = first.picks.map((p) => p.key);
+  const next = await answer(cleanInput({ meal: "dinner", chips: ["quick"], exclude: [...keys, "bad key!"] }), { catalog, household: null, ai: { enabled: false } });
+  assert.ok(next.picks.length > 0);
+  assert.ok(next.picks.every((p) => !keys.includes(p.key)));
+  console.log("assistant exclude test passed");
+}
