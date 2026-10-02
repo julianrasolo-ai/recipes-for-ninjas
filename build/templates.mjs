@@ -19,8 +19,8 @@ export const img = (r, cls = "", lazy = true) =>
 
 /* ---------- layout ---------- */
 function publicConfig(site) {
-  const { ads, consent, analytics, email, members, shop, affiliate, family } = site;
-  return { ads, consent, analytics, email, members, shop, family, disclosure: affiliate.disclosure };
+  const { ads, consent, analytics, email, members, shop, affiliate, family, supabase, ai } = site;
+  return { ads, consent, analytics, email: { ...email, ideas: undefined, postalAddress: undefined }, members, shop, family, supabase, ai: { enabled: !!ai?.enabled }, disclosure: affiliate.disclosure };
 }
 
 export function layout(ctx, o) {
@@ -66,22 +66,24 @@ ${(o.jsonld || []).map((j) => `<script type="application/ld+json">${json(j)}</sc
 </head>
 <body data-site="${o.theme || "plain"}">
 <a class="skip" href="#main">Skip to content</a>
-${o.header === false ? "" : header(o.heading, o.kicker, o.headingTag, o.brand)}
+${o.header === false ? "" : header(o.heading, o.kicker, o.headingTag, o.brand, !!site.supabase)}
 <main id="main" tabindex="-1">
 ${o.body}
 </main>
 ${footer(ctx)}
 <script src="/assets/site.js" defer></script>
+<script src="/assets/assistant.js" defer></script>
+${site.supabase ? '<script type="module" src="/assets/auth.js"></script>' : ""}
 ${(o.scripts || []).map((s) => (s.startsWith("<") ? s : `<script src="${s}" defer></script>`)).join("\n")}
 </body>
 </html>`;
 }
 
-function header(heading, kicker, tag = "h1", brand = false) {
+function header(heading, kicker, tag = "h1", brand = false, accounts = false) {
   return `<header class="top${brand ? " brand" : ""}">
   <a class="ibtn home" href="/" aria-label="Home">←</a>
   <div class="ttl">${kicker ? `<p class="kick">${kicker}</p>` : ""}<${tag} class="h">${heading || "Recipes for Ninjas"}</${tag}></div>
-  <a class="ibtn srch" href="/search/" aria-label="Search all recipes">🔍</a>
+  <a class="ibtn srch" href="/search/" aria-label="Search all recipes">🔍</a>${accounts ? '\n  <a class="ibtn srch acct" href="/account/" aria-label="Your account">👤</a>' : ""}
 </header>`;
 }
 
@@ -200,7 +202,7 @@ export function home(ctx, html) {
 ${s.googleSiteVerification ? `<meta name="google-site-verification" content="${esc(s.googleSiteVerification)}">` : ""}
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">`;
-  return html.replace("<!--SOCIAL-->", social).replace("<!--SITE_CONFIG-->", cfg).replace("<!--SITE_JS-->", '<script src="/assets/site.js" defer></script>');
+  return html.replace("<!--SOCIAL-->", social).replace("<!--SITE_CONFIG-->", cfg).replace("<!--SITE_JS-->", '<script src="/assets/site.js" defer></script>\n<script src="/assets/assistant.js" defer></script>' + (s.supabase ? '\n<script type="module" src="/assets/auth.js"></script>' : ""));
 }
 
 /* ---------- hub ---------- */
@@ -281,7 +283,7 @@ export function recipe(ctx, a, r) {
     ${(r.ben || []).length ? `<div class="chips">${r.ben.map((b) => `<a class="chip b" href="/tags/${b}/">${a.benMap[b]?.[1]} ${esc(a.benMap[b]?.[2])}</a>`).join("")}</div>` : ""}
     <div class="chips">${r.chips.map((x) => `<span class="chip">${esc(x)}</span>`).join("")}</div>
     <div class="press"><small>${esc(a.pressLabel)}</small> ${esc(r.press)}</div>
-    <div class="likebox"><b>❤️ Who likes this?</b><div class="who">${site.family.map((p) => `<button class="who-b" type="button" data-p="${p}" data-like="${p}" aria-pressed="false">${p}</button>`).join("")}</div><p class="sync" id="sync"></p></div>
+    <div class="likebox"><b>❤️ Who likes this?</b><div class="who">${site.supabase ? "" : site.family.map((p) => `<button class="who-b" type="button" data-p="${p}" data-like="${p}" aria-pressed="false">${p}</button>`).join("")}</div><p class="sync" id="sync"></p></div>
     ${ings}
     ${adSlot(site, "recipe-in-content", "incontent")}
     ${gated ? `<div class="gate"><div class="gate-blur" aria-hidden="true">${steps}</div><div class="gate-cta"><b>🔒 Members-only recipe</b><p>Join to unlock the steps.</p>${site.members.joinUrl ? `<a class="btn" href="${esc(site.members.joinUrl)}">Join</a>` : ""}</div></div>` : steps}
@@ -297,7 +299,7 @@ export function recipe(ctx, a, r) {
 </article>
 ${site.ads.enabled ? `<div class="side">${adSlot(site, "recipe-sidebar", "sidebar")}</div>` : ""}
 </div>`,
-    scripts: [`<script>window.RECIPE=${json({ id: r.id, title: r.title, ing: r.ing, section: a.section })};</script>`, "/assets/likes.js", "/assets/recipe.js"],
+    scripts: [`<script>window.RECIPE=${json({ id: r.id, title: r.title, ing: r.ing, section: a.section, appliance: a.key })};</script>`, "/assets/likes.js", "/assets/recipe.js"],
   });
 }
 
@@ -369,7 +371,15 @@ export function legal(ctx, which) {
 <li><b>Analytics.</b> If enabled and you consent, we use privacy-friendly analytics to count visits and clicks. No data is sold.</li>
 <li><b>Advertising.</b> If ads are enabled and you consent, our ad partner may use cookies to show and measure ads.</li>
 <li><b>Purchases.</b> Payments are handled by Stripe. We never see your card details; we keep an order record so you can re-download.</li></ul>
-<h2 class="h3">Your choices</h2><p>Change your cookie choice any time with "Cookie settings" in the footer. To ask for your data to be deleted, contact ${contact}.</p>`],
+<h2 class="h3">Accounts</h2><ul>
+<li><b>What we store.</b> Your email (to sign you in), your household (name, size, which Ninja machines you have), and for each person you add: first name, diet, allergies, foods they don't like, goals, meal types and cooking time. We also store favorites, a "we made this" log, and your email and text settings.</li>
+<li><b>Why.</b> Only to personalize recipe ideas: skip allergies and dislikes, show your machines, and not repeat what you cooked in the last two weeks. Allergy answers are used as filters, not as medical information, and are never shared or sold.</li>
+<li><b>Where.</b> Accounts run on Supabase (database and sign-in). Each household can only read its own rows (row-level security). If you sign in with Google we receive your email address only.</li>
+<li><b>Email and text ideas.</b> Off unless you tick the box. Email and text are separate permissions; we record when you gave or withdrew each. Emails are sent through Resend, include a one-click unsubscribe link, and we keep a log of which recipes we sent so ideas rotate.</li>
+<li><b>Deleting.</b> "Delete my account" on your account page permanently removes your sign-in, household, people, favorites, history and settings right away.</li></ul>
+<h2 class="h3">"What are we making?" assistant</h2>
+<p>When you ask for ideas, your meal choice, the chips you tapped and what you typed are sent to our server. If you are signed in, your household's allergies, dislikes and recent meals are used to filter the recipe list. To write the suggestions we may send your request and a shortlist of our recipes to Anthropic (Claude). We don't send your name or email, and Anthropic does not use API data to train its models. To limit use per visitor we count requests by account or by a one-way hash of your IP address, kept for one day. Don't type anything private into the box.</p>
+<h2 class="h3">Your choices</h2><p>Change your cookie choice any time with "Cookie settings" in the footer. Edit or delete your account data from the account page, or contact ${contact}.</p>`],
     terms: ["Terms of use", `<p>Recipes are for home use. Follow your appliance manual and food-safety guidance, check internal temperatures for meat, and take care with allergies. Nutrition and benefit tags are general information, not medical advice.</p>
 <p>Content on this site belongs to ${who} unless stated otherwise. You may share links freely; please don't republish full recipes or photos without permission.</p>
 <p>Product names are trademarks of their owners. This site is not affiliated with or endorsed by SharkNinja.</p>`],
@@ -409,4 +419,11 @@ export function contact(ctx) {
   <label>Message<textarea name="message" rows="6" required></textarea></label>
   <button class="btn" type="submit">Send</button>
 </form>` });
+}
+
+export function account(ctx) {
+  const on = !!ctx.site.supabase;
+  return listing(ctx, { title: "Your account", desc: "Save favorites for each person in your household, get recipe ideas that fit your family.", path: "/account/", h1: "👤 Your kitchen",
+    inner: on ? `<div id="acct" class="acct" aria-live="polite"><p class="muted">Loading…</p></div>` : `<p class="lead">Family accounts are coming soon.</p>`,
+    scripts: on ? [`<script type="module" src="/assets/account.js"></script>`] : [] });
 }

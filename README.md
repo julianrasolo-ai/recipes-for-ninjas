@@ -56,3 +56,22 @@ netlify/functions/likes.mjs  favorites API
 | **Shop / Stripe** | `shop.enabled: true`; add items to `products.json` → `digital` with a Stripe Payment Link as `checkoutUrl`. Emailed secure downloads and order records need a Stripe webhook function (not built yet). |
 | **Physical products** | Add to `products.json` with `kind: "accessory"` and a Shopify/dropship link; they appear on `/gear/`. |
 | **Video** | Add `"video": "https://www.tiktok.com/..."` to a recipe; it embeds and is added to the schema. |
+
+## Accounts, assistant and email ideas (setup)
+
+Everything below is off until its keys exist, and the site works without any of it.
+
+| Netlify environment variable | Used for |
+|---|---|
+| `SUPABASE_URL`, `SUPABASE_ANON_KEY` | Accounts. Build-time: turns on sign-in, the 👤 link and per-profile favorites |
+| `SUPABASE_SERVICE_ROLE_KEY` | Server only: account deletion, email sending, assistant personalization |
+| `ANTHROPIC_API_KEY` | Assistant explanations. Without it the assistant still answers from the library |
+| `USAGE_SALT` | Any random string; hashes visitor IPs for the daily AI cap |
+| `RESEND_API_KEY` | "Tonight's idea" emails |
+
+1. **Supabase**: create a free project and run `supabase/migrations/001_accounts.sql` in the SQL editor. Under Authentication → URL configuration, set Site URL to your domain and add `https://<domain>/account/` as a redirect. To allow Google sign-in, enable Google under Providers and add your Google OAuth client.
+2. **Assistant**: settings live in `data/site.json` → `ai` (`enabled`, `model`, `perVisitorDaily`, `globalDaily`).
+3. **Email ideas**: verify a sending domain in Resend (a `netlify.app` address can't be verified), then set `email.ideas.from` and `email.postalAddress` (required by anti-spam law) and `email.ideas.enabled: true`. The hourly `send-ideas` function only emails people who ticked the email box, at their chosen day and hour.
+4. **Search Console**: add the site, paste the verification code into `googleSiteVerification`, push, then submit `https://<domain>/sitemap.xml`.
+
+Tests: `npm test` (row-level security in PGlite, the assistant with a fake client, and email scheduling).

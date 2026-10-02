@@ -39,7 +39,6 @@
   })});
 
   /* ---------- favorites dots ---------- */
-  var PEOPLE=Likes.PEOPLE;
   Likes.init(SITE.section,function(){paintLikes();if(dlg.open&&refreshOpen)refreshOpen()});
   function likedBy(id){return Likes.get()[id]||[]}
   function paintLikes(){
@@ -77,7 +76,7 @@
   function miniRow(r,extra){
     return '<a class="mini" data-id="'+r.id+'" href="/'+SITE.key+'/'+r.slug+'/"><span class="mt">'+thumb(r)+'</span><span><b>'+esc(r.title)+'</b>'+(extra||'')+'</span></a>';
   }
-  function syncLine(){var st=Likes.status();return '<p class="sync" data-s="'+st+'">'+(st==='off'?'Offline: saved on this device, will sync when back online.':'Shared with the whole family.')+'</p>'}
+  function syncLine(){var st=Likes.status();if(Likes.mode()==='account')return '<p class="sync">Saved to your household.</p>';if(Likes.mode()==='signedout')return '<p class="sync"><a href="/account/">Sign in</a> to save favorites for your family.</p>';return '<p class="sync" data-s="'+st+'">'+(st==='off'?'Offline: saved on this device, will sync when back online.':'Shared with the whole family.')+'</p>'}
 
   /* Desktop opens recipes in the sheet; phones follow the link to the full page so it can be shared and Back works natively. */
   var wide=matchMedia('(min-width: 900px)');
@@ -102,7 +101,7 @@
       ((r.ben||[]).length?'<div class="chips">'+r.ben.map(function(b){return '<span class="chip b">'+benMap[b][1]+' '+esc(benMap[b][2])+'</span>'}).join('')+'</div>':'')+
       '<div class="chips">'+r.chips.map(function(x){return '<span class="chip">'+esc(x)+'</span>'}).join('')+'</div>'+
       '<div class="press"><small>'+esc(D.pressLabel)+'</small> '+esc(r.press)+'</div>'+
-      '<div class="likebox"><b>❤️ Who likes this?</b><div class="who">'+PEOPLE.map(function(p){return '<button class="who-b" type="button" data-p="'+p+'" data-like="'+p+'" aria-pressed="'+(liked.indexOf(p)>-1)+'">'+p+'</button>'}).join('')+'</div>'+syncLine()+'</div>'+
+      '<div class="likebox"><b>❤️ Who likes this?</b><div class="who">'+(Likes.mode()==='signedout'?'<a class="btn" href="/account/">Sign in to save favorites</a>':'')+Likes.people().map(function(p){return '<button class="who-b" type="button" data-p="'+p+'" data-like="'+p+'" aria-pressed="'+(liked.indexOf(p)>-1)+'">'+p+'</button>'}).join('')+'</div>'+syncLine()+'</div>'+
       '<h3>'+esc(r.listTitle||'You need')+'</h3><ul class="ingl">'+r.ing.map(function(x){return '<li><label><input type="checkbox"><span>'+esc(x)+'</span></label></li>'}).join('')+'</ul>'+
       '<div class="row"><button class="btn" id="cp" type="button">Copy shopping list</button><span class="status" id="cps" aria-live="polite"></span></div>'+
       '<h3>Steps</h3><ol class="steps">'+r.steps.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ol>'+
@@ -169,7 +168,7 @@
     var list=D.recipes.filter(function(r){var l=likedBy(r.id);return favWho==='all'?l.length:l.indexOf(favWho)>-1});
     var h=bar()+'<div class="sbody"><h2>❤️ Favorites</h2><p class="lead">Pick a person to see their favorites.</p>'+
       '<div class="fchips"><button class="fchip'+(favWho==='all'?' on':'')+'" data-p="all" type="button">Everyone</button>'+
-      PEOPLE.map(function(p){return '<button class="fchip'+(favWho===p?' on':'')+'" data-p="'+p+'" type="button">'+p+'</button>'}).join('')+'</div>'+syncLine()+
+      Likes.people().map(function(p){return '<button class="fchip'+(favWho===p?' on':'')+'" data-p="'+p+'" type="button">'+p+'</button>'}).join('')+'</div>'+syncLine()+
       (list.length?list.map(function(r){return miniRow(r,'<span>'+(favWho==='all'?'❤️ '+esc(likedBy(r.id).join(', ')):esc(catMap[r.cat].n))+'</span>')}).join(''):'<p class="empty">Nothing here yet. Open any recipe and tap your name under ❤️ Who likes this?</p>')+'</div>';
     open(h,SITE.favColor);
     $$('.fchip',sin).forEach(function(b){b.onclick=function(){favWho=b.dataset.p;showFav()}});

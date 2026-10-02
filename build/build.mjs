@@ -4,12 +4,15 @@ import { readFile, writeFile, mkdir, cp, rm } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import * as T from "./templates.mjs";
+import { buildCatalog } from "../lib/picker.mjs";
 
 const ROOT = process.cwd(), OUT = join(ROOT, "dist");
 const readJSON = async (p) => JSON.parse(await readFile(join(ROOT, p), "utf8"));
 
 const site = await readJSON("data/site.json");
 site.url = (process.env.URL || site.url || "").replace(/\/$/, "");
+// Accounts switch on when the Supabase project is configured in Netlify env (the anon key is public by design; RLS protects data).
+site.supabase = process.env.SUPABASE_URL && process.env.SUPABASE_ANON_KEY ? { url: process.env.SUPABASE_URL, anonKey: process.env.SUPABASE_ANON_KEY } : null;
 const appliances = await readJSON("data/appliances.json");
 const catalog = await readJSON("data/products.json");
 const images = await readJSON("data/images.json");
@@ -73,6 +76,7 @@ page("/disclosure/", T.legal(ctx, "disclosure"));
 page("/404.html", T.notFound(ctx));
 page("/thanks/", T.thanks(ctx));
 page("/about/", T.about(ctx));
+page("/account/", T.account(ctx));
 page("/contact/", T.contact(ctx));
 
 // ---- write ----
@@ -110,5 +114,8 @@ const redirects = [
   ...Object.values(products).filter((p) => p.url).map((p) => `/go/${p.id}  ${withTag(p.url)}  302`),
 ];
 await writeFile(join(OUT, "_redirects"), redirects.join("\n") + "\n");
+
+// Runtime catalog for the assistant and emails (bundled into Netlify functions)
+await writeFile(join(ROOT, "data", "catalog.json"), JSON.stringify(buildCatalog(appliances)));
 
 console.log(`built ${pages.length} pages, ${all.length} recipes -> dist/`);

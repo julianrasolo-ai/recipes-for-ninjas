@@ -32,6 +32,10 @@ h1 span{display:inline-block;animation:pop .7s cubic-bezier(.2,1.4,.4,1) backwar
 h1 span:nth-child(2){animation-delay:.08s;color:var(--pink)}
 h1 span:nth-child(3){animation-delay:.16s;color:var(--mint)}
 @keyframes pop{from{opacity:0;transform:translateY(22px) scale(.95)}}
+.askbox{pointer-events:auto;display:flex;gap:6px;max-width:420px;margin:12px auto 0;padding:5px;border-radius:999px;background:color-mix(in srgb,#fff 92%,var(--cream));box-shadow:0 6px 18px rgba(34,23,74,.1);animation:pop .7s cubic-bezier(.2,1.4,.4,1) .24s backwards}
+.askbox input{flex:1;min-width:0;border:0;background:transparent;font:16px "Nunito",sans-serif;color:var(--ink);padding:6px 10px;outline:none}
+.askbox button{border:0;border-radius:999px;width:38px;height:38px;background:var(--pink);font-size:20px;cursor:pointer}
+.askbox:focus-within{box-shadow:0 0 0 3px color-mix(in srgb,var(--pink) 40%,transparent),0 6px 18px rgba(34,23,74,.1)}
 .search{position:absolute;z-index:31;right:14px;top:calc(env(safe-area-inset-top,0px) + 14px);width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,#fff 92%,var(--cream));text-decoration:none;box-shadow:0 6px 18px rgba(34,23,74,.1)}
 
 .sun{position:absolute;z-index:1;left:50%;top:47%;width:min(66vw,440px);aspect-ratio:1;border-radius:50%;translate:-50% -50%;
@@ -93,6 +97,10 @@ document.addEventListener('error',function(e){
   <div class="head">
     <span class="kicker">Recipes for Ninjas</span>
     <h1><span>What</span> <span>are we</span> <span>making?</span></h1>
+    <form class="askbox" id="ask-home" role="search" aria-label="Ask the ninja for ideas">
+      <input name="q" maxlength="400" placeholder="Tired, healthy, leftovers… ask the ninja" aria-label="What do you feel like?">
+      <button type="submit" aria-label="Get ideas">🥷</button>
+    </form>
   </div>
   <a class="search" href="/search/" aria-label="Search all recipes">🔍</a>
   <div class="sun" aria-hidden="true"></div>

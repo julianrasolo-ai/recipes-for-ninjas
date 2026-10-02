@@ -6,3 +6,4 @@ dist/
 img/og/
 favicon-32.png
 apple-touch-icon.png
+data/catalog.json

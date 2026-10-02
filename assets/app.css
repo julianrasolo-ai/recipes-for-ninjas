@@ -366,3 +366,9 @@ dialog.pop{max-width:520px}
   .note{background:none!important;border:1px solid #ccc}
   a{color:#000;text-decoration:none}
 }
+/* household profiles (accounts): colour by position */
+.who-b[data-i="0"],.fchip[data-i="0"]{--pc:#2ba8ff}.who-b[data-i="1"]{--pc:#ff4f9a}.who-b[data-i="2"]{--pc:#14a77c}.who-b[data-i="3"]{--pc:#ffc83d}
+.who-b[data-p=""]:not([data-i]),.who-b.made{--pc:var(--line)}
+.dot:not([data-p="Julian"]):not([data-p="Charlyne"]):not([data-p="Leanne"]):not([data-p="Noah"]){--pc:#c9b8ff}
+.who-b.made{background:var(--bg)}
+.acct{max-width:720px}

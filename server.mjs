@@ -1,4 +1,4 @@
-// Local dev server: serves the site and a file-backed /api/likes (same API as the Netlify function).
+// Local dev server: serves the site, a file-backed /api/likes (same API as the Netlify function), and the other functions.
 // Run: npm start  ->  http://localhost:8888
 import http from "node:http";
 import { readFile, writeFile, mkdir, stat } from "node:fs/promises";
@@ -15,8 +15,18 @@ const TYPES = { ".html": "text/html; charset=utf-8", ".css": "text/css", ".js": 
 async function readDb() { try { return JSON.parse(await readFile(DB, "utf8")); } catch { return {}; } }
 const send = (res, status, body, type = "application/json") => { res.writeHead(status, { "content-type": type, "cache-control": "no-store" }); res.end(body); };
 
+// The other Netlify functions run as-is (Web Request/Response). Blobs fall back to memory locally.
+const FUNCS = { "/api/chat": "chat", "/api/unsubscribe": "unsubscribe", "/api/account-delete": "account-delete" };
+async function runFunction(name, req, res, url) {
+  const mod = await import(`./netlify/functions/${name}.mjs`);
+  let body; if (!["GET", "HEAD"].includes(req.method)) { const chunks = []; for await (const c of req) chunks.push(c); body = Buffer.concat(chunks); }
+  const r = await mod.default(new Request("http://localhost" + url.pathname + url.search, { method: req.method, headers: req.headers, body }), { ip: req.socket.remoteAddress });
+  res.writeHead(r.status, Object.fromEntries(r.headers)); res.end(Buffer.from(await r.arrayBuffer()));
+}
+
 http.createServer(async (req, res) => {
   const url = new URL(req.url, "http://x");
+  if (FUNCS[url.pathname]) return runFunction(FUNCS[url.pathname], req, res, url).catch((e) => { console.error(e); send(res, 500, '{"error":"Function failed"}'); });
   if (url.pathname === "/api/likes") {
     const db = await readDb();
     if (req.method === "GET") {

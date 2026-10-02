@@ -1,8 +1,11 @@
-/* Family favorites, shared across devices through /api/likes.
-   Works offline: changes are kept in localStorage and sent when the server is reachable. */
+/* Favorites. Two backends:
+   - family (default): the four family names, shared through /api/likes, works offline.
+   - account: when accounts are on (SITE_CONFIG.supabase), assets/auth.js plugs in the signed-in
+     household's profiles via Likes.setAdapter(); signed-out visitors get a sign-in prompt instead. */
 window.Likes=(function(){
   var PEOPLE=['Julian','Charlyne','Leanne','Noah'];
   var section, data={}, pending=[], state='on', onChange=function(){}, busy=false;
+  var accounts=!!(window.SITE_CONFIG&&window.SITE_CONFIG.supabase), adapter=null;
   function key(n){return 'family-likes-'+section+'-'+n}
   function load(n,def){try{return JSON.parse(localStorage.getItem(key(n))||'null')||def}catch(e){return def}}
   function save(){try{localStorage.setItem(key('data'),JSON.stringify(data));localStorage.setItem(key('pending'),JSON.stringify(pending))}catch(e){}}
@@ -40,6 +43,7 @@ window.Likes=(function(){
     PEOPLE:PEOPLE,
     init:function(s,cb){
       section=s; onChange=cb||onChange;
+      if(accounts)return data; /* wait for auth.js */
       data=load('data',{}); pending=load('pending',[]);
       sync();
       document.addEventListener('visibilitychange',function(){if(!document.hidden)sync()});
@@ -47,9 +51,13 @@ window.Likes=(function(){
       setInterval(function(){if(!document.hidden)sync()},30000);
       return data;
     },
-    get:function(){return data},
-    status:function(){return state},
+    get:function(){return adapter?adapter.get():data},
+    status:function(){return adapter?adapter.status():state},
+    people:function(){return adapter?adapter.people:(accounts?[]:PEOPLE)},
+    mode:function(){return adapter?adapter.mode:(accounts?'loading':'family')},
+    setAdapter:function(a){adapter=a;onChange()},
     toggle:function(id,p){
+      if(adapter){var r=adapter.toggle(id,p);if(r&&r.then)r.then(function(){onChange()});return}
       if(PEOPLE.indexOf(p)<0)return;
       var on=(data[id]||[]).indexOf(p)<0, op={id:id,p:p,on:on};
       apply(data,op); pending.push(op); save(); sync();

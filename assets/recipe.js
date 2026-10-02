@@ -1,17 +1,30 @@
-/* Recipe page: family favorites, copy shopping list, share. */
+/* Recipe page: favorites (family or household profiles), cooked log, copy shopping list, share. */
 (function(){
   var R=window.RECIPE;
   function $(s,r){return (r||document).querySelector(s)}
   function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))}
 
+  var who=$('.who');
+  function renderWho(){
+    var mode=Likes.mode(), people=Likes.people(), liked=Likes.get()[R.id]||[];
+    if(mode==='signedout'){who.innerHTML='<a class="btn" href="/account/">Sign in to save favorites</a>';return}
+    if(mode==='noprofiles'){who.innerHTML='<a class="btn" href="/account/">Add your family to save favorites</a>';return}
+    if(mode==='loading'){who.innerHTML='<span class="muted">Loading…</span>';return}
+    who.innerHTML=people.map(function(p,i){return '<button class="who-b" type="button" data-p="'+(mode==='family'?p:'')+'" data-i="'+(i%4)+'" data-like="'+p.replace(/"/g,'&quot;')+'" aria-pressed="'+(liked.indexOf(p)>-1)+'">'+p.replace(/</g,'&lt;')+'</button>'}).join('')+
+      (mode==='account'?'<button class="who-b made" type="button" id="made">✅ We made this</button>':'');
+  }
   function paint(){
-    var liked=Likes.get()[R.id]||[];
-    $$('[data-like]').forEach(function(b){b.setAttribute('aria-pressed',liked.indexOf(b.dataset.like)>-1)});
-    var st=Likes.status(), s=$('#sync');
-    s.dataset.s=st; s.textContent=st==='off'?'Offline: saved on this device, will sync when back online.':'Shared with the whole family.';
+    renderWho();
+    var st=Likes.status(), s=$('#sync'), mode=Likes.mode();
+    s.dataset.s=st;
+    s.textContent=mode==='account'?'Saved to your household.':mode==='family'?(st==='off'?'Offline: saved on this device, will sync when back online.':'Shared with the whole family.'):'';
   }
   Likes.init(R.section,paint); paint();
-  $$('[data-like]').forEach(function(b){b.addEventListener('click',function(){Likes.toggle(R.id,b.dataset.like);paint()})});
+  who.addEventListener('click',function(e){
+    var b=e.target.closest('[data-like]'); if(b){Likes.toggle(R.id,b.dataset.like);paint();return}
+    var m=e.target.closest('#made');
+    if(m&&window.RFNAuth){m.disabled=true;RFNAuth.cooked(R.appliance+'/'+R.id).then(function(res){m.textContent=res&&res.error?'Could not save, try again':'✅ Logged. Nice cooking!';m.disabled=!!(res&&!res.error)})}
+  });
 
   function copy(txt,st){
     var done=function(ok){st.textContent=ok?'Copied':'Could not copy here. Long-press to select.'};

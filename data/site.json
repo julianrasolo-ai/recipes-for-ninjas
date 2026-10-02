@@ -47,6 +47,12 @@
   "leadMagnet": {
    "title": "Free printable: 10 family-favourite Ninja recipes",
    "url": ""
+  },
+  "postalAddress": "",
+  "ideas": {
+   "enabled": false,
+   "from": "Recipes for Ninjas <ideas@yourdomain.com>",
+   "_note": "Personalized 'tonight's idea' emails via Resend. Needs RESEND_API_KEY, a verified sending domain, and postalAddress filled in (required by anti-spam law). Sends only to accounts that opted in."
   }
  },
  "members": {
@@ -58,5 +64,15 @@
   "enabled": false,
   "currency": "USD"
  },
- "googleSiteVerification": ""
+ "googleSiteVerification": "",
+ "ai": {
+  "enabled": true,
+  "model": "claude-opus-5-5",
+  "perVisitorDaily": 8,
+  "globalDaily": 300,
+  "_note": "Needs ANTHROPIC_API_KEY in Netlify env. Without it (or once a cap is hit) the assistant still answers from the recipe library, just without AI-written reasons. Lower globalDaily to cap spend."
+ },
+ "accounts": {
+  "_note": "Turns on automatically when SUPABASE_URL and SUPABASE_ANON_KEY are set in Netlify env."
+ }
 }
