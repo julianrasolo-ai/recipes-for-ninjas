@@ -1,0 +1,17 @@
+{
+  "name": "recipes-for-ninjas",
+  "private": true,
+  "type": "module",
+  "description": "Family recipe site: Ninja Swirl ice cream and Ninja NeverClog juices.",
+  "scripts": {
+    "start": "node server.mjs",
+    "build": "node scripts/fetch-images.mjs",
+    "images": "node scripts/fetch-images.mjs",
+    "pages": "python3 scripts/pages.py"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^11.1.3",
+    "sharp": "^0.35.5"
+  },
+  "engines": { "node": ">=20" }
+}

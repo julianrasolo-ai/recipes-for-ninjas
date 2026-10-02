@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Swirl Club · Ninja Swirl recipes</title>
+<meta name="description" content="78 easy family recipes for the Ninja Swirl by CREAMi: fruit, healthy, protein and real soft serve.">
+<meta property="og:title" content="Swirl Club · Ninja Swirl recipes">
+<meta property="og:description" content="78 easy family recipes for the Ninja Swirl by CREAMi: fruit, healthy, protein and real soft serve.">
+<meta property="og:image" content="/img/ice/hero.jpg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/app.css">
+<script>
+/* Images: local file first, then the CDN copy, then the emoji tile. Registered early so the hero is covered. */
+document.addEventListener('error',function(e){
+  var im=e.target; if(!im||im.tagName!=='IMG')return;
+  if(im.dataset.cdn&&im.src.indexOf(im.dataset.cdn)<0){im.src=im.dataset.cdn;return}
+  if(im.dataset.emo){var d=document.createElement('div');d.className='emo';d.textContent=im.dataset.emo;im.replaceWith(d)}
+},true);
+</script>
+</head>
+<body>
+<a class="skip" href="#menu">Skip to recipes</a>
+
+<section class="hero" id="hero" aria-label="Swirl Club">
+  <div class="hero-pin">
+    <nav class="topbar" aria-label="Site"><a href="/">← Home</a><a href="/juice/">🧃 Juice</a></nav>
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+    <div id="sprinkles" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="txt">
+        <span class="brand">Swirl Club</span>
+        <h1 id="h1"><span class="word w1">Swirl</span> <span class="word w2">it.</span></h1>
+        <p class="lede">78 easy recipes for your Ninja Swirl. Fruit, healthy, protein and real soft serve.</p>
+        <a class="cta" href="#menu">See the menu ↓</a>
+      </div>
+      <div class="cone" id="cone"><img src="/img/ice/hero.jpg" alt="A tall vanilla soft-serve swirl in a cone"></div>
+    </div>
+    <div class="scrollcue">Scroll</div>
+  </div>
+</section>
+
+<main class="menu" id="menu">
+  <div class="wrap">
+    <div class="tools">
+      <input class="search" id="q" type="search" placeholder="Search mango, chocolate, protein…" aria-label="Search recipes" autocomplete="off">
+      <div class="pills">
+        <button class="pill fav" id="openFav" type="button"><span class="pe">❤️ </span><span class="pl">Favorites</span><span class="ps">Faves</span></button>
+        <button class="pill have" id="openHave" type="button"><span class="pe">🧺 </span><span class="pl">What I have</span><span class="ps">I have</span></button>
+        <button class="pill" id="healthyOnly" type="button" aria-pressed="false"><span class="pe">🌿 </span>Healthy</button>
+      </div>
+    </div>
+    <div class="bens" id="bens" hidden aria-label="Filter by benefit"></div>
+    <nav class="nav" aria-label="Menu sections"><div class="navrow" id="navrow"></div></nav>
+    <div id="sections"></div>
+    <p class="empty" id="empty" hidden>No recipes match. Try another word.</p>
+    <p class="foot">Freeze every pint flat for 24 hours. Crumbly? Press Re-Spin.<br>Recipes adapted from the Ninja Swirl guide and popular CREAMi recipes.</p>
+  </div>
+</main>
+
+<dialog class="sheet" id="sheet" aria-label="Recipe">
+  <div class="sheet-in" id="sheetIn"></div>
+</dialog>
+
+<script>window.SITE={"key": "ice", "data": "/data/ice.json", "pantry": "Sugar, vanilla extract, salt", "haveNote": "Tap everything in your kitchen. Sugar, vanilla and salt are assumed.", "focus": [["all", "Anything"], ["healthy", "🌿 Healthy"], ["fruit", "🍓 Fruit"]], "haveColor": "healthy", "favColor": "fruit"};</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="/assets/likes.js"></script>
+<script src="/assets/app.js"></script>
+</body>
+</html>

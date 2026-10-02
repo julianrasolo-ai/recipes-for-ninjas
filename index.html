@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Recipes for Ninjas</title>
+<meta name="description" content="Our family recipe book: Ninja Swirl ice cream and Ninja NeverClog juices.">
+<meta property="og:title" content="Recipes for Ninjas">
+<meta property="og:description" content="Our family recipe book: Ninja Swirl ice cream and Ninja NeverClog juices.">
+<meta property="og:image" content="/img/ice/hero.jpg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fff6fa; --card:#ffffff; --ink:#22174a; --muted:#6b5f8f; --line:#f1dcea;
+  --pink:#ff4f9a; --sky:#2ba8ff; --sun:#ffc83d; --mint:#14a77c; --grape:#7a5cff;
+  --pinkt:#ffe1ee; --skyt:#dcf0ff; --sunt:#fff1c7; --mintt:#d4f5e9;
+  --shadow:0 18px 40px rgba(34,23,74,.12);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#171230; --card:#221b45; --ink:#fbf7ff; --muted:#b9b0dc; --line:#352c63;
+    --pink:#ff79b3; --sky:#62c0ff; --sun:#ffd76a; --mint:#46d6a8; --grape:#a48fff;
+    --pinkt:#3c2040; --skyt:#16304a; --sunt:#3a3214; --mintt:#143a2f;
+    --shadow:0 18px 40px rgba(0,0,0,.4);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#171230; --card:#221b45; --ink:#fbf7ff; --muted:#b9b0dc; --line:#352c63;
+  --pink:#ff79b3; --sky:#62c0ff; --sun:#ffd76a; --mint:#46d6a8; --grape:#a48fff;
+  --pinkt:#3c2040; --skyt:#16304a; --sunt:#3a3214; --mintt:#143a2f;
+  --shadow:0 18px 40px rgba(0,0,0,.4);
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{background:var(--bg);color:var(--ink);font-family:"Nunito",system-ui,sans-serif;overflow-x:hidden}
+h1,.name{font-family:"Fredoka","Nunito",system-ui,sans-serif}
+.stage{position:relative;min-height:100vh;min-height:100dvh;display:grid;place-items:center;padding:calc(24px + env(safe-area-inset-top,0px)) 16px calc(24px + env(safe-area-inset-bottom,0px));overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(2px);animation:drift 14s ease-in-out infinite alternate}
+.b1{width:52vmax;height:52vmax;background:var(--pinkt);left:-18vmax;top:-16vmax}
+.b2{width:44vmax;height:44vmax;background:var(--mintt);right:-16vmax;bottom:-14vmax;animation-delay:-5s}
+.b3{width:24vmax;height:24vmax;background:var(--sunt);right:8vw;top:-6vmax;animation-delay:-9s}
+@keyframes drift{to{transform:translate(4vmax,3vmax) scale(1.06)}}
+.float{position:absolute;font-size:clamp(22px,4vw,34px);opacity:.75;animation:bob 7s ease-in-out infinite;pointer-events:none}
+@keyframes bob{50%{transform:translateY(-18px) rotate(12deg)}}
+.inner{position:relative;z-index:2;width:min(980px,100%);display:grid;gap:18px}
+header{text-align:center}
+.kicker{display:inline-block;background:var(--card);color:var(--pink);font:700 14px "Fredoka",sans-serif;padding:6px 14px;border-radius:999px;box-shadow:var(--shadow)}
+h1{font-size:clamp(40px,10vw,92px);line-height:.95;margin:12px 0 6px;letter-spacing:-.02em;text-wrap:balance}
+h1 span{display:inline-block;animation:pop .7s cubic-bezier(.2,1.4,.4,1) both}
+h1 span:nth-child(2){animation-delay:.08s;color:var(--pink)}
+h1 span:nth-child(3){animation-delay:.16s;color:var(--mint)}
+@keyframes pop{from{opacity:0;transform:translateY(24px) scale(.95)}}
+.sub{color:var(--muted);font-weight:700;margin:0;font-size:clamp(15px,2.4vw,18px)}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:640px){.choices{grid-template-columns:1fr;gap:12px}}
+.choice{--a:var(--pink);--t:var(--pinkt);position:relative;display:grid;grid-template-columns:1fr;text-decoration:none;color:var(--ink);background:var(--card);border-radius:28px;padding:18px;box-shadow:var(--shadow);overflow:hidden;animation:rise .8s cubic-bezier(.2,1,.3,1) backwards;transition:transform .2s,box-shadow .2s;transform-style:preserve-3d}
+.choice.juice{--a:var(--mint);--t:var(--mintt);animation-delay:.12s}
+.choice:hover{box-shadow:0 26px 60px rgba(34,23,74,.18)}
+.choice:active{transform:scale(.98)}
+.choice:focus-visible{outline:3px solid var(--sky);outline-offset:4px}
+@keyframes rise{from{opacity:0;transform:translateY(40px)}}
+.pic{position:relative;aspect-ratio:1;width:min(100%,300px);justify-self:center;border-radius:50%;background:var(--t);border:8px solid var(--card);box-shadow:0 16px 40px color-mix(in srgb,var(--a) 30%,transparent);overflow:hidden;animation:spin 9s ease-in-out infinite alternate}
+.juice .pic{animation-delay:-4.5s}
+@keyframes spin{from{transform:rotate(-6deg) scale(.98)}to{transform:rotate(6deg) scale(1.02)}}
+.pic img{width:100%;height:100%;object-fit:cover;display:block}
+.pic .emo{position:absolute;inset:0;display:grid;place-items:center;font-size:96px}
+.meta{text-align:center;margin-top:12px}
+.name{font-size:clamp(28px,5vw,40px);font-weight:700;margin:0;line-height:1}
+.dev{color:var(--muted);font-weight:700;font-size:14px;margin:6px 0 10px}
+.go{display:inline-flex;align-items:center;gap:8px;background:var(--a);color:#fff;font-weight:800;padding:11px 20px;border-radius:999px;transition:transform .2s}
+.choice:hover .go{transform:translateX(4px)}
+.family{text-align:center;color:var(--muted);font-weight:700;font-size:14px;margin:4px 0 0}
+.family b{font-family:"Fredoka",sans-serif;font-weight:600}
+@media (max-width:640px){
+  .choice{grid-template-columns:120px 1fr;align-items:center;gap:14px;padding:14px;text-align:left}
+  .pic{width:120px;border-width:5px}
+  .pic .emo{font-size:56px}
+  .meta{text-align:left;margin:0}
+  .go{padding:9px 16px;font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+<script>
+document.addEventListener('error',function(e){
+  var im=e.target; if(!im||im.tagName!=='IMG')return;
+  if(im.dataset.cdn&&im.src.indexOf(im.dataset.cdn)<0){im.src=im.dataset.cdn;return}
+  if(im.dataset.emo){var d=document.createElement('div');d.className='emo';d.textContent=im.dataset.emo;im.replaceWith(d)}
+},true);
+</script>
+</head>
+<body>
+<main class="stage">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <span class="float" style="left:8%;top:18%" aria-hidden="true">🍓</span>
+  <span class="float" style="right:10%;top:12%;animation-delay:-2s" aria-hidden="true">🍋</span>
+  <span class="float" style="left:12%;bottom:12%;animation-delay:-4s" aria-hidden="true">🥕</span>
+  <span class="float" style="right:7%;bottom:20%;animation-delay:-1s" aria-hidden="true">🍦</span>
+  <div class="inner">
+    <header>
+      <span class="kicker">Recipes for Ninjas</span>
+      <h1><span>What</span> <span>are we</span> <span>making?</span></h1>
+      <p class="sub">Pick a machine.</p>
+    </header>
+    <div class="choices">
+      <a class="choice ice" href="/ice-cream/">
+        <div class="pic"><img src="/img/ice/hero.jpg" alt="A soft-serve swirl in a cone" data-emo="🍦"></div>
+        <div class="meta"><p class="name">Ice cream</p><p class="dev">Ninja Swirl by CREAMi · 78 recipes</p><span class="go">Let's swirl →</span></div>
+      </a>
+      <a class="choice juice" href="/juice/">
+        <div class="pic"><img src="/img/juice/hero.jpg" data-cdn="https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_012255_e8a3bddf-7c69-44e3-9fca-bfddf01c5929_min.webp" alt="Three glasses of fresh juice" data-emo="🧃"></div>
+        <div class="meta"><p class="name">Juice</p><p class="dev">Ninja NeverClog · 42 recipes</p><span class="go">Let's press →</span></div>
+      </a>
+    </div>
+    <p class="family">Favorites saved for <b>Julian</b>, <b>Charlyne</b>, <b>Leanne</b> &amp; <b>Noah</b></p>
+  </div>
+</main>
+<script>
+/* Gentle tilt toward the pointer on desktop. */
+(function(){
+  if(matchMedia('(hover: none), (prefers-reduced-motion: reduce)').matches)return;
+  document.querySelectorAll('.choice').forEach(function(c){
+    c.addEventListener('pointermove',function(e){
+      var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+      c.style.transform='perspective(900px) rotateY('+(x*8)+'deg) rotateX('+(-y*8)+'deg) translateY(-4px)';
+    });
+    c.addEventListener('pointerleave',function(){c.style.transform=''});
+  });
+})();
+</script>
+</body>
+</html>
