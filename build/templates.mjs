@@ -82,7 +82,7 @@ ${(o.scripts || []).map((s) => (s.startsWith("<") ? s : `<script src="${s}" defe
 function header(heading, kicker, tag = "h1", brand = false, accounts = false) {
   return `<header class="top${brand ? " brand" : ""}">
   <a class="ibtn home" href="/" aria-label="Home">←</a>
-  <div class="ttl">${kicker ? `<p class="kick">${kicker}</p>` : ""}<${tag} class="h">${heading || "Recipes for Ninjas"}</${tag}></div>
+  <div class="ttl">${kicker ? `<p class="kick">${kicker}</p>` : ""}<${tag} class="h">${heading || "Recipes By Ninjas"}</${tag}></div>
   <a class="ibtn srch" href="/search/" aria-label="Search all recipes">🔍</a>${accounts ? '\n  <a class="ibtn srch acct" href="/account/" aria-label="Your account">👤</a>' : ""}
 </header>`;
 }
@@ -93,10 +93,9 @@ function footer(ctx) {
   <nav class="fnav" aria-label="Appliances">${appliances.map((a) => `<a href="${a.url}">${a.emoji} ${esc(a.name)}</a>`).join("")}</nav>
   <nav class="fnav small" aria-label="More">
     <a href="/search/">Search</a><a href="/gear/">Accessories</a>${site.shop.enabled ? '<a href="/shop/">Shop</a>' : ""}
-    <a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/disclosure/">Affiliate disclosure</a>
+    <a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/disclosure/">Disclosures</a>
     <button type="button" class="linkbtn" data-consent-open>Cookie settings</button>
   </nav>
-  <p class="disc">${esc(site.affiliate.disclosure)}</p>
   <p class="disc">© ${new Date().getFullYear()} ${esc(site.ownerName)}. Not affiliated with SharkNinja.</p>
 </footer>`;
 }
@@ -163,12 +162,14 @@ function video(v) {
   const tall = !yt || /shorts/.test(url);
   return `<div class="video${tall ? " tall" : ""}"><iframe src="${src}" title="Recipe video" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div>`;
 }
+/* Short affiliate note: only shown once an Amazon tag is set, since links aren't affiliate links before that. */
+const affNote = (site, cls = "disc") => site.affiliate.amazonTag ? `<p class="${cls}">We may earn from qualifying purchases. <a href="/disclosure/">Disclosures</a></p>` : "";
 function gearBlock(ctx, r) {
   const items = (r.gear || []).map((id) => ctx.products[id]).filter(Boolean);
   if (!items.length) return "";
   return `<section class="gear-used"><h3>Handy for this recipe</h3>
   <div class="gear-row">${items.map((p) => productCard(p, "recipe")).join("")}</div>
-  <p class="disc">${esc(ctx.site.affiliate.disclosure)}</p></section>`;
+  ${affNote(ctx.site)}</section>`;
 }
 export function productCard(p, where) {
   const pic = p.image ? `<img src="${p.image}" alt="${esc(p.name)}" loading="lazy"${p.cdn ? ` data-cdn="${p.cdn}"` : ""} data-emo="${p.icon || "🧰"}">` : `<div class="emo">${p.icon || "🧰"}</div>`;
@@ -182,7 +183,7 @@ export function productCard(p, where) {
 export function home(ctx, html) {
   const cfg = `<script>window.SITE_CONFIG=${json(publicConfig(ctx.site))};</script>`;
   const s = ctx.site, img = s.url + ctx.og.home, big = ctx.og.home.includes("/og/");
-  const title = s.name + " · Ninja Creami, juicer, blender and Woodfire recipes";
+  const title = s.name + " — What are we making?";
   const desc = "Family recipes for Ninja machines: Creami ice cream, NeverClog juices, Detect blender smoothies and Woodfire grill BBQ. Pick a machine and start cooking.";
   const social = `<meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${s.url}/">
@@ -309,7 +310,7 @@ function listing(ctx, o) {
   ${o.crumbs ? `<nav class="crumbs" aria-label="Breadcrumb">${o.crumbs}</nav>` : ""}
   <div class="lhead"><h1>${o.h1}</h1>${o.lead ? `<p class="lead">${esc(o.lead)}</p>` : ""}</div>
   ${o.inner}
-</div>`, header: true, heading: o.heading || "🥷 Recipes for Ninjas", headingTag: "p", brand: !o.heading });
+</div>`, header: true, heading: o.heading || "🥷 Recipes By Ninjas", headingTag: "p", brand: !o.heading });
 }
 export function category(ctx, a, c) {
   const items = a.data.recipes.filter((r) => r.cat === c.k).map((r) => ({ a, r }));
@@ -335,7 +336,7 @@ export function accessoryStrip(ctx, a, limit = 3) {
   const l = Object.values(ctx.products).filter((p) => p.appliance === a.key).sort((x, y) => x.rank - y.rank).slice(0, limit);
   if (!l.length) return "";
   return `<section class="acc-strip"><div class="sh"><h2 class="h3">🧰 Accessories for your ${esc(a.short.toLowerCase())}</h2><a class="shop-btn" href="/gear/#${a.key}">See all</a></div>
-  <div class="gear-grid">${l.map((p) => productCard(p, "hub")).join("")}</div><p class="disc">${esc(ctx.site.affiliate.disclosure)}</p></section>`;
+  <div class="gear-grid">${l.map((p) => productCard(p, "hub")).join("")}</div>${affNote(ctx.site)}</section>`;
 }
 function compatTable(c) {
   return `<div class="compat"><h3>${esc(c.title)}</h3><table><thead><tr><th>Your machine</th><th>Pints that fit</th></tr></thead><tbody>${c.rows.map((r) => `<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join("")}</tbody></table><p class="disc">${esc(c.note)}</p></div>`;
@@ -351,7 +352,7 @@ export function gear(ctx, catalog) {
   }).join("");
   return listing(ctx, { title: "Accessories we use", desc: "Pints, cups, pellets and the small extras that make Ninja machines easier to live with.", path: "/gear/", h1: "🧰 Accessories we use",
     lead: "You already have the machine. These are the extras we actually reach for.",
-    inner: `<nav class="chips">${ctx.appliances.map((a) => `<a class="chip" href="#${a.key}">${a.emoji} ${esc(a.short)}</a>`).join("")}</nav><p class="disc box">${esc(ctx.site.affiliate.disclosure)}</p>${secs}` });
+    inner: `<nav class="chips">${ctx.appliances.map((a) => `<a class="chip" href="#${a.key}">${a.emoji} ${esc(a.short)}</a>`).join("")}</nav>${affNote(ctx.site, "disc box")}${secs}` });
 }
 export function shop(ctx, catalog) {
   const items = catalog.digital || [];
@@ -372,10 +373,10 @@ export function legal(ctx, which) {
 <li><b>Advertising.</b> If ads are enabled and you consent, our ad partner may use cookies to show and measure ads.</li>
 <li><b>Purchases.</b> Payments are handled by Stripe. We never see your card details; we keep an order record so you can re-download.</li></ul>
 <h2 class="h3">Accounts</h2><ul>
-<li><b>What we store.</b> Your email (to sign you in), your household (name, size, which Ninja machines you have), and for each person you add: first name, diet, allergies, foods they don't like, goals, meal types and cooking time. We also store favorites, a "we made this" log, and your email and text settings.</li>
+<li><b>What we store.</b> Your email (to sign you in), your household (name, size, which Ninja machines you have), and for each person you add: first name, diet, allergies, foods they don't like, goals, meal types and cooking time. We also store favorites, a "we made this" log, and your email settings.</li>
 <li><b>Why.</b> Only to personalize recipe ideas: skip allergies and dislikes, show your machines, and not repeat what you cooked in the last two weeks. Allergy answers are used as filters, not as medical information, and are never shared or sold.</li>
 <li><b>Where.</b> Accounts run on Supabase (database and sign-in). Each household can only read its own rows (row-level security). If you sign in with Google we receive your email address only.</li>
-<li><b>Email and text ideas.</b> Off unless you tick the box. Email and text are separate permissions; we record when you gave or withdrew each. Emails are sent through Resend, include a one-click unsubscribe link, and we keep a log of which recipes we sent so ideas rotate.</li>
+<li><b>Tonight by Ninjas emails.</b> Off unless you tick the box, and only daily or weekly at the time you pick. We record when you gave or withdrew permission. Emails are sent through Resend, include a one-click unsubscribe link, and we keep a log of which recipes we sent so ideas rotate.</li>
 <li><b>Deleting.</b> "Delete my account" on your account page permanently removes your sign-in, household, people, favorites, history and settings right away.</li></ul>
 <h2 class="h3">"What are we making?" assistant</h2>
 <p>When you ask for ideas, your meal choice, the chips you tapped and what you typed are sent to our server. If you are signed in, your household's allergies, dislikes and recent meals are used to filter the recipe list. To write the suggestions we may send your request and a shortlist of our recipes to Anthropic (Claude). We don't send your name or email, and Anthropic does not use API data to train its models. To limit use per visitor we count requests by account or by a one-way hash of your IP address, kept for one day. Don't type anything private into the box.</p>
@@ -383,7 +384,7 @@ export function legal(ctx, which) {
     terms: ["Terms of use", `<p>Recipes are for home use. Follow your appliance manual and food-safety guidance, check internal temperatures for meat, and take care with allergies. Nutrition and benefit tags are general information, not medical advice.</p>
 <p>Content on this site belongs to ${who} unless stated otherwise. You may share links freely; please don't republish full recipes or photos without permission.</p>
 <p>Product names are trademarks of their owners. This site is not affiliated with or endorsed by SharkNinja.</p>`],
-    disclosure: ["Affiliate disclosure", `<p>${esc(s.affiliate.disclosure)}</p><p>We only recommend products we use or would buy for our own family. Commissions help keep this site free and don't change the price you pay.</p>`],
+    disclosure: ["Disclosures", `<p>${esc(s.name)} is an independent family recipe site. Not affiliated with SharkNinja; Ninja, Creami, NeverClog and Woodfire are trademarks of their owners.</p><h2 class="h3">Affiliate links</h2><p>${esc(s.affiliate.disclosure)}</p><p>We only recommend products we use or would buy for our own family. Commissions help keep this site free and don't change the price you pay.</p>`],
   }[which];
   return listing(ctx, { title: T[0], desc: `${T[0]} for ${s.name}.`, path: `/${which}/`, h1: T[0], inner: `<div class="prose">${T[1]}<p class="disc">Last updated ${new Date().toISOString().slice(0, 10)}.</p></div>` });
 }
@@ -393,19 +394,19 @@ export function notFound(ctx) {
 }
 export function thanks(ctx) {
   const lm = ctx.site.email.leadMagnet;
-  return listing(ctx, { title: "You're in", desc: "Thanks for joining Recipes for Ninjas.", path: "/thanks/", h1: "🎉 You're in", lead: "Thanks for joining. Check your inbox for a welcome email.",
+  return listing(ctx, { title: "You're in", desc: "Thanks for joining Recipes By Ninjas.", path: "/thanks/", h1: "🎉 You're in", lead: "Thanks for joining. Check your inbox for a welcome email.",
     inner: (lm?.url ? `<p><a class="btn" href="${esc(lm.url)}" download>Download: ${esc(lm.title)}</a></p>` : "") + `<p><a class="btn ghost" href="/">Back to recipes</a></p>` });
 }
 
 export function about(ctx) {
   const s = ctx.site;
-  return listing(ctx, { title: "About", desc: "Who we are and why we write recipes for Ninja kitchen machines.", path: "/about/", h1: "👋 About Recipes for Ninjas",
+  return listing(ctx, { title: "About", desc: "Who we are and why we write recipes for Ninja kitchen machines.", path: "/about/", h1: "👋 About Recipes By Ninjas",
     inner: `<div class="prose">
 <p>We're a family of four (${s.family.map(esc).join(", ")}) with a slightly out-of-hand collection of Ninja machines. This site started as our own recipe book so nobody had to dig through manuals or scroll past ten ads to find out how long to freeze a pint.</p>
 <p>Every recipe here is written for a specific machine: the ${ctx.appliances.map((a) => esc(a.device)).join(", ")}. Each one tells you which program, filter or function to press, with times and amounts tested at home.</p>
 <h2 class="h3">How we write recipes</h2>
 <ul><li>Short ingredient lists, things you can find in a normal supermarket.</li><li>Clear steps you can follow with sticky hands on a phone.</li><li>A "make it healthier" idea on every recipe.</li><li>Food-safety temperatures for anything off the grill.</li></ul>
-<p>We're not affiliated with SharkNinja. Some links are affiliate links; see our <a href="/disclosure/">disclosure</a>.</p>
+<p>We're not affiliated with SharkNinja. See our <a href="/disclosure/">disclosures</a>.</p>
 <p><a class="btn" href="/contact/">Contact us</a></p></div>` });
 }
 export function contact(ctx) {

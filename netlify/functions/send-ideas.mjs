@@ -1,4 +1,5 @@
-// Hourly: prune yesterday's AI usage counters, then email each opted-in account its "tonight's idea" at the hour/day they chose (their timezone).
+// Runs every hour only to check whose chosen send time it is: each person gets "Tonight by Ninjas" daily or weekly, never more
+// than once a day (see isDue). Also prunes yesterday's AI usage counters.
 // Needs SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, RESEND_API_KEY, and site.json email.ideas.enabled + email.postalAddress.
 import catalog from "../../data/catalog.json" with { type: "json" };
 import site from "../../data/site.json" with { type: "json" };

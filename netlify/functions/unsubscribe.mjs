@@ -5,7 +5,7 @@ import { adminClient } from "../../lib/household.mjs";
 
 const page = (msg, form = "") => new Response(`<!doctype html><meta name="viewport" content="width=device-width,initial-scale=1"><title>Email preferences</title>
 <body style="font:17px/1.5 system-ui,sans-serif;max-width:480px;margin:12vh auto;padding:0 16px;color:#22174a"><h1 style="font-size:24px">${msg}</h1>${form}
-<p><a href="${site.url}/account/#email">Manage email preferences</a> · <a href="${site.url}/">Recipes for Ninjas</a></p></body>`, { headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" } });
+<p><a href="${site.url}/account/#email">Manage email preferences</a> · <a href="${site.url}/">Recipes By Ninjas</a></p></body>`, { headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" } });
 
 export default async (req) => {
   const token = new URL(req.url).searchParams.get("t") || "";

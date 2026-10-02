@@ -48,4 +48,4 @@ http.createServer(async (req, res) => {
   try { if ((await stat(file)).isDirectory()) file = join(file, "index.html"); } catch {}
   try { send(res, 200, await readFile(file), TYPES[extname(file)] || "application/octet-stream"); }
   catch { send(res, 404, await readFile(join(SITE, "404.html")).catch(() => "Not found"), "text/html; charset=utf-8"); }
-}).listen(PORT, () => console.log(`Recipes for Ninjas on http://localhost:${PORT}`));
+}).listen(PORT, () => console.log(`Recipes By Ninjas on http://localhost:${PORT}`));

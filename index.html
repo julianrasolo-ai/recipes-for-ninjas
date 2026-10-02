@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Recipes for Ninjas</title>
+<title>Recipes By Ninjas — What are we making?</title>
 <!--SOCIAL-->
 <meta name="theme-color" content="#fff4e8">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -32,10 +32,20 @@ h1 span{display:inline-block;animation:pop .7s cubic-bezier(.2,1.4,.4,1) backwar
 h1 span:nth-child(2){animation-delay:.08s;color:var(--pink)}
 h1 span:nth-child(3){animation-delay:.16s;color:var(--mint)}
 @keyframes pop{from{opacity:0;transform:translateY(22px) scale(.95)}}
-.askbox{pointer-events:auto;display:flex;gap:6px;max-width:420px;margin:12px auto 0;padding:5px;border-radius:999px;background:color-mix(in srgb,#fff 92%,var(--cream));box-shadow:0 6px 18px rgba(34,23,74,.1);animation:pop .7s cubic-bezier(.2,1.4,.4,1) .24s backwards}
-.askbox input{flex:1;min-width:0;border:0;background:transparent;font:16px "Nunito",sans-serif;color:var(--ink);padding:6px 10px;outline:none}
-.askbox button{border:0;border-radius:999px;width:38px;height:38px;background:var(--pink);font-size:20px;cursor:pointer}
-.askbox:focus-within{box-shadow:0 0 0 3px color-mix(in srgb,var(--pink) 40%,transparent),0 6px 18px rgba(34,23,74,.1)}
+/* Ask Ninjas: the chef's speech bubble (dark glass, neon hairline, tail pointing at him) */
+.askbox{pointer-events:auto;position:relative;display:flex;align-items:center;gap:8px;max-width:400px;margin:14px auto 0;padding:6px 6px 6px 14px;border-radius:22px;
+  background:rgba(16,12,34,.86);color:#f4f1ff;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 14px 34px rgba(16,12,34,.28);
+  animation:pop .7s cubic-bezier(.2,1.4,.4,1) .3s backwards}
+.askbox::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(120deg,#5ce1e6,transparent 45%,transparent 60%,#ff5fa2);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.askbox::after{content:"";position:absolute;left:50%;bottom:-9px;width:18px;height:18px;translate:-50% 0;rotate:45deg;background:rgba(16,12,34,.86);border-radius:0 0 5px 0}
+.askbox .who{flex:none;font:700 12px "Fredoka",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#5ce1e6;display:flex;align-items:center;gap:6px}
+.askbox .who i{width:7px;height:7px;border-radius:50%;background:#3ee6a4;box-shadow:0 0 8px #3ee6a4}
+.askbox input{flex:1;min-width:0;border:0;background:transparent;font:16px "Nunito",sans-serif;color:#f4f1ff;padding:8px 4px;outline:none}
+.askbox input::placeholder{color:#a79fcf}
+.askbox button{flex:none;border:0;border-radius:50%;width:40px;height:40px;background:linear-gradient(135deg,#5ce1e6,#ff5fa2);color:#120d28;font-size:17px;font-weight:900;cursor:pointer}
+.askbox:focus-within{box-shadow:0 0 0 3px rgba(92,225,230,.35),0 14px 34px rgba(16,12,34,.28)}
+@media (max-width:420px){.askbox .who span{display:none}}
 .search{position:absolute;z-index:31;right:14px;top:calc(env(safe-area-inset-top,0px) + 14px);width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,#fff 92%,var(--cream));text-decoration:none;box-shadow:0 6px 18px rgba(34,23,74,.1)}
 
 .sun{position:absolute;z-index:1;left:50%;top:47%;width:min(66vw,440px);aspect-ratio:1;border-radius:50%;translate:-50% -50%;
@@ -95,11 +105,12 @@ document.addEventListener('error',function(e){
 <body>
 <main class="stage" id="stage">
   <div class="head">
-    <span class="kicker">Recipes for Ninjas</span>
+    <span class="kicker">Recipes By Ninjas</span>
     <h1><span>What</span> <span>are we</span> <span>making?</span></h1>
-    <form class="askbox" id="ask-home" role="search" aria-label="Ask the ninja for ideas">
-      <input name="q" maxlength="400" placeholder="Tired, healthy, leftovers… ask the ninja" aria-label="What do you feel like?">
-      <button type="submit" aria-label="Get ideas">🥷</button>
+    <form class="askbox" id="ask-home" aria-label="Ask Ninjas">
+      <span class="who"><i aria-hidden="true"></i><span>Ask Ninjas</span></span>
+      <input name="q" maxlength="400" placeholder="Tired? Leftovers? Tell me…" aria-label="Ask Ninjas what to make">
+      <button type="submit" aria-label="Ask">➤</button>
     </form>
   </div>
   <a class="search" href="/search/" aria-label="Search all recipes">🔍</a>
@@ -121,7 +132,7 @@ document.addEventListener('error',function(e){
   /* CDN copies (transparent PNGs) for when the build hasn't downloaded the images, e.g. local preview */
   var CDN='https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_';
   var SRC={ninja:'015047_1ecb3764-861c-4e1f-a86f-2d8bb558b94c','icecream-machine':'023312_43681c6b-3eda-4263-9ec1-5b785afd6ae6',juicer:'023312_98ba7198-3278-4beb-9680-7ed51e5f99db',
-    blender:'023312_f5c50f42-417a-40db-a7c3-3c62adc7a64b',grill:'023312_c8c4f5e7-e6be-47ec-9187-185472b6d1fd',
+    blender:'023312_f5c50f42-417a-40db-a7c3-3c62adc7a64b',grill:'194703_1534ab96-f613-47ce-ad72-dc44b0d31ba8',
     strawberry:'023306_3c0041da-81fb-4638-8968-d7c0b2ab2fa6',banana:'023306_71cb8b2a-b92a-4c8c-94b8-06b52efa5362',blueberry:'023306_bc2c0400-01a7-4e84-bf2e-090f70c718f9',
     ice:'023306_c037e700-2921-4a60-878a-55bda902916e',orange:'023306_1820d910-8c14-4666-b607-e8ca3145821c',carrot:'023306_e28c674b-17b1-4b83-9f87-5e51e0d9e1b3',
     apple:'023306_ef141bfd-a3fe-49e7-b5c6-ad10daae6d3c',lemon:'023306_6acf6ff3-6568-48c8-b7f9-c457a5e421f4',pineapple:'023306_9d9e3a00-4885-4066-a1ff-9e549fee2981',

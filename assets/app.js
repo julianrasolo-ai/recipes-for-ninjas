@@ -109,7 +109,7 @@
       ((r.ben||[]).length?'<p class="disclaim">Benefit tags are general nutrition info, not medical advice.</p>':'')+
       ((r.gearItems||[]).length?'<h3>Handy for this recipe</h3><div class="gear-row">'+r.gearItems.map(function(p){
         return p.href?'<a class="gcard" href="'+p.href+'" rel="sponsored noopener" target="_blank" data-aff="'+p.id+'" data-where="sheet"><span class="gp"><div class="emo">'+(p.icon||'🧰')+'</div></span><span class="gt"><b>'+esc(p.name)+'</b><small>'+esc(p.note||'')+'</small></span><span class="go">Check price ›</span></a>':'';
-      }).join('')+'</div><p class="disc">'+esc(D.disclosure)+'</p>':'')+
+      }).join('')+'</div>'+(D.disclosure?'<p class="disc">'+esc(D.disclosure)+' <a href="/disclosure/">Disclosures</a></p>':''):'')+
       '<a class="open-page" href="'+url+'">Open full page ›</a></div>';
     var keep=dlg.open?sin.scrollTop:0;
     open(h,r.cat); if(keep)sin.scrollTop=keep;

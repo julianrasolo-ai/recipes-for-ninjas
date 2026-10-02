@@ -93,7 +93,7 @@ for (const [path, html] of pages) {
 await mkdir(join(OUT, "data"), { recursive: true });
 for (const a of appliances) {
   const recipes = a.data.recipes.map((r) => ({ ...r, gearItems: (r.gear || []).map((id) => products[id]).filter(Boolean).map((p) => ({ id: p.id, name: p.name, icon: p.icon, note: p.note, href: p.href })) }));
-  await writeFile(join(OUT, "data", `${a.key}.json`), JSON.stringify({ ...a.data, recipes, pressLabel: a.pressLabel, toggleChip: a.toggleChip, disclosure: site.affiliate.disclosure }));
+  await writeFile(join(OUT, "data", `${a.key}.json`), JSON.stringify({ ...a.data, recipes, pressLabel: a.pressLabel, toggleChip: a.toggleChip, disclosure: site.affiliate.amazonTag ? "We may earn from qualifying purchases." : "" }));
 }
 await writeFile(join(OUT, "search-index.json"), JSON.stringify(all.map(({ r, a }) => ({
   t: r.title, u: r.url, a: a.key, c: a.catMap[r.cat]?.n || "", i: r.img, cdn: r.cdn || "", e: r.emoji,

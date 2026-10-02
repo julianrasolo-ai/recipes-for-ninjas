@@ -59,11 +59,9 @@ function questionnaire(state) {
     <fieldset><legend>Cooking time on a normal day</legend><div class="ichips">${[15, 30, 60, 90].map((m, i) => `<label class="ichip-l"><input type="radio" name="time" value="${m}"${i === 1 ? " checked" : ""}> ${m === 90 ? "90+ min" : m + " min"}</label>`).join("")}</div></fieldset>
     <fieldset><legend>Goals</legend><div class="ichips">${checks("goal", GOALS)}</div></fieldset>
     <fieldset><legend>Which meals do you want ideas for?</legend><div class="ichips">${checks("meal", pairs(MEALS), ["dinner"])}</div></fieldset>
-    <fieldset id="email"><legend>Ideas by email or text (optional)</legend>
-      <label class="consent-l"><input type="checkbox" name="emailOk"> Email me recipe ideas for my household. Unsubscribe any time.</label>
+    <fieldset id="email"><legend>Tonight by Ninjas: recipe ideas by email (optional)</legend>
+      <label class="consent-l"><input type="checkbox" name="emailOk"> Email me Tonight by Ninjas: recipe ideas for my household. Unsubscribe any time.</label>
       <div class="when">${whenFields({ email_frequency: "weekly", email_weekday: 0, send_hour: 16 })}</div>
-      <label class="consent-l"><input type="checkbox" name="smsOk"> Text me recipe ideas (separate permission; message rates may apply).</label>
-      <label class="phone">Mobile number<input name="phone" type="tel" autocomplete="tel" maxlength="20"></label>
       <input type="hidden" name="tz" value="${esc(tz)}">
     </fieldset>
     <button class="btn" type="submit">Save</button>
@@ -106,14 +104,13 @@ function whenFields(s) {
 
 async function saveSettings(f, extra = {}) {
   const { sb, state: s } = RFNAuth, prev = s.settings || {};
-  const emailOk = f.emailOk.checked, smsOk = f.smsOk.checked, now = new Date().toISOString();
+  const emailOk = f.emailOk.checked, now = new Date().toISOString();
   const row = {
-    user_id: s.session.user.id, email_consent: emailOk, sms_consent: smsOk && !!f.phone.value.trim(), phone: smsOk ? f.phone.value.trim() || null : null,
+    user_id: s.session.user.id, email_consent: emailOk,
     email_frequency: f.freq.value, email_weekday: +f.weekday.value, send_hour: +f.hour.value, timezone: (f.tz && f.tz.value) || prev.timezone || "America/New_York",
     updated_at: now, ...extra,
   };
   if (emailOk !== !!prev.email_consent) row.email_consent_at = now;
-  if (row.sms_consent !== !!prev.sms_consent) row.sms_consent_at = now;
   const { error } = await sb.from("account_settings").upsert(row);
   if (error) throw error;
 }
@@ -134,12 +131,10 @@ async function dashboard(state, note = "") {
   <section class="card-s"><h2 class="h3">People</h2>
     ${state.profiles.map((p) => personForm(p)).join("")}
     <button class="pill" id="addperson" type="button">+ Add person</button></section>
-  <section class="card-s" id="email"><h2 class="h3">Ideas by email or text</h2>
+  <section class="card-s" id="email"><h2 class="h3">Tonight by Ninjas emails</h2>
     <form id="mail">
       <label class="consent-l"><input type="checkbox" name="emailOk"${st.email_consent ? " checked" : ""}> Email me recipe ideas for my household.</label>
       <div class="when">${whenFields(st)}</div>
-      <label class="consent-l"><input type="checkbox" name="smsOk"${st.sms_consent ? " checked" : ""}> Text me recipe ideas (separate permission).</label>
-      <label class="phone">Mobile number<input name="phone" type="tel" value="${esc(st.phone || "")}" maxlength="20"></label>
       <input type="hidden" name="tz" value="${esc(Intl.DateTimeFormat().resolvedOptions().timeZone || st.timezone || "")}">
       <button class="btn ghost" type="submit">Save email settings</button></form></section>
   <section class="card-s"><h2 class="h3">Favorites and history</h2>

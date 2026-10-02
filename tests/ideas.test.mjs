@@ -32,7 +32,7 @@ assert.ok([again.family, ...again.each.map((e) => e.pick)].every((x) => !keys.in
 
 // email: unsubscribe + address present, refuses to build without an address
 const mail = buildEmail({ site, ideas, unsubscribeUrl: "https://x/api/unsubscribe?t=abc", preferencesUrl: "https://x/account/#email" });
-assert.ok(mail.subject.startsWith("Tonight's idea: "));
+assert.ok(mail.subject.startsWith("Tonight by Ninjas: "));
 assert.ok(mail.html.includes("Unsubscribe") && mail.html.includes("123 Test St") && mail.text.includes("Unsubscribe: https://x/api/unsubscribe?t=abc"));
 assert.equal(mail.keys.length, 3);
 assert.throws(() => buildEmail({ site: { ...site, email: { ...site.email, postalAddress: "" } }, ideas, unsubscribeUrl: "u", preferencesUrl: "p" }));

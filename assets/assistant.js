@@ -1,130 +1,130 @@
-/* "What are we making?" assistant: floating button on every page, inline box on the home page.
-   Meal first, then chips + free text -> POST /api/chat -> 1 to 3 recipe picks (+ an optional dish outside the library). */
+/* Ask Ninjas: a chat with the ninja chef. Floating avatar on every page, speech bubble on the home page.
+   Flow: meal first -> mood chips + free text -> POST /api/chat -> 1 to 3 recipe picks (+ an optional dish outside the library). */
 (function () {
   if (window.__rfnAssistant) return; window.__rfnAssistant = 1;
-  var MEALS = [["breakfast", "🍳", "Breakfast"], ["lunch", "🥪", "Lunch"], ["dinner", "🍽️", "Dinner"], ["snack", "🍓", "Snack"]];
+  var MEALS = [["breakfast", "🍳 Breakfast"], ["lunch", "🥪 Lunch"], ["dinner", "🍽️ Dinner"], ["snack", "🍓 Snack"]];
   var CHIPS = [["tired", "😴 Tired"], ["healthy", "🥗 Healthy"], ["quick", "⚡ Quick"], ["comfort", "🧸 Comfort"], ["leftovers", "🥡 Use my leftovers"]];
+  var NINJA = "/img/home/ninja.webp";
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
-  var state = { meal: null, chips: [], busy: false };
+  var label = function (list, k) { var x = list.filter(function (i) { return i[0] === k; })[0]; return x ? x[1] : k; };
+  var accounts = !!(window.SITE_CONFIG && SITE_CONFIG.supabase);
+  var st = { meal: null, chips: [], text: "", busy: false };
 
-  var css = "" +
-    ".ask-fab{position:fixed;z-index:60;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:8px;border:0;border-radius:999px;padding:12px 16px;background:var(--ink,#22174a);color:var(--bg,#fff);font:700 15px Fredoka,Nunito,system-ui,sans-serif;box-shadow:0 10px 30px rgba(34,23,74,.28);cursor:pointer}" +
-    ".ask-fab span{font-size:20px}@media (max-width:380px){.ask-fab b{display:none}}" +
-    ".ask-fab b{transition:max-width .25s,opacity .2s;max-width:200px;overflow:hidden;white-space:nowrap}.ask-fab.mini{padding:12px}.ask-fab.mini b{max-width:0;opacity:0}" +
-    "body.has-fab{padding-bottom:76px}" +
-    "@media print{.ask-fab,.ask{display:none!important}}" +
-    ".ask{position:fixed;inset:0;z-index:70;display:none;align-items:flex-end;justify-content:center;background:rgba(20,14,40,.45)}" +
-    ".ask.open{display:flex}" +
-    ".ask-p{width:100%;max-width:560px;max-height:92dvh;overflow:auto;overscroll-behavior:contain;background:var(--card,#fff);color:var(--ink,#22174a);border-radius:24px 24px 0 0;padding:18px 16px calc(18px + env(safe-area-inset-bottom,0px));font-family:Nunito,system-ui,sans-serif;box-shadow:0 -10px 40px rgba(0,0,0,.2)}" +
-    "@media (min-width:700px){.ask{align-items:center}.ask-p{border-radius:24px;padding:22px}}" +
-    ".ask-h{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 12px}.ask-h h2{font:700 22px Fredoka,Nunito,sans-serif;margin:0}" +
-    ".ask-x{border:0;background:none;font-size:24px;line-height:1;color:inherit;cursor:pointer;padding:6px}" +
-    ".ask-l{font:700 13px Nunito,sans-serif;color:var(--muted,#6b5f8f);margin:14px 0 8px;text-transform:uppercase;letter-spacing:.04em}" +
-    ".ask-meals{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}" +
-    ".ask-meals button{border:2px solid var(--line,#f1dcea);background:var(--bg,#fff6fa);color:inherit;border-radius:16px;padding:10px 4px;font:700 13px Nunito,sans-serif;cursor:pointer;display:grid;gap:2px;justify-items:center}" +
-    ".ask-meals button span{font-size:24px}.ask-meals button[aria-pressed=true]{border-color:var(--pink,#ff4f9a);background:var(--pinkt,#ffe1ee)}" +
-    ".ask-chips{display:flex;flex-wrap:wrap;gap:8px}.ask-chips button{border:1.5px solid var(--line,#f1dcea);background:transparent;color:inherit;border-radius:999px;padding:7px 12px;font:600 14px Nunito,sans-serif;cursor:pointer}" +
-    ".ask-chips button[aria-pressed=true]{background:var(--mint,#14a77c);border-color:var(--mint,#14a77c);color:#fff}" +
-    ".ask textarea{width:100%;box-sizing:border-box;min-height:64px;border:1.5px solid var(--line,#f1dcea);border-radius:14px;padding:10px 12px;font:16px Nunito,sans-serif;background:var(--bg,#fff);color:inherit;resize:vertical}" +
-    ".ask-go{width:100%;margin-top:12px;border:0;border-radius:999px;padding:13px;background:var(--pink,#ff4f9a);color:#fff;font:700 16px Fredoka,Nunito,sans-serif;cursor:pointer}.ask-go:disabled{opacity:.5;cursor:default}" +
-    ".ask-out{margin-top:14px}.ask-out .intro{margin:0 0 10px;font-weight:600}" +
-    ".ask-card{display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit;border:1.5px solid var(--line,#f1dcea);border-radius:18px;padding:8px;margin:0 0 8px;background:var(--bg,#fff)}" +
-    ".ask-card img,.ask-card .e{width:72px;height:72px;border-radius:14px;object-fit:cover;flex:none;display:grid;place-items:center;font-size:36px;background:var(--line,#f1dcea)}" +
-    ".ask-card b{display:block;font:700 16px Fredoka,Nunito,sans-serif}.ask-card small{display:block;color:var(--muted,#6b5f8f);font-size:14px;line-height:1.35}" +
-    ".ask-outside{border:1.5px dashed var(--muted,#6b5f8f);border-radius:18px;padding:10px 12px;margin:0 0 8px}.ask-outside .tag{font:700 12px Nunito,sans-serif;color:var(--muted,#6b5f8f);text-transform:uppercase;letter-spacing:.04em}" +
-    ".ask-outside ol{margin:6px 0 0;padding-left:20px}" +
-    ".ask-note{font-size:12px;color:var(--muted,#6b5f8f);margin:10px 0 0}" +
-    ".ask-err{color:#c0392b;font-weight:600}";
-  var st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);
+  var link = document.createElement("link"); link.rel = "stylesheet"; link.href = "/assets/assistant.css"; document.head.appendChild(link);
+  var avatar = '<span class="ak-av" aria-hidden="true"><img src="' + NINJA + '" alt="" onerror="this.outerHTML=\'<span class=emo>🥷</span>\'"></span>';
 
-  var box = document.createElement("div");
-  box.className = "ask"; box.setAttribute("role", "dialog"); box.setAttribute("aria-modal", "true"); box.setAttribute("aria-labelledby", "ask-t");
-  box.innerHTML = '<div class="ask-p">' +
-    '<div class="ask-h"><h2 id="ask-t">🥷 What are we making?</h2><button class="ask-x" type="button" aria-label="Close">×</button></div>' +
-    '<p class="ask-l">Which meal?</p><div class="ask-meals">' + MEALS.map(function (m) { return '<button type="button" data-meal="' + m[0] + '" aria-pressed="false"><span>' + m[1] + "</span>" + m[2] + "</button>"; }).join("") + "</div>" +
-    '<p class="ask-l">How are you feeling?</p><div class="ask-chips">' + CHIPS.map(function (c) { return '<button type="button" data-chip="' + c[0] + '" aria-pressed="false">' + c[1] + "</button>"; }).join("") + "</div>" +
-    '<p class="ask-l"><label for="ask-text">Anything else?</label></p><textarea id="ask-text" maxlength="400" placeholder="e.g. I have chicken, peppers and rice. Kids are hungry."></textarea>' +
-    '<button class="ask-go" type="button" disabled>Pick a meal first</button>' +
-    '<div class="ask-out" aria-live="polite"></div>' +
-    '<p class="ask-note">Food ideas only, not medical advice.' + (window.SITE_CONFIG && SITE_CONFIG.supabase ? ' <a href="/account/">Sign in</a> so ideas skip your allergies and recent meals.' : "") + "</p>" +
-    "</div>";
-  var go = box.querySelector(".ask-go"), out = box.querySelector(".ask-out"), text = box.querySelector("#ask-text"), lastFocus = null;
+  var wrap = document.createElement("div");
+  wrap.className = "ak ak-wrap";
+  wrap.innerHTML = '<div class="ak-p" role="dialog" aria-modal="true" aria-labelledby="ak-t">' +
+    '<div class="ak-h">' + avatar + '<div><b id="ak-t">Ask Ninjas</b><small>Your chef for tonight</small></div><button class="ak-x" type="button" aria-label="Close">×</button></div>' +
+    '<div class="ak-log" aria-live="polite"></div>' +
+    '<form class="ak-in"><input maxlength="400" placeholder="Type what you have or how you feel…" aria-label="Message Ask Ninjas"><button class="ak-send" type="submit" aria-label="Send">➤</button></form>' +
+    '<p class="ak-note">Food ideas only, not medical advice.</p></div>';
+  var log = wrap.querySelector(".ak-log"), form = wrap.querySelector(".ak-in"), input = form.querySelector("input"), send = form.querySelector(".ak-send"), lastFocus = null;
 
-  function refresh() {
-    box.querySelectorAll("[data-meal]").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.meal === state.meal)); });
-    box.querySelectorAll("[data-chip]").forEach(function (b) { b.setAttribute("aria-pressed", String(state.chips.indexOf(b.dataset.chip) >= 0)); });
-    go.disabled = state.busy || !state.meal;
-    go.textContent = state.busy ? "Thinking…" : state.meal ? "Find ideas" : "Pick a meal first";
+  function add(html, cls) {
+    var d = document.createElement("div"); d.className = cls || "ak-m"; d.innerHTML = html; log.appendChild(d);
+    log.scrollTop = log.scrollHeight; return d;
   }
-  box.addEventListener("click", function (e) {
-    if (e.target === box || e.target.closest(".ask-x")) return close();
-    var m = e.target.closest("[data-meal]"), c = e.target.closest("[data-chip]");
-    if (m) { state.meal = m.dataset.meal; refresh(); }
-    if (c) { var i = state.chips.indexOf(c.dataset.chip); i < 0 ? state.chips.push(c.dataset.chip) : state.chips.splice(i, 1); refresh(); }
+  function ninjaSays(html) { return add(html); }
+  function meSays(text) { return add(esc(text), "ak-m me"); }
+  function options(list, onPick, multi) {
+    var box = add(list.map(function (o) { return '<button type="button" data-k="' + o[0] + '" aria-pressed="false">' + o[1] + "</button>"; }).join(""), "ak-opts");
+    box.addEventListener("click", function (e) {
+      var b = e.target.closest("button"); if (!b || st.busy) return;
+      if (multi) { b.setAttribute("aria-pressed", String(b.getAttribute("aria-pressed") !== "true")); onPick(b.dataset.k, b); }
+      else { box.remove(); onPick(b.dataset.k); }
+    });
+    return box;
+  }
+
+  function start() {
+    st = { meal: null, chips: [], text: st.text || "", busy: false }; log.innerHTML = "";
+    ninjaSays("Hey! I'm your ninja chef. 🥷 <br>What are we making?");
+    options(MEALS, pickMeal);
+    sync();
+  }
+  function pickMeal(k) {
+    st.meal = k; meSays(label(MEALS, k).replace(/^\S+\s/, ""));
+    ninjaSays("Nice. How's everyone feeling? Tap any that fit, or tell me what's in the fridge.");
+    var chips = options(CHIPS, function (c) { var i = st.chips.indexOf(c); i < 0 ? st.chips.push(c) : st.chips.splice(i, 1); }, true);
+    var go = document.createElement("button"); go.type = "button"; go.className = "ak-go"; go.textContent = "Show me ideas →"; go.setAttribute("aria-pressed", "true");
+    go.addEventListener("click", function (e) { e.stopPropagation(); ask(); }); chips.appendChild(go);
+    if (st.text) input.value = st.text;
+    sync(); input.focus();
+  }
+  function sync() { send.disabled = st.busy || !st.meal; input.disabled = st.busy; }
+
+  function token() { return window.RFNAuth && RFNAuth.token ? RFNAuth.token().catch(function () { return null; }) : Promise.resolve(null); }
+  function card(p) {
+    var pic = p.img ? '<img src="' + esc(p.img) + '" alt="" loading="lazy" onerror="this.outerHTML=\'<span class=e>' + esc(p.emoji || "🍽️") + "</span>'\">" : '<span class="e">' + esc(p.emoji || "🍽️") + "</span>";
+    return '<a class="ak-card" href="' + esc(p.url) + '">' + pic + "<span><b>" + esc(p.title) + "</b><small>" + esc(p.reason) + "</small></span></a>";
+  }
+
+  function ask() {
+    if (st.busy || !st.meal) return;
+    st.text = input.value.trim(); input.value = "";
+    log.querySelectorAll(".ak-opts").forEach(function (o) { o.remove(); });
+    var said = st.chips.map(function (c) { return label(CHIPS, c); }).join(" · ");
+    if (said || st.text) meSays([said, st.text].filter(Boolean).join(" — "));
+    st.busy = true; sync();
+    var typing = add('<span class="ak-typing"><span></span><span></span><span></span></span>');
+    token().then(function (t) {
+      var h = { "content-type": "application/json" }; if (t) h.Authorization = "Bearer " + t;
+      return fetch("/api/chat", { method: "POST", headers: h, body: JSON.stringify({ meal: st.meal, chips: st.chips, text: st.text }) });
+    }).then(function (r) {
+      return r.json().catch(function () { return {}; }).then(function (d) { if (!r.ok) throw new Error(d.error || "I'm offline for a minute. Try again soon."); return d; });
+    }).then(function (d) {
+      typing.remove();
+      ninjaSays(esc(d.intro || "Here's what I'd make."));
+      (d.picks || []).forEach(function (p) { add(card(p), "ak-pick"); });
+      if (d.outside && d.outside.title) {
+        add('<span class="tag">Outside our recipe book</span><b>' + esc(d.outside.title) + "</b>" + (d.outside.reason ? "<small>" + esc(d.outside.reason) + "</small>" : "") +
+          ((d.outside.steps || []).length ? "<ol>" + d.outside.steps.map(function (s) { return "<li>" + esc(s) + "</li>"; }).join("") + "</ol>" : ""), "ak-out");
+      }
+      if (!(d.picks || []).length && !d.outside) ninjaSays("Nothing fits that yet. Try another meal or fewer filters.");
+      // Sign-in is offered after the first useful answer, not as a gate in front of it.
+      if (accounts && !d.signedIn) ninjaSays('Want me to skip allergies and what you cooked lately? <a href="/account/">Sign in</a> and I\'ll remember your family.');
+      options([["again", "↺ Start over"]], start);
+      if (window.track) try { track("assistant_answer", { meal: st.meal, ai: !!d.ai }); } catch (e) {}
+    }).catch(function (err) {
+      typing.remove(); ninjaSays(esc(err.message)); options([["again", "↺ Try again"]], start);
+    }).then(function () { st.busy = false; st.text = ""; sync(); });
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!st.meal) { if (input.value.trim()) { st.text = input.value.trim(); meSays(st.text); input.value = ""; ninjaSays("Got it. Which meal is this for?"); } return; }
+    ask();
   });
-  go.addEventListener("click", ask);
-  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && box.classList.contains("open")) close(); });
-  box.addEventListener("keydown", function (e) {
-    if (e.key === "Enter" && !e.shiftKey && e.target === text && state.meal) { e.preventDefault(); ask(); }
-  });
+  wrap.addEventListener("click", function (e) { if (e.target === wrap || e.target.closest(".ak-x")) close(); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && wrap.classList.contains("open")) close(); });
 
   function open(prefill) {
-    if (!box.isConnected) document.body.appendChild(box);
-    if (prefill) text.value = prefill;
-    lastFocus = document.activeElement; box.classList.add("open"); document.documentElement.style.overflow = "hidden";
-    refresh(); (box.querySelector(state.meal ? "#ask-text" : "[data-meal]") || go).focus();
+    if (!wrap.isConnected) document.body.appendChild(wrap);
+    lastFocus = document.activeElement;
+    if (prefill || !log.childElementCount) { st.text = prefill || ""; start(); if (prefill) { meSays(prefill); ninjaSays("Got it. Which meal is this for?"); } }
+    wrap.classList.add("open"); document.documentElement.style.overflow = "hidden";
+    (log.querySelector(".ak-opts button") || input).focus();
     if (window.track) try { track("assistant_open"); } catch (e) {}
   }
   function close() {
-    box.classList.remove("open"); document.documentElement.style.overflow = "";
+    wrap.classList.remove("open"); document.documentElement.style.overflow = "";
     if (lastFocus && lastFocus.focus) lastFocus.focus();
-  }
-
-  function token() {
-    return window.RFNAuth && RFNAuth.token ? RFNAuth.token().catch(function () { return null; }) : Promise.resolve(null);
-  }
-  function card(p) {
-    var pic = p.img ? '<img src="' + esc(p.img) + '" alt="" loading="lazy" onerror="this.outerHTML=\'<span class=e>' + esc(p.emoji || "🍽️") + "</span>'\">" : '<span class="e">' + esc(p.emoji || "🍽️") + "</span>";
-    return '<a class="ask-card" href="' + esc(p.url) + '">' + pic + "<span><b>" + esc(p.title) + "</b><small>" + esc(p.reason) + "</small></span></a>";
-  }
-  function ask() {
-    if (state.busy || !state.meal) return;
-    state.busy = true; refresh(); out.innerHTML = "";
-    token().then(function (t) {
-      var h = { "content-type": "application/json" }; if (t) h.Authorization = "Bearer " + t;
-      return fetch("/api/chat", { method: "POST", headers: h, body: JSON.stringify({ meal: state.meal, chips: state.chips, text: text.value }) });
-    }).then(function (r) {
-      return r.json().catch(function () { return {}; }).then(function (d) { if (!r.ok) throw new Error(d.error || "The ninja is offline right now. Try again in a minute."); return d; });
-    }).then(function (d) {
-      var html = d.intro ? '<p class="intro">' + esc(d.intro) + "</p>" : "";
-      html += (d.picks || []).map(card).join("");
-      if (d.outside && d.outside.title) {
-        html += '<div class="ask-outside"><span class="tag">Outside our recipe library</span><b style="display:block;font:700 16px Fredoka,Nunito,sans-serif;margin-top:2px">' + esc(d.outside.title) + "</b>" +
-          (d.outside.reason ? "<small>" + esc(d.outside.reason) + "</small>" : "") +
-          ((d.outside.steps || []).length ? "<ol>" + d.outside.steps.map(function (s) { return "<li>" + esc(s) + "</li>"; }).join("") + "</ol>" : "") + "</div>";
-      }
-      if (!(d.picks || []).length && !d.outside) html += "<p>No match this time. Try another meal or fewer filters.</p>";
-      out.innerHTML = html;
-      if (window.track) try { track("assistant_answer", { meal: state.meal, ai: !!d.ai }); } catch (e) {}
-    }).catch(function (err) {
-      out.innerHTML = '<p class="ask-err">' + esc(err.message) + "</p>";
-    }).then(function () { state.busy = false; refresh(); });
   }
 
   function init() {
     var home = document.getElementById("ask-home");
     if (home) {
-      // Home page: inline box opens the sheet with what they typed.
-      home.addEventListener("submit", function (e) { e.preventDefault(); var v = home.querySelector("input").value.trim(); open(v); });
+      home.addEventListener("submit", function (e) { e.preventDefault(); open(home.querySelector("input").value.trim()); });
       return;
     }
     var fab = document.createElement("button");
-    fab.type = "button"; fab.className = "ask-fab"; fab.setAttribute("aria-haspopup", "dialog");
-    fab.innerHTML = '<span aria-hidden="true">🥷</span><b>What are we making?</b>';
+    fab.type = "button"; fab.className = "ak ak-fab"; fab.setAttribute("aria-haspopup", "dialog"); fab.setAttribute("aria-label", "Ask Ninjas: what are we making?");
+    fab.innerHTML = '<span class="ak-say">Ask Ninjas</span>' + avatar;
     fab.addEventListener("click", function () { open(); });
-    document.body.appendChild(fab); document.body.classList.add("has-fab");
-    // Shrink to just the ninja while scrolling down, so it covers less of the recipe.
-    var lastY = scrollY;
+    document.body.appendChild(fab); document.body.classList.add("ak-pad");
+    var lastY = scrollY; // tuck the bubble away while scrolling down so it covers less of the recipe
     addEventListener("scroll", function () { var y = scrollY; fab.classList.toggle("mini", y > lastY && y > 200); lastY = y; }, { passive: true });
   }
   window.RFNAsk = { open: open };

@@ -1,4 +1,4 @@
-# Recipes for Ninjas
+# Recipes By Ninjas
 
 Family recipe site for four Ninja machines. The homepage is an animated kitchen: a ninja chef with fruit orbiting around him; tap a machine and he throws its ingredients in, then the recipes open.
 
@@ -67,7 +67,7 @@ Everything below is off until its keys exist, and the site works without any of 
 | `SUPABASE_SERVICE_ROLE_KEY` | Server only: account deletion, email sending, assistant personalization |
 | `ANTHROPIC_API_KEY` | Assistant explanations. Without it the assistant still answers from the library |
 | `USAGE_SALT` | Any random string; hashes visitor IPs for the daily AI cap |
-| `RESEND_API_KEY` | "Tonight's idea" emails |
+| `RESEND_API_KEY` | "Tonight by Ninjas" emails (daily or weekly, each person's choice) |
 
 1. **Supabase**: create a free project and run `supabase/migrations/001_accounts.sql` in the SQL editor. Under Authentication → URL configuration, set Site URL to your domain and add `https://<domain>/account/` as a redirect. To allow Google sign-in, enable Google under Providers and add your Google OAuth client.
 2. **Assistant**: settings live in `data/site.json` → `ai` (`enabled`, `model`, `perVisitorDaily`, `globalDaily`).
