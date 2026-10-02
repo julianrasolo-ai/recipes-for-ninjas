@@ -79,7 +79,9 @@
   }
   function syncLine(){var st=Likes.status();return '<p class="sync" data-s="'+st+'">'+(st==='off'?'Offline: saved on this device, will sync when back online.':'Shared with the whole family.')+'</p>'}
 
-  function plainClick(e){return !(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button>0)}
+  /* Desktop opens recipes in the sheet; phones follow the link to the full page so it can be shared and Back works natively. */
+  var wide=matchMedia('(min-width: 900px)');
+  function plainClick(e){return wide.matches&&!(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button>0)}
   $('#sections').addEventListener('click',function(e){
     var s=e.target.closest('[data-shop]'); if(s){data(function(){showShop(s.dataset.shop)});return}
     var c=e.target.closest('.card'); if(c&&plainClick(e)){e.preventDefault();data(function(){showRecipe(c.dataset.id)})}

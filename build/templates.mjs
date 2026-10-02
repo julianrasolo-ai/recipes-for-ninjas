@@ -15,7 +15,7 @@ const iso = (min) => (min ? `PT${Math.floor(min / 60) ? Math.floor(min / 60) + "
 const IMG_FALLBACK = `document.addEventListener('error',function(e){var im=e.target;if(!im||im.tagName!=='IMG')return;if(im.dataset.cdn&&im.src.indexOf(im.dataset.cdn)<0){im.src=im.dataset.cdn;return}if(im.dataset.emo){var d=document.createElement('div');d.className=(im.className?im.className+' ':'')+'emo';d.textContent=im.dataset.emo;d.setAttribute('aria-hidden','true');im.replaceWith(d)}},true);`;
 
 export const img = (r, cls = "", lazy = true) =>
-  r.img ? `<img${cls ? ` class="${cls}"` : ""} src="${r.img}" alt="${esc(r.title)}"${lazy ? ' loading="lazy"' : ""}${r.cdn ? ` data-cdn="${r.cdn}"` : ""} data-emo="${r.emoji}">` : `<div class="emo">${r.emoji}</div>`;
+  r.img ? `<img${cls ? ` class="${cls}"` : ""} src="${r.img}" alt="${esc(r.alt || r.title)}" width="600" height="600" decoding="async"${lazy ? ' loading="lazy"' : ' fetchpriority="high"'}${r.cdn ? ` data-cdn="${r.cdn}"` : ""} data-emo="${r.emoji}">` : `<div class="emo">${r.emoji}</div>`;
 
 /* ---------- layout ---------- */
 function publicConfig(site) {
@@ -27,7 +27,11 @@ export function layout(ctx, o) {
   const { site } = ctx;
   const title = o.title ? `${o.title} · ${site.name}` : site.name;
   const url = site.url + (o.path || "/");
-  const og = o.image ? (o.image.startsWith("http") ? o.image : site.url + o.image) : site.url + "/img/ice/hero.jpg";
+  // Share card: recipe pages pass their own 1200x630 card (or photo); everything else uses the home banner.
+  const ogRel = o.image || ctx.og.home;
+  const og = ogRel.startsWith("http") ? ogRel : site.url + ogRel;
+  const ogBig = /\/img\/og\//.test(ogRel);
+  const ogTitle = esc(o.title || site.name), ogDesc = esc(o.desc || site.tagline);
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,12 +42,21 @@ export function layout(ctx, o) {
 <link rel="canonical" href="${url}">
 <meta property="og:type" content="${o.ogType || "website"}">
 <meta property="og:site_name" content="${esc(site.name)}">
-<meta property="og:title" content="${esc(o.title || site.name)}">
-<meta property="og:description" content="${esc(o.desc || site.tagline)}">
+<meta property="og:title" content="${ogTitle}">
+<meta property="og:description" content="${ogDesc}">
 <meta property="og:url" content="${url}">
 <meta property="og:image" content="${og}">
+<meta property="og:image:width" content="${ogBig ? 1200 : 600}">
+<meta property="og:image:height" content="${ogBig ? 630 : 600}">
+<meta property="og:image:alt" content="${esc(o.imageAlt || o.title || site.name)}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${ogTitle}">
+<meta name="twitter:description" content="${ogDesc}">
+<meta name="twitter:image" content="${og}">
+${site.googleSiteVerification ? `<meta name="google-site-verification" content="${esc(site.googleSiteVerification)}">` : ""}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
@@ -78,7 +91,7 @@ function footer(ctx) {
   <nav class="fnav" aria-label="Appliances">${appliances.map((a) => `<a href="${a.url}">${a.emoji} ${esc(a.name)}</a>`).join("")}</nav>
   <nav class="fnav small" aria-label="More">
     <a href="/search/">Search</a><a href="/gear/">Accessories</a>${site.shop.enabled ? '<a href="/shop/">Shop</a>' : ""}
-    <a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/disclosure/">Affiliate disclosure</a>
+    <a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/disclosure/">Affiliate disclosure</a>
     <button type="button" class="linkbtn" data-consent-open>Cookie settings</button>
   </nav>
   <p class="disc">${esc(site.affiliate.disclosure)}</p>
@@ -156,7 +169,7 @@ function gearBlock(ctx, r) {
   <p class="disc">${esc(ctx.site.affiliate.disclosure)}</p></section>`;
 }
 export function productCard(p, where) {
-  const pic = p.image ? `<img src="${p.image}" alt="" loading="lazy"${p.cdn ? ` data-cdn="${p.cdn}"` : ""} data-emo="${p.icon || "🧰"}">` : `<div class="emo">${p.icon || "🧰"}</div>`;
+  const pic = p.image ? `<img src="${p.image}" alt="${esc(p.name)}" loading="lazy"${p.cdn ? ` data-cdn="${p.cdn}"` : ""} data-emo="${p.icon || "🧰"}">` : `<div class="emo">${p.icon || "🧰"}</div>`;
   const inner = `<span class="gp">${pic}</span><span class="gt"><b>${esc(p.name)}</b>${p.note ? `<small>${esc(p.note)}</small>` : ""}${p.price ? `<small class="price">${esc(p.price)}</small>` : ""}</span>`;
   return p.href
     ? `<a class="gcard" href="${p.href}" rel="sponsored noopener" target="_blank" data-aff="${p.id}" data-where="${where}">${inner}<span class="go">Check price ›</span></a>`
@@ -166,7 +179,28 @@ export function productCard(p, where) {
 /* ---------- home ---------- */
 export function home(ctx, html) {
   const cfg = `<script>window.SITE_CONFIG=${json(publicConfig(ctx.site))};</script>`;
-  return html.replace("<!--SITE_CONFIG-->", cfg).replace("<!--SITE_JS-->", '<script src="/assets/site.js" defer></script>');
+  const s = ctx.site, img = s.url + ctx.og.home, big = ctx.og.home.includes("/og/");
+  const title = s.name + " · Ninja Creami, juicer, blender and Woodfire recipes";
+  const desc = "Family recipes for Ninja machines: Creami ice cream, NeverClog juices, Detect blender smoothies and Woodfire grill BBQ. Pick a machine and start cooking.";
+  const social = `<meta name="description" content="${esc(desc)}">
+<link rel="canonical" href="${s.url}/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="${esc(s.name)}">
+<meta property="og:title" content="${esc(title)}">
+<meta property="og:description" content="${esc(desc)}">
+<meta property="og:url" content="${s.url}/">
+<meta property="og:image" content="${img}">
+<meta property="og:image:width" content="${big ? 1200 : 600}">
+<meta property="og:image:height" content="${big ? 630 : 600}">
+<meta property="og:image:alt" content="Our ninja chef: what are we making?">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${esc(title)}">
+<meta name="twitter:description" content="${esc(desc)}">
+<meta name="twitter:image" content="${img}">
+${s.googleSiteVerification ? `<meta name="google-site-verification" content="${esc(s.googleSiteVerification)}">` : ""}
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">`;
+  return html.replace("<!--SOCIAL-->", social).replace("<!--SITE_CONFIG-->", cfg).replace("<!--SITE_JS-->", '<script src="/assets/site.js" defer></script>');
 }
 
 /* ---------- hub ---------- */
@@ -183,7 +217,7 @@ ${grid(list.map((r) => ({ a, r })))}
   const SITE = { key: a.key, section: a.section, data: `/data/${a.key}.json`, pantry: a.pantry, haveNote: a.haveNote, focus: a.focus, haveColor: D.cats[0].k, favColor: D.cats[0].k };
   return layout(ctx, {
     title: `${a.name} recipes for the ${a.device}`, desc: a.intro, path: a.url, theme: a.theme,
-    heading: `${a.emoji} ${esc(a.name)}`, kicker: `${esc(a.device)} · ${D.recipes.length} recipes`,
+    heading: `${a.emoji} ${esc(a.name)}`, kicker: `${esc(ctx.site.name)} · ${D.recipes.length} recipes`,
     image: D.recipes[0].img,
     jsonld: [{ "@context": "https://schema.org", "@type": "CollectionPage", name: `${a.name} recipes`, description: a.intro, url: ctx.site.url + a.url }],
     body: `<div class="wrap menu" id="menu">
@@ -230,11 +264,11 @@ export function recipe(ctx, a, r) {
   const related = a.data.recipes.filter((x) => x.cat === r.cat && x.id !== r.id).slice(0, 4);
   const gated = site.members.enabled && r.members;
   const ings = `<h2 class="h3">${esc(r.listTitle || "You need")}</h2><ul class="ingl">${r.ing.map((x) => `<li><label><input type="checkbox"><span>${esc(x)}</span></label></li>`).join("")}</ul>
-  <div class="row"><button class="btn" id="cp" type="button">Copy shopping list</button><span class="status" id="cps" aria-live="polite"></span></div>`;
+  <div class="row noprint"><button class="btn" id="cp" type="button">Copy shopping list</button><button class="btn ghost" type="button" onclick="window.print()">🖨️ Print</button><span class="status" id="cps" aria-live="polite"></span></div>`;
   const steps = `<h2 class="h3">Steps</h2><ol class="steps">${r.steps.map((x) => `<li>${esc(x)}</li>`).join("")}</ol>`;
   return layout(ctx, {
-    title: r.title, desc: `${r.blurb} ${a.device} recipe.`, path: r.url, theme: a.theme, image: r.img, ogType: "article",
-    heading: `${a.emoji} ${esc(a.name)}`, kicker: `<a href="${a.url}">${esc(a.device)}</a>`, headingTag: "p",
+    title: `${r.title} – ${a.brand} recipe`, desc: `${r.blurb} ${r.chips.join(", ")}. Made with the ${a.device}.`, path: r.url, theme: a.theme, image: r.og, imageAlt: r.title, ogType: "article",
+    heading: `${a.emoji} ${esc(a.name)}`, kicker: `<a href="/">${esc(ctx.site.name)}</a>`, headingTag: "p",
     jsonld: [ld, crumbs],
     body: `<div class="wrap rlayout${site.ads.enabled ? " has-side" : ""}">
 <article class="rpage" data-c="${r.cat}" data-recipe="${r.id}" data-section="${a.section}">
@@ -252,6 +286,7 @@ export function recipe(ctx, a, r) {
     ${adSlot(site, "recipe-in-content", "incontent")}
     ${gated ? `<div class="gate"><div class="gate-blur" aria-hidden="true">${steps}</div><div class="gate-cta"><b>🔒 Members-only recipe</b><p>Join to unlock the steps.</p>${site.members.joinUrl ? `<a class="btn" href="${esc(site.members.joinUrl)}">Join</a>` : ""}</div></div>` : steps}
     ${r.notes.map(([k, v]) => `<p class="note"><b>${esc(k)}:</b> ${esc(v)}</p>`).join("")}
+    ${r.healthier ? `<p class="note healthier"><b>🌿 Make it healthier:</b> ${esc(r.healthier)}</p>` : ""}
     ${(r.ben || []).length ? '<p class="disclaim">Benefit tags are general nutrition info, not medical advice.</p>' : ""}
     ${video(r.video)}
     ${gearBlock(ctx, r)}
@@ -276,8 +311,10 @@ function listing(ctx, o) {
 }
 export function category(ctx, a, c) {
   const items = a.data.recipes.filter((r) => r.cat === c.k).map((r) => ({ a, r }));
-  return listing(ctx, { title: `${c.n} · ${a.name}`, desc: c.d, path: `/${a.key}/category/${c.k}/`, theme: a.theme, heading: `${a.emoji} ${esc(a.name)}`,
-    crumbs: `<a href="/">Home</a> › <a href="${a.url}">${esc(a.name)}</a>`, h1: `${c.e} ${esc(c.n)}`, lead: c.d, inner: grid(items) });
+  const name = `${a.brand} ${c.n.toLowerCase()} recipes`;
+  const intro = `${items.length} easy ${c.n.toLowerCase()} recipes for the ${a.device}. ${c.d}`;
+  return listing(ctx, { title: name.charAt(0).toUpperCase() + name.slice(1), desc: intro, path: `/${a.key}/category/${c.k}/`, theme: a.theme, heading: `${a.emoji} ${esc(a.name)}`,
+    crumbs: `<a href="/">Home</a> › <a href="${a.url}">${esc(a.name)}</a>`, h1: `${c.e} ${esc(name.charAt(0).toUpperCase() + name.slice(1))}`, lead: intro, inner: grid(items) });
 }
 export function tag(ctx, t) {
   return listing(ctx, { title: `${t.label} recipes`, desc: `${t.label} recipes across every Ninja machine.`, path: `/tags/${t.k}/`,
@@ -316,7 +353,7 @@ export function gear(ctx, catalog) {
 }
 export function shop(ctx, catalog) {
   const items = catalog.digital || [];
-  const cards = items.map((d) => `<div class="gcard shopc">${d.image ? `<span class="gp"><img src="${d.image}" alt="" loading="lazy"></span>` : '<span class="gp"><div class="emo">📄</div></span>'}<span class="gt"><b>${esc(d.name)}</b>${d.note ? `<small>${esc(d.note)}</small>` : ""}<small class="price">${esc(d.price)}</small></span>${d.checkoutUrl ? `<a class="btn" href="${esc(d.checkoutUrl)}" data-buy="${d.id}">Buy</a>` : ""}</div>`).join("");
+  const cards = items.map((d) => `<div class="gcard shopc">${d.image ? `<span class="gp"><img src="${d.image}" alt="${esc(d.name)}" loading="lazy"></span>` : '<span class="gp"><div class="emo">📄</div></span>'}<span class="gt"><b>${esc(d.name)}</b>${d.note ? `<small>${esc(d.note)}</small>` : ""}<small class="price">${esc(d.price)}</small></span>${d.checkoutUrl ? `<a class="btn" href="${esc(d.checkoutUrl)}" data-buy="${d.id}">Buy</a>` : ""}</div>`).join("");
   return listing(ctx, { title: "Shop", desc: "Printable recipe cards and guides.", path: "/shop/", h1: "🛍️ Shop",
     lead: items.length ? "Printables and guides. Secure checkout by Stripe." : "Printable recipe cards and mini-guides are coming soon.",
     inner: (cards ? `<div class="gear-grid">${cards}</div>` : "") + emailBox(ctx.site, "shop") });
@@ -338,7 +375,7 @@ export function legal(ctx, which) {
 <p>Product names are trademarks of their owners. This site is not affiliated with or endorsed by SharkNinja.</p>`],
     disclosure: ["Affiliate disclosure", `<p>${esc(s.affiliate.disclosure)}</p><p>We only recommend products we use or would buy for our own family. Commissions help keep this site free and don't change the price you pay.</p>`],
   }[which];
-  return listing(ctx, { title: T[0], path: `/${which}/`, h1: T[0], inner: `<div class="prose">${T[1]}<p class="disc">Last updated ${new Date().toISOString().slice(0, 10)}.</p></div>` });
+  return listing(ctx, { title: T[0], desc: `${T[0]} for ${s.name}.`, path: `/${which}/`, h1: T[0], inner: `<div class="prose">${T[1]}<p class="disc">Last updated ${new Date().toISOString().slice(0, 10)}.</p></div>` });
 }
 export function notFound(ctx) {
   return listing(ctx, { title: "Page not found", path: "/404.html", h1: "🫠 That page melted.", lead: "Try search, or pick a machine below.",
@@ -346,6 +383,30 @@ export function notFound(ctx) {
 }
 export function thanks(ctx) {
   const lm = ctx.site.email.leadMagnet;
-  return listing(ctx, { title: "You're in", path: "/thanks/", h1: "🎉 You're in", lead: "Thanks for joining. Check your inbox for a welcome email.",
+  return listing(ctx, { title: "You're in", desc: "Thanks for joining Recipes for Ninjas.", path: "/thanks/", h1: "🎉 You're in", lead: "Thanks for joining. Check your inbox for a welcome email.",
     inner: (lm?.url ? `<p><a class="btn" href="${esc(lm.url)}" download>Download: ${esc(lm.title)}</a></p>` : "") + `<p><a class="btn ghost" href="/">Back to recipes</a></p>` });
+}
+
+export function about(ctx) {
+  const s = ctx.site;
+  return listing(ctx, { title: "About", desc: "Who we are and why we write recipes for Ninja kitchen machines.", path: "/about/", h1: "👋 About Recipes for Ninjas",
+    inner: `<div class="prose">
+<p>We're a family of four (${s.family.map(esc).join(", ")}) with a slightly out-of-hand collection of Ninja machines. This site started as our own recipe book so nobody had to dig through manuals or scroll past ten ads to find out how long to freeze a pint.</p>
+<p>Every recipe here is written for a specific machine: the ${ctx.appliances.map((a) => esc(a.device)).join(", ")}. Each one tells you which program, filter or function to press, with times and amounts tested at home.</p>
+<h2 class="h3">How we write recipes</h2>
+<ul><li>Short ingredient lists, things you can find in a normal supermarket.</li><li>Clear steps you can follow with sticky hands on a phone.</li><li>A "make it healthier" idea on every recipe.</li><li>Food-safety temperatures for anything off the grill.</li></ul>
+<p>We're not affiliated with SharkNinja. Some links are affiliate links; see our <a href="/disclosure/">disclosure</a>.</p>
+<p><a class="btn" href="/contact/">Contact us</a></p></div>` });
+}
+export function contact(ctx) {
+  return listing(ctx, { title: "Contact", desc: "Questions, recipe requests or corrections: send us a note.", path: "/contact/", h1: "✉️ Contact us",
+    lead: "Recipe request, a correction, or a partnership idea? We read everything.",
+    inner: `<form class="contact-f" name="contact" method="POST" data-netlify="true" netlify-honeypot="company" action="/thanks/?f=contact">
+  <input type="hidden" name="form-name" value="contact">
+  <p class="hp"><label>Leave this empty <input name="company"></label></p>
+  <label>Your name<input name="name" required autocomplete="name"></label>
+  <label>Email<input type="email" name="email" required autocomplete="email"></label>
+  <label>Message<textarea name="message" rows="6" required></textarea></label>
+  <button class="btn" type="submit">Send</button>
+</form>` });
 }

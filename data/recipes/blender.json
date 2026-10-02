@@ -254,7 +254,8 @@
     "blender-extractor-blades"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use unsweetened almond milk, skip the honey and add a handful of spinach. You won't taste it."
   },
   {
    "id": "b02",
@@ -305,7 +306,8 @@
     "blender-extractor-blades"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Already light. Add a scoop of Greek yogurt or protein to keep you full longer."
   },
   {
    "id": "b03",
@@ -356,7 +358,8 @@
     "blender-extractor-blades"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use powdered peanut butter and unsweetened cocoa to cut the fat by about half."
   },
   {
    "id": "b04",
@@ -404,7 +407,8 @@
     "blender-extractor-blades"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use light coconut milk and water instead of orange juice, and add half a cup of spinach."
   },
   {
    "id": "b05",
@@ -456,7 +460,8 @@
     "blender-extractor-blades"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Already filling. Use unsweetened milk and skip any sweetener; the banana is enough."
   },
   {
    "id": "b06",
@@ -505,7 +510,8 @@
     "blender-extractor-blades"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Already light. Swap the orange juice for water and add a squeeze of lemon to keep it bright."
   },
   {
    "id": "b07",
@@ -550,7 +556,8 @@
    "slug": "acai-bowl",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use unsweetened açaí packs, go light on granola and skip the honey drizzle."
   },
   {
    "id": "b08",
@@ -595,7 +602,8 @@
    "slug": "pitaya-pink-bowl",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Top with seeds and fresh fruit instead of granola, and skip any syrup."
   },
   {
    "id": "b09",
@@ -643,7 +651,8 @@
    "slug": "green-protein-bowl",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Already balanced. Use half an avocado instead of a whole one if you're watching calories."
   },
   {
    "id": "b10",
@@ -686,7 +695,8 @@
    "slug": "chocolate-pb-nice-cream",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Skip the extra peanut butter and use powdered PB; bananas bring plenty of sweetness."
   },
   {
    "id": "b11",
@@ -731,7 +741,8 @@
     "blender-extractor-blades"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use unsweetened sparkling water and fresh lemon juice instead of lemonade."
   },
   {
    "id": "b12",
@@ -778,7 +789,8 @@
     "blender-extractor-blades"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use unsweetened cocoa with a teaspoon of honey instead of syrup, and skip the whipped cream."
   },
   {
    "id": "b13",
@@ -819,7 +831,8 @@
     "blender-extractor-blades"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use Greek yogurt and frozen banana instead of ice cream, and just two cookies crushed on top."
   },
   {
    "id": "b14",
@@ -869,7 +882,8 @@
     "blender-extractor-blades"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Already a no-added-sugar treat. Nothing to change."
   },
   {
    "id": "b15",
@@ -916,7 +930,8 @@
    "slug": "restaurant-style-salsa",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Already light. Serve with sliced cucumber and peppers instead of chips."
   },
   {
    "id": "b16",
@@ -961,7 +976,8 @@
    "slug": "basil-pesto",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use half the oil plus a splash of pasta water, and half the cheese."
   },
   {
    "id": "b17",
@@ -1009,7 +1025,8 @@
    "slug": "silky-hummus",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Already healthy. Use less oil on top and serve with veg sticks."
   },
   {
    "id": "b18",
@@ -1058,7 +1075,8 @@
    "slug": "green-goddess-dressing",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Already light. Use nonfat Greek yogurt to cut the fat further."
   },
   {
    "id": "b19",
@@ -1111,7 +1129,8 @@
    "slug": "roasted-tomato-basil-soup",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Skip the cream; blend in half a can of white beans for creaminess and extra protein."
   },
   {
    "id": "b20",
@@ -1159,7 +1178,8 @@
    "slug": "butternut-squash-soup",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Already dairy-free and light. Use low-sodium stock."
   },
   {
    "id": "b21",
@@ -1207,7 +1227,8 @@
    "slug": "chilled-gazpacho",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Already a raw-veg soup. Go easy on the oil drizzle."
   },
   {
    "id": "b22",
@@ -1252,7 +1273,8 @@
    "slug": "fluffy-blender-pancakes",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Swap half the flour for oat flour and top with berries instead of syrup."
   },
   {
    "id": "b23",
@@ -1298,7 +1320,8 @@
    "slug": "banana-oat-pancakes",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Already flour-free. Top with fruit and Greek yogurt instead of syrup."
   },
   {
    "id": "b24",
@@ -1342,7 +1365,8 @@
    "slug": "easy-crepes",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use half whole-wheat flour and fill with fruit and yogurt instead of chocolate spread."
   }
  ]
 }

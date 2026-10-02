@@ -1,6 +1,7 @@
 // Static site generator: data/*.json -> dist/
 // Run: node build/build.mjs   (npm run build also fetches images first)
 import { readFile, writeFile, mkdir, cp, rm } from "node:fs/promises";
+import { existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import * as T from "./templates.mjs";
 
@@ -39,7 +40,10 @@ for (const a of appliances) {
 
 const pages = [];
 const page = (path, html) => pages.push([path, html]);
-const ctx = { site, appliances, products, all, images };
+// Share cards made by scripts/og-images.mjs (only on builds that have the photos)
+const og = { home: existsSync(join(ROOT, "img/og/home.jpg")) ? "/img/og/home.jpg" : "/img/ice/hero.jpg" };
+for (const { r, a } of all) r.og = existsSync(join(ROOT, `img/og/${a.key}/${r.slug}.jpg`)) ? `/img/og/${a.key}/${r.slug}.jpg` : r.img;
+const ctx = { site, appliances, products, all, images, og };
 
 // Hubs, recipe pages, category pages
 for (const a of appliances) {
@@ -68,11 +72,13 @@ page("/terms/", T.legal(ctx, "terms"));
 page("/disclosure/", T.legal(ctx, "disclosure"));
 page("/404.html", T.notFound(ctx));
 page("/thanks/", T.thanks(ctx));
+page("/about/", T.about(ctx));
+page("/contact/", T.contact(ctx));
 
 // ---- write ----
 await rm(OUT, { recursive: true, force: true });
 for (const dir of ["assets", "img"]) await cp(join(ROOT, dir), join(OUT, dir), { recursive: true });
-await cp(join(ROOT, "favicon.svg"), join(OUT, "favicon.svg"));
+for (const f of ["favicon.svg", "favicon-32.png", "apple-touch-icon.png"]) if (existsSync(join(ROOT, f))) await cp(join(ROOT, f), join(OUT, f));
 for (const [path, html] of pages) {
   const file = path.endsWith(".html") ? join(OUT, path) : join(OUT, path, "index.html");
   await mkdir(dirname(file), { recursive: true });

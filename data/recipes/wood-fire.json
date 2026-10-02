@@ -200,7 +200,8 @@
     "woodfire-thermometer"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Choose a leaner sirloin, trim the fat, use half the butter and fill half the plate with grilled veg."
   },
   {
    "id": "w02",
@@ -246,7 +247,8 @@
     "woodfire-thermometer"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use 90/10 beef or ground turkey and wrap in lettuce instead of a bun."
   },
   {
    "id": "w03",
@@ -295,7 +297,8 @@
     "woodfire-thermometer"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use skinless chicken breast and halve the honey; the lime and smoke carry the flavor."
   },
   {
    "id": "w04",
@@ -348,7 +351,8 @@
     "woodfire-thermometer"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Already light. Use 1 tbsp oil instead of 3."
   },
   {
    "id": "w05",
@@ -399,7 +403,8 @@
     "woodfire-thermometer"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Trim the fat cap before smoking, serve sauce on the side and pile it on slaw instead of a bun."
   },
   {
    "id": "w06",
@@ -446,7 +451,8 @@
     "woodfire-thermometer"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Brush the glaze on only for the last 10 minutes and serve with a big salad."
   },
   {
    "id": "w07",
@@ -493,7 +499,8 @@
     "woodfire-thermometer"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Already a great pick. Use half the sugar in the cure."
   },
   {
    "id": "w08",
@@ -537,7 +544,8 @@
     "woodfire-pellets-variety"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use half the cheese and stir in steamed broccoli or cauliflower."
   },
   {
    "id": "w09",
@@ -583,7 +591,8 @@
     "woodfire-thermometer"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use plain smoked paprika wings with hot sauce instead of a sugary BBQ glaze."
   },
   {
    "id": "w10",
@@ -623,7 +632,8 @@
    "slug": "woodfire-fries",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use sweet potatoes and just 1 tsp oil; they crisp up fine."
   },
   {
    "id": "w11",
@@ -669,7 +679,8 @@
     "woodfire-pellets-variety"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use 1 tbsp oil and skip the Parmesan, or use a light dusting."
   },
   {
    "id": "w12",
@@ -718,7 +729,8 @@
     "woodfire-thermometer"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use chicken sausages and serve on a whole-wheat roll."
   },
   {
    "id": "w13",
@@ -766,7 +778,8 @@
     "woodfire-pellets-variety"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use whole-wheat dough, half the cheese and add peppers and mushrooms."
   },
   {
    "id": "w14",
@@ -810,7 +823,8 @@
     "woodfire-pellets-variety"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Brush with olive oil and garlic instead of butter."
   },
   {
    "id": "w15",
@@ -850,7 +864,8 @@
    "slug": "skillet-cornbread",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use a whole-grain mix and skip the honey drizzle."
   },
   {
    "id": "w16",
@@ -898,7 +913,8 @@
     "woodfire-thermometer"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use whole-wheat tortillas, half the cheese and add grilled peppers."
   },
   {
    "id": "w17",
@@ -943,7 +959,8 @@
     "woodfire-pellets-variety"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use Greek yogurt instead of mayo and go light on the cheese."
   },
   {
    "id": "w18",
@@ -993,7 +1010,8 @@
     "woodfire-pellets-variety"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Already healthy. Nothing to change."
   },
   {
    "id": "w19",
@@ -1038,7 +1056,8 @@
     "woodfire-pellets-variety"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Already light. Skip the Parmesan if you like."
   },
   {
    "id": "w20",
@@ -1082,7 +1101,8 @@
     "woodfire-pellets-variety"
    ],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use olive oil spray instead of butter."
   },
   {
    "id": "w21",
@@ -1127,7 +1147,8 @@
    "slug": "grilled-honey-peaches",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Serve with Greek yogurt instead of ice cream and skip the butter."
   },
   {
    "id": "w22",
@@ -1169,7 +1190,8 @@
    "slug": "pineapple-with-cinnamon-sugar",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Skip the sugar; grilling caramelizes the pineapple on its own."
   },
   {
    "id": "w23",
@@ -1210,7 +1232,8 @@
    "slug": "s-mores-dip",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use dark chocolate and serve with strawberries to dip."
   },
   {
    "id": "w24",
@@ -1252,7 +1275,8 @@
    "slug": "campfire-banana-boats",
    "gear": [],
    "video": null,
-   "members": false
+   "members": false,
+   "healthier": "Use dark chocolate chips and half the marshmallows."
   }
  ]
 }

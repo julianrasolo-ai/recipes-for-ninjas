@@ -3,3 +3,6 @@ node_modules/
 .netlify/
 .DS_Store
 dist/
+img/og/
+favicon-32.png
+apple-touch-icon.png

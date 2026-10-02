@@ -2,7 +2,7 @@
  "_readme": "Everything monetization-related is a switch here. Flip enabled:true, fill in the IDs, push. No code changes needed.",
  "name": "Recipes for Ninjas",
  "tagline": "Our family recipe book for Ninja kitchen machines.",
- "url": "https://recipes-for-ninjas.netlify.app",
+ "url": "https://recipeforninjas.netlify.app",
  "contactEmail": "",
  "ownerName": "Recipes for Ninjas",
  "family": [
@@ -57,5 +57,6 @@
  "shop": {
   "enabled": false,
   "currency": "USD"
- }
+ },
+ "googleSiteVerification": ""
 }

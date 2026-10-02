@@ -184,10 +184,6 @@
     [
      "Dairy-free",
      "Use dairy-free ice cream, gelato or frozen yogurt."
-    ],
-    [
-     "Lighter",
-     "Use lite, low-calorie, keto or reduced-sugar ice cream."
     ]
    ],
    "press": "Soft Serve, then Re-Spin",
@@ -206,7 +202,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use lite, low-calorie, keto or reduced-sugar ice cream."
   },
   {
    "id": "r02",
@@ -265,7 +262,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Start with a light or no-sugar-added ice cream. Use half the mix-ins and sprinkle them on top so a little goes further."
   },
   {
    "id": "r03",
@@ -326,7 +324,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use plain nonfat Greek yogurt and sweeten lightly."
   },
   {
    "id": "r04",
@@ -367,10 +366,6 @@
     [
      "Dairy-free",
      "Use unsweetened oat milk for the whole milk and unsweetened coconut cream for the heavy cream."
-    ],
-    [
-     "Lighter",
-     "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
     ]
    ],
    "press": "Soft Serve, then Ice Cream",
@@ -389,7 +384,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
   },
   {
    "id": "r05",
@@ -432,10 +428,6 @@
     [
      "Dairy-free",
      "Use unsweetened oat milk for the whole milk and unsweetened coconut cream for the heavy cream."
-    ],
-    [
-     "Lighter",
-     "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
     ]
    ],
    "press": "Soft Serve, then Ice Cream",
@@ -454,7 +446,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
   },
   {
    "id": "r06",
@@ -515,7 +508,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Swap the heavy cream for 2% milk plus 2 tbsp dry milk powder; it stays creamy with about half the fat."
   },
   {
    "id": "r07",
@@ -557,10 +551,6 @@
     [
      "Dairy-free",
      "Already dairy-free. Want dairy? Use whole milk and heavy cream."
-    ],
-    [
-     "Lighter",
-     "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
     ]
    ],
    "press": "Soft Serve, then Ice Cream",
@@ -582,7 +572,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
   },
   {
    "id": "r08",
@@ -627,10 +618,6 @@
      "Use coconut or oat milk powder, unsweetened coconut cream and unsweetened oat milk."
     ],
     [
-     "Lighter",
-     "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
-    ],
-    [
      "Tip",
      "No xanthan gum? Use 1 tbsp instant pudding mix instead."
     ]
@@ -651,7 +638,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
   },
   {
    "id": "r09",
@@ -700,10 +688,6 @@
      "Use coconut or oat milk powder, unsweetened coconut cream and unsweetened oat milk."
     ],
     [
-     "Lighter",
-     "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
-    ],
-    [
      "Tip",
      "No xanthan gum? Use 1 tbsp chocolate instant pudding mix."
     ]
@@ -724,7 +708,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
   },
   {
    "id": "r10",
@@ -770,10 +755,6 @@
      "Use coconut or oat milk powder, unsweetened coconut cream and unsweetened oat milk."
     ],
     [
-     "Lighter",
-     "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
-    ],
-    [
      "Tip",
      "No xanthan gum? Use 1 tbsp vanilla instant pudding mix."
     ]
@@ -794,7 +775,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
   },
   {
    "id": "r11",
@@ -850,7 +832,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use plain nonfat Greek yogurt and sweeten lightly."
   },
   {
    "id": "r12",
@@ -902,7 +885,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use plain nonfat Greek yogurt and sweeten lightly."
   },
   {
    "id": "r13",
@@ -954,7 +938,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Swap the heavy cream for 2% milk plus 2 tbsp dry milk powder; it stays creamy with about half the fat. Use plain nonfat Greek yogurt and sweeten lightly."
   },
   {
    "id": "r14",
@@ -1005,7 +990,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use plain nonfat Greek yogurt and sweeten lightly."
   },
   {
    "id": "r15",
@@ -1062,7 +1048,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use sugar-free pudding mix and unsweetened almond milk."
   },
   {
    "id": "r16",
@@ -1122,7 +1109,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use half the mix-ins and sprinkle them on top so a little goes further. Use sugar-free pudding mix and unsweetened almond milk."
   },
   {
    "id": "r17",
@@ -1183,7 +1171,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use sugar-free pudding mix and unsweetened almond milk."
   },
   {
    "id": "r18",
@@ -1242,7 +1231,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use sugar-free pudding mix and unsweetened almond milk."
   },
   {
    "id": "r19",
@@ -1308,7 +1298,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use sugar-free pudding mix and unsweetened almond milk."
   },
   {
    "id": "r20",
@@ -1370,7 +1361,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use light coconut milk. Halve the honey or sugar; ripe fruit does most of the work."
   },
   {
    "id": "r21",
@@ -1427,7 +1419,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use light coconut milk."
   },
   {
    "id": "r22",
@@ -1486,7 +1479,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use light coconut milk. Halve the honey or sugar; ripe fruit does most of the work."
   },
   {
    "id": "r23",
@@ -1546,7 +1540,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Already a lighter pick. Serve a small scoop with fresh fruit."
   },
   {
    "id": "r24",
@@ -1604,7 +1599,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Already a lighter pick. Serve a small scoop with fresh fruit."
   },
   {
    "id": "r25",
@@ -1668,7 +1664,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use sugar-free pudding mix and unsweetened almond milk. Halve the honey or sugar; ripe fruit does most of the work."
   },
   {
    "id": "r26",
@@ -1738,7 +1735,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Swap the heavy cream for 2% milk plus 2 tbsp dry milk powder; it stays creamy with about half the fat. Halve the honey or sugar; ripe fruit does most of the work."
   },
   {
    "id": "r27",
@@ -1800,7 +1798,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use half the mix-ins and sprinkle them on top so a little goes further."
   },
   {
    "id": "r28",
@@ -1845,10 +1844,6 @@
     [
      "Dairy-free",
      "Use vegan cream cheese, unsweetened coconut cream (whisk it smooth first) and unsweetened oat milk."
-    ],
-    [
-     "Lighter",
-     "Use 1/2 tsp stevia and 2 1/2 tbsp agave for the sugar. Spin on Scoop, Lite Ice Cream."
     ]
    ],
    "press": "Scoop, then Ice Cream",
@@ -1868,7 +1863,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use 1/2 tsp stevia and 2 1/2 tbsp agave for the sugar. Spin on Scoop, Lite Ice Cream."
   },
   {
    "id": "r29",
@@ -1901,12 +1897,7 @@
    "dfree": true,
    "img": "/img/ice/r29.jpg",
    "listTitle": "You need",
-   "notes": [
-    [
-     "Lighter",
-     "Use 1/4 cup stevia/cane sugar blend. Spin on Scoop, Lite Ice Cream."
-    ]
-   ],
+   "notes": [],
    "press": "Scoop, then Ice Cream",
    "badge": "🥄 Scoop",
    "chips": [
@@ -1926,7 +1917,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use 1/4 cup stevia/cane sugar blend. Spin on Scoop, Lite Ice Cream."
   },
   {
    "id": "r30",
@@ -1998,7 +1990,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Swap the heavy cream for 2% milk plus 2 tbsp dry milk powder; it stays creamy with about half the fat. Use half the mix-ins and sprinkle them on top so a little goes further."
   },
   {
    "id": "r31",
@@ -2066,7 +2059,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use 2 yolks instead of 3 and replace half the cream with milk. Use half the mix-ins and sprinkle them on top so a little goes further."
   },
   {
    "id": "r32",
@@ -2136,7 +2130,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use 2 yolks instead of 3 and replace half the cream with milk. Use half the mix-ins and sprinkle them on top so a little goes further."
   },
   {
    "id": "r33",
@@ -2204,7 +2199,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use 2 yolks instead of 3 and replace half the cream with milk."
   },
   {
    "id": "r34",
@@ -2274,7 +2270,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use 2 yolks instead of 3 and replace half the cream with milk. Use half the mix-ins and sprinkle them on top so a little goes further."
   },
   {
    "id": "r35",
@@ -2336,7 +2333,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use light coconut milk. Halve the honey or sugar; ripe fruit does most of the work."
   },
   {
    "id": "r36",
@@ -2398,7 +2396,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use light coconut milk. Halve the honey or sugar; ripe fruit does most of the work."
   },
   {
    "id": "r37",
@@ -2455,7 +2454,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use light coconut milk. Halve the honey or sugar; ripe fruit does most of the work."
   },
   {
    "id": "r38",
@@ -2509,7 +2509,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Already a lighter pick. Serve a small scoop with fresh fruit."
   },
   {
    "id": "r39",
@@ -2565,7 +2566,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Enjoy a half portion with fresh berries on the side."
   },
   {
    "id": "r40",
@@ -2625,7 +2627,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Swap the heavy cream for 2% milk plus 2 tbsp dry milk powder; it stays creamy with about half the fat. Use sugar-free pudding mix and unsweetened almond milk."
   },
   {
    "id": "r41",
@@ -2687,7 +2690,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Swap the heavy cream for 2% milk plus 2 tbsp dry milk powder; it stays creamy with about half the fat. Use sugar-free pudding mix and unsweetened almond milk."
   },
   {
    "id": "r42",
@@ -2745,7 +2749,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use plain nonfat Greek yogurt and sweeten lightly. Halve the honey or sugar; ripe fruit does most of the work."
   },
   {
    "id": "r43",
@@ -2799,7 +2804,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use plain nonfat Greek yogurt and sweeten lightly."
   },
   {
    "id": "r44",
@@ -2859,7 +2865,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Already a lighter pick. Serve a small scoop with fresh fruit."
   },
   {
    "id": "r45",
@@ -2915,7 +2922,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Already a lighter pick. Serve a small scoop with fresh fruit."
   },
   {
    "id": "r46",
@@ -2968,7 +2976,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use light coconut milk."
   },
   {
    "id": "r47",
@@ -3028,7 +3037,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use light coconut milk. Halve the honey or sugar; ripe fruit does most of the work."
   },
   {
    "id": "r48",
@@ -3088,7 +3098,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Halve the honey or sugar; ripe fruit does most of the work."
   },
   {
    "id": "r49",
@@ -3147,7 +3158,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Halve the honey or sugar; ripe fruit does most of the work."
   },
   {
    "id": "r50",
@@ -3201,7 +3213,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Enjoy a half portion with fresh berries on the side."
   },
   {
    "id": "r51",
@@ -3259,7 +3272,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Already a lighter pick. Serve a small scoop with fresh fruit."
   },
   {
    "id": "r52",
@@ -3314,7 +3328,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Halve the honey or sugar; ripe fruit does most of the work."
   },
   {
    "id": "r53",
@@ -3367,7 +3382,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Already a lighter pick. Serve a small scoop with fresh fruit."
   },
   {
    "id": "r54",
@@ -3425,7 +3441,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Halve the honey or sugar; ripe fruit does most of the work."
   },
   {
    "id": "r55",
@@ -3488,7 +3505,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Halve the honey or sugar; ripe fruit does most of the work."
   },
   {
    "id": "r56",
@@ -3548,7 +3566,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use sugar-free pudding mix and unsweetened almond milk. Halve the honey or sugar; ripe fruit does most of the work."
   },
   {
    "id": "r57",
@@ -3610,7 +3629,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use sugar-free pudding mix and unsweetened almond milk. Halve the honey or sugar; ripe fruit does most of the work."
   },
   {
    "id": "r58",
@@ -3661,7 +3681,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use plain nonfat Greek yogurt and sweeten lightly. Halve the honey or sugar; ripe fruit does most of the work."
   },
   {
    "id": "r59",
@@ -3713,7 +3734,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use plain nonfat Greek yogurt and sweeten lightly. Halve the honey or sugar; ripe fruit does most of the work."
   },
   {
    "id": "r60",
@@ -3767,7 +3789,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use sugar-free pudding mix and unsweetened almond milk."
   },
   {
    "id": "r61",
@@ -3828,7 +3851,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use sugar-free pudding mix and unsweetened almond milk."
   },
   {
    "id": "r62",
@@ -3881,7 +3905,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use sugar-free pudding mix and unsweetened almond milk."
   },
   {
    "id": "r63",
@@ -3936,7 +3961,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use half the mix-ins and sprinkle them on top so a little goes further. Use sugar-free pudding mix and unsweetened almond milk."
   },
   {
    "id": "r64",
@@ -3992,7 +4018,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use half the mix-ins and sprinkle them on top so a little goes further. Use sugar-free pudding mix and unsweetened almond milk."
   },
   {
    "id": "r65",
@@ -4049,7 +4076,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use half the mix-ins and sprinkle them on top so a little goes further. Use sugar-free pudding mix and unsweetened almond milk."
   },
   {
    "id": "r66",
@@ -4102,7 +4130,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use sugar-free pudding mix and unsweetened almond milk."
   },
   {
    "id": "r67",
@@ -4144,10 +4173,6 @@
     [
      "Dairy-free",
      "Use unsweetened oat milk for the whole milk and unsweetened coconut cream for the heavy cream."
-    ],
-    [
-     "Lighter",
-     "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
     ]
    ],
    "press": "Soft Serve, then Ice Cream",
@@ -4166,7 +4191,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
   },
   {
    "id": "r68",
@@ -4209,10 +4235,6 @@
     [
      "Dairy-free",
      "Use unsweetened oat milk for the whole milk and unsweetened coconut cream for the heavy cream."
-    ],
-    [
-     "Lighter",
-     "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
     ]
    ],
    "press": "Soft Serve, then Ice Cream",
@@ -4231,7 +4253,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
   },
   {
    "id": "r69",
@@ -4272,10 +4295,6 @@
     [
      "Dairy-free",
      "Use unsweetened oat milk for the whole milk and unsweetened coconut cream for the heavy cream."
-    ],
-    [
-     "Lighter",
-     "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
     ]
    ],
    "press": "Soft Serve, then Ice Cream",
@@ -4294,7 +4313,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Use 2 tbsp agave nectar instead of the sugar, then spin on Soft Serve, Lite Ice Cream."
   },
   {
    "id": "r70",
@@ -4354,7 +4374,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Swap the heavy cream for 2% milk plus 2 tbsp dry milk powder; it stays creamy with about half the fat. Use half the mix-ins and sprinkle them on top so a little goes further."
   },
   {
    "id": "r71",
@@ -4412,7 +4433,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Swap the heavy cream for 2% milk plus 2 tbsp dry milk powder; it stays creamy with about half the fat. Use fat-free sweetened condensed milk."
   },
   {
    "id": "r72",
@@ -4473,7 +4495,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Swap the heavy cream for 2% milk plus 2 tbsp dry milk powder; it stays creamy with about half the fat."
   },
   {
    "id": "r73",
@@ -4531,7 +4554,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Swap the heavy cream for 2% milk plus 2 tbsp dry milk powder; it stays creamy with about half the fat. Use half the mix-ins and sprinkle them on top so a little goes further."
   },
   {
    "id": "r74",
@@ -4592,7 +4616,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Swap the heavy cream for 2% milk plus 2 tbsp dry milk powder; it stays creamy with about half the fat."
   },
   {
    "id": "r75",
@@ -4640,7 +4665,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Start with a light or no-sugar-added ice cream."
   },
   {
    "id": "r76",
@@ -4690,7 +4716,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Start with a light or no-sugar-added ice cream."
   },
   {
    "id": "r77",
@@ -4739,7 +4766,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Start with a light or no-sugar-added ice cream."
   },
   {
    "id": "r78",
@@ -4792,7 +4820,8 @@
    ],
    "video": null,
    "members": false,
-   "ben": []
+   "ben": [],
+   "healthier": "Start with a light or no-sugar-added ice cream. Use half the mix-ins and sprinkle them on top so a little goes further."
   }
  ]
 }
