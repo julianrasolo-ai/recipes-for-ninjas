@@ -372,3 +372,25 @@ dialog.pop{max-width:520px}
 .dot:not([data-p="Julian"]):not([data-p="Charlyne"]):not([data-p="Leanne"]):not([data-p="Noah"]){--pc:#c9b8ff}
 .who-b.made{background:var(--bg)}
 .acct{max-width:720px}
+
+/* Creami help pages */
+.glist{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.gitem{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:16px;background:var(--card);border:1px solid var(--line);color:var(--ink);text-decoration:none}
+.gitem:hover{border-color:var(--pink)}
+.gitem .gi{font-size:24px;line-height:1}
+.gitem b{display:block;font-family:"Fredoka","Nunito",sans-serif;font-weight:600}
+.gitem small{display:block;color:var(--muted);margin-top:2px;line-height:1.35}
+.gpage{max-width:760px;margin:0 auto}
+.gpage h1{text-wrap:balance}
+.ghero img,.ghero .emo{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:22px}
+.ghero .emo{display:grid;place-items:center;font-size:72px;background:var(--card)}
+.lead.answer{font-size:1.1rem;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--mint);border-radius:14px;padding:14px 16px;color:var(--ink)}
+.gtab-wrap{overflow-x:auto}
+.gtab{width:100%;border-collapse:collapse;margin:8px 0 14px;font-size:.95rem}
+.gtab th,.gtab td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+.gtab th{font-family:"Fredoka","Nunito",sans-serif;font-weight:600}
+.gtab .num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.faq details{border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:8px 0;background:var(--card)}
+.faq summary{font-weight:700;cursor:pointer}
+.helpstrip{margin:22px 0}
+@media print{.helpstrip{display:none}}

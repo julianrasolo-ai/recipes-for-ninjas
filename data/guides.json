@@ -1,0 +1,211 @@
+{
+ "_readme": "Creami help pages: fixes (troubleshooting) and guides. Body sections are trusted HTML we write ourselves. 'related' = Creami recipe ids, 'products' = accessory ids. 'table': 'macros' renders the per-pint macro table from recipe data.",
+ "guides": [
+  {
+   "slug": "crumbly-powdery", "kind": "fix", "emoji": "🧂",
+   "title": "Ninja Creami ice cream crumbly or powdery? How to fix it",
+   "h1": "Creami crumbly or powdery? Here's the fix",
+   "desc": "Why your Ninja Creami pint comes out crumbly or powdery, and the 2-minute fix: re-spin, add a splash of liquid, and what to change next time.",
+   "lead": "Press Re-spin first. If it's still powdery, make a small hole, add 1 tablespoon of milk (or the liquid in your base), and Re-spin again. Crumbly just means the pint is very cold and low in fat or sugar, which protein and light bases always are.",
+   "sections": [
+    ["Why it happens", "<p>The Creami shaves a solid frozen block. Full-fat, full-sugar bases freeze softer, so the first spin is creamy. Protein, light and fruit-only bases freeze harder, so the blade turns them into snow first. That's normal, not a broken machine.</p>"],
+    ["The fix, step by step", "<ol><li>Press <b>Re-spin</b>. Most pints are smooth after one.</li><li>Still powdery? Make a 1-inch hole, add <b>1 tbsp milk</b>, Re-spin.</li><li>Repeat once more if needed. Stop at 3 tbsp total or it turns into a milkshake.</li><li>Rushed? Let the pint sit on the counter for 5–10 minutes before the first spin.</li></ol>"],
+    ["Next time", "<ul><li>Add <b>1 tbsp sugar-free instant pudding mix</b> or <b>⅛ tsp xanthan gum</b> to the base. Both hold water so the pint spins creamy.</li><li>Use a little fat: 1 tbsp cream cheese, a splash of cream, or 2 tbsp coconut cream.</li><li>Swap erythritol for allulose or a little real sugar, which keep pints softer.</li></ul>"]
+   ],
+   "faq": [["Can I re-spin more than once?", "Yes. Two or three re-spins is fine. If it is still powdery after that, it needs liquid, not more spinning."], ["Does crumbly mean my freezer is too cold?", "Usually not. It's the recipe. Very cold freezers make it worse, so a 5–10 minute rest on the counter helps."]],
+   "related": ["r15", "r56", "r95", "r89"], "products": ["creami-sf-pudding", "creami-scale"]
+  },
+  {
+   "slug": "icy-texture", "kind": "fix", "emoji": "🧊",
+   "title": "Why is my Ninja Creami ice cream icy? 5 fixes that work",
+   "h1": "Icy Creami ice cream: what causes it and how to fix it",
+   "desc": "Icy, grainy Creami ice cream comes from too much free water. Fix it with a re-spin, a stabilizer, a bit more fat or sugar, and freezing flat for a full 24 hours.",
+   "lead": "Icy means ice crystals: too much free water and not enough fat, sugar or thickener to hold it. Re-spin with a splash of milk to rescue this pint; add a stabilizer like pudding mix or a spoon of cream cheese to fix the next one.",
+   "sections": [
+    ["Rescue this pint", "<ol><li>Add 1 tbsp milk or cream to a small hole.</li><li>Press Re-spin.</li><li>Eat it right away. Icy pints get icier if you refreeze them.</li></ol>"],
+    ["Fix the recipe", "<ul><li><b>Stabilizer:</b> 1 tbsp sugar-free instant pudding mix or ⅛ tsp xanthan gum per pint.</li><li><b>Fat:</b> 1 tbsp cream cheese, ¼ cup cream, or coconut cream.</li><li><b>Sugar:</b> even 1–2 tbsp of sugar, honey or allulose lowers the freezing point. Erythritol alone makes pints icy.</li><li><b>Less water:</b> thick bases (Greek yogurt, cottage cheese, ultra-filtered milk) freeze creamier than juice or plain water.</li></ul>"],
+    ["Freeze it right", "<p>Freeze flat for a full 24 hours with the lid on. A half-frozen pint has a soft center and an icy edge. Don't fill above the max line.</p>"]
+   ],
+   "faq": [["Is icy the same as crumbly?", "No. Crumbly is dry snow that a re-spin fixes. Icy is crunchy crystals in a smooth pint, which a recipe change fixes."], ["Does a longer freeze make it less icy?", "Freeze at least 24 hours. Longer doesn't help much, but less than 24 hours often makes it worse."]],
+   "related": ["r40", "r57", "r85", "r25"], "products": ["creami-sf-pudding", "creami-allulose"]
+  },
+  {
+   "slug": "pint-wont-fit", "kind": "fix", "emoji": "🥡",
+   "title": "Ninja Creami pint won't fit or the lid won't lock: quick fixes",
+   "h1": "Creami pint won't fit or lock? Check these 4 things",
+   "desc": "If your Creami pint won't go into the outer bowl or the lid won't twist and lock, it's usually an overfilled pint, a frozen hump, the wrong pint size for your model, or a missing paddle.",
+   "lead": "Nine times out of ten it's a frozen hump or a pint filled past the max line. Scrape the top flat with a spoon and try again. If it still won't seat, you may have the wrong pint size for your model.",
+   "sections": [
+    ["1. Overfilled or a hump on top", "<p>Liquid expands when it freezes. A pint filled past the <b>max fill line</b> or frozen at an angle grows a hump the paddle can't clear. Let it sit 5 minutes and scrape the top level with a spoon.</p>"],
+    ["2. Wrong pint for your machine", "<p>Original, Deluxe (24 oz) and Swirl pints are not all interchangeable. Check the size printed on the pint and our <a href=\"/gear/#creami\">pint compatibility table</a> before buying spares.</p>"],
+    ["3. Paddle or bowl lid not seated", "<p>The paddle must click into the outer bowl lid, and the lid must twist until it locks. The machine won't start until it does; that's a safety lock.</p>"],
+    ["4. Pint lid still on", "<p>Take the storage lid off the pint before it goes into the outer bowl. Easy to miss at 9 pm.</p>"]
+   ],
+   "faq": [["Can I use 24 oz Deluxe pints in a regular Creami?", "No. They're taller and won't fit. Use pints made for your model."], ["Why won't my Creami start?", "The outer bowl and lid have to be fully locked with the paddle in. If the lights flash, unlock and re-seat everything."]],
+   "related": ["r24", "r04"], "products": ["creami-pints", "creami-extra-lids", "creami-lid-paddle"]
+  },
+  {
+   "slug": "respin-vs-add-liquid", "kind": "fix", "emoji": "🔁",
+   "title": "Creami Re-spin vs. adding liquid: which one and when",
+   "h1": "Re-spin or add liquid? A simple rule for the Creami",
+   "desc": "When to press Re-spin, when to add milk first, and how much liquid to add to a Ninja Creami pint without turning it into a milkshake.",
+   "lead": "Dry and powdery: Re-spin first. Still powdery after one Re-spin: add 1 tablespoon of liquid, then Re-spin. Soft and soupy: don't add anything; freeze it 30 minutes and spin again.",
+   "sections": [
+    ["Quick rule", "<table class=\"gtab\"><thead><tr><th>What you see</th><th>Do this</th></tr></thead><tbody><tr><td>Powder or snow</td><td>Re-spin</td></tr><tr><td>Still powdery after a re-spin</td><td>1 tbsp liquid + Re-spin</td></tr><tr><td>Crumbly edges, smooth middle</td><td>Re-spin only</td></tr><tr><td>Smooth but icy crunch</td><td>1 tbsp cream or milk + Re-spin, then fix the recipe</td></tr><tr><td>Soft and soupy</td><td>Freeze 30 min, then Re-spin</td></tr></tbody></table>"],
+    ["Which liquid", "<p>Use what's in the base: milk for dairy bases, the same plant milk for dairy-free, juice for sorbets. For protein pints, a splash of protein shake keeps the macros on track.</p>"],
+    ["How much is too much", "<p>Stop at about 3 tablespoons per pint. Past that the texture goes from ice cream to milkshake. If a pint always needs that much, change the recipe instead.</p>"]
+   ],
+   "faq": [["Does adding liquid change the calories?", "A little. 1 tbsp of fat-free milk is about 5 kcal; 1 tbsp of cream is about 50."]],
+   "related": ["r95", "r60", "r15"], "products": ["creami-pints"]
+  },
+  {
+   "slug": "scale-24-oz-pint", "kind": "fix", "emoji": "📏",
+   "title": "How to scale Creami recipes for the 24 oz Deluxe pint",
+   "h1": "Scaling a 16 oz Creami recipe to the 24 oz Deluxe pint",
+   "desc": "Multiply 16 oz Creami recipes by 1.5 for the 24 oz Deluxe pint. A quick conversion table, what not to scale up, and how to keep under the max fill line.",
+   "lead": "Multiply everything by 1.5, then fill only to the max line. Spices, extracts, salt and stabilizers like xanthan gum go up less, about 1.25×, or they'll taste too strong or turn gummy.",
+   "sections": [
+    ["Conversion table", "<table class=\"gtab\"><thead><tr><th>16 oz pint</th><th>24 oz pint</th></tr></thead><tbody><tr><td>1 cup</td><td>1½ cups</td></tr><tr><td>¾ cup</td><td>1 cup + 2 tbsp</td></tr><tr><td>½ cup</td><td>¾ cup</td></tr><tr><td>⅓ cup</td><td>½ cup</td></tr><tr><td>¼ cup</td><td>6 tbsp</td></tr><tr><td>2 tbsp</td><td>3 tbsp</td></tr><tr><td>1 tbsp</td><td>1½ tbsp</td></tr><tr><td>1 scoop protein</td><td>1½ scoops</td></tr></tbody></table>"],
+    ["Don't scale these 1.5×", "<ul><li>Xanthan or guar gum: 1.25× at most.</li><li>Salt, extracts and spices: 1.25×, then taste.</li><li>Mix-ins: same amount or a little more. They're on top, not in the base.</li><li>Alcohol: never more than 3 tbsp in a 24 oz pint.</li></ul>"],
+    ["Weigh it", "<p>A scale makes scaling exact: weigh your 16 oz base once, multiply by 1.5, done. It also keeps protein numbers honest.</p>"]
+   ],
+   "faq": [["Can I make a 16 oz recipe in a 24 oz pint without scaling?", "Yes, it just makes a shorter pint. Spin works fine as long as the base is frozen flat."]],
+   "related": ["r95", "r87", "r24"], "products": ["creami-scale", "creami-pints"]
+  },
+  {
+   "slug": "chalky-protein-ice-cream", "kind": "fix", "emoji": "🥄",
+   "title": "Protein ice cream chalky or bitter in the Creami? How to fix it",
+   "h1": "Chalky protein ice cream? Fix the powder, not the machine",
+   "desc": "Chalky, gritty or bitter Creami protein ice cream comes from the powder and from skipping the rest time. Here's how to make protein pints taste like real ice cream.",
+   "lead": "Blend the base well, let it rest 5 minutes before freezing, and use a powder with some casein. Add a pinch of salt and 1 tbsp sugar-free pudding mix. Most chalkiness disappears.",
+   "sections": [
+    ["Why it's chalky", "<p>Pure whey isolate makes thin, foamy bases that freeze into icy snow. Plant proteins can be gritty if they aren't fully dissolved. Too much powder (more than about 1½ scoops per pint) tastes like powder.</p>"],
+    ["Fixes", "<ul><li>Use a <b>whey-casein blend</b> or casein; they freeze creamier.</li><li><b>Blend, don't shake.</b> Then rest 5 minutes so foam settles.</li><li>Add <b>1 tbsp sugar-free pudding mix</b> and a <b>pinch of salt</b>.</li><li>Base it on ultra-filtered milk, Greek yogurt or cottage cheese, which add protein without powder.</li><li>Re-spin with a splash of milk.</li></ul>"],
+    ["Bitter or artificial taste", "<p>Use a powder you'd happily drink as a shake. Cut the extra sweetener in half; sucralose plus a sweet powder plus syrup tastes chemical.</p>"]
+   ],
+   "faq": [["Which protein powder is best for the Creami?", "Whey-casein blends and casein give the creamiest pints. See our guide to protein powders for Creami."]],
+   "related": ["r95", "r98", "r99", "r61"], "products": ["creami-protein-blend", "creami-sf-pudding"]
+  },
+  {
+   "slug": "mix-ins-sinking", "kind": "fix", "emoji": "🍪",
+   "title": "Creami mix-ins crushed or sinking? How to use Mix-In right",
+   "h1": "Mix-ins crushed to dust? Use the Mix-In program properly",
+   "desc": "How to add cookies, chips and fruit to Ninja Creami ice cream so they stay chunky: spin first, make a hole, add mix-ins, then press Mix-In.",
+   "lead": "Never freeze mix-ins in the base. Spin the pint first, make a 1½-inch hole down the middle, add the mix-ins, then press Mix-In. It folds them in gently instead of blending them.",
+   "sections": [
+    ["Step by step", "<ol><li>Spin the pint on its program (re-spin if needed).</li><li>Use a spoon or the mix-in tool to make a 1½-inch hole to the bottom.</li><li>Add up to about ¼ cup of mix-ins.</li><li>Press <b>Mix-In</b>.</li></ol>"],
+    ["What works", "<ul><li>Chopped chocolate, mini chips, cookie pieces, graham crumbs, nuts.</li><li>Frozen fruit pieces, chopped small.</li><li>Swirls (caramel, jam) right before serving, by hand.</li></ul>"],
+    ["What doesn't", "<p>Big hard chunks that can jam the paddle, and wet mix-ins added before the first spin.</p>"]
+   ],
+   "faq": [["Can I add mix-ins before freezing?", "No. They sink and get pulverised. Add them after the first spin."]],
+   "related": ["r31", "r87", "r95", "r79"], "products": ["creami-mixin-tool"]
+  },
+  {
+   "slug": "wont-start-or-noise", "kind": "fix", "emoji": "⚠️",
+   "title": "Ninja Creami won't start or the program stops: what to check",
+   "h1": "Creami won't start or stops mid-spin? Check this first",
+   "desc": "If your Ninja Creami won't start, flashes, or stops mid-spin, check the bowl lock, paddle, pint fill level and how frozen the pint is before calling support.",
+   "lead": "Unlock and re-seat the outer bowl, make sure the paddle clicked into the lid, and check the pint isn't overfilled. The Creami won't run unless everything is fully locked.",
+   "sections": [
+    ["It won't start", "<ul><li>Twist the outer bowl until it locks into the motor base.</li><li>Check the paddle is clicked into the outer bowl lid.</li><li>Confirm the pint lid is off.</li></ul>"],
+    ["It stops mid-spin", "<ul><li>The pint may be overfilled or have a hump. Scrape it flat.</li><li>Very hard pints (sorbets with little sugar, deep-freezers) can strain the motor. Rest 5–10 minutes on the counter first.</li></ul>"],
+    ["When to call Ninja", "<p>If it still won't start with a flat, properly frozen pint and a locked bowl, contact SharkNinja support with your model number. Don't open the motor base.</p>"]
+   ],
+   "faq": [["Is a loud noise normal?", "Yes, the first seconds of a hard pint are loud. A grinding or clicking noise every spin is worth checking the paddle and bowl."]],
+   "related": ["r24", "r50"], "products": ["creami-lid-paddle"]
+  },
+  {
+   "slug": "macros-per-pint", "kind": "guide", "emoji": "📊", "table": "macros",
+   "title": "Ninja Creami protein ice cream: calories and macros per pint",
+   "h1": "Calories and protein per pint for our Creami recipes",
+   "desc": "Approximate calories and protein per pint for every high-protein Ninja Creami recipe on Recipes By Ninjas, from cottage cheese to dairy-free, sorted by protein.",
+   "lead": "Every high-protein pint on the site, sorted by protein per pint. Numbers are estimates from typical labels; your milk and powder will change them a little. Weigh with a scale for accuracy.",
+   "sections": [
+    ["How we count", "<p>We add up typical label values for each ingredient, mix-ins included. A full pint is usually 2 servings, so halve the numbers for a bowl.</p>"]
+   ],
+   "faq": [["What's the highest-protein base?", "Ultra-filtered milk plus a scoop of protein powder: about 40–45 g a pint. Cottage cheese and Greek yogurt bases land around 25–35 g without any powder."]],
+   "related": [], "products": ["creami-scale", "creami-protein-blend"]
+  },
+  {
+   "slug": "best-protein-powder", "kind": "guide", "emoji": "💪",
+   "title": "Best protein powder for the Ninja Creami (and which to avoid)",
+   "h1": "Which protein powder works best in the Creami?",
+   "desc": "Whey isolate, whey-casein blends, casein and plant proteins compared for Ninja Creami ice cream: texture, taste and how much to use per pint.",
+   "lead": "Whey-casein blends and casein make the creamiest Creami pints. Whey isolate works but needs a stabilizer and a re-spin. Plant proteins work best with soy milk and a little fat.",
+   "sections": [
+    ["Compared", "<table class=\"gtab\"><thead><tr><th>Type</th><th>Texture</th><th>Tip</th></tr></thead><tbody><tr><td>Whey-casein blend</td><td>Creamy, thick</td><td>Our default. 1 scoop per pint.</td></tr><tr><td>Casein</td><td>Thickest, almost gelato</td><td>Add a little more milk.</td></tr><tr><td>Whey isolate</td><td>Lighter, can be icy</td><td>Add 1 tbsp pudding mix; expect a re-spin.</td></tr><tr><td>Pea / soy</td><td>Can be gritty</td><td>Blend well, rest 5 min, add 2 tbsp coconut cream.</td></tr></tbody></table>"],
+    ["What to look for", "<ul><li>A flavor you like as a plain shake.</li><li>Some casein in the ingredient list.</li><li>Not too sweet; you'll add flavor anyway.</li></ul>"],
+    ["How much", "<p>One scoop (about 30 g) per 16 oz pint, 1½ scoops for 24 oz. More than that tastes like powder.</p>"]
+   ],
+   "faq": [["Can I use a ready-to-drink protein shake?", "Yes. A 11–12 oz protein shake poured straight into the pint is the easiest protein ice cream there is."]],
+   "related": ["r95", "r96", "r97", "r98", "r99"], "products": ["creami-protein-blend", "creami-scale", "creami-sf-pudding"]
+  },
+  {
+   "slug": "sweetener-swaps", "kind": "guide", "emoji": "🍬",
+   "title": "Sweeteners in the Ninja Creami: sugar, allulose, erythritol and more",
+   "h1": "Sweetener swaps for the Creami (and how each one freezes)",
+   "desc": "How sugar, allulose, erythritol, stevia, monk fruit, honey and maple syrup behave in Ninja Creami ice cream, with swap amounts and which ones freeze rock-hard.",
+   "lead": "Sugar does two jobs: sweetness and softness. Allulose is the best low-calorie swap because it keeps pints soft. Erythritol, stevia and monk fruit sweeten but freeze harder, so expect a re-spin.",
+   "sections": [
+    ["Swap table", "<table class=\"gtab\"><thead><tr><th>Sweetener</th><th>Swap for ¼ cup sugar</th><th>Texture</th></tr></thead><tbody><tr><td>Allulose</td><td>⅓ cup</td><td>Soft, closest to sugar</td></tr><tr><td>Honey / maple / agave</td><td>3 tbsp</td><td>Soft, adds flavor</td></tr><tr><td>Erythritol blends</td><td>¼ cup</td><td>Harder, can be icy</td></tr><tr><td>Stevia / monk fruit drops</td><td>To taste</td><td>No bulk; add pudding mix</td></tr><tr><td>Sugar-free syrups</td><td>2–3 tbsp</td><td>Flavor, little softness</td></tr></tbody></table>"],
+    ["Rules of thumb", "<ul><li>Mix sweeteners: half allulose, half honey is a great balance.</li><li>With zero-calorie sweeteners, add a stabilizer: 1 tbsp pudding mix or ⅛ tsp xanthan.</li><li>Fruit sorbets need some sugar to be scoopable; pure fruit works best when very ripe.</li></ul>"]
+   ],
+   "faq": [["Why is my sugar-free pint rock hard?", "Without sugar there's nothing lowering the freezing point. Use allulose, add a stabilizer, and plan on a re-spin."]],
+   "related": ["r40", "r85", "r89", "r82"], "products": ["creami-allulose", "creami-sf-pudding"]
+  },
+  {
+   "slug": "storage-and-refreezing", "kind": "guide", "emoji": "❄️",
+   "title": "How to store Creami pints and re-spin leftovers",
+   "h1": "Storing Creami pints: how long they last and how to re-spin",
+   "desc": "How long frozen Ninja Creami bases and spun leftovers keep, how to refreeze a half-eaten pint, and why you should always re-spin before serving again.",
+   "lead": "Unspun bases keep well for about 2 weeks in the freezer; spun leftovers are best within a week. Smooth the top flat, lid on, refreeze, and always re-spin before eating again.",
+   "sections": [
+    ["Leftovers", "<ol><li>Smooth the top flat with a spoon. Bumps make the next spin hard.</li><li>Lid on, freeze flat.</li><li>Next time, press the same program or Re-spin. Leftovers freeze hard.</li></ol>"],
+    ["Freezer burn", "<p>Air is the enemy. Keep lids on, don't leave half-empty pints for weeks, and label the date on the lid.</p>"],
+    ["Batch prep", "<p>Make 3–4 bases on Sunday and freeze them flat. Spares pints and lids make this easy; a scale keeps the protein ones consistent.</p>"]
+   ],
+   "faq": [["Can I refreeze a melted pint?", "If it melted in the fridge or freezer door, yes: stir, refreeze 24 hours, spin. If it sat out for hours, throw it away."]],
+   "related": ["r95", "r56", "r24"], "products": ["creami-pints", "creami-extra-lids"]
+  },
+  {
+   "slug": "cottage-cheese-ice-cream", "kind": "guide", "emoji": "🧀",
+   "title": "Cottage cheese ice cream in the Ninja Creami: the complete guide",
+   "h1": "Cottage cheese ice cream: the base ratio and every flavor",
+   "desc": "How to make creamy high-protein cottage cheese ice cream in the Ninja Creami: the base ratio, how to hide the taste, best flavors and fixes.",
+   "lead": "1 cup cottage cheese + ½ cup milk + 2 tbsp sweetener, blended until completely smooth. That's the base. It tastes like cheesecake-vanilla, has about 30 g of protein a pint, and takes any flavor.",
+   "sections": [
+    ["The base", "<ul><li>1 cup low-fat cottage cheese</li><li>½ cup milk (ultra-filtered for extra protein)</li><li>2 tbsp maple, honey or allulose</li><li>1 tsp vanilla + pinch of salt</li></ul><p>Blend for a full minute. Any curds left will freeze as icy bits.</p>"],
+    ["Make it taste less like cottage cheese", "<p>Strong flavors win: fruit, cocoa, peanut butter, caramel. Lemon zest makes it taste on purpose like cheesecake.</p>"],
+    ["Spin", "<p>Press Scoop, then CreamiFit or Lite Ice Cream. Expect one re-spin.</p>"]
+   ],
+   "faq": [["Full-fat or low-fat cottage cheese?", "Either. Full-fat is creamier; low-fat has more protein per calorie."]],
+   "related": ["r87", "r88", "r89", "r90", "r56", "r57"], "products": ["creami-pints", "creami-scale"]
+  },
+  {
+   "slug": "greek-yogurt-ice-cream", "kind": "guide", "emoji": "🥛",
+   "title": "Greek yogurt protein ice cream in the Ninja Creami",
+   "h1": "Greek yogurt ice cream: tangy, light and high in protein",
+   "desc": "How to make Greek yogurt protein ice cream in the Ninja Creami: base ratio, flavors that work, and how to stop it freezing icy.",
+   "lead": "1 cup nonfat Greek yogurt + ¼ cup milk + 2 tbsp honey. About 25 g protein a pint, tangy like fro-yo, and ready for fruit, lemon or peanut butter.",
+   "sections": [
+    ["The base", "<ul><li>1 cup nonfat or 2% Greek yogurt</li><li>¼ cup milk</li><li>2 tbsp honey or maple</li></ul><p>Thicker yogurt freezes creamier. Skip watery regular yogurt for this base.</p>"],
+    ["Spin", "<p>Press Scoop, then Frozen Yogurt or CreamiFit. Re-spin with 1 tbsp milk if it's crumbly.</p>"]
+   ],
+   "faq": [["Is Greek yogurt ice cream healthy?", "It's lower in sugar and higher in protein than regular ice cream. Watch the honey and mix-ins."]],
+   "related": ["r91", "r92", "r93", "r94", "r42", "r58"], "products": ["creami-pints", "creami-scale"]
+  },
+  {
+   "slug": "dairy-free-protein-ice-cream", "kind": "guide", "emoji": "🌱",
+   "title": "Dairy-free protein ice cream in the Ninja Creami",
+   "h1": "Dairy-free protein ice cream that isn't gritty",
+   "desc": "Make creamy dairy-free, high-protein ice cream in the Ninja Creami with soy milk, pea protein and a little coconut cream. Base ratio, flavors and fixes.",
+   "lead": "Soy milk + plant protein + a little fat. Soy milk has the most protein of the plant milks, and 2 tablespoons of coconut cream stops plant protein from tasting gritty.",
+   "sections": [
+    ["The base", "<ul><li>1½ cups unsweetened soy milk</li><li>1 scoop pea or soy protein</li><li>2 tbsp coconut cream or 1 tbsp nut butter</li><li>1–2 tbsp maple or agave</li><li>⅛ tsp xanthan gum (optional)</li></ul>"],
+    ["Tips", "<ul><li>Blend well and rest 5 minutes before freezing.</li><li>Oat milk works but adds little protein.</li><li>Check your protein powder is dairy-free; many 'plant' blends are fine, some add milk.</li></ul>"]
+   ],
+   "faq": [["Which plant milk is best?", "Soy for protein, oat for creaminess, coconut for richness."]],
+   "related": ["r99", "r100", "r101", "r29", "r46"], "products": ["creami-pints", "creami-scale"]
+  }
+ ]
+}

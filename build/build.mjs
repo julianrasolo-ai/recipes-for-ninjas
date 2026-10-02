@@ -46,13 +46,20 @@ const page = (path, html) => pages.push([path, html]);
 // Share cards made by scripts/og-images.mjs (only on builds that have the photos)
 const og = { home: existsSync(join(ROOT, "img/og/home.jpg")) ? "/img/og/home.jpg" : "/img/ice/hero.jpg" };
 for (const { r, a } of all) r.og = existsSync(join(ROOT, `img/og/${a.key}/${r.slug}.jpg`)) ? `/img/og/${a.key}/${r.slug}.jpg` : r.img;
-const ctx = { site, appliances, products, all, images, og };
+// Creami help pages (fixes + guides)
+const guides = (await readJSON("data/guides.json")).guides;
+for (const g of guides) { const im = images[`guides/${g.slug}`]; if (im) { g.img = `/img/guides/${g.slug}.jpg`; g.cdn = im.min; } }
+const ctx = { site, appliances, products, all, images, og, guides };
 
 // Hubs, recipe pages, category pages
 for (const a of appliances) {
   page(a.url, T.hub(ctx, a));
   for (const r of a.data.recipes) page(r.url, T.recipe(ctx, a, r));
   for (const c of a.data.cats) page(`/${a.key}/category/${c.k}/`, T.category(ctx, a, c));
+  if (a.key === "creami") {
+    page(`/${a.key}/help/`, T.helpHub(ctx, a, guides));
+    for (const g of guides) page(`/${a.key}/help/${g.slug}/`, T.helpPage(ctx, a, g, guides));
+  }
 }
 
 // Tag pages: benefits + diet flags across every appliance
@@ -95,10 +102,11 @@ for (const a of appliances) {
   const recipes = a.data.recipes.map((r) => ({ ...r, gearItems: (r.gear || []).map((id) => products[id]).filter(Boolean).map((p) => ({ id: p.id, name: p.name, icon: p.icon, note: p.note, href: p.href })) }));
   await writeFile(join(OUT, "data", `${a.key}.json`), JSON.stringify({ ...a.data, recipes, pressLabel: a.pressLabel, toggleChip: a.toggleChip, disclosure: site.affiliate.amazonTag ? "We may earn from qualifying purchases." : "" }));
 }
-await writeFile(join(OUT, "search-index.json"), JSON.stringify(all.map(({ r, a }) => ({
+await writeFile(join(OUT, "search-index.json"), JSON.stringify([...all.map(({ r, a }) => ({
   t: r.title, u: r.url, a: a.key, c: a.catMap[r.cat]?.n || "", i: r.img, cdn: r.cdn || "", e: r.emoji,
-  s: [r.title, r.blurb, r.ing.join(" "), (r.ben || []).map((b) => a.benMap[b]?.[2]).join(" "), a.name, a.catMap[r.cat]?.n].join(" ").toLowerCase(),
-}))));
+  s: [r.title, r.blurb, r.ing.join(" "), (r.ben || []).map((b) => a.benMap[b]?.[2]).join(" "), a.name, a.catMap[r.cat]?.n, r.macros ? "protein high-protein" : ""].join(" ").toLowerCase(),
+})), ...guides.map((g) => ({ t: g.h1, u: `/creami/help/${g.slug}/`, a: "creami", c: g.kind === "fix" ? "Fix" : "Guide", i: g.img || "", cdn: g.cdn || "", e: g.emoji,
+  s: [g.h1, g.title, g.desc, g.lead, "help fix guide"].join(" ").toLowerCase() }))]));
 
 // SEO + routing
 const urls = pages.map(([p]) => p).filter((p) => !p.endsWith(".html"));

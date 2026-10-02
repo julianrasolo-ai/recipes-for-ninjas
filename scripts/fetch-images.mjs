@@ -15,7 +15,7 @@ const seen = await readFile(SEEN, "utf8").then(JSON.parse).catch(() => ({}));
 const entries = Object.entries(manifest);
 // small batches so the CDN isn't hammered
 for (let i = 0; i < entries.length; i += 8) {
-  await Promise.all(entries.slice(i, i + 8).map(async ([key, { src, size = 600, ext = "jpg" }]) => {
+  await Promise.all(entries.slice(i, i + 8).map(async ([key, { src, size = 600, w, h, ext = "jpg" }]) => {
     const out = `img/${key}.${ext}`;
     try { await access(out); if (!seen[key] || seen[key] === src) { seen[key] = src; skipped++; return; } } catch {}
     try {
@@ -23,7 +23,7 @@ for (let i = 0; i < entries.length; i += 8) {
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       const img = sharp(Buffer.from(await r.arrayBuffer()));
       const buf = ext === "jpg"
-        ? await img.resize(size, size, { fit: "cover" }).jpeg({ quality: 78, progressive: true, mozjpeg: true }).toBuffer()
+        ? await img.resize(w || size, h || size, { fit: "cover" }).jpeg({ quality: 78, progressive: true, mozjpeg: true }).toBuffer()
         : await img.trim().resize(size, size, { fit: "inside" }).webp({ quality: 82, alphaQuality: 90 }).toBuffer(); // trim empty transparent edges
       await mkdir(dirname(out), { recursive: true });
       await writeFile(out, buf);

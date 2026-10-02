@@ -64,3 +64,15 @@ console.log("assistant tests passed");
   assert.ok(next.picks.every((p) => !keys.includes(p.key)));
   console.log("assistant exclude test passed");
 }
+
+// Adults-only recipes never show up unless the person asks for them
+{
+  const { rank } = await import("../lib/picker.mjs");
+  const plain = rank(catalog, { meal: "snack", chips: [], text: "", limit: 500 });
+  assert.ok(plain.length > 0 && plain.every((x) => !x.rec.adult));
+  const asked = rank(catalog, { meal: "snack", chips: [], text: "a margarita for the adults", limit: 500 });
+  assert.ok(asked.some((x) => x.rec.adult));
+  const prot = rank(catalog, { meal: "snack", chips: ["protein"], text: "", limit: 5 });
+  assert.ok(prot.every((x) => x.rec.mood.includes("protein")));
+  console.log("assistant adult/protein tests passed");
+}

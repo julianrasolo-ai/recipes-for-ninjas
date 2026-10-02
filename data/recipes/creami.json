@@ -35,7 +35,9 @@
   "cottage": "Cottage cheese",
   "ccheese": "Cream cheese",
   "cond": "Sweetened condensed milk",
-  "matcha": "Matcha"
+  "matcha": "Matcha",
+  "booze": "Spirits or liqueur",
+  "sf": "Sugar-free pudding mix or syrup"
  },
  "groups": [
   [
@@ -151,6 +153,13 @@
    "e": "👑",
    "d": "Cooked custards and gelato for showing off.",
    "s": "Fancy"
+  },
+  {
+   "k": "adult",
+   "n": "Adults only (21+)",
+   "e": "🍸",
+   "d": "Boozy scoops for grown-up nights. The alcohol isn't cooked off, so keep these away from kids.",
+   "s": "21+"
   }
  ],
  "recipes": [
@@ -5245,6 +5254,1272 @@
     "Spin 2 min",
     "4 servings"
    ]
+  },
+  {
+   "id": "r87",
+   "cat": "pro",
+   "title": "Cottage cheese cookie dough ice cream",
+   "level": "Easy",
+   "emoji": "🍪",
+   "blurb": "Blended cottage cheese tastes like cheesecake-y vanilla. Add cookie dough bits and nobody guesses.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup low-fat cottage cheese",
+    "½ cup fat-free ultra-filtered milk",
+    "2 tbsp maple syrup",
+    "1 tsp vanilla",
+    "Pinch of salt",
+    "Mix-in: 2 tbsp almond flour + 1 tbsp brown sugar + 1 tsp melted butter, rolled into crumbs",
+    "Mix-in: 1 tbsp mini chocolate chips"
+   ],
+   "steps": [
+    "Blend the cottage cheese, milk, maple, vanilla and salt until completely smooth, no curds left.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then CreamiFit.",
+    "Crumbly? Add 1 tbsp milk and press Re-spin (protein bases almost always need one).",
+    "Make a 1½-inch hole down the middle, add the dough crumbs and chips, then press Mix-In."
+   ],
+   "tags": [
+    "cottage",
+    "milk",
+    "sweet",
+    "choc",
+    "nuts"
+   ],
+   "healthy": true,
+   "dfree": false,
+   "img": "/img/ice/r87.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Per pint (about)",
+     "460 kcal · 33 g protein. Estimates from typical labels; your brands will vary."
+    ]
+   ],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "cottage-cheese-cookie-dough-ice-cream",
+   "gear": [
+    "creami-pints",
+    "creami-scale"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Already a lighter, high-protein pint. Split it into two servings to halve the numbers.",
+   "macros": {
+    "kcal": 460,
+    "protein": 33,
+    "base": "Cottage cheese"
+   }
+  },
+  {
+   "id": "r88",
+   "cat": "pro",
+   "title": "Blueberry cheesecake cottage cheese ice cream",
+   "level": "Easy",
+   "emoji": "🫐",
+   "blurb": "Tastes like cheesecake, packs almost 30 g of protein.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup low-fat cottage cheese",
+    "2 tbsp light cream cheese",
+    "2 tbsp honey",
+    "1 tsp lemon zest",
+    "½ cup blueberries",
+    "Mix-in: 1 graham cracker sheet, crushed"
+   ],
+   "steps": [
+    "Blend cottage cheese, cream cheese, honey and zest until smooth. Stir in the blueberries.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then CreamiFit.",
+    "Crumbly? Add 1 tbsp milk and press Re-spin (protein bases almost always need one).",
+    "Make a 1½-inch hole down the middle, add the graham crumbs, then press Mix-In."
+   ],
+   "tags": [
+    "cottage",
+    "ccheese",
+    "berry",
+    "sweet",
+    "cookie"
+   ],
+   "healthy": true,
+   "dfree": false,
+   "img": "/img/ice/r88.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Per pint (about)",
+     "460 kcal · 27 g protein. Estimates from typical labels; your brands will vary."
+    ]
+   ],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "blueberry-cheesecake-cottage-cheese-ice-cream",
+   "gear": [
+    "creami-pints",
+    "creami-scale"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Already a lighter, high-protein pint. Split it into two servings to halve the numbers.",
+   "macros": {
+    "kcal": 460,
+    "protein": 27,
+    "base": "Cottage cheese"
+   }
+  },
+  {
+   "id": "r89",
+   "cat": "pro",
+   "title": "Salted caramel cottage cheese ice cream",
+   "level": "Easy",
+   "emoji": "🧂",
+   "blurb": "Low-calorie, high-protein and properly salty-sweet.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup low-fat cottage cheese",
+    "½ cup fat-free ultra-filtered milk",
+    "1 tbsp sugar-free butterscotch pudding mix",
+    "2 tbsp sugar-free caramel syrup",
+    "¼ tsp flaky salt"
+   ],
+   "steps": [
+    "Blend everything except the salt until smooth.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then CreamiFit.",
+    "Crumbly? Add 1 tbsp milk and press Re-spin (protein bases almost always need one).",
+    "Sprinkle the flaky salt on top to serve."
+   ],
+   "tags": [
+    "cottage",
+    "milk",
+    "sf"
+   ],
+   "healthy": true,
+   "dfree": false,
+   "img": "/img/ice/r89.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Per pint (about)",
+     "255 kcal · 31 g protein. Estimates from typical labels; your brands will vary."
+    ]
+   ],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "salted-caramel-cottage-cheese-ice-cream",
+   "gear": [
+    "creami-pints",
+    "creami-scale"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Already a lighter, high-protein pint. Split it into two servings to halve the numbers.",
+   "macros": {
+    "kcal": 255,
+    "protein": 31,
+    "base": "Cottage cheese"
+   }
+  },
+  {
+   "id": "r90",
+   "cat": "pro",
+   "title": "Mango cottage cheese ice cream",
+   "level": "Easy",
+   "emoji": "🥭",
+   "blurb": "Tropical and creamy. The mango hides the cottage cheese completely.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup low-fat cottage cheese",
+    "1 cup frozen mango, thawed",
+    "1 tbsp honey",
+    "Juice of ½ lime"
+   ],
+   "steps": [
+    "Blend everything until silky.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then CreamiFit.",
+    "Crumbly? Add 1 tbsp milk and press Re-spin (protein bases almost always need one)."
+   ],
+   "tags": [
+    "cottage",
+    "mango",
+    "sweet",
+    "lemon"
+   ],
+   "healthy": true,
+   "dfree": false,
+   "img": "/img/ice/r90.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Per pint (about)",
+     "340 kcal · 25 g protein. Estimates from typical labels; your brands will vary."
+    ]
+   ],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "mango-cottage-cheese-ice-cream",
+   "gear": [
+    "creami-pints",
+    "creami-scale"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Already a lighter, high-protein pint. Split it into two servings to halve the numbers.",
+   "macros": {
+    "kcal": 340,
+    "protein": 25,
+    "base": "Cottage cheese"
+   }
+  },
+  {
+   "id": "r91",
+   "cat": "pro",
+   "title": "Lemon blueberry Greek yogurt ice cream",
+   "level": "Easy",
+   "emoji": "🍋",
+   "blurb": "Bright, tangy and fro-yo smooth.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup nonfat Greek yogurt",
+    "¼ cup fat-free ultra-filtered milk",
+    "2 tbsp honey",
+    "Zest and juice of 1 lemon",
+    "Mix-in: ½ cup blueberries"
+   ],
+   "steps": [
+    "Whisk yogurt, milk, honey, lemon zest and juice until smooth.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then CreamiFit.",
+    "Crumbly? Add 1 tbsp milk and press Re-spin (protein bases almost always need one).",
+    "Make a 1½-inch hole down the middle, add the blueberries, then press Mix-In."
+   ],
+   "tags": [
+    "yog",
+    "milk",
+    "sweet",
+    "lemon",
+    "berry"
+   ],
+   "healthy": true,
+   "dfree": false,
+   "img": "/img/ice/r91.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Per pint (about)",
+     "310 kcal · 26 g protein. Estimates from typical labels; your brands will vary."
+    ]
+   ],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "lemon-blueberry-greek-yogurt-ice-cream",
+   "gear": [
+    "creami-pints",
+    "creami-scale"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Already a lighter, high-protein pint. Split it into two servings to halve the numbers.",
+   "macros": {
+    "kcal": 310,
+    "protein": 26,
+    "base": "Greek yogurt"
+   }
+  },
+  {
+   "id": "r92",
+   "cat": "pro",
+   "title": "Peanut butter honey Greek yogurt ice cream",
+   "level": "Easy",
+   "emoji": "🥜",
+   "blurb": "Nutty, sweet, 35 g of protein.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup nonfat Greek yogurt",
+    "¼ cup fat-free ultra-filtered milk",
+    "3 tbsp powdered peanut butter",
+    "2 tbsp honey",
+    "Pinch of salt"
+   ],
+   "steps": [
+    "Whisk everything until smooth.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then CreamiFit.",
+    "Crumbly? Add 1 tbsp milk and press Re-spin (protein bases almost always need one).",
+    "Drizzle with a little more honey to serve."
+   ],
+   "tags": [
+    "yog",
+    "milk",
+    "pb",
+    "sweet"
+   ],
+   "healthy": true,
+   "dfree": false,
+   "img": "/img/ice/r92.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Per pint (about)",
+     "345 kcal · 35 g protein. Estimates from typical labels; your brands will vary."
+    ]
+   ],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "peanut-butter-honey-greek-yogurt-ice-cream",
+   "gear": [
+    "creami-pints",
+    "creami-scale"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Already a lighter, high-protein pint. Split it into two servings to halve the numbers.",
+   "macros": {
+    "kcal": 345,
+    "protein": 35,
+    "base": "Greek yogurt"
+   }
+  },
+  {
+   "id": "r93",
+   "cat": "pro",
+   "title": "Cherry chocolate chunk Greek yogurt ice cream",
+   "level": "Easy",
+   "emoji": "🍒",
+   "blurb": "Dark cherries and chocolate chunks in a tangy yogurt base.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup nonfat Greek yogurt",
+    "¼ cup fat-free ultra-filtered milk",
+    "2 tbsp maple syrup",
+    "½ tsp almond or vanilla extract",
+    "Mix-in: ½ cup frozen dark cherries, chopped",
+    "Mix-in: 1 tbsp dark chocolate, chopped"
+   ],
+   "steps": [
+    "Whisk yogurt, milk, maple and extract until smooth.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then CreamiFit.",
+    "Crumbly? Add 1 tbsp milk and press Re-spin (protein bases almost always need one).",
+    "Make a 1½-inch hole down the middle, add the cherries and chocolate, then press Mix-In."
+   ],
+   "tags": [
+    "yog",
+    "milk",
+    "sweet",
+    "cherry",
+    "choc"
+   ],
+   "healthy": true,
+   "dfree": false,
+   "img": "/img/ice/r93.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Per pint (about)",
+     "370 kcal · 27 g protein. Estimates from typical labels; your brands will vary."
+    ]
+   ],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "cherry-chocolate-chunk-greek-yogurt-ice-cream",
+   "gear": [
+    "creami-pints",
+    "creami-scale"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Already a lighter, high-protein pint. Split it into two servings to halve the numbers.",
+   "macros": {
+    "kcal": 370,
+    "protein": 27,
+    "base": "Greek yogurt"
+   }
+  },
+  {
+   "id": "r94",
+   "cat": "pro",
+   "title": "Key lime pie Greek yogurt ice cream",
+   "level": "Easy",
+   "emoji": "🥧",
+   "blurb": "Tart lime, graham crunch, way more protein than pie.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup nonfat Greek yogurt",
+    "¼ cup fat-free ultra-filtered milk",
+    "2 tbsp honey",
+    "Zest of 2 limes + 2 tbsp juice",
+    "Mix-in: 1 graham cracker sheet, crushed"
+   ],
+   "steps": [
+    "Whisk yogurt, milk, honey, zest and juice until smooth.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then CreamiFit.",
+    "Crumbly? Add 1 tbsp milk and press Re-spin (protein bases almost always need one).",
+    "Make a 1½-inch hole down the middle, add the graham crumbs, then press Mix-In."
+   ],
+   "tags": [
+    "yog",
+    "milk",
+    "sweet",
+    "lemon",
+    "cookie"
+   ],
+   "healthy": true,
+   "dfree": false,
+   "img": "/img/ice/r94.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Per pint (about)",
+     "330 kcal · 27 g protein. Estimates from typical labels; your brands will vary."
+    ]
+   ],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "key-lime-pie-greek-yogurt-ice-cream",
+   "gear": [
+    "creami-pints",
+    "creami-scale"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Already a lighter, high-protein pint. Split it into two servings to halve the numbers.",
+   "macros": {
+    "kcal": 330,
+    "protein": 27,
+    "base": "Greek yogurt"
+   }
+  },
+  {
+   "id": "r95",
+   "cat": "pro",
+   "title": "Mint chocolate chip protein ice cream",
+   "level": "Easy",
+   "emoji": "🌿",
+   "blurb": "The classic flavor at about 44 g of protein a pint.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1½ cups fat-free ultra-filtered milk",
+    "1 scoop vanilla protein powder (whey or whey-casein)",
+    "1 tbsp sugar-free vanilla pudding mix",
+    "¼ tsp peppermint extract",
+    "Mix-in: 1 tbsp mini chocolate chips"
+   ],
+   "steps": [
+    "Blend milk, protein, pudding mix and peppermint until smooth. Rest 5 minutes so the foam settles.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then CreamiFit.",
+    "Crumbly? Add 1 tbsp milk and press Re-spin (protein bases almost always need one).",
+    "Make a 1½-inch hole down the middle, add the chocolate chips, then press Mix-In."
+   ],
+   "tags": [
+    "milk",
+    "prot",
+    "sf",
+    "choc"
+   ],
+   "healthy": true,
+   "dfree": false,
+   "img": "/img/ice/r95.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Per pint (about)",
+     "335 kcal · 44 g protein. Estimates from typical labels; your brands will vary."
+    ]
+   ],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "mint-chocolate-chip-protein-ice-cream",
+   "gear": [
+    "creami-pints",
+    "creami-scale"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Already a lighter, high-protein pint. Split it into two servings to halve the numbers.",
+   "macros": {
+    "kcal": 335,
+    "protein": 44,
+    "base": "Protein powder"
+   }
+  },
+  {
+   "id": "r96",
+   "cat": "pro",
+   "title": "Banana bread protein ice cream",
+   "level": "Easy",
+   "emoji": "🍌",
+   "blurb": "Banana, cinnamon and a little walnut crunch. Breakfast-worthy.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1¼ cups fat-free ultra-filtered milk",
+    "1 scoop vanilla protein powder",
+    "½ very ripe banana",
+    "1 tbsp sugar-free vanilla pudding mix",
+    "½ tsp cinnamon",
+    "Mix-in: 1 tbsp chopped walnuts"
+   ],
+   "steps": [
+    "Blend milk, protein, banana, pudding mix and cinnamon until smooth.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then CreamiFit.",
+    "Crumbly? Add 1 tbsp milk and press Re-spin (protein bases almost always need one).",
+    "Make a 1½-inch hole down the middle, add the walnuts, then press Mix-In."
+   ],
+   "tags": [
+    "milk",
+    "prot",
+    "ban",
+    "sf",
+    "nuts"
+   ],
+   "healthy": true,
+   "dfree": false,
+   "img": "/img/ice/r96.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Per pint (about)",
+     "345 kcal · 41 g protein. Estimates from typical labels; your brands will vary."
+    ]
+   ],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "banana-bread-protein-ice-cream",
+   "gear": [
+    "creami-pints",
+    "creami-scale"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Already a lighter, high-protein pint. Split it into two servings to halve the numbers.",
+   "macros": {
+    "kcal": 345,
+    "protein": 41,
+    "base": "Protein powder"
+   }
+  },
+  {
+   "id": "r97",
+   "cat": "pro",
+   "title": "S'mores protein ice cream",
+   "level": "Easy",
+   "emoji": "🔥",
+   "blurb": "Chocolate protein base with graham and marshmallow.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1½ cups fat-free ultra-filtered milk",
+    "1 scoop chocolate protein powder",
+    "1 tbsp sugar-free chocolate pudding mix",
+    "Mix-in: 1 graham cracker sheet, crushed",
+    "Mix-in: ¼ cup mini marshmallows"
+   ],
+   "steps": [
+    "Blend milk, protein and pudding mix until smooth.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then CreamiFit.",
+    "Crumbly? Add 1 tbsp milk and press Re-spin (protein bases almost always need one).",
+    "Make a 1½-inch hole down the middle, add the graham crumbs and marshmallows, then press Mix-In."
+   ],
+   "tags": [
+    "milk",
+    "prot",
+    "sf",
+    "cookie"
+   ],
+   "healthy": true,
+   "dfree": false,
+   "img": "/img/ice/r97.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Per pint (about)",
+     "365 kcal · 45 g protein. Estimates from typical labels; your brands will vary."
+    ]
+   ],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "smores-protein-ice-cream",
+   "gear": [
+    "creami-pints",
+    "creami-scale"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Already a lighter, high-protein pint. Split it into two servings to halve the numbers.",
+   "macros": {
+    "kcal": 365,
+    "protein": 45,
+    "base": "Protein powder"
+   }
+  },
+  {
+   "id": "r98",
+   "cat": "pro",
+   "title": "Birthday cake protein ice cream",
+   "level": "Easy",
+   "emoji": "🎂",
+   "blurb": "Cake-batter flavor and sprinkles, 44 g of protein.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1½ cups fat-free ultra-filtered milk",
+    "1 scoop vanilla protein powder",
+    "1 tbsp sugar-free white chocolate or vanilla pudding mix",
+    "½ tsp butter or cake-batter extract",
+    "Mix-in: 1 tbsp rainbow sprinkles"
+   ],
+   "steps": [
+    "Blend milk, protein, pudding mix and extract until smooth.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then CreamiFit.",
+    "Crumbly? Add 1 tbsp milk and press Re-spin (protein bases almost always need one).",
+    "Make a 1½-inch hole down the middle, add the sprinkles, then press Mix-In."
+   ],
+   "tags": [
+    "milk",
+    "prot",
+    "sf"
+   ],
+   "healthy": true,
+   "dfree": false,
+   "img": "/img/ice/r98.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Per pint (about)",
+     "325 kcal · 44 g protein. Estimates from typical labels; your brands will vary."
+    ]
+   ],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "birthday-cake-protein-ice-cream",
+   "gear": [
+    "creami-pints",
+    "creami-scale"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Already a lighter, high-protein pint. Split it into two servings to halve the numbers.",
+   "macros": {
+    "kcal": 325,
+    "protein": 44,
+    "base": "Protein powder"
+   }
+  },
+  {
+   "id": "r99",
+   "cat": "pro",
+   "title": "Dairy-free chocolate protein ice cream",
+   "level": "Easy",
+   "emoji": "🍫",
+   "blurb": "Soy milk and pea protein, rich and fudgy without dairy.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1½ cups unsweetened soy milk",
+    "1 scoop chocolate plant protein (pea or soy)",
+    "1 tbsp cocoa powder",
+    "2 tbsp maple syrup",
+    "Pinch of salt",
+    "⅛ tsp xanthan gum (optional, smoother)"
+   ],
+   "steps": [
+    "Blend everything until smooth. Rest 5 minutes.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then CreamiFit.",
+    "Crumbly? Add 1 tbsp milk and press Re-spin (protein bases almost always need one)."
+   ],
+   "tags": [
+    "oat",
+    "prot",
+    "cocoa",
+    "sweet"
+   ],
+   "healthy": true,
+   "dfree": true,
+   "img": "/img/ice/r99.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Per pint (about)",
+     "355 kcal · 35 g protein. Estimates from typical labels; your brands will vary."
+    ]
+   ],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "dairy-free-chocolate-protein-ice-cream",
+   "gear": [
+    "creami-pints",
+    "creami-scale"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Already a lighter, high-protein pint. Split it into two servings to halve the numbers.",
+   "macros": {
+    "kcal": 355,
+    "protein": 35,
+    "base": "Dairy-free"
+   }
+  },
+  {
+   "id": "r100",
+   "cat": "pro",
+   "title": "Dairy-free vanilla protein ice cream",
+   "level": "Easy",
+   "emoji": "🥥",
+   "blurb": "Coconut cream gives plant protein a creamy, scoopable body.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1½ cups unsweetened soy milk",
+    "1 scoop vanilla plant protein",
+    "2 tbsp canned coconut cream",
+    "1 tbsp agave",
+    "1 tsp vanilla"
+   ],
+   "steps": [
+    "Blend everything until smooth.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then CreamiFit.",
+    "Crumbly? Add 1 tbsp milk and press Re-spin (protein bases almost always need one)."
+   ],
+   "tags": [
+    "oat",
+    "prot",
+    "coco",
+    "sweet"
+   ],
+   "healthy": true,
+   "dfree": true,
+   "img": "/img/ice/r100.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Per pint (about)",
+     "400 kcal · 35 g protein. Estimates from typical labels; your brands will vary."
+    ]
+   ],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "dairy-free-vanilla-protein-ice-cream",
+   "gear": [
+    "creami-pints",
+    "creami-scale"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Already a lighter, high-protein pint. Split it into two servings to halve the numbers.",
+   "macros": {
+    "kcal": 400,
+    "protein": 35,
+    "base": "Dairy-free"
+   }
+  },
+  {
+   "id": "r101",
+   "cat": "pro",
+   "title": "Dairy-free strawberry protein ice cream",
+   "level": "Easy",
+   "emoji": "🍓",
+   "blurb": "Real strawberries, plant protein, pretty pink.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup unsweetened soy milk",
+    "1 scoop vanilla plant protein",
+    "1 cup frozen strawberries, thawed",
+    "1 tbsp maple syrup"
+   ],
+   "steps": [
+    "Blend everything until completely smooth.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then CreamiFit.",
+    "Crumbly? Add 1 tbsp milk and press Re-spin (protein bases almost always need one)."
+   ],
+   "tags": [
+    "oat",
+    "prot",
+    "berry",
+    "sweet"
+   ],
+   "healthy": true,
+   "dfree": true,
+   "img": "/img/ice/r101.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Per pint (about)",
+     "300 kcal · 32 g protein. Estimates from typical labels; your brands will vary."
+    ]
+   ],
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "dairy-free-strawberry-protein-ice-cream",
+   "gear": [
+    "creami-pints",
+    "creami-scale"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Already a lighter, high-protein pint. Split it into two servings to halve the numbers.",
+   "macros": {
+    "kcal": 300,
+    "protein": 32,
+    "base": "Dairy-free"
+   }
+  },
+  {
+   "id": "r102",
+   "cat": "adult",
+   "title": "Bourbon vanilla ice cream",
+   "level": "Easy",
+   "emoji": "🥃",
+   "blurb": "Vanilla custard-style ice cream with a warm bourbon finish. 21+.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup whole milk",
+    "¾ cup heavy cream",
+    "⅓ cup sugar",
+    "1 tbsp cream cheese, soft",
+    "1 tsp vanilla",
+    "1½ tbsp bourbon"
+   ],
+   "steps": [
+    "Whisk the cream cheese and sugar, then whisk in milk, cream, vanilla and bourbon.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then Ice Cream.",
+    "Don't add more than 2 tbsp of alcohol per pint, or it won't freeze firm."
+   ],
+   "tags": [
+    "milk",
+    "cream",
+    "ccheese",
+    "booze"
+   ],
+   "healthy": false,
+   "dfree": false,
+   "img": "/img/ice/r102.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Adults only",
+     "Contains alcohol that isn't cooked off. Not for kids or anyone who shouldn't drink."
+    ]
+   ],
+   "press": "Scoop, then Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "bourbon-vanilla-ice-cream",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Use half-and-half instead of cream and keep the scoop small.",
+   "adult": true
+  },
+  {
+   "id": "r103",
+   "cat": "adult",
+   "title": "Margarita sorbet",
+   "level": "Easy",
+   "emoji": "🍹",
+   "blurb": "Lime, tequila and a salted rim. Frozen-margarita energy. 21+.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup water",
+    "½ cup sugar",
+    "½ cup fresh lime juice",
+    "Zest of 1 lime",
+    "2 tbsp tequila",
+    "1 tbsp orange liqueur",
+    "Flaky salt to serve"
+   ],
+   "steps": [
+    "Dissolve the sugar in warm water, cool, then stir in lime juice, zest, tequila and orange liqueur.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then Sorbet.",
+    "Serve in salt-rimmed glasses."
+   ],
+   "tags": [
+    "lemon",
+    "booze"
+   ],
+   "healthy": false,
+   "dfree": true,
+   "img": "/img/ice/r103.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Adults only",
+     "Contains alcohol that isn't cooked off. Not for kids or anyone who shouldn't drink."
+    ]
+   ],
+   "press": "Scoop, then Sorbet",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "margarita-sorbet",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Cut the sugar to ⅓ cup and serve a small scoop over sparkling water.",
+   "adult": true
+  },
+  {
+   "id": "r104",
+   "cat": "adult",
+   "title": "Irish cream coffee ice cream",
+   "level": "Easy",
+   "emoji": "☕",
+   "blurb": "Coffee ice cream with Irish cream liqueur. After-dinner dessert. 21+.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 cup whole milk",
+    "½ cup heavy cream",
+    "¼ cup sugar",
+    "1 tbsp instant coffee",
+    "3 tbsp Irish cream liqueur"
+   ],
+   "steps": [
+    "Whisk the instant coffee and sugar into the milk until dissolved, then whisk in the cream and liqueur.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then Ice Cream."
+   ],
+   "tags": [
+    "milk",
+    "cream",
+    "coffee",
+    "booze"
+   ],
+   "healthy": false,
+   "dfree": false,
+   "img": "/img/ice/r104.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Adults only",
+     "Contains alcohol that isn't cooked off. Not for kids or anyone who shouldn't drink."
+    ]
+   ],
+   "press": "Scoop, then Ice Cream",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "slug": "irish-cream-coffee-ice-cream",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Use whole milk only, no cream, and press Lite Ice Cream instead.",
+   "adult": true
+  },
+  {
+   "id": "r105",
+   "cat": "adult",
+   "title": "Piña colada whip",
+   "level": "Easy",
+   "emoji": "🍍",
+   "blurb": "Pineapple, coconut and a splash of rum. Vacation in a pint. 21+.",
+   "spin": "2 min",
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "makes": "1 pint",
+   "ing": [
+    "1 can (20 oz) pineapple chunks in juice",
+    "½ cup canned coconut cream",
+    "2 tbsp white rum",
+    "1 tbsp lime juice"
+   ],
+   "steps": [
+    "Blend everything until smooth.",
+    "Pour into the pint (base closed).",
+    "Lid on. Freeze flat for 24 hours.",
+    "Press Scoop, then Sorbet."
+   ],
+   "tags": [
+    "pine",
+    "coco",
+    "booze",
+    "lemon"
+   ],
+   "healthy": false,
+   "dfree": true,
+   "img": "/img/ice/r105.jpg",
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Adults only",
+     "Contains alcohol that isn't cooked off. Not for kids or anyone who shouldn't drink."
+    ]
+   ],
+   "press": "Scoop, then Sorbet",
+   "badge": "🥄 Scoop",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ],
+   "cook": "2 min",
+   "wait": "24 hours",
+   "flags": [
+    "dairy-free"
+   ],
+   "slug": "pi-a-colada-whip",
+   "gear": [
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "ben": [],
+   "healthier": "Use light coconut milk and skip the rum for a kid-friendly version.",
+   "adult": true
   }
  ]
 }

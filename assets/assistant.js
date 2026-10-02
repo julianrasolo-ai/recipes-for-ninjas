@@ -4,7 +4,7 @@
 (function () {
   if (window.__rfnAssistant) return; window.__rfnAssistant = 1;
   var MEALS = [["breakfast", "🍳 Breakfast"], ["lunch", "🥪 Lunch"], ["dinner", "🍽️ Dinner"], ["snack", "🍓 Snack"]];
-  var CHIPS = [["tired", "😴 Tired"], ["healthy", "🥗 Healthy"], ["quick", "⚡ Quick"], ["comfort", "🧸 Comfort"], ["leftovers", "🥡 Use my leftovers"]];
+  var CHIPS = [["tired", "😴 Tired"], ["healthy", "🥗 Healthy"], ["protein", "💪 High protein"], ["quick", "⚡ Quick"], ["comfort", "🧸 Comfort"], ["leftovers", "🥡 Use my leftovers"]];
   var NINJA = "/img/home/ninja.webp";
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
   var label = function (list, k) { var x = list.filter(function (i) { return i[0] === k; })[0]; return x ? x[1] : k; };

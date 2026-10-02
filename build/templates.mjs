@@ -239,6 +239,7 @@ ${grid(list.map((r) => ({ a, r })))}
   <div id="sections">${secs}</div>
   <p class="empty" id="empty" hidden>No recipes match. Try another word.</p>
   <p class="foot">${esc(a.foot)}</p>
+  ${a.key === "creami" ? helpLinks(a, ctx.guides, 4) : ""}
   ${accessoryStrip(ctx, a)}
   ${emailBox(ctx.site, "hub-" + a.key)}
 </div>
@@ -260,6 +261,7 @@ export function recipe(ctx, a, r) {
     recipeIngredient: r.ing,
     recipeInstructions: r.steps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, text: s })),
   };
+  if (r.macros) ld.nutrition = { "@type": "NutritionInformation", servingSize: "1 pint", calories: `${r.macros.kcal} calories`, proteinContent: `${r.macros.protein} g` };
   if (r.video) ld.video = { "@type": "VideoObject", name: r.title, description: r.blurb, thumbnailUrl: ld.image, contentUrl: typeof r.video === "string" ? r.video : r.video.url, uploadDate: r.video.date || undefined };
   const crumbs = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: site.url + "/" },
@@ -284,7 +286,7 @@ export function recipe(ctx, a, r) {
     <h1>${esc(r.title)}</h1>
     <p class="lead">${esc(r.blurb)}</p>
     ${(r.ben || []).length ? `<div class="chips">${r.ben.map((b) => `<a class="chip b" href="/tags/${b}/">${a.benMap[b]?.[1]} ${esc(a.benMap[b]?.[2])}</a>`).join("")}</div>` : ""}
-    <div class="chips">${r.chips.map((x) => `<span class="chip">${esc(x)}</span>`).join("")}</div>
+    <div class="chips">${r.chips.map((x) => `<span class="chip">${esc(x)}</span>`).join("")}${r.macros ? `<span class="chip g">💪 ${r.macros.protein} g protein · ${r.macros.kcal} kcal / pint</span>` : ""}${r.adult ? '<span class="chip">🍸 21+ only</span>' : ""}</div>
     <div class="press"><small>${esc(a.pressLabel)}</small> ${esc(r.press)}</div>
     <div class="likebox"><b>❤️ Who likes this?</b><div class="who">${site.supabase ? "" : site.family.map((p) => `<button class="who-b" type="button" data-p="${p}" data-like="${p}" aria-pressed="false">${p}</button>`).join("")}</div><p class="sync" id="sync"></p></div>
     ${ings}
@@ -293,6 +295,7 @@ export function recipe(ctx, a, r) {
     ${r.notes.map(([k, v]) => `<p class="note"><b>${esc(k)}:</b> ${esc(v)}</p>`).join("")}
     ${r.healthier ? `<p class="note healthier"><b>🌿 Make it healthier:</b> ${esc(r.healthier)}</p>` : ""}
     ${(r.ben || []).length ? '<p class="disclaim">Benefit tags are general nutrition info, not medical advice.</p>' : ""}
+    ${a.key === "creami" ? helpLinks(a, ctx.guides) : ""}
     ${video(r.video)}
     ${gearBlock(ctx, r)}
     ${share(ctx, r)}
@@ -429,4 +432,57 @@ export function account(ctx) {
   return listing(ctx, { title: "Your account", desc: "Save favorites for each person in your household, get recipe ideas that fit your family.", path: "/account/", h1: "👤 Your kitchen",
     inner: on ? `<div id="acct" class="acct" aria-live="polite"><p class="muted">Loading…</p></div>` : `<p class="lead">Family accounts are coming soon.</p>`,
     scripts: on ? [`<script type="module" src="/assets/account.js"></script>`] : [] });
+}
+
+/* ---------- Creami help: fixes and guides ---------- */
+const KIND = { fix: "Fix", guide: "Guide" };
+export function helpHub(ctx, a, guides) {
+  const sec = (kind, h, lead) => `<section class="sec"><div class="sh"><h2>${h}</h2></div><p class="sd">${lead}</p>
+  <div class="glist">${guides.filter((g) => g.kind === kind).map((g) => `<a class="gitem" href="/${a.key}/help/${g.slug}/"><span class="gi">${g.emoji}</span><span><b>${esc(g.h1)}</b><small>${esc(g.lead.split(". ")[0])}.</small></span></a>`).join("")}</div></section>`;
+  return listing(ctx, { title: `${a.brand} help: fixes and guides`, desc: `Fix crumbly, icy or powdery ${a.brand} pints, scale recipes for 24 oz pints, and learn protein, sweetener and storage basics.`,
+    path: `/${a.key}/help/`, theme: a.theme, heading: `${a.emoji} ${esc(a.name)}`, crumbs: `<a href="/">Home</a> › <a href="${a.url}">${esc(a.name)}</a>`,
+    h1: `🛠️ ${esc(a.brand)} fixes and guides`, lead: "Quick answers for the problems everyone hits, plus guides for protein, sweeteners and storage.",
+    inner: sec("fix", "🧯 Fixes", "Something went wrong with a pint? Start here.") + sec("guide", "📘 Guides", "Get better pints from the start.") });
+}
+export function helpPage(ctx, a, g, guides) {
+  const { site } = ctx, url = `/${a.key}/help/${g.slug}/`;
+  const byId = Object.fromEntries(a.data.recipes.map((r) => [r.id, r]));
+  const rel = (g.related || []).map((id) => byId[id]).filter(Boolean).map((r) => ({ a, r }));
+  const prods = (g.products || []).map((id) => ctx.products[id]).filter(Boolean);
+  const macros = g.table === "macros" ? (() => {
+    const rows = a.data.recipes.filter((r) => r.macros).sort((x, y) => y.macros.protein - x.macros.protein);
+    return `<div class="gtab-wrap"><table class="gtab"><thead><tr><th>Recipe</th><th>Base</th><th>Protein</th><th>Calories</th></tr></thead><tbody>${rows.map((r) => `<tr><td><a href="${r.url}">${esc(r.title)}</a></td><td>${esc(r.macros.base)}</td><td class="num">${r.macros.protein} g</td><td class="num">${r.macros.kcal}</td></tr>`).join("")}</tbody></table></div><p class="disc">Per full pint, about. Estimates from typical labels.</p>`;
+  })() : "";
+  const others = guides.filter((x) => x.slug !== g.slug && x.kind === g.kind).slice(0, 4);
+  const hero = g.img ? `<div class="ghero">${img({ img: g.img, cdn: g.cdn, emoji: g.emoji, alt: g.h1 }, "", false)}</div>` : "";
+  const ld = [
+    { "@context": "https://schema.org", "@type": "Article", headline: g.h1, description: g.desc, image: g.img ? [site.url + g.img] : undefined, author: { "@type": "Organization", name: site.name }, publisher: { "@type": "Organization", name: site.name }, mainEntityOfPage: site.url + url },
+    ...(g.faq?.length ? [{ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: g.faq.map(([q, ans]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: ans } })) }] : []),
+    { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site.url + "/" }, { "@type": "ListItem", position: 2, name: a.name, item: site.url + a.url },
+      { "@type": "ListItem", position: 3, name: "Fixes and guides", item: `${site.url}/${a.key}/help/` }, { "@type": "ListItem", position: 4, name: g.h1, item: site.url + url }] },
+  ];
+  return layout(ctx, {
+    title: g.title, desc: g.desc, path: url, theme: a.theme, image: g.img, imageAlt: g.h1, ogType: "article",
+    heading: `${a.emoji} ${esc(a.name)}`, kicker: `<a href="/">${esc(site.name)}</a>`, headingTag: "p", jsonld: ld,
+    body: `<div class="wrap"><article class="gpage">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="${a.url}">${esc(a.name)}</a> › <a href="/${a.key}/help/">Fixes and guides</a></nav>
+  ${hero}
+  <div class="chips"><span class="chip">${g.emoji} ${KIND[g.kind]}</span></div>
+  <h1>${esc(g.h1)}</h1>
+  <p class="lead answer">${esc(g.lead)}</p>
+  ${macros}
+  <div class="prose">${g.sections.map(([h, html]) => `<h2 class="h3">${esc(h)}</h2>${html}`).join("\n")}</div>
+  ${g.faq?.length ? `<section class="faq"><h2 class="h3">Questions</h2>${g.faq.map(([q, ans]) => `<details><summary>${esc(q)}</summary><p>${esc(ans)}</p></details>`).join("")}</section>` : ""}
+  ${prods.length ? `<section class="gear-used"><h2 class="h3">Handy for this</h2><div class="gear-row">${prods.map((p) => productCard(p, "guide")).join("")}</div>${affNote(site)}</section>` : ""}
+  ${rel.length ? `<section class="related"><h2 class="h3">Recipes to try</h2>${grid(rel)}</section>` : ""}
+  ${others.length ? `<section class="related"><h2 class="h3">More ${g.kind === "fix" ? "fixes" : "guides"}</h2><div class="glist">${others.map((x) => `<a class="gitem" href="/${a.key}/help/${x.slug}/"><span class="gi">${x.emoji}</span><span><b>${esc(x.h1)}</b></span></a>`).join("")}</div></section>` : ""}
+  ${emailBox(site, "guide")}
+</article></div>`,
+  });
+}
+/* Short "having trouble?" links shown on Creami pages. */
+export function helpLinks(a, guides, n = 3) {
+  if (!guides?.length) return "";
+  return `<section class="helpstrip"><h2 class="h3">🛠️ Having trouble?</h2><div class="glist">${guides.filter((g) => g.kind === "fix").slice(0, n).map((g) => `<a class="gitem" href="/${a.key}/help/${g.slug}/"><span class="gi">${g.emoji}</span><span><b>${esc(g.h1)}</b></span></a>`).join("")}</div><p><a href="/${a.key}/help/">All fixes and guides ›</a></p></section>`;
 }
