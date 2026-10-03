@@ -5,6 +5,8 @@
   "name": "recipes-for-ninjas",
   "main": "worker/index.mjs",
   "compatibility_date": "2025-09-01",
+  "workers_dev": true,
+  "preview_urls": true,
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
