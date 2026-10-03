@@ -96,7 +96,7 @@ function footer(ctx) {
     <a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/disclosure/">Disclosures</a>${site.email.enabled ? '<a href="/join/">Get recipes by email</a>' : ""}
     <button type="button" class="linkbtn" data-consent-open>Cookie settings</button>
   </nav>
-  <p class="disc">© ${new Date().getFullYear()} ${esc(site.ownerName)}. Not affiliated with SharkNinja.</p>
+  <p class="disc">© ${new Date().getFullYear()} ${esc(site.ownerName)}. Not affiliated with SharkNinja.${site.contactEmail ? ` · <a href="mailto:${esc(site.contactEmail)}">${esc(site.contactEmail)}</a>` : ""}</p>
 </footer>`;
 }
 
@@ -437,6 +437,7 @@ export function contact(ctx) {
   <label>Email<input type="email" name="email" required autocomplete="email"></label>
   <label>Message<textarea name="message" rows="6" required></textarea></label>
   <button class="btn" type="submit">Send</button>
+  ${ctx.site.contactEmail ? `<p class="disc">Or email us directly: <a href="mailto:${esc(ctx.site.contactEmail)}">${esc(ctx.site.contactEmail)}</a></p>` : ""}
 </form>` });
 }
 
