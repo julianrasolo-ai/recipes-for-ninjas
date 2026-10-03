@@ -10,8 +10,8 @@ const ROOT = process.cwd(), OUT = join(ROOT, "dist");
 const readJSON = async (p) => JSON.parse(await readFile(join(ROOT, p), "utf8"));
 
 const site = await readJSON("data/site.json");
-// Host: Cloudflare Pages sets CF_PAGES=1 at build time; otherwise Netlify (or local).
-site.host = process.env.CF_PAGES ? "cloudflare" : "netlify";
+// Host: Cloudflare Pages sets CF_PAGES=1, Cloudflare Workers Builds sets WORKERS_CI=1; otherwise Netlify (or local).
+site.host = process.env.CF_PAGES || process.env.WORKERS_CI ? "cloudflare" : "netlify";
 site.url = (process.env.SITE_URL || process.env.URL || site.url || "").replace(/\/$/, "");
 // Accounts switch on when the Supabase project is configured in Netlify env (the anon key is public by design; RLS protects data).
 site.supabase = process.env.SUPABASE_URL && process.env.SUPABASE_ANON_KEY ? { url: process.env.SUPABASE_URL, anonKey: process.env.SUPABASE_ANON_KEY } : null;

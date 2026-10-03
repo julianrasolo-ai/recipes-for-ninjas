@@ -88,3 +88,7 @@ The same repo runs on Netlify or Cloudflare. On Cloudflare, the server code live
 6. Redeploy. For "Tonight by Ninjas" emails, add GitHub repo secrets `SITE_URL` and `CRON_SECRET`; `.github/workflows/send-ideas.yml` calls the site hourly.
 
 Free plan: unlimited static traffic, 500 builds/month, 100k function requests/day, KV 100k reads and 1k writes/day. Form entries are saved in KV under `forms:`; with `FORM_NOTIFY_TO` + `RESEND_API_KEY` you also get them by email.
+
+### Cloudflare Workers (Workers Builds)
+
+If the Cloudflare project was created as a Worker (deploy command `npx wrangler deploy`), `wrangler.jsonc` + `worker/index.mjs` handle it: static pages from `dist/`, `/api/*` on the same handlers, and a built-in hourly cron for Tonight by Ninjas (no GitHub Action needed). To keep favorites and form entries, create a KV namespace and add it to `wrangler.jsonc` as `RFN_KV` (see the comment in that file).
