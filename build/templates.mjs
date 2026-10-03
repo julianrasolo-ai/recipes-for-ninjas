@@ -126,12 +126,13 @@ export function adSlot(site, name, cls = "") {
 export function emailBox(site, where) {
   const e = site.email;
   if (!e.enabled) return "";
-  const netlify = e.provider === "netlify";
+  const own = e.provider === "netlify"; // our own list: Netlify Forms on Netlify, /api/form on Cloudflare
+  const netlify = own && site.host !== "cloudflare";
   return `<section class="signup" data-where="${where}">
   <h2>${esc(e.headline)}</h2>
   ${e.leadMagnet?.title ? `<p>${esc(e.leadMagnet.title)}, free when you join.</p>` : ""}
-  <form class="signup-f" method="POST" ${netlify ? 'name="newsletter" data-netlify="true" action="/thanks/"' : `action="${esc(e.action)}" target="_blank"`}>
-    ${netlify ? '<input type="hidden" name="form-name" value="newsletter">' : ""}
+  <form class="signup-f" method="POST" ${netlify ? 'name="newsletter" data-netlify="true" action="/thanks/"' : own ? 'action="/api/form"' : `action="${esc(e.action)}" target="_blank"`}>
+    ${own ? '<input type="hidden" name="form-name" value="newsletter">' : ""}
     <input type="hidden" name="source" value="${where}">
     <label class="sr" for="em-${where}">Email</label>
     <input id="em-${where}" type="email" name="email" required placeholder="you@example.com" autocomplete="email">
@@ -417,7 +418,7 @@ export function about(ctx) {
 export function contact(ctx) {
   return listing(ctx, { title: "Contact", desc: "Questions, recipe requests or corrections: send us a note.", path: "/contact/", h1: "✉️ Contact us",
     lead: "Recipe request, a correction, or a partnership idea? We read everything.",
-    inner: `<form class="contact-f" name="contact" method="POST" data-netlify="true" netlify-honeypot="company" action="/thanks/?f=contact">
+    inner: `<form class="contact-f" name="contact" method="POST" ${ctx.site.host === "cloudflare" ? 'action="/api/form"' : 'data-netlify="true" netlify-honeypot="company" action="/thanks/?f=contact"'}>
   <input type="hidden" name="form-name" value="contact">
   <p class="hp"><label>Leave this empty <input name="company"></label></p>
   <label>Your name<input name="name" required autocomplete="name"></label>

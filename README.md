@@ -75,3 +75,16 @@ Everything below is off until its keys exist, and the site works without any of 
 4. **Search Console**: add the site, paste the verification code into `googleSiteVerification`, push, then submit `https://<domain>/sitemap.xml`.
 
 Tests: `npm test` (row-level security in PGlite, the assistant with a fake client, and email scheduling).
+
+## Host on Cloudflare Pages (free)
+
+The same repo runs on Netlify or Cloudflare. On Cloudflare, the server code lives in `functions/api/[[path]].js` (it reuses `lib/api/*`), favorites and AI counters use Workers KV, and forms post to `/api/form`.
+
+1. Cloudflare dashboard → **Workers & Pages → Create → Pages → Connect to Git** → pick this repo and branch.
+2. Build settings: framework **None**, build command `npm run build`, output directory `dist`. Environment variable `NODE_VERSION` = `22`.
+3. **Storage & Databases → KV → Create** a namespace (e.g. `recipes-kv`). In the Pages project → **Settings → Bindings → Add → KV namespace**, variable name `RFN_KV`.
+4. **Settings → Runtime**: compatibility date `2025-09-01`, compatibility flag `nodejs_compat`.
+5. **Settings → Variables and Secrets**: `SITE_URL` = your `https://<project>.pages.dev` (or custom domain), plus any of `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `ANTHROPIC_API_KEY`, `USAGE_SALT`, `RESEND_API_KEY`, `FORM_NOTIFY_TO` (your email, to get contact messages), `CRON_SECRET` (any random string).
+6. Redeploy. For "Tonight by Ninjas" emails, add GitHub repo secrets `SITE_URL` and `CRON_SECRET`; `.github/workflows/send-ideas.yml` calls the site hourly.
+
+Free plan: unlimited static traffic, 500 builds/month, 100k function requests/day, KV 100k reads and 1k writes/day. Form entries are saved in KV under `forms:`; with `FORM_NOTIFY_TO` + `RESEND_API_KEY` you also get them by email.

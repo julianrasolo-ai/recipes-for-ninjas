@@ -11,3 +11,5 @@ img/.sources.json
 grill-images-review.html
 *-preview.zip
 appliance-photo-test.html
+lib/generated/
+.wrangler/
