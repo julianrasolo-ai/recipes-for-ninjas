@@ -6,7 +6,9 @@ import sendIdeas from "../lib/api/send-ideas.mjs";
 
 export default {
   async fetch(request, env) {
-    const { pathname } = new URL(request.url);
+    const url = new URL(request.url), { pathname } = url;
+    // One address for search engines: www → bare domain.
+    if (url.hostname === "www.recipesbyninjas.com") { url.hostname = "recipesbyninjas.com"; return Response.redirect(url.toString(), 301); }
     if (pathname.startsWith("/api/")) {
       return onRequest({ request, env, params: { path: pathname.slice(5).split("/").filter(Boolean) } });
     }
