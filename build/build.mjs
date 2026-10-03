@@ -84,6 +84,7 @@ page("/terms/", T.legal(ctx, "terms"));
 page("/disclosure/", T.legal(ctx, "disclosure"));
 page("/404.html", T.notFound(ctx));
 page("/thanks/", T.thanks(ctx));
+page("/join/", T.join(ctx));
 page("/about/", T.about(ctx));
 page("/account/", T.account(ctx));
 page("/contact/", T.contact(ctx));

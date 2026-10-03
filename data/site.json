@@ -35,9 +35,9 @@
   "ga4Id": ""
  },
  "email": {
-  "enabled": false,
-  "provider": "beehiiv",
-  "_providers": "beehiiv: paste your Beehiiv embed/subscribe form URL into action. netlify = Netlify Forms (no account). convertkit/resend also work with their form URL.",
+  "enabled": true,
+  "provider": "site",
+  "_providers": "site = our own list (saved in Cloudflare KV under forms:newsletter:, or Netlify Forms on Netlify). beehiiv/convertkit: set provider and paste their form URL into action.",
   "action": "",
   "headline": "Get one new Ninja recipe a week",
   "popup": {
@@ -45,7 +45,7 @@
    "delaySeconds": 40
   },
   "leadMagnet": {
-   "title": "Free printable: 10 family-favourite Ninja recipes",
+   "title": "",
    "url": ""
   },
   "postalAddress": "",

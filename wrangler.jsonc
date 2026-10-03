@@ -1,6 +1,4 @@
 // Cloudflare Workers deploy config (used by Workers Builds: build `npm run build`, deploy `npx wrangler deploy`).
-// Optional shared storage for favorites / form entries: create a KV namespace and add
-//   "kv_namespaces": [{ "binding": "RFN_KV", "id": "<namespace id>" }]
 {
   "name": "recipes-for-ninjas",
   "main": "worker/index.mjs",
@@ -18,6 +16,8 @@
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "404-page"
   },
+  // Shared storage: family favorites, AI usage counters, newsletter and contact form entries.
+  "kv_namespaces": [{ "binding": "RFN_KV", "id": "13455c02f3224ba08f30b918c5caf7f3" }],
   "triggers": { "crons": ["7 * * * *"] },
   "observability": { "enabled": true }
 }

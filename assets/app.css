@@ -394,3 +394,5 @@ dialog.pop{max-width:520px}
 .faq summary{font-weight:700;cursor:pointer}
 .helpstrip{margin:22px 0}
 @media print{.helpstrip{display:none}}
+.join-why{list-style:none;padding:0;margin:0 0 18px;display:grid;gap:8px;font-size:1.05rem}
+.join-why li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px}

@@ -93,7 +93,7 @@ function footer(ctx) {
   <nav class="fnav" aria-label="Appliances">${appliances.map((a) => `<a href="${a.url}">${a.emoji} ${esc(a.name)}</a>`).join("")}</nav>
   <nav class="fnav small" aria-label="More">
     <a href="/search/">Search</a><a href="/gear/">Accessories</a>${site.shop.enabled ? '<a href="/shop/">Shop</a>' : ""}
-    <a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/disclosure/">Disclosures</a>
+    <a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/disclosure/">Disclosures</a>${site.email.enabled ? '<a href="/join/">Get recipes by email</a>' : ""}
     <button type="button" class="linkbtn" data-consent-open>Cookie settings</button>
   </nav>
   <p class="disc">© ${new Date().getFullYear()} ${esc(site.ownerName)}. Not affiliated with SharkNinja.</p>
@@ -126,7 +126,7 @@ export function adSlot(site, name, cls = "") {
 export function emailBox(site, where) {
   const e = site.email;
   if (!e.enabled) return "";
-  const own = e.provider === "netlify"; // our own list: Netlify Forms on Netlify, /api/form on Cloudflare
+  const own = e.provider === "site" || e.provider === "netlify"; // our own list: Netlify Forms on Netlify, /api/form on Cloudflare
   const netlify = own && site.host !== "cloudflare";
   return `<section class="signup" data-where="${where}">
   <h2>${esc(e.headline)}</h2>
@@ -134,10 +134,12 @@ export function emailBox(site, where) {
   <form class="signup-f" method="POST" ${netlify ? 'name="newsletter" data-netlify="true" action="/thanks/"' : own ? 'action="/api/form"' : `action="${esc(e.action)}" target="_blank"`}>
     ${own ? '<input type="hidden" name="form-name" value="newsletter">' : ""}
     <input type="hidden" name="source" value="${where}">
+    <p class="hp" aria-hidden="true"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off"></label></p>
     <label class="sr" for="em-${where}">Email</label>
     <input id="em-${where}" type="email" name="email" required placeholder="you@example.com" autocomplete="email">
     <button class="btn" type="submit">Join</button>
   </form>
+  <p class="disc">New recipes and fixes, about once a week. No spam, unsubscribe any time. <a href="/privacy/">Privacy</a></p>
 </section>`;
 }
 function share(ctx, r) {
@@ -374,7 +376,7 @@ export function legal(ctx, which) {
 <h2 class="h3">What we collect</h2><ul>
 <li><b>Favorites.</b> When you tap a name under "Who likes this?", that choice is stored on our server so it syncs between devices. It is not linked to an email or account.</li>
 <li><b>Preferences.</b> Your cookie choice and offline favorites are stored in your browser (local storage).</li>
-<li><b>Email.</b> If you join the newsletter we store your email address with our email provider to send it. Unsubscribe any time from any email.</li>
+<li><b>Email list.</b> If you join, we store your email address, the page you joined from and the date, on our host (Cloudflare), only to send you recipe emails. When we start sending, every email has an unsubscribe link, and you can ask us to delete your address any time.</li>
 <li><b>Analytics.</b> If enabled and you consent, we use privacy-friendly analytics to count visits and clicks. No data is sold.</li>
 <li><b>Advertising.</b> If ads are enabled and you consent, our ad partner may use cookies to show and measure ads.</li>
 <li><b>Purchases.</b> Payments are handled by Stripe. We never see your card details; we keep an order record so you can re-download.</li></ul>
@@ -400,8 +402,18 @@ export function notFound(ctx) {
 }
 export function thanks(ctx) {
   const lm = ctx.site.email.leadMagnet;
-  return listing(ctx, { title: "You're in", desc: "Thanks for joining Recipes By Ninjas.", path: "/thanks/", h1: "🎉 You're in", lead: "Thanks for joining. Check your inbox for a welcome email.",
-    inner: (lm?.url ? `<p><a class="btn" href="${esc(lm.url)}" download>Download: ${esc(lm.title)}</a></p>` : "") + `<p><a class="btn ghost" href="/">Back to recipes</a></p>` });
+  return listing(ctx, { title: "You're in", desc: "Thanks for joining Recipes By Ninjas.", path: "/thanks/", h1: "🎉 You're in", lead: "You're on the list. New recipes and fixes land about once a week.",
+    inner: (lm?.url ? `<p><a class="btn" href="${esc(lm.url)}" download>Download: ${esc(lm.title)}</a></p>` : "") + `<p><a class="btn ghost" href="/">Back to recipes</a></p>
+<script>if(/[?&]f=contact/.test(location.search)){var h=document.querySelector("h1"),l=document.querySelector(".lead");h.textContent="✉️ Message sent";l.textContent="Thanks for writing. We read everything and reply within a few days.";document.title="Message sent · Recipes By Ninjas"}</script>` });
+}
+
+/* ---------- newsletter sign-up page ---------- */
+export function join(ctx) {
+  const s = ctx.site;
+  return listing(ctx, { title: "Get Ninja recipes by email", desc: "Join Recipes By Ninjas: one new recipe or fix a week for your Creami, juicer, blender and Woodfire grill. Free, no spam.", path: "/join/",
+    h1: "📬 Get one new Ninja recipe a week",
+    lead: "New recipes, protein pints and fixes for your Creami, juicer, blender and Woodfire grill. Free, about once a week, unsubscribe any time.",
+    inner: `<ul class="join-why"><li>🍦 New Creami pints, including high-protein and 21+ ones</li><li>🔥 Grill and smoker recipes that use your Woodfire's real settings</li><li>🛠️ Quick fixes for crumbly, icy or stuck pints</li><li>🥷 Seasonal ideas picked by our ninja chef</li></ul>` + (s.email.enabled ? emailBox(s, "join-page") : "<p>Email sign-up opens soon.</p>") });
 }
 
 export function about(ctx) {
