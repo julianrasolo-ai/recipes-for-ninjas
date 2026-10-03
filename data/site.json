@@ -2,7 +2,7 @@
  "_readme": "Everything monetization-related is a switch here. Flip enabled:true, fill in the IDs, push. No code changes needed.",
  "name": "Recipes By Ninjas",
  "tagline": "What are we making?",
- "url": "https://recipeforninjas.netlify.app",
+ "url": "https://recipes-for-ninjas.yesouicare-web.workers.dev",
  "contactEmail": "",
  "ownerName": "Recipes By Ninjas",
  "family": [
