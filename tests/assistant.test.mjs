@@ -27,7 +27,7 @@ const ai = { enabled: true, model: "claude-opus-5-5" };
 // 2. pantry question gets an outside-the-library dish
 {
   const input = cleanInput({ meal: "lunch", chips: ["leftovers"], text: "I have flour, 4 eggs, leftover ham and bread" });
-  const client = fake({ intro: "Let's use it up.", picks: [{ id: "wood-fire/w15", reason: "Uses the eggs." }], outside: { title: "Ham and egg bread bake", reason: "Uses all of it.", steps: ["Tear bread", "Whisk eggs", "Bake"] } });
+  const client = fake({ intro: "Let's use it up.", picks: [{ id: "wood-fire/w34", reason: "Uses the eggs." }], outside: { title: "Ham and egg bread bake", reason: "Uses all of it.", steps: ["Tear bread", "Whisk eggs", "Bake"] } });
   const r = await answer(input, { catalog, household: null, ai, allowAi: true, client });
   assert.equal(r.outside.title, "Ham and egg bread bake"); assert.equal(r.outside.steps.length, 3);
 }
@@ -76,3 +76,14 @@ console.log("assistant tests passed");
   assert.ok(prot.every((x) => x.rec.mood.includes("protein")));
   console.log("assistant adult/protein tests passed");
 }
+
+// Diets: vegan is a hard rule, keto is a strong preference, both from plain words or a chip
+{
+  const { rank } = await import("../lib/picker.mjs");
+  const vegan = rank(catalog, { meal: "dinner", text: "vegan please" });
+  assert.ok(vegan.length && vegan.every((x) => x.rec.dt.includes("vegan")), "vegan only");
+  const keto = rank(catalog, { meal: "dessert", chips: ["keto"] });
+  assert.ok(keto[0].rec.dt.includes("keto"), "keto first");
+  assert.ok(cleanInput({ chips: ["keto", "bogus"] }).chips.includes("keto"));
+}
+console.log("diets ok");

@@ -396,3 +396,30 @@ dialog.pop{max-width:520px}
 @media print{.helpstrip{display:none}}
 .join-why{list-style:none;padding:0;margin:0 0 18px;display:grid;gap:8px;font-size:1.05rem}
 .join-why li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px}
+
+/* Niche recipes: the complaint it fixes, the one product that makes it work, step photos, diets */
+.fixbox{display:grid;gap:8px;margin:14px 0 6px}
+.fixbox p{margin:0;padding:10px 14px;border-radius:14px;font-size:15px;line-height:1.45}
+.fixbox b{display:block;font-family:"Fredoka",sans-serif;font-weight:600;font-size:13px;letter-spacing:.02em;margin-bottom:2px}
+.fixbox .fq{background:var(--coralt)}
+.fixbox .fa{background:var(--mintt)}
+.keyp{display:flex;align-items:center;gap:12px;margin:8px 0 6px;padding:12px 14px;border-radius:18px;background:var(--card);border:2px solid var(--a,var(--pink));box-shadow:var(--shadow);text-decoration:none;color:var(--ink);transition:transform .15s}
+.keyp:hover{transform:translateY(-2px)}
+.keyp .ki{flex:0 0 48px;height:48px;border-radius:14px;background:var(--t,var(--pinkt));display:grid;place-items:center;font-size:26px}
+.keyp .kt{flex:1;min-width:0;display:flex;flex-direction:column;font-size:13.5px;color:var(--muted);font-weight:700;line-height:1.35}
+.keyp .kt small{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--a,var(--pink));font-weight:800}
+.keyp .kt b{font-family:"Fredoka",sans-serif;font-weight:600;font-size:16.5px;color:var(--ink)}
+.keyp .go{flex:none;font-weight:800;font-size:13px;color:var(--a,var(--pink))}
+@media (max-width:520px){.keyp{display:grid;grid-template-columns:48px 1fr;row-gap:6px}.keyp .go{grid-column:2}}
+.steps.pics li{display:flex;flex-direction:column;gap:8px;padding-bottom:14px}
+.stepimg{width:100%;max-width:520px;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:16px;background:var(--bg)}
+.chip.d{background:var(--grapet)}
+.dietrow .bchip{text-decoration:none;color:var(--ink);display:inline-flex;align-items:center}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:8px 0 24px}
+.dcard{display:flex;flex-direction:column;gap:4px;padding:18px;border-radius:20px;background:var(--card);box-shadow:var(--shadow);text-decoration:none;color:var(--ink);transition:transform .15s}
+.dcard:hover{transform:translateY(-2px)}
+.dcard .de{font-size:34px}
+.dcard b{font-family:"Fredoka",sans-serif;font-weight:600;font-size:20px}
+.dcard small{color:var(--muted);font-weight:700;font-size:13.5px;line-height:1.4}
+#cookmode[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+@media print{.keyp,.fixbox .fq{display:none!important}.stepimg{max-width:240px}}

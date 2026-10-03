@@ -1591,6 +1591,327 @@
     "Prep 5 min",
     "2 shakes"
    ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [
+    "energy"
+   ],
+   "id": "b30",
+   "cat": "smoothie",
+   "title": "Keto chocolate avocado shake",
+   "emoji": "🥑",
+   "blurb": "Thick like a milkshake, about 6 g net carbs. Avocado makes it creamy, MCT keeps you full.",
+   "ing": [
+    "1 cup unsweetened almond milk",
+    "½ ripe avocado",
+    "2 tbsp cocoa powder",
+    "1 tbsp MCT oil powder",
+    "1–2 tbsp allulose or monk fruit",
+    "Pinch of salt",
+    "1 cup ice"
+   ],
+   "steps": [
+    "Liquid first: almond milk, then avocado, cocoa, MCT, sweetener and salt. Ice on top.",
+    "Lock the lid and press Auto. BlendSense will pick Thick.",
+    "Taste and add sweetener if needed. Pulse to mix."
+   ],
+   "tags": [
+    "almond",
+    "avo",
+    "cocoa",
+    "ice"
+   ],
+   "healthy": true,
+   "prep": "5 min",
+   "makes": "1 big glass",
+   "level": "Easy",
+   "press": "Auto (BlendSense)",
+   "gear": [
+    "blender-mct",
+    "blender-cups"
+   ],
+   "diet": [
+    "keto",
+    "low-sugar",
+    "dairy-free",
+    "vegan"
+   ],
+   "fix": {
+    "q": "Keto shakes are thin and leave you hungry an hour later.",
+    "a": "Avocado gives milkshake body without sugar, and MCT fat is what keeps you full. Ice on top, liquid on the bottom, so the blades catch."
+   },
+   "key": {
+    "id": "blender-mct",
+    "why": "Powdered MCT blends in creamy. Liquid MCT oil can separate and upset stomachs."
+   },
+   "healthier": "Already low-carb. Use ¼ avocado and add spinach for fewer calories.",
+   "slug": "keto-chocolate-avocado-shake",
+   "img": "/img/blender/b30.jpg",
+   "dfree": true,
+   "chips": [
+    "Prep 5 min",
+    "1 big glass"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [
+    "energy",
+    "immune"
+   ],
+   "id": "b31",
+   "cat": "smoothie",
+   "title": "Freezer smoothie pucks (5 mornings)",
+   "emoji": "🧊",
+   "blurb": "Prep once on Sunday. Each morning: one puck, one cup of milk, 40 seconds.",
+   "ing": [
+    "2 bananas",
+    "2 cups frozen berries",
+    "2 big handfuls spinach",
+    "1 cup Greek yogurt",
+    "2 tbsp chia seeds",
+    "½ cup water",
+    "Each morning: 1 cup milk"
+   ],
+   "steps": [
+    "Sunday: blend bananas, berries, spinach, yogurt, chia and water on Auto until smooth.",
+    "Pour into 1-cup freezer trays and freeze. Pop out into a bag once solid.",
+    "Morning: add 1 cup milk to the 24 oz cup first, then 2 pucks.",
+    "Blend on the cup's Auto program. Thick but drinkable, never watery."
+   ],
+   "tags": [
+    "banana",
+    "berry",
+    "spinach",
+    "yog",
+    "chia",
+    "milk"
+   ],
+   "healthy": true,
+   "prep": "15 min",
+   "makes": "5 smoothies",
+   "level": "Easy",
+   "press": "Auto (BlendSense)",
+   "gear": [
+    "blender-souper-cubes",
+    "blender-cups"
+   ],
+   "diet": [
+    "high-protein"
+   ],
+   "fix": {
+    "q": "The single-serve cup either jams or makes a watery smoothie.",
+    "a": "Loose frozen fruit jams the small cup, so people add too much liquid. Pre-blended pucks melt evenly against the blade: always liquid first, then pucks."
+   },
+   "key": {
+    "id": "blender-souper-cubes",
+    "why": "1-cup portions mean exact smoothies with no measuring at 7 am."
+   },
+   "healthier": "Use unsweetened almond milk in the morning and skip the second banana.",
+   "slug": "freezer-smoothie-pucks-5-mornings",
+   "img": "/img/blender/b31.jpg",
+   "dfree": false,
+   "chips": [
+    "Prep 15 min",
+    "5 smoothies"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [
+    "energy"
+   ],
+   "id": "b32",
+   "cat": "smoothie",
+   "title": "Vegan PB banana protein shake",
+   "emoji": "💪",
+   "blurb": "About 35 g of plant protein. Tastes like a peanut butter milkshake, not like gym powder.",
+   "ing": [
+    "1¼ cups soy milk",
+    "1 frozen banana",
+    "2 tbsp peanut butter",
+    "1 scoop unflavored pea protein",
+    "1 tsp cinnamon",
+    "3 ice cubes"
+   ],
+   "steps": [
+    "Soy milk first, then peanut butter, protein, cinnamon, banana and ice.",
+    "Press Auto. If you see a dry pocket of powder, pulse twice.",
+    "Drink right away. Pea protein thickens as it sits."
+   ],
+   "tags": [
+    "almond",
+    "banana",
+    "pb",
+    "prot",
+    "ice"
+   ],
+   "healthy": true,
+   "prep": "5 min",
+   "makes": "1 big glass",
+   "level": "Easy",
+   "press": "Auto (BlendSense)",
+   "gear": [
+    "blender-pea-protein",
+    "blender-cups"
+   ],
+   "diet": [
+    "vegan",
+    "dairy-free",
+    "high-protein"
+   ],
+   "fix": {
+    "q": "Protein powder clumps to the side of the cup.",
+    "a": "Powder on the bottom becomes paste under the blades. Liquid first, powder in the middle, frozen stuff on top."
+   },
+   "key": {
+    "id": "blender-pea-protein",
+    "why": "Unflavored pea protein disappears behind banana and peanut butter."
+   },
+   "healthier": "Swap peanut butter for 2 tbsp powdered peanut butter.",
+   "slug": "vegan-pb-banana-protein-shake",
+   "img": "/img/blender/b32.jpg",
+   "dfree": true,
+   "chips": [
+    "Prep 5 min",
+    "1 big glass"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "id": "b33",
+   "cat": "sauce",
+   "title": "30 g protein cottage cheese Alfredo",
+   "emoji": "🍝",
+   "blurb": "Silky white sauce for pasta from cottage cheese and Parmesan. No flour, no cream.",
+   "ing": [
+    "1 cup cottage cheese",
+    "½ cup grated Parmesan",
+    "¼ cup pasta water or milk",
+    "1 garlic clove",
+    "½ tsp salt, pepper to taste"
+   ],
+   "steps": [
+    "Add the cottage cheese, Parmesan, garlic, salt and pepper, then the warm pasta water.",
+    "Blend on high for a full 60 seconds. Shorter and it stays grainy.",
+    "Toss with hot pasta off the heat. Don't boil the sauce or it splits."
+   ],
+   "tags": [
+    "cheese",
+    "garlic",
+    "milk"
+   ],
+   "healthy": true,
+   "prep": "5 min",
+   "makes": "Sauce for 2",
+   "level": "Easy",
+   "press": "Speed 6 for 1 min",
+   "gear": [
+    "blender-cups"
+   ],
+   "diet": [
+    "high-protein",
+    "keto",
+    "low-sugar"
+   ],
+   "fix": {
+    "q": "Blender cottage cheese sauces stay grainy.",
+    "a": "Curds need heat and time. Warm liquid and a full minute on high turn them perfectly smooth."
+   },
+   "key": {
+    "id": "blender-cups",
+    "why": "One batch fits a 24 oz cup, so you don't wash the big pitcher."
+   },
+   "healthier": "Already high-protein. Toss with veggie noodles to make it keto.",
+   "slug": "30-g-protein-cottage-cheese-alfredo",
+   "img": "/img/blender/b33.jpg",
+   "dfree": false,
+   "chips": [
+    "Prep 5 min",
+    "Sauce for 2"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Adults only",
+     "Contains alcohol that isn't cooked off. Not for kids, pregnancy, or anyone who shouldn't drink."
+    ]
+   ],
+   "ben": [],
+   "id": "b34",
+   "cat": "frozen",
+   "title": "Real-fruit frozen margarita (21+)",
+   "emoji": "🍹",
+   "blurb": "Frozen mango instead of ice, so it's thick and never watery. No sour mix.",
+   "ing": [
+    "2 cups frozen mango",
+    "4 oz blanco tequila",
+    "2 oz orange liqueur",
+    "3 limes, juiced",
+    "1–2 tbsp agave",
+    "½ cup ice",
+    "Tajín or salt for the rim"
+   ],
+   "steps": [
+    "Add lime juice, tequila, liqueur and agave, then the mango and ice.",
+    "Press Max Crush.",
+    "Rim the glasses with Tajín and pour.",
+    "Mocktail: replace the tequila and liqueur with orange juice."
+   ],
+   "tags": [
+    "mango",
+    "lime",
+    "ice",
+    "honey"
+   ],
+   "healthy": false,
+   "prep": "5 min",
+   "makes": "2 drinks",
+   "level": "Easy",
+   "press": "Max Crush",
+   "gear": [
+    "blender-souper-cubes"
+   ],
+   "adult": true,
+   "diet": [
+    "21+",
+    "dairy-free",
+    "vegan"
+   ],
+   "fix": {
+    "q": "Frozen margaritas go watery in 5 minutes.",
+    "a": "Ice is just water. Frozen fruit gives the same chill and thickness, and when it melts it's still margarita."
+   },
+   "key": {
+    "id": "blender-souper-cubes",
+    "why": "Freeze leftover margarita in portions and re-blend next weekend."
+   },
+   "healthier": "Make it a mocktail and skip the agave.",
+   "slug": "real-fruit-frozen-margarita",
+   "img": "/img/blender/b34.jpg",
+   "dfree": true,
+   "chips": [
+    "Prep 5 min",
+    "2 drinks"
+   ]
   }
  ]
 }

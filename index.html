@@ -90,7 +90,9 @@ div.fl{display:grid;place-items:center;font-size:calc(var(--fs)*.7);height:var(-
 .c-ice b{color:var(--pink)}.c-juice b{color:var(--mint)}.c-blender b{color:#7a5cff}.c-fire b{color:#e2552b}
 @media (max-width:520px){.label small{display:none}.label{padding:5px 8px}}
 .family{position:absolute;z-index:21;left:0;right:0;bottom:calc(env(safe-area-inset-bottom,0px) + 6px);margin:0;text-align:center;font-size:12px;font-weight:800;color:var(--muted)}
-.family a{color:inherit}
+.family{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 6px;padding:0 10px}
+.family a{color:inherit;text-decoration:none;background:color-mix(in srgb,#fff 80%,var(--cream));border-radius:999px;padding:3px 9px;box-shadow:0 3px 10px rgba(34,23,74,.06)}
+@media (max-width:420px){.family .x{display:none}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 <script>
@@ -125,7 +127,7 @@ document.addEventListener('error',function(e){
     <a class="machine c-blender" href="/blender/" data-k="blender" style="--d:.46s"><img class="m" src="/img/home/blender.webp" data-emo="🥤" alt=""><span class="label"><b>Blender</b><small>24 recipes</small></span></a>
     <a class="machine c-fire" href="/wood-fire/" data-k="wood-fire" style="--d:.54s"><img class="m" src="/img/home/grill.webp" data-emo="🔥" alt=""><span class="label"><b>Grill</b><small>24 recipes</small></span></a>
   </nav>
-  <p class="family">Favorites for Julian, Charlyne, Leanne &amp; Noah · <a href="/gear/">Accessories</a> · <a href="/join/">Get recipes by email</a></p>
+  <nav class="family" aria-label="Recipes by diet"><a href="/diet/keto/">🥑 Keto</a><a href="/diet/high-protein/">💪 Protein</a><a href="/diet/vegan/">🌱 Vegan</a><a href="/diet/dairy-free/">🥥 Dairy-free</a><a href="/diet/21-plus/">🍸 21+</a><a href="/gear/" class="x">🧰 Accessories</a></nav>
 </main>
 <script>
 (function(){

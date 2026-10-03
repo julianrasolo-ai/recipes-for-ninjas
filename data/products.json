@@ -155,6 +155,114 @@
    "icon": "🍮",
    "note": "1 tablespoon per pint fixes icy, crumbly protein bases.",
    "url": "https://www.amazon.com/s?k=sugar+free+instant+pudding+mix"
+  },
+  {
+   "id": "creami-xanthan",
+   "appliance": "creami",
+   "rank": 9,
+   "name": "Xanthan gum",
+   "icon": "🧂",
+   "note": "A pinch (⅛ tsp) stops keto and dairy-free pints from turning icy.",
+   "url": "https://www.amazon.com/s?k=xanthan+gum"
+  },
+  {
+   "id": "creami-sf-chips",
+   "appliance": "creami",
+   "rank": 10,
+   "name": "Sugar-free chocolate chips",
+   "icon": "🍫",
+   "note": "Stevia-sweetened chips for keto mix-ins. Chop them small so they don’t sink.",
+   "url": "https://www.amazon.com/s?k=sugar+free+chocolate+chips+stevia"
+  },
+  {
+   "id": "creami-coconut-cream",
+   "appliance": "creami",
+   "rank": 11,
+   "name": "Coconut cream (canned)",
+   "icon": "🥥",
+   "note": "The fat that makes dairy-free pints creamy instead of icy. Cream, not milk.",
+   "url": "https://www.amazon.com/s?k=coconut+cream+canned+unsweetened"
+  },
+  {
+   "id": "creami-vegan-protein",
+   "appliance": "creami",
+   "rank": 12,
+   "name": "Plant protein powder (pea + rice)",
+   "icon": "🌱",
+   "note": "Smoother than pure pea. Pick a flavor you’d drink as a shake.",
+   "url": "https://www.amazon.com/s?k=vegan+protein+powder+pea+rice+blend"
+  },
+  {
+   "id": "juicer-bottles",
+   "appliance": "juicer",
+   "rank": 3,
+   "name": "Glass juice bottles with lids (16 oz)",
+   "icon": "🍾",
+   "note": "Fill to the very top so there’s no air. Fresh juice keeps 48–72 hours in the fridge.",
+   "url": "https://www.amazon.com/s?k=glass+juice+bottles+16+oz+with+lids"
+  },
+  {
+   "id": "juicer-shot-bottles",
+   "appliance": "juicer",
+   "rank": 4,
+   "name": "2 oz shot bottles",
+   "icon": "💉",
+   "note": "Batch a week of ginger shots in one go.",
+   "url": "https://www.amazon.com/s?k=2+oz+glass+shot+bottles+with+lids"
+  },
+  {
+   "id": "blender-souper-cubes",
+   "appliance": "blender",
+   "rank": 3,
+   "name": "Silicone freezer trays (1-cup portions)",
+   "icon": "🧊",
+   "note": "Freeze smoothie pucks so the cup blends thick, not watery.",
+   "url": "https://www.amazon.com/s?k=silicone+freezer+tray+1+cup+portions"
+  },
+  {
+   "id": "blender-pea-protein",
+   "appliance": "blender",
+   "rank": 4,
+   "name": "Unflavored pea protein",
+   "icon": "🌱",
+   "note": "Vegan protein that disappears into fruit smoothies.",
+   "url": "https://www.amazon.com/s?k=unflavored+pea+protein+powder"
+  },
+  {
+   "id": "blender-mct",
+   "appliance": "blender",
+   "rank": 5,
+   "name": "MCT oil powder",
+   "icon": "🥥",
+   "note": "Keto fat that blends creamy. Start with 1 tbsp.",
+   "url": "https://www.amazon.com/s?k=mct+oil+powder+keto"
+  },
+  {
+   "id": "woodfire-sf-bbq",
+   "appliance": "wood-fire",
+   "rank": 6,
+   "name": "Sugar-free BBQ sauce",
+   "icon": "🍖",
+   "note": "Won’t burn black like regular sauce and fits keto.",
+   "url": "https://www.amazon.com/s?k=sugar+free+bbq+sauce"
+  },
+  {
+   "id": "woodfire-skewers",
+   "appliance": "wood-fire",
+   "rank": 7,
+   "name": "Flat stainless steel skewers",
+   "icon": "🍢",
+   "note": "Flat blades stop food spinning when you flip. Check they fit the grate.",
+   "url": "https://www.amazon.com/s?k=flat+stainless+steel+skewers+12+inch"
+  },
+  {
+   "id": "woodfire-grill-basket",
+   "appliance": "wood-fire",
+   "rank": 8,
+   "name": "Grill basket / perforated tray",
+   "icon": "🧺",
+   "note": "For veggies and fish that fall through the grate.",
+   "url": "https://www.amazon.com/s?k=small+grill+basket+perforated"
   }
  ],
  "compat": {

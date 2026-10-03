@@ -43,6 +43,28 @@ for (const a of appliances) {
   }
 }
 
+// Diets: explicit r.diet plus what the data already says (adult, macros, dairy-free).
+// Conservative: an ingredient list with any animal product (plant milks/creams aside) is not vegan.
+const ANIMAL = /\b(honey|butter|yog(h)?urt|milk|cheese|parmesan|eggs?|yolks?|cream|bacon|mayo|gelatin|marshmallows?|chicken|beef|pork|steak|ribs|sausages?|salmon|shrimp|fish|turkey|ham|whey|casein|ice cream|custard|mascarpone|wings|meat|brisket|lamb|mozzarella|cheddar|feta|ricotta|anchov(y|ies)|protein|collagen)\b/i;
+const PLANT = /\b(almond|oat|coconut|soy|rice|plant|cashew)[- ](milk|cream|yog(h)?urt)\b|coconut cream|non-?dairy|dairy-free|peanut butter|almond butter|nut butter|cocoa butter|(plant|pea|vegan|soy)[- ]protein( powder)?/gi;
+const LOW_SUGAR_JUICE = new Set(["celery", "cuke", "spinach", "kale", "romaine", "lemon", "lime", "ginger", "turmeric", "parsley", "mint", "basil", "fennel", "pepper", "chili", "fizz", "cinnamon"]);
+const dietsOf = (r) => {
+  const d = new Set(r.diet || []);
+  if (!r.adult && !ANIMAL.test(r.ing.join(" ").replace(PLANT, ""))) d.add("vegan");
+  if (r.appliance === "juicer" && r.tags.every((t) => LOW_SUGAR_JUICE.has(t))) d.add("low-sugar");
+  if (r.adult) d.add("21+");
+  if (r.macros || r.cat === "pro") d.add("high-protein");
+  if (r.dfree || d.has("vegan")) d.add("dairy-free");
+  return T.DIETS.map((x) => x.k).filter((k) => d.has(k));
+};
+for (const { r } of all) r.diets = dietsOf(r);
+// Step photos: images.json "steps/<appliance>-<id>-<n>" (n from 1) line up with r.steps.
+for (const { r, a } of all) {
+  const sp = r.steps.map((_, i) => { const k = `steps/${a.key}-${r.id}-${i + 1}`, im = images[k]; return im ? { img: `/img/${k}.jpg`, cdn: im.min } : null; });
+  if (sp.some(Boolean)) r.stepPics = sp;
+  if (r.key && !products[r.key.id]) throw new Error(`${r.id}: unknown key product ${r.key.id}`);
+}
+
 const pages = [];
 const page = (path, html) => pages.push([path, html]);
 // Share cards made by scripts/og-images.mjs (only on builds that have the photos)
@@ -70,8 +92,16 @@ const addTag = (k, label, emoji, item) => ((tags[k] ||= { k, label, emoji, items
 for (const it of all) {
   for (const b of it.r.ben || []) { const B = it.a.benMap[b]; if (B) addTag(b, B[2], B[1], it); }
   if (it.r.healthy) addTag("healthy", "Healthy & light", "🌿", it);
-  if (it.r.dfree || (it.r.flags || []).includes("dairy-free")) addTag("dairy-free", "Dairy-free", "🥥", it);
 }
+const dietCounts = {};
+for (const d of T.DIETS) {
+  const items = all.filter(({ r }) => r.diets.includes(d.k));
+  if (!items.length) continue;
+  dietCounts[d.k] = items.length;
+  page(T.dietUrl(d.k), T.dietPage({ ...ctx, dietCounts }, d, items));
+}
+ctx.dietCounts = dietCounts;
+page("/diet/", T.dietHub(ctx, dietCounts));
 for (const t of Object.values(tags)) page(`/tags/${t.k}/`, T.tag(ctx, t));
 ctx.tags = Object.values(tags);
 
@@ -107,7 +137,7 @@ for (const a of appliances) {
 }
 await writeFile(join(OUT, "search-index.json"), JSON.stringify([...all.map(({ r, a }) => ({
   t: r.title, u: r.url, a: a.key, c: a.catMap[r.cat]?.n || "", i: r.img, cdn: r.cdn || "", e: r.emoji,
-  s: [r.title, r.blurb, r.ing.join(" "), (r.ben || []).map((b) => a.benMap[b]?.[2]).join(" "), a.name, a.catMap[r.cat]?.n, r.macros ? "protein high-protein" : ""].join(" ").toLowerCase(),
+  s: [r.title, r.blurb, r.ing.join(" "), (r.ben || []).map((b) => a.benMap[b]?.[2]).join(" "), a.name, a.catMap[r.cat]?.n, r.macros ? "protein high-protein" : "", r.diets.map((d) => T.dietMap[d].label).join(" ")].join(" ").toLowerCase(),
 })), ...guides.map((g) => ({ t: g.h1, u: `/creami/help/${g.slug}/`, a: "creami", c: g.kind === "fix" ? "Fix" : "Guide", i: g.img || "", cdn: g.cdn || "", e: g.emoji,
   s: [g.h1, g.title, g.desc, g.lead, "help fix guide"].join(" ").toLowerCase() }))]));
 
@@ -122,6 +152,7 @@ const withTag = (url) => {
 const redirects = [
   "/ice-cream/*  /creami/  301",
   "/juice/*  /juicer/  301",
+  "/tags/dairy-free/  /diet/dairy-free/  301",
   ...Object.values(products).filter((p) => p.url).map((p) => `/go/${p.id}  ${withTag(p.url)}  302`),
 ];
 await writeFile(join(OUT, "_redirects"), redirects.join("\n") + "\n");

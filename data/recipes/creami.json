@@ -7289,6 +7289,374 @@
    "healthier": "Use half the white chocolate and serve with fresh cherries.",
    "adult": true,
    "abv": 2.3
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "id": "r117",
+   "cat": "healthy",
+   "title": "Keto vanilla bean that stays scoopable",
+   "emoji": "🍦",
+   "level": "Easy",
+   "blurb": "Real cream, zero sugar, and no rock-hard pint. Allulose plus a pinch of xanthan is the trick.",
+   "ing": [
+    "¾ cup heavy cream",
+    "¾ cup unsweetened almond milk",
+    "⅓ cup allulose",
+    "⅛ tsp xanthan gum",
+    "1 tsp vanilla bean paste",
+    "Pinch of salt"
+   ],
+   "steps": [
+    "Whisk the allulose, xanthan gum and salt together dry first, so the xanthan doesn't clump.",
+    "Whisk in the almond milk until smooth, then the cream and vanilla. Let it sit 5 minutes to thicken slightly.",
+    "Pour into the pint up to the max line. Lid on, freeze flat for 24 hours.",
+    "Press Scoop, then Lite Ice Cream.",
+    "Powdery? Add 1 tbsp almond milk and Re-spin once."
+   ],
+   "tags": [
+    "cream",
+    "oat",
+    "sf"
+   ],
+   "prep": "5 min",
+   "freeze": "24 hours",
+   "spin": "2 min",
+   "cook": "2 min",
+   "wait": "24 hours",
+   "makes": "1 pint",
+   "press": "Scoop, then Lite Ice Cream",
+   "badge": "🥄 Scoop",
+   "healthy": true,
+   "dfree": false,
+   "gear": [
+    "creami-allulose",
+    "creami-xanthan",
+    "creami-scale"
+   ],
+   "diet": [
+    "keto",
+    "low-sugar"
+   ],
+   "fix": {
+    "q": "My keto ice cream freezes rock-hard and comes out icy.",
+    "a": "Erythritol and stevia blends recrystallise in the freezer. Allulose behaves like sugar: it lowers the freezing point so the pint stays soft. A pinch of xanthan holds the water so ice crystals stay tiny."
+   },
+   "key": {
+    "id": "creami-allulose",
+    "why": "The one swap that makes keto pints scoop like real ice cream."
+   },
+   "healthier": "Already sugar-free. Use half cream, half almond milk for fewer calories (a little less creamy).",
+   "slug": "keto-vanilla-bean-that-stays-scoopable",
+   "img": "/img/ice/r117.jpg",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "id": "r118",
+   "cat": "healthy",
+   "title": "Keto peanut butter cup",
+   "emoji": "🥜",
+   "level": "Easy",
+   "blurb": "Salty peanut butter base with chopped sugar-free chocolate. Tastes like the candy, not like a diet.",
+   "ing": [
+    "¾ cup heavy cream",
+    "¾ cup unsweetened almond milk",
+    "2 tbsp natural peanut butter",
+    "¼ cup allulose",
+    "⅛ tsp xanthan gum",
+    "Pinch of salt",
+    "3 tbsp sugar-free chocolate chips, chopped (mix-in)"
+   ],
+   "steps": [
+    "Blend or whisk everything except the chocolate until smooth. Warm the peanut butter 10 seconds if it's stiff.",
+    "Pour into the pint, lid on, freeze flat for 24 hours.",
+    "Press Scoop, then Lite Ice Cream. Re-spin once if crumbly.",
+    "Make a hole down the middle to the bottom, add the chopped chips, and press Mix-In."
+   ],
+   "tags": [
+    "cream",
+    "oat",
+    "pb",
+    "choc",
+    "sf"
+   ],
+   "prep": "5 min",
+   "freeze": "24 hours",
+   "spin": "3 min",
+   "cook": "3 min",
+   "wait": "24 hours",
+   "makes": "1 pint",
+   "press": "Scoop, Lite Ice Cream, then Mix-In",
+   "badge": "🥄 Scoop",
+   "healthy": true,
+   "dfree": false,
+   "gear": [
+    "creami-sf-chips",
+    "creami-allulose",
+    "creami-mixin-tool"
+   ],
+   "diet": [
+    "keto",
+    "low-sugar"
+   ],
+   "fix": {
+    "q": "Mix-ins sink to the bottom or turn to dust.",
+    "a": "Chop chips to pea size and dig a well all the way down before Mix-In. Big chunks get pulverised; tiny ones vanish."
+   },
+   "key": {
+    "id": "creami-sf-chips",
+    "why": "Regular chips add about 20 g of sugar a pint. These keep it keto."
+   },
+   "healthier": "Swap the peanut butter for powdered peanut butter to cut the fat by about half.",
+   "slug": "keto-peanut-butter-cup",
+   "img": "/img/ice/r118.jpg",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 3 min",
+    "1 pint"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "id": "r119",
+   "cat": "fruit",
+   "title": "Dairy-free coconut coffee gelato",
+   "emoji": "☕",
+   "level": "Easy",
+   "blurb": "Oat milk and coconut cream with real espresso. Dense like gelato, no dairy, not icy.",
+   "ing": [
+    "¾ cup canned coconut cream",
+    "¾ cup oat milk (barista style)",
+    "2 shots espresso or ¼ cup strong coffee, cooled",
+    "⅓ cup sugar or maple syrup",
+    "1 tbsp instant vanilla pudding mix",
+    "Pinch of salt"
+   ],
+   "steps": [
+    "Whisk the sugar, pudding mix and salt into the coffee until dissolved.",
+    "Whisk in the coconut cream (stir the can first) and oat milk until smooth.",
+    "Pour into the pint, lid on, freeze flat for 24 hours.",
+    "Press Scoop, then Gelato. Re-spin with 1 tbsp oat milk if powdery."
+   ],
+   "tags": [
+    "coco",
+    "oat",
+    "coffee",
+    "pud"
+   ],
+   "prep": "5 min",
+   "freeze": "24 hours",
+   "spin": "2 min",
+   "cook": "2 min",
+   "wait": "24 hours",
+   "makes": "1 pint",
+   "press": "Scoop, then Gelato",
+   "badge": "🥄 Scoop",
+   "healthy": false,
+   "dfree": true,
+   "gear": [
+    "creami-coconut-cream",
+    "creami-pints"
+   ],
+   "diet": [
+    "dairy-free",
+    "vegan"
+   ],
+   "fix": {
+    "q": "Dairy-free pints come out icy and thin.",
+    "a": "Plant milks are mostly water. Coconut cream adds the fat that dairy cream would, and instant pudding mix (most are dairy-free, check the label) binds the rest."
+   },
+   "key": {
+    "id": "creami-coconut-cream",
+    "why": "Coconut cream, not coconut milk. It's the difference between gelato and a slushie."
+   },
+   "healthier": "Use light coconut milk and 2 tbsp less sugar. Expect one extra Re-spin.",
+   "slug": "dairy-free-coconut-coffee-gelato",
+   "img": "/img/ice/r119.jpg",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "id": "r120",
+   "cat": "pro",
+   "title": "Vegan chocolate protein pint (no chalk)",
+   "emoji": "🌱",
+   "level": "Easy",
+   "blurb": "About 40 g of plant protein a pint that spins smooth. Soy milk and pudding mix do the heavy lifting.",
+   "ing": [
+    "1½ cups unsweetened soy milk",
+    "1 scoop (30 g) chocolate plant protein powder",
+    "1 tbsp cocoa powder",
+    "1 tbsp instant chocolate pudding mix (sugar-free works)",
+    "2 tbsp maple syrup or allulose",
+    "Pinch of salt"
+   ],
+   "steps": [
+    "Blend everything for 30 seconds, or shake hard in a jar. No lumps.",
+    "Rest 5 minutes so the foam settles, then pour into the pint.",
+    "Lid on, freeze flat for 24 hours.",
+    "Press Scoop, then CreamiFit (or Lite Ice Cream).",
+    "Add 1–2 tbsp soy milk and Re-spin. Plant protein almost always needs one."
+   ],
+   "tags": [
+    "oat",
+    "prot",
+    "cocoa",
+    "pud",
+    "sf"
+   ],
+   "prep": "5 min",
+   "freeze": "24 hours",
+   "spin": "3 min",
+   "cook": "3 min",
+   "wait": "24 hours",
+   "makes": "1 pint",
+   "press": "Scoop, then CreamiFit",
+   "badge": "🥄 Scoop",
+   "healthy": true,
+   "dfree": true,
+   "gear": [
+    "creami-vegan-protein",
+    "creami-sf-pudding"
+   ],
+   "macros": {
+    "kcal": 380,
+    "protein": 40,
+    "base": "Soy milk + plant protein"
+   },
+   "diet": [
+    "vegan",
+    "dairy-free",
+    "high-protein"
+   ],
+   "fix": {
+    "q": "Plant protein pints taste chalky and gritty.",
+    "a": "Pea protein soaks up water and freezes grainy. Soy milk has its own protein and fat to smooth it out, and a spoon of pudding mix plus one Re-spin finishes the job."
+   },
+   "key": {
+    "id": "creami-vegan-protein",
+    "why": "Pea and rice blends spin far smoother than pea alone."
+   },
+   "healthier": "Already lean. Use allulose instead of maple to drop about 100 kcal.",
+   "slug": "vegan-chocolate-protein-pint-no-chalk",
+   "img": "/img/ice/r120.jpg",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 3 min",
+    "1 pint"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Strength",
+     "About 3% ABV, like a light beer. More alcohol and it won't freeze. See our guide to alcohol in the Creami."
+    ],
+    [
+     "Adults only",
+     "Contains alcohol that isn't cooked off. Not for kids, pregnancy, or anyone who shouldn't drink."
+    ]
+   ],
+   "ben": [],
+   "id": "r121",
+   "cat": "adult",
+   "title": "Espresso martini protein soft serve (21+)",
+   "emoji": "🍸",
+   "level": "Easy",
+   "blurb": "Vodka, coffee liqueur and a protein shake. Cocktail hour that also counts toward your protein.",
+   "ing": [
+    "1 bottle (11–12 oz) ready-to-drink vanilla protein shake",
+    "¼ cup cold brew or strong coffee",
+    "2 tbsp vodka",
+    "1 tbsp coffee liqueur",
+    "1 tbsp sugar-free vanilla pudding mix",
+    "Pinch of salt"
+   ],
+   "steps": [
+    "Whisk the pudding mix into the shake, then add the coffee, vodka, liqueur and salt.",
+    "Pour into the pint, lid on, freeze flat for 24 hours. Boozy bases freeze slightly softer; that's normal.",
+    "Press Soft Serve if you have it, otherwise Lite Ice Cream.",
+    "Too soft? Back in the freezer 1–2 hours and Re-spin. Top with 3 coffee beans."
+   ],
+   "tags": [
+    "prot",
+    "coffee",
+    "booze",
+    "sf"
+   ],
+   "prep": "5 min",
+   "freeze": "24 hours",
+   "spin": "2 min",
+   "cook": "2 min",
+   "wait": "24 hours",
+   "makes": "1 pint",
+   "press": "Soft Serve, then Lite Ice Cream",
+   "badge": "🍦 Swirl",
+   "healthy": false,
+   "dfree": false,
+   "adult": true,
+   "abv": 3.1,
+   "gear": [
+    "creami-protein-blend",
+    "creami-sf-pudding"
+   ],
+   "macros": {
+    "kcal": 310,
+    "protein": 30,
+    "base": "Protein shake"
+   },
+   "diet": [
+    "21+",
+    "high-protein"
+   ],
+   "fix": {
+    "q": "Boozy pints never freeze and come out soupy.",
+    "a": "Alcohol doesn't freeze. Keep spirits to about 3 tbsp per pint in total and let the protein and pudding do the thickening."
+   },
+   "key": {
+    "id": "creami-protein-blend",
+    "why": "Casein in the blend keeps boozy pints creamy, not icy."
+   },
+   "healthier": "Skip the liqueur and use 3 tbsp vodka plus a few drops of coffee extract.",
+   "slug": "espresso-martini-protein-soft-serve",
+   "img": "/img/ice/r121.jpg",
+   "chips": [
+    "Prep 5 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ]
   }
  ]
 }

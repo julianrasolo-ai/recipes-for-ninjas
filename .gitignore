@@ -13,3 +13,12 @@ grill-images-review.html
 appliance-photo-test.html
 lib/generated/
 .wrangler/
+
+# Recipe photos are downloaded by scripts/fetch-images.mjs at build time
+img/ice/
+img/juice/
+img/blender/
+img/fire/
+img/steps/
+img/guides/
+img/home/

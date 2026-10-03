@@ -40,7 +40,8 @@
   "cracker": "Graham crackers",
   "icecream": "Vanilla ice cream",
   "cinnamon": "Cinnamon",
-  "herbs": "Fresh herbs"
+  "herbs": "Fresh herbs",
+  "cauli": "Cauliflower"
  },
  "groups": [
   [
@@ -70,7 +71,8 @@
     "cabbage",
     "tomato",
     "garlic",
-    "herbs"
+    "herbs",
+    "cauli"
    ]
   ],
   [
@@ -1758,6 +1760,333 @@
     "Prep 15 min",
     "Cook 1 hour",
     "6 servings"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "id": "w35",
+   "cat": "smoke",
+   "title": "Keto smoked chicken thighs, sugar-free glaze",
+   "emoji": "🍗",
+   "blurb": "Smoky, sticky thighs with no sugar in the rub or the sauce. Nothing burns black.",
+   "ing": [
+    "2 lb boneless chicken thighs",
+    "1 tbsp olive oil",
+    "2 tsp smoked paprika",
+    "1 tsp garlic powder",
+    "1 tsp salt, ½ tsp pepper",
+    "½ cup sugar-free BBQ sauce",
+    "½ cup Woodfire pellets"
+   ],
+   "steps": [
+    "Toss the chicken with oil, paprika, garlic powder, salt and pepper.",
+    "Fill the pellet scoop, select Smoker at 250°F and preheat.",
+    "Smoke 45 minutes.",
+    "Switch to Grill HI, brush with sugar-free BBQ sauce and grill 2–3 minutes a side until 175°F inside."
+   ],
+   "tags": [
+    "chicken",
+    "oil",
+    "bbq",
+    "rub"
+   ],
+   "healthy": true,
+   "prep": "10 min",
+   "cook": "1 hour",
+   "makes": "4 servings",
+   "level": "Easy",
+   "press": "Smoker · 250°F + Woodfire flavor",
+   "gear": [
+    "woodfire-sf-bbq",
+    "woodfire-thermometer"
+   ],
+   "diet": [
+    "keto",
+    "high-protein",
+    "low-sugar",
+    "dairy-free"
+   ],
+   "fix": {
+    "q": "BBQ rubs and sauces scorch on the grill.",
+    "a": "Sugar burns at about 350°F. A sugar-free rub and sauce let you finish over high heat for char without black, bitter spots."
+   },
+   "key": {
+    "id": "woodfire-sf-bbq",
+    "why": "All the sticky glaze, about 1 g of sugar a serving."
+   },
+   "healthier": "Already lean and low-sugar. Serve with grilled veg instead of buns.",
+   "slug": "keto-smoked-chicken-thighs-sugar-free-glaze",
+   "img": "/img/fire/w35.jpg",
+   "dfree": true,
+   "chips": [
+    "Prep 10 min",
+    "Cook 1 hour",
+    "4 servings"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "id": "w36",
+   "cat": "smoke",
+   "title": "Double-smoke reverse-sear steak",
+   "emoji": "🥩",
+   "blurb": "Smoke first at low heat, sear last. The fix for a steak that barely tastes of smoke.",
+   "ing": [
+    "2 thick ribeye or strip steaks (1½ inch)",
+    "2 tsp coarse salt",
+    "1 tsp black pepper",
+    "1 tbsp butter",
+    "½ cup hickory pellets (two loads)"
+   ],
+   "steps": [
+    "Salt the steaks and leave them uncovered in the fridge for 1 hour, or overnight.",
+    "Fill the pellet scoop with hickory. Smoker at 250°F, preheat, then smoke 25 minutes.",
+    "Add a second half-scoop of pellets and smoke until 115°F inside (about 15 more minutes).",
+    "Take the steaks out. Switch to Grill HI and preheat until Add Food.",
+    "Sear 2 minutes a side with the butter on top, to 130°F for medium-rare. Rest 5 minutes."
+   ],
+   "tags": [
+    "beef",
+    "butter"
+   ],
+   "healthy": false,
+   "prep": "10 min",
+   "cook": "50 min",
+   "makes": "2–3 servings",
+   "level": "Medium",
+   "press": "Smoker · 250°F + Woodfire flavor",
+   "gear": [
+    "woodfire-pellets-variety",
+    "woodfire-thermometer",
+    "woodfire-scoop"
+   ],
+   "diet": [
+    "keto",
+    "high-protein"
+   ],
+   "fix": {
+    "q": "Not enough smoke flavor from the Woodfire.",
+    "a": "Smoke sticks to cold, dry meat and stops once the surface heats up. Start cold and dry, use a stronger wood like hickory, refill the scoop once, and sear only at the end."
+   },
+   "key": {
+    "id": "woodfire-pellets-variety",
+    "why": "Hickory and mesquite taste much smokier than the default blend."
+   },
+   "healthier": "Use sirloin and skip the butter.",
+   "slug": "double-smoke-reverse-sear-steak",
+   "img": "/img/fire/w36.jpg",
+   "dfree": false,
+   "chips": [
+    "Prep 10 min",
+    "Cook 50 min",
+    "2–3 servings"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "id": "w37",
+   "cat": "grill",
+   "title": "Chicken souvlaki skewers with tzatziki",
+   "emoji": "🍢",
+   "blurb": "Lemon-oregano chicken with a yogurt sauce. About 40 g protein a plate.",
+   "ing": [
+    "1½ lb chicken breast, in 1¼-inch cubes",
+    "3 tbsp olive oil",
+    "1 lemon, zest and juice",
+    "2 tsp dried oregano",
+    "2 garlic cloves, grated",
+    "1 tsp salt",
+    "1 cup Greek yogurt + ½ grated cucumber + dill for tzatziki"
+   ],
+   "steps": [
+    "Marinate the chicken in oil, lemon, oregano, garlic and salt for 30 minutes (up to 8 hours).",
+    "Thread onto flat skewers, pieces touching but not squashed.",
+    "Select Grill HI and preheat until Add Food.",
+    "Grill 10–12 minutes, turning every 3, until 165°F.",
+    "Squeeze the cucumber dry and stir into the yogurt with dill and salt."
+   ],
+   "tags": [
+    "chicken",
+    "oil",
+    "lemon",
+    "garlic",
+    "herbs"
+   ],
+   "healthy": true,
+   "prep": "15 min",
+   "cook": "12 min",
+   "wait": "30 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "press": "Grill · HI",
+   "gear": [
+    "woodfire-skewers",
+    "woodfire-thermometer"
+   ],
+   "diet": [
+    "high-protein",
+    "low-sugar"
+   ],
+   "fix": {
+    "q": "Food spins on the skewer when you flip it.",
+    "a": "Round skewers act like an axle. Flat blades grip each piece, so the whole skewer turns in one go."
+   },
+   "key": {
+    "id": "woodfire-skewers",
+    "why": "Flat, reusable and nothing spins. Check the length fits the grate."
+   },
+   "healthier": "Already lean. Use 0% yogurt for the tzatziki.",
+   "slug": "chicken-souvlaki-skewers-with-tzatziki",
+   "img": "/img/fire/w37.jpg",
+   "dfree": false,
+   "chips": [
+    "Prep 15 min",
+    "Cook 12 min",
+    "4 servings"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "id": "w38",
+   "cat": "veg",
+   "title": "Smoked cauliflower steaks with tahini",
+   "emoji": "🥦",
+   "blurb": "Thick cauliflower slices, smoked then charred. A vegan main, not a side.",
+   "ing": [
+    "1 large cauliflower",
+    "3 tbsp olive oil",
+    "1 tsp smoked paprika",
+    "1 tsp cumin",
+    "1 tsp salt",
+    "3 tbsp tahini + lemon + water for the drizzle"
+   ],
+   "steps": [
+    "Trim the leaves and cut the cauliflower into 2 thick slices through the core. Keep the loose florets.",
+    "Brush everything with oil and the spices.",
+    "Smoker at 250°F with pellets, 30 minutes. Put the florets in the grill basket so they don't fall through.",
+    "Switch to Grill HI and char 4 minutes a side until tender.",
+    "Thin the tahini with lemon and water and drizzle."
+   ],
+   "tags": [
+    "cauli",
+    "oil",
+    "lemon"
+   ],
+   "healthy": true,
+   "prep": "10 min",
+   "cook": "40 min",
+   "makes": "2 mains",
+   "level": "Easy",
+   "press": "Smoker · 250°F + Woodfire flavor",
+   "gear": [
+    "woodfire-grill-basket",
+    "woodfire-pellets-variety"
+   ],
+   "diet": [
+    "vegan",
+    "keto",
+    "dairy-free",
+    "low-sugar"
+   ],
+   "fix": {
+    "q": "Veggies dry out or fall through the grate.",
+    "a": "Smoke them low first with plenty of oil so they cook through, then char fast. Small pieces go in a basket."
+   },
+   "key": {
+    "id": "woodfire-grill-basket",
+    "why": "Keeps florets, mushrooms and fish out of the fire."
+   },
+   "healthier": "Already a top pick.",
+   "slug": "smoked-cauliflower-steaks-with-tahini",
+   "img": "/img/fire/w38.jpg",
+   "dfree": true,
+   "chips": [
+    "Prep 10 min",
+    "Cook 40 min",
+    "2 mains"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Adults only",
+     "The glaze is only warmed briefly, so most of the alcohol stays in. For kids, use apple juice and vanilla instead of bourbon."
+    ]
+   ],
+   "ben": [],
+   "id": "w39",
+   "cat": "sweet",
+   "title": "Bourbon-glazed smoked peaches (21+)",
+   "emoji": "🍑",
+   "blurb": "Smoky peach halves in a bourbon-butter glaze. Serve warm over vanilla ice cream.",
+   "ing": [
+    "4 ripe peaches, halved and pitted",
+    "2 tbsp butter",
+    "2 tbsp brown sugar",
+    "2 tbsp bourbon",
+    "Pinch of cinnamon and salt",
+    "Vanilla ice cream to serve"
+   ],
+   "steps": [
+    "Melt the butter, sugar, bourbon, cinnamon and salt together for 1 minute. Off the heat.",
+    "Grill HI with Woodfire flavor, preheat until Add Food.",
+    "Grill the peaches cut side down 4 minutes, flip and spoon glaze into each.",
+    "Grill 3 more minutes. Serve with ice cream and the leftover glaze."
+   ],
+   "tags": [
+    "peach",
+    "butter",
+    "cinnamon",
+    "icecream"
+   ],
+   "healthy": false,
+   "prep": "10 min",
+   "cook": "8 min",
+   "makes": "4 servings",
+   "level": "Easy",
+   "press": "Grill · HI + Woodfire flavor",
+   "gear": [
+    "woodfire-pellets-variety"
+   ],
+   "adult": true,
+   "diet": [
+    "21+"
+   ],
+   "fix": {
+    "q": "Grilled fruit turns to mush or sticks.",
+    "a": "Use ripe-but-firm peaches, oil the grate, and don't move them for the first 4 minutes. They release on their own."
+   },
+   "key": {
+    "id": "woodfire-pellets-variety",
+    "why": "Cherry or apple pellets taste best with fruit."
+   },
+   "healthier": "Skip the sugar and serve with Greek yogurt.",
+   "slug": "bourbon-glazed-smoked-peaches",
+   "img": "/img/fire/w39.jpg",
+   "dfree": false,
+   "chips": [
+    "Prep 10 min",
+    "Cook 8 min",
+    "4 servings"
    ]
   }
  ]

@@ -43,3 +43,17 @@
     });
   }
 })();
+
+/* Cook mode: keep the screen awake while cooking (Screen Wake Lock API; hidden where unsupported). */
+(function(){
+  var b=document.getElementById('cookmode'); if(!b||!('wakeLock' in navigator))return;
+  var lock=null; b.hidden=false;
+  function set(on){b.setAttribute('aria-pressed',String(on));b.textContent=on?'🍳 Cook mode on: screen stays awake':'🍳 Cook mode: keep screen on'}
+  b.addEventListener('click',function(){
+    if(lock){lock.release();lock=null;set(false);return}
+    navigator.wakeLock.request('screen').then(function(l){lock=l;set(true);l.addEventListener('release',function(){if(lock===l){lock=null;if(document.visibilityState==='visible')set(false)}})}).catch(function(){b.textContent='Cook mode isn’t available here'});
+    if(window.track)try{track('cook_mode')}catch(e){}
+  });
+  // The lock drops when the tab is hidden; take it back when the cook returns.
+  document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible'&&b.getAttribute('aria-pressed')==='true'&&!lock)navigator.wakeLock.request('screen').then(function(l){lock=l}).catch(function(){})});
+})();

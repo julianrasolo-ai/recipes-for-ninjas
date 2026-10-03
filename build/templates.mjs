@@ -17,6 +17,25 @@ const IMG_FALLBACK = `document.addEventListener('error',function(e){var im=e.tar
 export const img = (r, cls = "", lazy = true) =>
   r.img ? `<img${cls ? ` class="${cls}"` : ""} src="${r.img}" alt="${esc(r.alt || r.title)}" width="600" height="600" decoding="async"${lazy ? ' loading="lazy"' : ' fetchpriority="high"'}${r.cdn ? ` data-cdn="${r.cdn}"` : ""} data-emo="${r.emoji}">` : `<div class="emo">${r.emoji}</div>`;
 
+/* Diets: niche ways to eat, shared by every machine. Each recipe's list comes from build.mjs (dietsOf). */
+export const DIETS = [
+  { k: "keto", label: "Keto & low-carb", short: "Keto", e: "🥑", lead: "Real fat, no sugar, and none of the rock-hard pints or burnt glazes keto cooks complain about.",
+    pain: "Keto ice cream freezes like a brick, green juice hides 30 g of sugar, and BBQ sauce is mostly sugar. These recipes fix each of those." },
+  { k: "high-protein", label: "High protein", short: "Protein", e: "💪", lead: "Protein ice cream that isn't chalky, shakes that don't clump, and grill plates around 40 g.",
+    pain: "Protein pints come out powdery and shakes leave dry pockets of powder. Every recipe here says exactly how to avoid that." },
+  { k: "dairy-free", label: "Dairy-free", short: "Dairy-free", e: "🥥", lead: "Creamy without milk. Coconut cream, oat and soy do the work.",
+    pain: "Dairy-free pints usually turn icy because plant milks are mostly water. The fat has to come from somewhere else." },
+  { k: "vegan", label: "Vegan", short: "Vegan", e: "🌱", lead: "No animal products, plenty of protein and real mains for the grill.",
+    pain: "Plant protein tastes gritty and grilled veg dries out. These recipes are built around those two problems." },
+  { k: "low-sugar", label: "Low sugar", short: "Low sugar", e: "🍬", lead: "Sweet enough for the kids, without the sugar crash.",
+    pain: "Most juices and frozen treats are dessert in disguise. These keep sugar low without tasting like a diet." },
+  { k: "21+", label: "21+ boozy", short: "21+", e: "🍸", lead: "Boozy ice cream, fresh-pressed cocktails and grilled desserts for grown-up nights.",
+    pain: "Alcohol doesn't freeze and cooks off less than people think. Each recipe gives the strength and keeps it adults-only." },
+];
+export const dietMap = Object.fromEntries(DIETS.map((d) => [d.k, d]));
+const dietSlug = (k) => (k === "21+" ? "21-plus" : k);
+export const dietUrl = (k) => `/diet/${dietSlug(k)}/`;
+
 /* ---------- layout ---------- */
 function publicConfig(site) {
   const { ads, consent, analytics, email, members, shop, affiliate, family, supabase, ai } = site;
@@ -92,7 +111,7 @@ function footer(ctx) {
   return `<footer class="foot-site">
   <nav class="fnav" aria-label="Appliances">${appliances.map((a) => `<a href="${a.url}">${a.emoji} ${esc(a.name)}</a>`).join("")}</nav>
   <nav class="fnav small" aria-label="More">
-    <a href="/search/">Search</a><a href="/gear/">Accessories</a>${site.shop.enabled ? '<a href="/shop/">Shop</a>' : ""}
+    <a href="/search/">Search</a><a href="/diet/">Diets</a><a href="/gear/">Accessories</a>${site.shop.enabled ? '<a href="/shop/">Shop</a>' : ""}
     <a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/disclosure/">Disclosures</a>${site.email.enabled ? '<a href="/join/">Get recipes by email</a>' : ""}
     <button type="button" class="linkbtn" data-consent-open>Cookie settings</button>
   </nav>
@@ -112,7 +131,7 @@ function meta(a, r) {
   return r.prep + (r.cook ? " + " + r.cook : "") + " · " + r.makes;
 }
 export function card(a, r) {
-  const s = [r.title, r.blurb, r.ing.join(" "), r.tags.map((t) => a.data.labels[t]).join(" "), (r.ben || []).map((b) => a.benMap[b]?.[2]).join(" ")].join(" ").toLowerCase();
+  const s = [r.title, r.blurb, r.ing.join(" "), r.tags.map((t) => a.data.labels[t]).join(" "), (r.ben || []).map((b) => a.benMap[b]?.[2]).join(" "), (r.diets || []).map((d) => dietMap[d]?.label).join(" ")].join(" ").toLowerCase();
   return `<a class="card" href="${r.url}" data-id="${r.id}" data-c="${r.cat}" data-s="${esc(s)}"${r.healthy ? " data-h" : ""}${(r.ben || []).length ? ` data-ben="${r.ben.join(" ")}"` : ""}>
 <div class="thumb">${img(r)}<span class="mode">${badge(a, r)}</span>${r.healthy ? '<span class="leaf">🌿</span>' : ""}${r.members ? '<span class="lock">🔒</span>' : ""}<span class="likes" data-lk="${r.id}"></span></div>
 <div class="cb"><p class="ct">${esc(r.title)}</p><div class="cm">${esc(meta(a, r))}${r.dfree ? " · Dairy-free" : ""}</div></div></a>`;
@@ -237,6 +256,7 @@ ${grid(list.map((r) => ({ a, r })))}
       <button class="pill" id="healthyOnly" type="button" aria-pressed="false"><span class="pe">🌿 </span>${esc(a.toggle)}</button>
     </div>
   </div>
+  ${(() => { const ds = DIETS.filter((d) => D.recipes.some((r) => (r.diets || []).includes(d.k))); return ds.length ? `<div class="bens dietrow"><span class="lbl">Diet:</span>${ds.map((d) => `<a class="bchip" href="${dietUrl(d.k)}#${a.key}">${d.e} ${esc(d.short)}</a>`).join("")}</div>` : ""; })()}
   ${hasBen ? `<div class="bens" id="bens" aria-label="Filter by benefit"><span class="lbl">I want:</span>${(D.bens || []).filter((b) => D.recipes.some((r) => (r.ben || []).includes(b[0]))).map((b) => `<button class="bchip" type="button" data-b="${b[0]}" aria-pressed="false">${b[1]} ${esc(b[2])}</button>`).join("")}</div>` : ""}
   <nav class="nav" aria-label="Menu sections"><div class="navrow" id="navrow" style="--n:${D.cats.length}">${D.cats.map((c) => `<button class="tab" type="button" data-c="${c.k}" data-t="${c.k}" aria-label="${esc(c.n)}"><span class="te">${c.e}</span><span>${esc(c.s || c.n)}</span></button>`).join("")}</div></nav>
   <div id="sections">${secs}</div>
@@ -264,6 +284,7 @@ export function recipe(ctx, a, r) {
     recipeIngredient: r.ing,
     recipeInstructions: r.steps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, text: s })),
   };
+  if ((r.diets || []).includes("vegan")) ld.suitableForDiet = "https://schema.org/VeganDiet";
   if (r.macros) ld.nutrition = { "@type": "NutritionInformation", servingSize: "1 pint", calories: `${r.macros.kcal} calories`, proteinContent: `${r.macros.protein} g` };
   if (r.video) ld.video = { "@type": "VideoObject", name: r.title, description: r.blurb, thumbnailUrl: ld.image, contentUrl: typeof r.video === "string" ? r.video : r.video.url, uploadDate: r.video.date || undefined };
   const crumbs = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
@@ -275,7 +296,11 @@ export function recipe(ctx, a, r) {
   const gated = site.members.enabled && r.members;
   const ings = `<h2 class="h3">${esc(r.listTitle || "You need")}</h2><ul class="ingl">${r.ing.map((x) => `<li><label><input type="checkbox"><span>${esc(x)}</span></label></li>`).join("")}</ul>
   <div class="row noprint"><button class="btn" id="cp" type="button">Copy shopping list</button><button class="btn ghost" type="button" onclick="window.print()">🖨️ Print</button><span class="status" id="cps" aria-live="polite"></span></div>`;
-  const steps = `<h2 class="h3">Steps</h2><ol class="steps">${r.steps.map((x) => `<li>${esc(x)}</li>`).join("")}</ol>`;
+  const sp = r.stepPics || [];
+  const steps = `<h2 class="h3">Steps</h2><ol class="steps${sp.length ? " pics" : ""}">${r.steps.map((x, i) => `<li>${sp[i] ? `<img class="stepimg" src="${sp[i].img}" alt="Step ${i + 1}: ${esc(r.title)}" width="600" height="450" loading="lazy" decoding="async"${sp[i].cdn ? ` data-cdn="${sp[i].cdn}"` : ""}>` : ""}<span>${esc(x)}</span></li>`).join("")}</ol>`;
+  const key = r.key && ctx.products[r.key.id];
+  const fixKey = (r.fix ? `<div class="fixbox"><p class="fq"><b>😤 The complaint</b>${esc(r.fix.q)}</p><p class="fa"><b>✅ What this recipe does about it</b>${esc(r.fix.a)}</p></div>` : "") +
+    (key ? `<a class="keyp" href="${key.href}" rel="sponsored noopener" target="_blank" data-aff="${key.id}" data-where="key"><span class="ki">${key.icon || "🔑"}</span><span class="kt"><small>The secret ingredient</small><b>${esc(key.name)}</b><span>${esc(r.key.why)}</span></span><span class="go">Check price ›</span></a>` : "");
   return layout(ctx, {
     title: `${r.title} – ${a.brand} recipe`, desc: `${r.blurb} ${r.chips.join(", ")}. Made with the ${a.device}.`, path: r.url, theme: a.theme, image: r.og, imageAlt: r.title, ogType: "article",
     heading: `${a.emoji} ${esc(a.name)}`, kicker: `<a href="/">${esc(ctx.site.name)}</a>`, headingTag: "p",
@@ -290,7 +315,10 @@ export function recipe(ctx, a, r) {
     <p class="lead">${esc(r.blurb)}</p>
     ${(r.ben || []).length ? `<div class="chips">${r.ben.map((b) => `<a class="chip b" href="/tags/${b}/">${a.benMap[b]?.[1]} ${esc(a.benMap[b]?.[2])}</a>`).join("")}</div>` : ""}
     <div class="chips">${r.chips.map((x) => `<span class="chip">${esc(x)}</span>`).join("")}${r.macros ? `<span class="chip g">💪 ${r.macros.protein} g protein · ${r.macros.kcal} kcal / pint</span>` : ""}${r.adult ? '<span class="chip">🍸 21+ only</span>' : ""}</div>
+    ${(r.diets || []).length ? `<div class="chips diets">${r.diets.map((d) => `<a class="chip d" href="${dietUrl(d)}">${dietMap[d].e} ${esc(dietMap[d].short)}</a>`).join("")}</div>` : ""}
     <div class="press"><small>${esc(a.pressLabel)}</small> ${esc(r.press)}</div>
+    ${fixKey}
+    <div class="row noprint"><button class="btn ghost" id="cookmode" type="button" aria-pressed="false" hidden>🍳 Cook mode: keep screen on</button></div>
     <div class="likebox"><b>❤️ Who likes this?</b><div class="who">${site.supabase ? "" : site.family.map((p) => `<button class="who-b" type="button" data-p="${p}" data-like="${p}" aria-pressed="false">${p}</button>`).join("")}</div><p class="sync" id="sync"></p></div>
     ${ings}
     ${adSlot(site, "recipe-in-content", "incontent")}
@@ -331,12 +359,34 @@ export function tag(ctx, t) {
   return listing(ctx, { title: `${t.label} recipes`, desc: `${t.label} recipes across every Ninja machine.`, path: `/tags/${t.k}/`,
     crumbs: `<a href="/">Home</a> › Tags`, h1: `${t.emoji} ${esc(t.label)}`, lead: `${t.items.length} recipes across all machines.`, inner: grid(t.items) });
 }
+/* Diet pages: one per diet, recipes grouped by machine, plus the pantry items those recipes rely on. */
+export function dietHub(ctx, counts) {
+  const cards = DIETS.filter((d) => counts[d.k]).map((d) => `<a class="dcard" href="${dietUrl(d.k)}"><span class="de">${d.e}</span><b>${esc(d.label)}</b><small>${counts[d.k]} recipes · ${esc(d.lead)}</small></a>`).join("");
+  return listing(ctx, { title: "Recipes by diet", desc: "Keto, high-protein, dairy-free, vegan, low-sugar and 21+ recipes for the Ninja Creami, juicer, blender and Woodfire grill.", path: "/diet/",
+    crumbs: `<a href="/">Home</a> › Diets`, h1: "🥗 Eat your way", lead: "Pick a diet. Every recipe works on a Ninja machine and fixes a problem owners actually complain about.",
+    inner: `<div class="dgrid">${cards}</div>` });
+}
+export function dietPage(ctx, d, items) {
+  const by = ctx.appliances.map((a) => [a, items.filter((it) => it.a.key === a.key)]).filter(([, l]) => l.length);
+  const keys = [...new Set(items.flatMap(({ r }) => [r.key?.id, ...(r.gear || [])]).filter(Boolean))].map((id) => ctx.products[id]).filter((p) => p && p.href).slice(0, 6);
+  const others = DIETS.filter((x) => x.k !== d.k && ctx.dietCounts[x.k]);
+  return listing(ctx, { title: `${d.label} Ninja recipes`, desc: `${items.length} ${d.label.toLowerCase()} recipes for the Ninja Creami, juicer, blender and Woodfire grill. ${d.lead}`, path: dietUrl(d.k),
+    crumbs: `<a href="/">Home</a> › <a href="/diet/">Diets</a> › ${esc(d.label)}`, h1: `${d.e} ${esc(d.label)}`, lead: d.lead,
+    jsonld: [{ "@context": "https://schema.org", "@type": "CollectionPage", name: `${d.label} recipes`, description: d.lead, url: ctx.site.url + dietUrl(d.k) }],
+    inner: `<p class="note">${esc(d.pain)}</p>
+  <nav class="chips">${by.map(([a, l]) => `<a class="chip" href="#${a.key}">${a.emoji} ${esc(a.short)} (${l.length})</a>`).join("")}</nav>
+  ${by.map(([a, l]) => `<section class="sec" id="${a.key}"><h2 class="h3">${a.emoji} ${esc(a.name)}</h2>${grid(l)}</section>`).join("")}
+  ${keys.length ? `<section class="gear-used"><h3>Stock up for ${esc(d.short.toLowerCase())}</h3><div class="gear-row">${keys.map((p) => productCard(p, "diet")).join("")}</div>${affNote(ctx.site)}</section>` : ""}
+  <h2 class="h3">Other diets</h2><div class="chips">${others.map((x) => `<a class="chip" href="${dietUrl(x.k)}">${x.e} ${esc(x.label)}</a>`).join("")}</div>
+  ${emailBox(ctx.site, "diet")}` });
+}
 export function search(ctx) {
   return listing(ctx, { title: "Search", desc: "Search every recipe across all Ninja machines.", path: "/search/", h1: "🔍 Search every recipe",
     inner: `<div class="tools"><input class="search" id="sq" type="search" placeholder="Try mango, ribs, energy, salsa…" aria-label="Search all recipes" autocomplete="off" autofocus></div>
   <div class="pills afilter" role="group" aria-label="Filter by appliance"><button class="pill on" type="button" data-a="">All</button>${ctx.appliances.map((a) => `<button class="pill" type="button" data-a="${a.key}">${a.emoji} ${esc(a.short)}</button>`).join("")}</div>
   <p class="status" id="scount" aria-live="polite"></p>
   <div class="grid" id="sres"></div>
+  <h2 class="h3">Browse by diet</h2><div class="chips">${DIETS.filter((d) => ctx.dietCounts[d.k]).map((d) => `<a class="chip" href="${dietUrl(d.k)}">${d.e} ${esc(d.label)}</a>`).join("")}</div>
   <h2 class="h3">Browse by tag</h2><div class="chips">${(ctx.tags || []).map((t) => `<a class="chip" href="/tags/${t.k}/">${t.emoji} ${esc(t.label)}</a>`).join("")}</div>`,
     scripts: [`<script>window.APPLIANCES=${json(Object.fromEntries(ctx.appliances.map((a) => [a.key, a.emoji + " " + a.short])))};</script>`, "/assets/search.js"] });
 }

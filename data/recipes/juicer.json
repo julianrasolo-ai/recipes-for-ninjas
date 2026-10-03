@@ -2565,6 +2565,325 @@
     "Prep 5 min",
     "2 glasses"
    ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [
+    "immune"
+   ],
+   "id": "j50",
+   "cat": "green",
+   "title": "Keto green juice (no fruit)",
+   "emoji": "🥒",
+   "blurb": "Cucumber, celery, spinach and lemon. About 5 g of sugar a glass instead of 30.",
+   "ing": [
+    "1 large cucumber",
+    "4 celery stalks",
+    "2 big handfuls spinach",
+    "1 lemon, peeled",
+    "½ inch ginger",
+    "Pinch of sea salt (optional)"
+   ],
+   "steps": [
+    "Fit the black filter. Cut cucumber and celery into 1-inch pieces.",
+    "Ball the spinach tightly and drop it in between cucumber pieces, so the hard veg pushes it through.",
+    "Juice the lemon and ginger last to rinse everything out.",
+    "Stir in the salt, pour over ice and drink within a day."
+   ],
+   "tags": [
+    "cuke",
+    "celery",
+    "spinach",
+    "lemon",
+    "ginger"
+   ],
+   "healthy": true,
+   "prep": "10 min",
+   "makes": "2 glasses",
+   "level": "Easy",
+   "press": "Black filter · less pulp",
+   "filter": "black",
+   "gear": [
+    "juicer-bottles",
+    "juicer-brush"
+   ],
+   "diet": [
+    "keto",
+    "low-sugar",
+    "vegan"
+   ],
+   "fix": {
+    "q": "Most green juices are secretly sugar bombs.",
+    "a": "Apples and pineapple add 20–30 g of sugar a glass. Cucumber gives the volume, lemon gives the brightness, and the salt makes it taste less grassy."
+   },
+   "key": {
+    "id": "juicer-bottles",
+    "why": "Fill to the very top and it keeps 2–3 days, so one juicing covers the week."
+   },
+   "healthier": "Already as lean as juice gets. Add parsley for more greens.",
+   "slug": "keto-green-juice-no-fruit",
+   "img": "/img/juice/j50.jpg",
+   "dfree": false,
+   "chips": [
+    "Prep 10 min",
+    "2 glasses"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [
+    "immune"
+   ],
+   "id": "j51",
+   "cat": "shot",
+   "title": "Week of ginger-turmeric shots",
+   "emoji": "💥",
+   "blurb": "Seven fiery 2 oz shots in one juicing. No clogging, no orange-stained everything.",
+   "ing": [
+    "8 oz fresh ginger (a big hand)",
+    "3 oz fresh turmeric",
+    "3 lemons, peeled",
+    "2 oranges, peeled",
+    "1 green apple",
+    "Pinch of black pepper per shot"
+   ],
+   "steps": [
+    "Fit the black filter. Slice the ginger and turmeric into thin coins across the grain. Long strands are what wrap the auger.",
+    "Alternate: a few coins, then a wedge of apple or orange. Juicy fruit flushes the fibre through.",
+    "Finish with the lemons.",
+    "Stir, pour into 2 oz bottles, add a pinch of pepper to each and refrigerate. Good for 5–7 days.",
+    "Rinse the parts right away. Turmeric stains if it dries."
+   ],
+   "tags": [
+    "ginger",
+    "turmeric",
+    "lemon",
+    "orange",
+    "apple"
+   ],
+   "healthy": true,
+   "prep": "15 min",
+   "makes": "7 shots",
+   "level": "Easy",
+   "press": "Black filter · less pulp",
+   "filter": "black",
+   "gear": [
+    "juicer-shot-bottles",
+    "juicer-brush"
+   ],
+   "diet": [
+    "vegan",
+    "low-sugar"
+   ],
+   "fix": {
+    "q": "Ginger jams the juicer and the yield is tiny.",
+    "a": "Ginger is all fibre. Cut it into coins across the grain and alternate with juicy fruit; you'll get double the juice and no clogs."
+   },
+   "key": {
+    "id": "juicer-shot-bottles",
+    "why": "Batch once, grab one every morning."
+   },
+   "healthier": "Already a good pick. Drop the orange for even less sugar.",
+   "slug": "week-of-ginger-turmeric-shots",
+   "img": "/img/juice/j51.jpg",
+   "dfree": false,
+   "chips": [
+    "Prep 15 min",
+    "7 shots"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "id": "j52",
+   "cat": "green",
+   "title": "Straight celery juice, no strings attached",
+   "emoji": "🥬",
+   "blurb": "16 oz of pure celery juice without strings wrapping the auger.",
+   "ing": [
+    "1 large bunch celery (about 9 stalks)"
+   ],
+   "steps": [
+    "Fit the black filter. Wash the celery and cut every stalk into 1-inch pieces. This is the whole trick.",
+    "Feed a handful at a time and let the auger clear before adding more.",
+    "Halfway through, run Reverse for 3 seconds if it slows.",
+    "Drink fresh, on its own. Bottle the rest filled to the top."
+   ],
+   "tags": [
+    "celery"
+   ],
+   "healthy": true,
+   "prep": "10 min",
+   "makes": "1 big glass",
+   "level": "Easy",
+   "press": "Black filter · less pulp",
+   "filter": "black",
+   "gear": [
+    "juicer-bottles",
+    "juicer-brush"
+   ],
+   "diet": [
+    "keto",
+    "low-sugar",
+    "vegan"
+   ],
+   "fix": {
+    "q": "Celery strings wrap around the auger and stall it.",
+    "a": "Whole stalks feed long fibres that wind up like string. 1-inch pieces cut the fibres short, so the pulp comes out dry and nothing wraps."
+   },
+   "key": {
+    "id": "juicer-bottles",
+    "why": "Celery juice separates fast. A full, airtight bottle keeps it green."
+   },
+   "healthier": "Already as simple as it gets.",
+   "slug": "straight-celery-juice-no-strings-attached",
+   "img": "/img/juice/j52.jpg",
+   "dfree": false,
+   "chips": [
+    "Prep 10 min",
+    "1 big glass"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [
+    "immune"
+   ],
+   "id": "j53",
+   "cat": "green",
+   "title": "Kale roll-up mean green",
+   "emoji": "🥗",
+   "blurb": "The classic mean green, plus the rolling trick that gets kale through the small chute.",
+   "ing": [
+    "6 kale leaves, stems on",
+    "1 cucumber",
+    "2 green apples",
+    "3 celery stalks",
+    "1 lemon, peeled",
+    "1 inch ginger"
+   ],
+   "steps": [
+    "Fit the black filter. Cut the apples and cucumber into wedges and the celery into 1-inch pieces.",
+    "Roll each kale leaf tightly into a cigar and fold it in half.",
+    "Feed a kale roll, then an apple or cucumber wedge. Repeat. The hard piece pushes the leaf through.",
+    "Lemon and ginger last. Stir and serve over ice."
+   ],
+   "tags": [
+    "kale",
+    "cuke",
+    "apple",
+    "celery",
+    "lemon",
+    "ginger"
+   ],
+   "healthy": true,
+   "prep": "10 min",
+   "makes": "2 glasses",
+   "level": "Easy",
+   "press": "Black filter · less pulp",
+   "filter": "black",
+   "gear": [
+    "juicer-bottles",
+    "juicer-brush"
+   ],
+   "diet": [
+    "vegan"
+   ],
+   "fix": {
+    "q": "Leafy greens are messy and barely juice in the small chute.",
+    "a": "Loose leaves flap around and spit out wet. Rolled tight and followed by something hard, they press as well as a cucumber."
+   },
+   "key": {
+    "id": "juicer-brush",
+    "why": "Kale leaves a fine green film on the screen. Brush it while it's still wet."
+   },
+   "healthier": "Use one apple and add an extra cucumber.",
+   "slug": "kale-roll-up-mean-green",
+   "img": "/img/juice/j53.jpg",
+   "dfree": false,
+   "chips": [
+    "Prep 10 min",
+    "2 glasses"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Adults only",
+     "Contains alcohol that isn't cooked off. Not for kids, pregnancy, or anyone who shouldn't drink."
+    ]
+   ],
+   "ben": [],
+   "id": "j54",
+   "cat": "fizz",
+   "title": "Fresh-pressed paloma (21+)",
+   "emoji": "🍹",
+   "blurb": "Grapefruit juice pressed a minute ago, tequila, lime and soda. The mix never tastes like this.",
+   "ing": [
+    "2 pink grapefruits, peeled",
+    "2 limes, peeled",
+    "4 oz blanco tequila",
+    "Sparkling water",
+    "Pinch of salt",
+    "Ice"
+   ],
+   "steps": [
+    "Fit the black filter. Juice the grapefruit and limes.",
+    "Stir the salt into the juice, then the tequila.",
+    "Pour over ice in two tall glasses and top with sparkling water.",
+    "Want a mocktail? Skip the tequila and add a splash more soda."
+   ],
+   "tags": [
+    "grapefruit",
+    "lime",
+    "fizz"
+   ],
+   "healthy": false,
+   "prep": "5 min",
+   "makes": "2 drinks",
+   "level": "Easy",
+   "press": "Black filter · less pulp",
+   "filter": "black",
+   "gear": [
+    "juicer-jug"
+   ],
+   "adult": true,
+   "diet": [
+    "21+",
+    "low-sugar",
+    "vegan"
+   ],
+   "fix": {
+    "q": "Bottled paloma mix is cloying and fake.",
+    "a": "Fresh grapefruit is sharp and only slightly sweet. Salt rounds off the bitterness, so you don't need syrup."
+   },
+   "key": {
+    "id": "juicer-jug",
+    "why": "Juice straight into the jug, mix and pour. One thing to wash."
+   },
+   "healthier": "Make it a mocktail: skip the tequila, double the soda.",
+   "slug": "fresh-pressed-paloma",
+   "img": "/img/juice/j54.jpg",
+   "dfree": false,
+   "chips": [
+    "Prep 5 min",
+    "2 drinks"
+   ]
   }
  ]
 }
