@@ -65,6 +65,20 @@ for (const { r, a } of all) {
   if (r.key && !products[r.key.id]) throw new Error(`${r.id}: unknown key product ${r.key.id}`);
 }
 
+// Button guides: which recipes use each button, and which buttons each recipe needs.
+const buttons = await readJSON("data/buttons.json");
+for (const a of appliances) {
+  const B = buttons[a.key]; if (!B) continue;
+  a.buttons = B;
+  for (const it of B.groups.flatMap((g) => g.items)) {
+    if (!it.match) continue;
+    const re = new RegExp(it.match, "i");
+    it.recipes = a.data.recipes.filter((r) => re.test(r.press || ""));
+    // Non-enumerable so the recipe JSON written for the browser stays free of this back-reference.
+    for (const r of it.recipes) { if (!r.btns) Object.defineProperty(r, "btns", { value: [] }); r.btns.push(it); }
+  }
+}
+
 const pages = [];
 const page = (path, html) => pages.push([path, html]);
 // Share cards made by scripts/og-images.mjs (only on builds that have the photos)
@@ -80,6 +94,7 @@ for (const a of appliances) {
   page(a.url, T.hub(ctx, a));
   for (const r of a.data.recipes) page(r.url, T.recipe(ctx, a, r));
   for (const c of a.data.cats) page(`/${a.key}/category/${c.k}/`, T.category(ctx, a, c));
+  if (a.buttons) page(`/${a.key}/buttons/`, T.buttonsPage(ctx, a));
   if (a.key === "creami") {
     page(`/${a.key}/help/`, T.helpHub(ctx, a, guides));
     for (const g of guides) page(`/${a.key}/help/${g.slug}/`, T.helpPage(ctx, a, g, guides));
@@ -138,7 +153,8 @@ for (const a of appliances) {
 await writeFile(join(OUT, "search-index.json"), JSON.stringify([...all.map(({ r, a }) => ({
   t: r.title, u: r.url, a: a.key, c: a.catMap[r.cat]?.n || "", i: r.img, cdn: r.cdn || "", e: r.emoji,
   s: [r.title, r.blurb, r.ing.join(" "), (r.ben || []).map((b) => a.benMap[b]?.[2]).join(" "), a.name, a.catMap[r.cat]?.n, r.macros ? "protein high-protein" : "", r.diets.map((d) => T.dietMap[d].label).join(" ")].join(" ").toLowerCase(),
-})), ...guides.map((g) => ({ t: g.h1, u: `/creami/help/${g.slug}/`, a: "creami", c: g.kind === "fix" ? "Fix" : "Guide", i: g.img || "", cdn: g.cdn || "", e: g.emoji,
+})), ...appliances.filter((a) => a.buttons).map((a) => ({ t: `${a.name}: what each button does`, u: `/${a.key}/buttons/`, a: a.key, c: "Guide", i: "", cdn: "", e: "🎛️",
+  s: [a.device, "buttons programs settings what does each button do", a.buttons.groups.flatMap((g) => g.items.map((i) => i.name)).join(" ")].join(" ").toLowerCase() })), ...guides.map((g) => ({ t: g.h1, u: `/creami/help/${g.slug}/`, a: "creami", c: g.kind === "fix" ? "Fix" : "Guide", i: g.img || "", cdn: g.cdn || "", e: g.emoji,
   s: [g.h1, g.title, g.desc, g.lead, "help fix guide"].join(" ").toLowerCase() }))]));
 
 // SEO + routing

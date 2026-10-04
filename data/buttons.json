@@ -1,0 +1,99 @@
+{
+ "_readme": "Button guides, one per machine, written for a 5th grader. 'match' is a regex tested against each recipe's press text to count and link recipes that use that button. Source: owner's guides (Ninja Swirl NC701 inspiration guide, NeverClog JC151 guide, Woodfire quick start guide) and the Detect Power Blender Pro panel.",
+ "creami": {
+  "h1": "What does each button do?",
+  "lead": "Your Ninja Swirl has two modes and a bunch of program buttons. First pick a mode, then pick the program that matches what's in your pint.",
+  "groups": [
+   { "h": "Step 1: pick a mode", "items": [
+    { "k": "scoop", "name": "Scoop", "e": "🥄", "what": "Makes it thick and firm, like ice cream from a tub. You eat it with a spoon or a scooper.", "match": "Scoop" },
+    { "k": "soft-serve", "name": "Soft Serve", "e": "🍦", "what": "Makes it softer and fluffier, like ice cream from a machine. Pick this if you want to swirl it into a cone with the handle.", "match": "Soft Serve" }
+   ]},
+   { "h": "Step 2: pick the program for your pint", "items": [
+    { "k": "ice-cream", "name": "Ice Cream", "e": "🍨", "modes": "Scoop or Soft Serve", "what": "For normal ice cream made with milk, cream and sugar. Comes out thick and creamy.", "match": "(?<!Lite )Ice Cream" },
+    { "k": "lite-ice-cream", "name": "Lite Ice Cream", "e": "🥑", "modes": "Scoop or Soft Serve", "what": "For low-sugar pints: keto, sugar-free, or sweetened with stevia, allulose or agave. Less sugar makes a pint freeze harder, so this button is made to soften it.", "tip": "Keto pint still crumbly? Add a spoon of milk and press Re-Spin.", "match": "Lite Ice Cream" },
+    { "k": "sorbet", "name": "Sorbet", "e": "🍓", "modes": "Scoop", "what": "For fruit and juice with no milk. Squish or blend the fruit first, or cover it with juice. Loose chunks of frozen fruit won't work.", "match": "Sorbet" },
+    { "k": "gelato", "name": "Gelato", "e": "🇮🇹", "modes": "Scoop", "what": "For custard you cooked on the stove first, usually with egg yolks. Comes out extra thick and rich, like Italian gelato. Don't use it on a mix you didn't cook.", "match": "Gelato" },
+    { "k": "frozen-yogurt", "name": "Frozen Yogurt", "e": "🥛", "modes": "Scoop or Soft Serve", "what": "For yogurt. You can even pour store-bought yogurt straight into the pint, freeze it, and press this.", "match": "Frozen Yogurt" },
+    { "k": "milkshake", "name": "Milkshake", "e": "🥤", "modes": "Scoop", "what": "Turns a frozen pint of ice cream into a thick shake. Make a hole, add a splash of milk, and press. Fast.", "match": "Milkshake" },
+    { "k": "creamifit", "name": "CreamiFit", "e": "💪", "modes": "Scoop or Soft Serve", "what": "For protein shakes and low-calorie, low-sugar mixes. It whips in extra air, so a thin protein shake turns light and fluffy.", "match": "CreamiFit" },
+    { "k": "fruit-whip", "name": "Fruit Whip", "e": "🍍", "modes": "Soft Serve", "what": "Fruit plus coconut milk or another dairy-free milk. Makes a light, airy fruit soft serve, like a pineapple whip at the theme park.", "match": "Fruit Whip" },
+    { "k": "frozen-custard", "name": "Frozen Custard", "e": "🍮", "modes": "Soft Serve", "what": "For a cooked egg custard when you want it soft and swirly instead of hard and scoopable. Extra rich.", "match": "Frozen Custard" }
+   ]},
+   { "h": "Step 3 (only if you need it)", "items": [
+    { "k": "re-spin", "name": "Re-Spin", "e": "🔁", "what": "A short extra spin. Press it when your ice cream looks dry, crumbly or like powder. Add 1 tablespoon of milk first for extra help.", "tip": "Very normal for protein and low-sugar pints. Many need one Re-Spin.", "match": "Re-?Spin" },
+    { "k": "mix-in", "name": "Mix-In", "e": "🍪", "modes": "Scoop", "what": "Adds chunks like cookies, candy, nuts or fruit after your ice cream is done. Dig a hole to the bottom, drop them in, then press Mix-In. It stirs gently so chunks stay chunks.", "tip": "Don't press Re-Spin after adding mix-ins. It smashes them.", "match": "Mix-?In" }
+   ]},
+   { "h": "The other parts", "items": [
+    { "k": "handle", "name": "Swirl handle", "e": "🎚️", "what": "Pull it to squeeze soft serve out of the nozzle. Pull a little for slow, more for fast. Turn the cone while you pull to make a swirl." },
+    { "k": "install-light", "name": "Install light", "e": "💡", "what": "If it blinks, something isn't on right. Check the bowl is locked, the paddle is on the lid, and (for soft serve) the dispense lid is on." },
+    { "k": "timer", "name": "Timer", "e": "⏱️", "what": "Counts down the minutes left. Colder pints can take a little longer." }
+   ]}
+  ]
+ },
+ "juicer": {
+  "h1": "What does each button do?",
+  "lead": "The NeverClog only has two buttons. The bigger choice is which filter you put in.",
+  "groups": [
+   { "h": "Buttons", "items": [
+    { "k": "start-stop", "name": "Start / Stop", "e": "▶️", "what": "Turns the juicer on and off. Turn it ON before you put food in. It runs for up to about 12 minutes, then stops by itself so it doesn't get too hot." },
+    { "k": "reverse", "name": "Reverse", "e": "↩️", "what": "Hold it down when food gets stuck. The spinning screw goes backward to loosen things. Let go, then press Start / Stop to keep juicing.", "tip": "Stringy stuff like celery or ginger? Cut it into small coins first and you'll rarely need Reverse." }
+   ]},
+   { "h": "Filters (Total Pulp Control)", "items": [
+    { "k": "black-filter", "name": "Black filter: less pulp", "e": "⚫", "what": "Smooth juice with only a little pulp. Best for hard stuff: apples, carrots, beets, celery, greens and ginger.", "match": "Black filter" },
+    { "k": "orange-filter", "name": "Orange filter: lots of pulp", "e": "🟠", "what": "Thicker juice with more pulp. Best for soft fruit: oranges, berries, mango, pineapple and watermelon.", "match": "Orange filter" }
+   ]},
+   { "h": "Good to know", "items": [
+    { "k": "chute", "name": "Feed chute", "e": "⬇️", "what": "Drop food in a few pieces at a time and let the machine pull it down. Cut pieces to about 2 inches. Roll leafy greens into tight little logs." },
+    { "k": "pulp", "name": "Pulp bin and jug", "e": "🫙", "what": "Juice comes out the spout into the jug. Dry leftover pulp goes in the bin. Rinse everything right away so nothing dries on." }
+   ]}
+  ]
+ },
+ "blender": {
+  "h1": "What does each button do?",
+  "lead": "The Detect blender can choose for you, or you can choose yourself. When in doubt, press BlendSense.",
+  "groups": [
+   { "h": "Let the blender decide", "items": [
+    { "k": "blendsense", "name": "BlendSense (Auto)", "e": "🧠", "what": "The smart button. The blender feels what's inside and how much, then picks the speed and time for you. Great for smoothies and shakes.", "tip": "Liquids go in first, frozen stuff and ice on top. That's how it blends best.", "match": "Auto|BlendSense" },
+    { "k": "thick", "name": "Thick Mode", "e": "🥣", "what": "For extra-thick things like smoothie bowls, thick shakes and frozen treats you eat with a spoon.", "match": "Thick" }
+   ]},
+   { "h": "Ice and chopping", "items": [
+    { "k": "crush", "name": "Crush", "e": "🧊", "what": "Breaks ice into small pieces for slushy drinks." },
+    { "k": "max-crush", "name": "Max Crush", "e": "❄️", "what": "Turns ice into snow. For frozen drinks, margaritas and frosty lemonade.", "match": "Max Crush" },
+    { "k": "large-chop", "name": "Large Chop", "e": "🔪", "what": "Chops food into big pieces. Good for chunky salsa.", "match": "Large Chop" },
+    { "k": "small-chop", "name": "Small Chop", "e": "🥕", "what": "Chops food into small pieces, like for a dip or slaw." },
+    { "k": "mince", "name": "Mince", "e": "🧄", "what": "Chops food super tiny, like garlic, herbs or onion for a sauce.", "match": "Mince" }
+   ]},
+   { "h": "You decide", "items": [
+    { "k": "speed", "name": "Speed 1 to 10", "e": "🎛️", "what": "Pick the speed yourself. 1 is slow, 10 is super fast. Start slow, then go faster. Best for sauces, soups and batters.", "match": "Speed" },
+    { "k": "pulse", "name": "Pulse", "e": "⚡", "what": "Short bursts while you hold it. Good for a quick final mix or when you want it chunky, not smooth.", "match": "pulse" },
+    { "k": "start-stop", "name": "Start / Stop", "e": "⏯️", "what": "Starts and stops whatever you picked. Press it any time to stop early." },
+    { "k": "install", "name": "Install light", "e": "💡", "what": "If it blinks, the jug or lid isn't locked on. Twist until it clicks. Some programs only light up when the right container is on." }
+   ]}
+  ]
+ },
+ "wood-fire": {
+  "h1": "What does each button do?",
+  "lead": "Turn the dial to pick how you want to cook. Then set the heat and the time, and decide if you want wood smoke.",
+  "groups": [
+   { "h": "The dial: how you want to cook", "items": [
+    { "k": "grill", "name": "Grill", "e": "🔥", "what": "Hot, like a backyard BBQ. For burgers, steak, chicken, hot dogs and veggies. Wait for ADD FOOD on the screen before you put food on.", "match": "Grill" },
+    { "k": "smoker", "name": "Smoker", "e": "💨", "what": "Low heat for a long time with real wood smoke. For ribs, pulled pork and brisket. The wood smoke turns on by itself.", "tip": "One scoop of pellets is enough. More pellets doesn't mean more smoke.", "match": "Smoker" },
+    { "k": "air-crisp", "name": "Air Crisp", "e": "🍟", "what": "Like an air fryer. A fan blows hot air to make wings, fries and nuggets crispy. Use the crisper basket.", "match": "Air Crisp" },
+    { "k": "bake", "name": "Bake", "e": "🍕", "what": "Like an oven outside. For pizza, cornbread, cobbler and meatloaf.", "match": "Bake" },
+    { "k": "roast", "name": "Roast", "e": "🍗", "what": "For big pieces of meat and whole veggies. Brown on the outside, juicy inside.", "match": "Roast" },
+    { "k": "broil", "name": "Broil", "e": "🧀", "what": "Strong heat from the top. Melts cheese and browns the top fast. Wood smoke doesn't work with this one.", "match": "Broil" },
+    { "k": "dehydrate", "name": "Dehydrate", "e": "🍎", "what": "Very low heat for hours to dry food out. For beef jerky and dried fruit.", "match": "Dehydrate" }
+   ]},
+   { "h": "The buttons", "items": [
+    { "k": "woodfire-flavor", "name": "Woodfire Flavor", "e": "🪵", "what": "Adds real wood smoke. Fill the pellet box with one scoop first, pick Grill, Air Crisp, Bake, Roast or Dehydrate, then press this. A little flame shows on the screen.", "match": "Woodfire flavor" },
+    { "k": "temp", "name": "Temp arrows", "e": "🌡️", "what": "Make it hotter or cooler. On Grill you pick LO, MED or HI." },
+    { "k": "time", "name": "Time arrows", "e": "⏲️", "what": "Set how long it cooks. It counts down and beeps, then says DONE." },
+    { "k": "start-stop", "name": "Start / Stop", "e": "⏯️", "what": "Starts cooking. The grill warms up first and shows ADD FOOD when it's ready. Holding it for 4 seconds skips the warm-up, but for grilling, always let it warm up." }
+   ]},
+   { "h": "Good to know", "items": [
+    { "k": "thermometer", "name": "Thermometer", "e": "🌡️", "what": "Pro models come with a probe. Push it into the thickest part of the meat. Chicken is done at 165°F, burgers at 160°F, pork and fish at 145°F." },
+    { "k": "screen", "name": "ADD FOOD and DONE", "e": "📟", "what": "ADD FOOD means it's hot and ready for food. DONE means time is up. Check the inside temperature before you eat." }
+   ]}
+  ]
+ }
+}

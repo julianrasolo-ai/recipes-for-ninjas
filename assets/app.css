@@ -423,3 +423,19 @@ dialog.pop{max-width:520px}
 .dcard small{color:var(--muted);font-weight:700;font-size:13.5px;line-height:1.4}
 #cookmode[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
 @media print{.keyp,.fixbox .fq{display:none!important}.stepimg{max-width:240px}}
+
+/* Button guides */
+.btnhelp{margin:6px 0 0;font-size:14px;font-weight:800;color:var(--muted)}
+.btnhelp a{color:var(--a,var(--grape))}
+.btngrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.btncard{background:var(--card);border-radius:18px;padding:14px 16px;box-shadow:var(--shadow);scroll-margin-top:80px}
+.btncard:target{outline:3px solid var(--grape)}
+.btncard .bh{display:flex;align-items:center;gap:10px}
+.btncard .be{flex:none;width:44px;height:44px;border-radius:12px;background:var(--grapet);display:grid;place-items:center;font-size:24px}
+.btncard h3{margin:0;font:600 18px "Fredoka",sans-serif}
+.btncard small{color:var(--muted);font-weight:800;font-size:12px}
+.btncard p{margin:10px 0 0;font-size:15.5px;line-height:1.45}
+.btncard .tip{background:var(--sunt);border-radius:12px;padding:8px 10px;font-size:14px}
+.btncard details{margin-top:10px;font-size:14px}
+.btncard summary{cursor:pointer;font-weight:800;color:var(--grape)}
+.btncard ul{margin:6px 0 0;padding-left:18px}

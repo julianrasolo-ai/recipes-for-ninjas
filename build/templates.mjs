@@ -257,6 +257,7 @@ ${grid(list.map((r) => ({ a, r })))}
     </div>
   </div>
   ${(() => { const ds = DIETS.filter((d) => D.recipes.some((r) => (r.diets || []).includes(d.k))); return ds.length ? `<div class="bens dietrow"><span class="lbl">Diet:</span>${ds.map((d) => `<a class="bchip" href="${dietUrl(d.k)}#${a.key}">${d.e} ${esc(d.short)}</a>`).join("")}</div>` : ""; })()}
+  ${a.buttons ? `<p class="btnhelp"><a href="/${a.key}/buttons/">🎛️ New to the ${esc(a.short.toLowerCase())} machine? What each button does →</a></p>` : ""}
   ${hasBen ? `<div class="bens" id="bens" aria-label="Filter by benefit"><span class="lbl">I want:</span>${(D.bens || []).filter((b) => D.recipes.some((r) => (r.ben || []).includes(b[0]))).map((b) => `<button class="bchip" type="button" data-b="${b[0]}" aria-pressed="false">${b[1]} ${esc(b[2])}</button>`).join("")}</div>` : ""}
   <nav class="nav" aria-label="Menu sections"><div class="navrow" id="navrow" style="--n:${D.cats.length}">${D.cats.map((c) => `<button class="tab" type="button" data-c="${c.k}" data-t="${c.k}" aria-label="${esc(c.n)}"><span class="te">${c.e}</span><span>${esc(c.s || c.n)}</span></button>`).join("")}</div></nav>
   <div id="sections">${secs}</div>
@@ -317,6 +318,7 @@ export function recipe(ctx, a, r) {
     <div class="chips">${r.chips.map((x) => `<span class="chip">${esc(x)}</span>`).join("")}${r.macros ? `<span class="chip g">💪 ${r.macros.protein} g protein · ${r.macros.kcal} kcal / pint</span>` : ""}${r.adult ? '<span class="chip">🍸 21+ only</span>' : ""}</div>
     ${(r.diets || []).length ? `<div class="chips diets">${r.diets.map((d) => `<a class="chip d" href="${dietUrl(d)}">${dietMap[d].e} ${esc(dietMap[d].short)}</a>`).join("")}</div>` : ""}
     <div class="press"><small>${esc(a.pressLabel)}</small> ${esc(r.press)}</div>
+    ${a.buttons ? `<p class="btnhelp noprint">🎛️ ${(r.btns || []).length ? `What does ${r.btns.slice(0, 3).map((b) => `<a href="/${a.key}/buttons/#${b.k}">${esc(b.name.split(":")[0])}</a>`).join(" / ")} do?` : `<a href="/${a.key}/buttons/">What do the buttons do?</a>`}</p>` : ""}
     ${fixKey}
     <div class="row noprint"><button class="btn ghost" id="cookmode" type="button" aria-pressed="false" hidden>🍳 Cook mode: keep screen on</button></div>
     <div class="likebox"><b>❤️ Who likes this?</b><div class="who">${site.supabase ? "" : site.family.map((p) => `<button class="who-b" type="button" data-p="${p}" data-like="${p}" aria-pressed="false">${p}</button>`).join("")}</div><p class="sync" id="sync"></p></div>
@@ -379,6 +381,20 @@ export function dietPage(ctx, d, items) {
   ${keys.length ? `<section class="gear-used"><h3>Stock up for ${esc(d.short.toLowerCase())}</h3><div class="gear-row">${keys.map((p) => productCard(p, "diet")).join("")}</div>${affNote(ctx.site)}</section>` : ""}
   <h2 class="h3">Other diets</h2><div class="chips">${others.map((x) => `<a class="chip" href="${dietUrl(x.k)}">${x.e} ${esc(x.label)}</a>`).join("")}</div>
   ${emailBox(ctx.site, "diet")}` });
+}
+/* Button guide: every button on the machine in kid-simple words, with recipes that use it. FAQ schema for "what does X do". */
+export function buttonsPage(ctx, a) {
+  const B = a.buttons, items = B.groups.flatMap((g) => g.items);
+  const faq = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: items.map((i) => ({ "@type": "Question", name: `What does ${i.name} do on the ${a.device}?`, acceptedAnswer: { "@type": "Answer", text: i.what + (i.tip ? " " + i.tip : "") } })) };
+  const card = (i) => `<article class="btncard" id="${i.k}"><div class="bh"><span class="be" aria-hidden="true">${i.e || "🔘"}</span><div><h3>${esc(i.name)}</h3>${i.modes ? `<small>${esc(i.modes)}</small>` : ""}</div></div>
+  <p>${esc(i.what)}</p>${i.tip ? `<p class="tip">💡 ${esc(i.tip)}</p>` : ""}
+  ${(i.recipes || []).length ? `<details><summary>${i.recipes.length} recipe${i.recipes.length > 1 ? "s" : ""} use this</summary><ul>${i.recipes.slice(0, 12).map((r) => `<li><a href="${r.url}">${r.emoji} ${esc(r.title)}</a></li>`).join("")}</ul></details>` : ""}</article>`;
+  return listing(ctx, { title: `${a.device} buttons explained`, desc: `What every button on the ${a.device} does, in plain words: ${items.slice(0, 6).map((i) => i.name).join(", ")} and more.`, path: `/${a.key}/buttons/`,
+    crumbs: `<a href="/">Home</a> › <a href="${a.url}">${esc(a.name)}</a> › Buttons`, h1: `🎛️ ${esc(B.h1)}`, lead: B.lead, heading: `${a.emoji} ${esc(a.name)}`, jsonld: [faq],
+    inner: `<nav class="chips">${items.map((i) => `<a class="chip" href="#${i.k}">${i.e || ""} ${esc(i.name)}</a>`).join("")}</nav>
+  ${B.groups.map((g) => `<section class="sec"><h2 class="h3">${esc(g.h)}</h2><div class="btngrid">${g.items.map(card).join("")}</div></section>`).join("")}
+  <p class="disc">Plain-words summary of the owner's guide. Your model's panel may differ a little; the manual that came with it wins.</p>
+  <p><a class="btn" href="${a.url}">See all ${esc(a.name.toLowerCase())} recipes →</a></p>` });
 }
 export function search(ctx) {
   return listing(ctx, { title: "Search", desc: "Search every recipe across all Ninja machines.", path: "/search/", h1: "🔍 Search every recipe",
