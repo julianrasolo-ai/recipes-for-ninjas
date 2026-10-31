@@ -263,6 +263,78 @@
    "icon": "🧺",
    "note": "For veggies and fish that fall through the grate.",
    "url": "https://www.amazon.com/s?k=small+grill+basket+perforated"
+  },
+  {
+   "id": "waffle-tongs",
+   "appliance": "waffle",
+   "rank": 1,
+   "name": "Silicone-tipped tongs",
+   "icon": "🥢",
+   "note": "The owner’s guide says no metal tools on the plates. These lift waffles out cleanly.",
+   "url": "https://www.amazon.com/s?k=silicone+tipped+tongs"
+  },
+  {
+   "id": "waffle-rack",
+   "appliance": "waffle",
+   "rank": 2,
+   "name": "Wire cooling rack",
+   "icon": "🧺",
+   "note": "Keeps waffles crisp instead of steaming soggy on a plate.",
+   "url": "https://www.amazon.com/s?k=wire+cooling+rack+baking"
+  },
+  {
+   "id": "waffle-mixer",
+   "appliance": "waffle",
+   "rank": 3,
+   "name": "Hand mixer",
+   "icon": "🌀",
+   "note": "Whips egg whites for extra-fluffy waffles in 2 minutes.",
+   "url": "https://www.amazon.com/s?k=electric+hand+mixer"
+  },
+  {
+   "id": "waffle-almond-flour",
+   "appliance": "waffle",
+   "rank": 4,
+   "name": "Blanched almond flour",
+   "icon": "🥑",
+   "note": "Fine almond flour for keto chaffles that taste like bread.",
+   "url": "https://www.amazon.com/s?k=blanched+almond+flour+fine"
+  },
+  {
+   "id": "waffle-protein-mix",
+   "appliance": "waffle",
+   "rank": 5,
+   "name": "Protein pancake & waffle mix",
+   "icon": "💪",
+   "note": "An easy way to make every waffle high-protein.",
+   "url": "https://www.amazon.com/s?k=protein+pancake+waffle+mix"
+  },
+  {
+   "id": "waffle-gf-flour",
+   "appliance": "waffle",
+   "rank": 6,
+   "name": "1:1 gluten-free flour",
+   "icon": "🌾",
+   "note": "A cup-for-cup blend with xanthan gum already in it.",
+   "url": "https://www.amazon.com/s?k=1+to+1+gluten+free+baking+flour"
+  },
+  {
+   "id": "waffle-flax",
+   "appliance": "waffle",
+   "rank": 7,
+   "name": "Ground flaxseed",
+   "icon": "🌱",
+   "note": "The easy egg replacer for vegan waffles.",
+   "url": "https://www.amazon.com/s?k=ground+flaxseed+meal"
+  },
+  {
+   "id": "waffle-maple",
+   "appliance": "waffle",
+   "rank": 8,
+   "name": "Pure maple syrup",
+   "icon": "🍁",
+   "note": "Real maple, not pancake syrup. Grade A amber.",
+   "url": "https://www.amazon.com/s?k=pure+maple+syrup+grade+a"
   }
  ],
  "compat": {

@@ -206,7 +206,7 @@ export function home(ctx, html) {
   const cfg = `<script>window.SITE_CONFIG=${json(publicConfig(ctx.site))};</script>`;
   const s = ctx.site, img = s.url + ctx.og.home, big = ctx.og.home.includes("/og/");
   const title = s.name + " — What are we making?";
-  const desc = "Family recipes for Ninja machines: Creami ice cream, NeverClog juices, Detect blender smoothies and Woodfire grill BBQ. Pick a machine and start cooking.";
+  const desc = "Family recipes for Ninja machines: Creami ice cream, NeverClog juices, Detect blender smoothies, Woodfire grill BBQ and Belgian waffles. Pick a machine and start cooking.";
   const social = `<meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${s.url}/">
 <meta property="og:type" content="website">
@@ -257,7 +257,7 @@ ${grid(list.map((r) => ({ a, r })))}
     </div>
   </div>
   ${(() => { const ds = DIETS.filter((d) => D.recipes.some((r) => (r.diets || []).includes(d.k))); return ds.length ? `<div class="bens dietrow"><span class="lbl">Diet:</span>${ds.map((d) => `<a class="bchip" href="${dietUrl(d.k)}#${a.key}">${d.e} ${esc(d.short)}</a>`).join("")}</div>` : ""; })()}
-  ${a.buttons ? `<p class="btnhelp"><a href="/${a.key}/buttons/">🎛️ New to the ${esc(a.short.toLowerCase())} machine? What each button does →</a></p>` : ""}
+  ${a.buttons ? `<p class="btnhelp"><a href="/${a.key}/buttons/">🎛️ New to your ${esc(a.device)}? What each button does →</a></p>` : ""}
   ${hasBen ? `<div class="bens" id="bens" aria-label="Filter by benefit"><span class="lbl">I want:</span>${(D.bens || []).filter((b) => D.recipes.some((r) => (r.ben || []).includes(b[0]))).map((b) => `<button class="bchip" type="button" data-b="${b[0]}" aria-pressed="false">${b[1]} ${esc(b[2])}</button>`).join("")}</div>` : ""}
   <nav class="nav" aria-label="Menu sections"><div class="navrow" id="navrow" style="--n:${D.cats.length}">${D.cats.map((c) => `<button class="tab" type="button" data-c="${c.k}" data-t="${c.k}" aria-label="${esc(c.n)}"><span class="te">${c.e}</span><span>${esc(c.s || c.n)}</span></button>`).join("")}</div></nav>
   <div id="sections">${secs}</div>
@@ -364,7 +364,7 @@ export function tag(ctx, t) {
 /* Diet pages: one per diet, recipes grouped by machine, plus the pantry items those recipes rely on. */
 export function dietHub(ctx, counts) {
   const cards = DIETS.filter((d) => counts[d.k]).map((d) => `<a class="dcard" href="${dietUrl(d.k)}"><span class="de">${d.e}</span><b>${esc(d.label)}</b><small>${counts[d.k]} recipes · ${esc(d.lead)}</small></a>`).join("");
-  return listing(ctx, { title: "Recipes by diet", desc: "Keto, high-protein, dairy-free, vegan, low-sugar and 21+ recipes for the Ninja Creami, juicer, blender and Woodfire grill.", path: "/diet/",
+  return listing(ctx, { title: "Recipes by diet", desc: "Keto, high-protein, dairy-free, vegan, low-sugar and 21+ recipes for the Ninja Creami, juicer, blender, Woodfire grill and waffle maker.", path: "/diet/",
     crumbs: `<a href="/">Home</a> › Diets`, h1: "🥗 Eat your way", lead: "Pick a diet. Every recipe works on a Ninja machine and fixes a problem owners actually complain about.",
     inner: `<div class="dgrid">${cards}</div>` });
 }
@@ -372,7 +372,7 @@ export function dietPage(ctx, d, items) {
   const by = ctx.appliances.map((a) => [a, items.filter((it) => it.a.key === a.key)]).filter(([, l]) => l.length);
   const keys = [...new Set(items.flatMap(({ r }) => [r.key?.id, ...(r.gear || [])]).filter(Boolean))].map((id) => ctx.products[id]).filter((p) => p && p.href).slice(0, 6);
   const others = DIETS.filter((x) => x.k !== d.k && ctx.dietCounts[x.k]);
-  return listing(ctx, { title: `${d.label} Ninja recipes`, desc: `${items.length} ${d.label.toLowerCase()} recipes for the Ninja Creami, juicer, blender and Woodfire grill. ${d.lead}`, path: dietUrl(d.k),
+  return listing(ctx, { title: `${d.label} Ninja recipes`, desc: `${items.length} ${d.label.toLowerCase()} recipes for the Ninja Creami, juicer, blender, Woodfire grill and waffle maker. ${d.lead}`, path: dietUrl(d.k),
     crumbs: `<a href="/">Home</a> › <a href="/diet/">Diets</a> › ${esc(d.label)}`, h1: `${d.e} ${esc(d.label)}`, lead: d.lead,
     jsonld: [{ "@context": "https://schema.org", "@type": "CollectionPage", name: `${d.label} recipes`, description: d.lead, url: ctx.site.url + dietUrl(d.k) }],
     inner: `<p class="note">${esc(d.pain)}</p>
@@ -476,9 +476,9 @@ export function thanks(ctx) {
 /* ---------- newsletter sign-up page ---------- */
 export function join(ctx) {
   const s = ctx.site;
-  return listing(ctx, { title: "Get Ninja recipes by email", desc: "Join Recipes By Ninjas: one new recipe or fix a week for your Creami, juicer, blender and Woodfire grill. Free, no spam.", path: "/join/",
+  return listing(ctx, { title: "Get Ninja recipes by email", desc: "Join Recipes By Ninjas: one new recipe or fix a week for your Creami, juicer, blender, Woodfire grill and waffle maker. Free, no spam.", path: "/join/",
     h1: "📬 Get one new Ninja recipe a week",
-    lead: "New recipes, protein pints and fixes for your Creami, juicer, blender and Woodfire grill. Free, about once a week, unsubscribe any time.",
+    lead: "New recipes, protein pints and fixes for your Creami, juicer, blender, Woodfire grill and waffle maker. Free, about once a week, unsubscribe any time.",
     inner: `<ul class="join-why"><li>🍦 New Creami pints, including high-protein and 21+ ones</li><li>🔥 Grill and smoker recipes that use your Woodfire's real settings</li><li>🛠️ Quick fixes for crumbly, icy or stuck pints</li><li>🥷 Seasonal ideas picked by our ninja chef</li></ul>` + (s.email.enabled ? emailBox(s, "join-page") : "<p>Email sign-up opens soon.</p>") });
 }
 

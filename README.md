@@ -1,13 +1,14 @@
 # Recipes By Ninjas
 
-Family recipe site for four Ninja machines. The homepage is an animated kitchen: a ninja chef with fruit orbiting around him; tap a machine and he throws its ingredients in, then the recipes open.
+Family recipe site for five Ninja machines. The homepage is an animated kitchen: a ninja chef with fruit orbiting around him; tap a machine and he throws its ingredients in, then the recipes open.
 
 | Hub | Machine | Recipes |
 |---|---|---|
 | `/creami/` | Ninja Swirl by CREAMi | 78 |
 | `/juicer/` | Ninja NeverClog Cold Press Juicer | 42 |
 | `/blender/` | Ninja Detect Power Blender Pro | 24 |
-| `/wood-fire/` | Ninja Woodfire Outdoor Grill & Smoker | 24 |
+| `/wood-fire/` | Ninja Woodfire Outdoor Grill & Smoker | 39 |
+| `/waffle/` | Ninja Belgian Waffle Maker PRO (BW1001, vertical pour-in) | 23 |
 
 On the hubs, tapping a recipe opens the familiar pop-up sheet (and the address bar shows its page URL). Every recipe also has its own page (`/blender/strawberry-banana/`) with Google Recipe schema, plus category pages, tag pages (`/tags/energy/`), site-wide search (`/search/`), an accessories page (`/gear/`, grouped by machine, with a CREAMi pint compatibility table), a shop (`/shop/`) and legal pages. Favorites for the family sync across devices.
 
@@ -30,7 +31,7 @@ Import the GitHub repo in Netlify. Settings come from `netlify.toml` (build `npm
 
 ```
 data/site.json            switches: ads, consent, analytics, email, members, shop, affiliate tag
-data/appliances.json      the four machines: names, labels, colours, homepage throw items
+data/appliances.json      the five machines: names, labels, colours, homepage throw items
 data/recipes/*.json       recipes (one file per machine)
 data/products.json        every product + affiliate URL (one place); pages link via /go/<id>
 data/images.json          Higgsfield image sources

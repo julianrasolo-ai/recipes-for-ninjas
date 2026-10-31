@@ -154,5 +154,44 @@
   "foot": "Use a meat thermometer: chicken 165°F, ground beef 160°F, pork and fish 145°F. ½ cup of pellets is plenty for smoke.",
   "intro": "Grilled, smoked, air-crisped and baked recipes for the Ninja Woodfire Outdoor Grill & Smoker.",
   "brand": "Ninja Woodfire grill"
+ },
+ {
+  "key": "waffle",
+  "section": "waffle",
+  "theme": "waffle",
+  "name": "Waffles",
+  "emoji": "🧇",
+  "device": "Ninja Belgian Waffle Maker PRO",
+  "short": "Waffles",
+  "imgDir": "waffle",
+  "machine": "waffle-maker",
+  "fly": [
+   "strawberry",
+   "banana",
+   "blueberry"
+  ],
+  "pressLabel": "SHADE",
+  "toggle": "Healthy",
+  "toggleChip": "🌿 Healthy",
+  "search": "Search chocolate, keto, garlic…",
+  "pantry": "Flour, sugar, baking powder, salt",
+  "haveNote": "Tap what you have. Flour, sugar, baking powder and salt are assumed.",
+  "focus": [
+   [
+    "all",
+    "Anything"
+   ],
+   [
+    "healthy",
+    "🌿 Healthy"
+   ],
+   [
+    "light",
+    "🥑 Diet"
+   ]
+  ],
+  "foot": "Wait for the green light, then pour ¾ to 1 cup of batter in one quick pour. Batter only: put chips, fruit and cheese on top after. Too thick to pour? Add water 1 tablespoon at a time.",
+  "intro": "Belgian, keto, protein, savory and party waffles for the Ninja Belgian Waffle Maker PRO, the vertical pour-in waffle maker.",
+  "brand": "Ninja waffle maker"
  }
 ]

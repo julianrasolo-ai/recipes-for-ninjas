@@ -1,7 +1,7 @@
 /* /account/: sign in, signup questionnaire, household dashboard. Runs as a module after auth.js. */
 const root = document.getElementById("acct");
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
-const APPLIANCES = [["creami", "🍦 Creami ice cream maker"], ["juicer", "🧃 NeverClog juicer"], ["blender", "🥤 Detect blender"], ["wood-fire", "🔥 Woodfire grill"]];
+const APPLIANCES = [["creami", "🍦 Creami ice cream maker"], ["juicer", "🧃 NeverClog juicer"], ["blender", "🥤 Detect blender"], ["wood-fire", "🔥 Woodfire grill"], ["waffle", "🧇 Belgian waffle maker"]];
 const DIETS = ["vegetarian", "vegan", "pescatarian", "dairy-free", "gluten-free"];
 const ALLERGIES = ["peanut", "tree nut", "dairy", "egg", "gluten", "soy", "shellfish", "fish", "sesame"];
 const GOALS = [["healthy", "Healthier"], ["protein", "More protein"], ["quick", "Quick"]];

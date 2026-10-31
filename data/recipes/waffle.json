@@ -1,0 +1,1529 @@
+{
+ "labels": {
+  "flour": "Flour",
+  "sugar": "Sugar",
+  "mix": "Pancake & waffle mix",
+  "mixcake": "Cake mix",
+  "mixbrownie": "Brownie mix",
+  "corn": "Cornmeal or cornbread mix",
+  "gfflour": "Gluten-free flour",
+  "almondflour": "Almond or coconut flour",
+  "oats": "Rolled oats",
+  "flax": "Ground flaxseed",
+  "milk": "Milk",
+  "buttermilk": "Buttermilk",
+  "plantmilk": "Oat or plant milk",
+  "egg": "Eggs",
+  "butter": "Butter",
+  "oil": "Oil",
+  "cream": "Heavy cream",
+  "ccheese": "Cream cheese",
+  "cottage": "Cottage cheese",
+  "cheese": "Parmesan or mozzarella",
+  "mayo": "Mayo or sour cream",
+  "prot": "Protein powder",
+  "banana": "Bananas",
+  "pumpkin": "Pumpkin purée",
+  "sweetpot": "Sweet potato",
+  "berry": "Berries",
+  "cocoa": "Cocoa powder",
+  "choc": "Chocolate chips",
+  "cinnamon": "Cinnamon",
+  "garlic": "Garlic powder",
+  "herbs": "Italian herbs",
+  "maple": "Maple syrup",
+  "icecream": "Ice cream",
+  "ham": "Ham or turkey",
+  "chicken": "Chicken",
+  "booze": "Bourbon"
+ },
+ "groups": [
+  [
+   "Baking",
+   [
+    "flour",
+    "sugar",
+    "mix",
+    "mixcake",
+    "mixbrownie",
+    "corn",
+    "gfflour",
+    "almondflour",
+    "oats",
+    "flax"
+   ]
+  ],
+  [
+   "Dairy & eggs",
+   [
+    "milk",
+    "buttermilk",
+    "plantmilk",
+    "egg",
+    "butter",
+    "oil",
+    "cream",
+    "ccheese",
+    "cottage",
+    "cheese",
+    "mayo",
+    "prot"
+   ]
+  ],
+  [
+   "Fruit & veg",
+   [
+    "banana",
+    "pumpkin",
+    "sweetpot",
+    "berry"
+   ]
+  ],
+  [
+   "Flavor",
+   [
+    "cocoa",
+    "choc",
+    "cinnamon",
+    "garlic",
+    "herbs",
+    "maple"
+   ]
+  ],
+  [
+   "Extras",
+   [
+    "icecream",
+    "ham",
+    "chicken",
+    "booze"
+   ]
+  ]
+ ],
+ "cats": [
+  {
+   "k": "classic",
+   "n": "Classic",
+   "e": "🧇",
+   "d": "The everyday waffles. Pour, wait for the beep, done.",
+   "s": "Classic"
+  },
+  {
+   "k": "treat",
+   "n": "Sweet treats",
+   "e": "🍫",
+   "d": "Chocolate, banana bread and cake-mix waffles. Most use the Specialty setting.",
+   "s": "Sweet"
+  },
+  {
+   "k": "savory",
+   "n": "Savory & sandwiches",
+   "e": "🧄",
+   "d": "Garlic-Parmesan waffle bread, paninis, cornbread and chicken & waffles.",
+   "s": "Savory"
+  },
+  {
+   "k": "light",
+   "n": "Keto, protein & free-from",
+   "e": "🥑",
+   "d": "Keto chaffles, protein waffles, gluten-free and vegan.",
+   "s": "Diet"
+  },
+  {
+   "k": "party",
+   "n": "Party & 21+",
+   "e": "🎉",
+   "d": "Ice cream sandwiches, waffle cake and a boozy brunch.",
+   "s": "Party"
+  }
+ ],
+ "recipes": [
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f01",
+   "cat": "classic",
+   "title": "Classic Belgian waffles",
+   "emoji": "🧇",
+   "blurb": "Golden outside, soft inside, with deep square pockets for syrup. The one to learn first.",
+   "ing": [
+    "2 cups all-purpose flour",
+    "2 tbsp sugar",
+    "2 tsp baking powder",
+    "½ tsp salt",
+    "1¾ cups milk",
+    "2 eggs",
+    "⅓ cup melted butter or oil",
+    "1 tsp vanilla"
+   ],
+   "steps": [
+    "Turn the dial to 3. The red light means it's heating.",
+    "Whisk the flour, sugar, baking powder and salt in a big bowl. In another bowl whisk the milk, eggs, butter and vanilla.",
+    "Pour the wet into the dry and whisk until just smooth. Rest 5 minutes.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs.",
+    "Keep waffles warm on a rack in a 200°F oven while you make the rest."
+   ],
+   "tags": [
+    "flour",
+    "sugar",
+    "milk",
+    "egg",
+    "butter"
+   ],
+   "prep": "10 min",
+   "cook": "5 min per waffle",
+   "makes": "5 waffles",
+   "press": "Shade 3",
+   "healthy": false,
+   "gear": [
+    "waffle-tongs",
+    "waffle-rack"
+   ],
+   "fix": {
+    "q": "The waffle came out half-empty.",
+    "a": "Too little batter. The machine needs at least ½ cup to start, and ¾ cup to fill the square. The batter rises to fill the rest while it cooks."
+   },
+   "key": {
+    "id": "waffle-tongs",
+    "why": "The guide says no metal tools. Silicone tongs lift waffles out without scratching the plates."
+   },
+   "healthier": "Use half whole-wheat flour and swap the butter for oil.",
+   "slug": "classic-belgian-waffles",
+   "img": "/img/waffle/f01.jpg",
+   "badge": "🧇 Shade 3",
+   "chips": [
+    "Prep 10 min",
+    "Cook 5 min per waffle",
+    "5 waffles"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f02",
+   "cat": "classic",
+   "title": "Extra-crispy buttermilk waffles",
+   "emoji": "🥞",
+   "blurb": "Tangy buttermilk and a little cornstarch for a shell that stays crunchy.",
+   "ing": [
+    "1¾ cups flour",
+    "¼ cup cornstarch",
+    "2 tbsp sugar",
+    "1½ tsp baking powder",
+    "½ tsp baking soda",
+    "½ tsp salt",
+    "2 cups buttermilk",
+    "2 eggs",
+    "6 tbsp melted butter"
+   ],
+   "steps": [
+    "Turn the dial to 4 for extra crunch.",
+    "Whisk the dry ingredients. Whisk the buttermilk, eggs and butter, then mix the two until just combined. Lumps are fine.",
+    "Buttermilk batter is thick. If it won't flow, stir in water 1 tablespoon at a time.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs.",
+    "Set each waffle on a cooling rack, not a plate. Steam on a plate makes them soggy."
+   ],
+   "tags": [
+    "flour",
+    "sugar",
+    "buttermilk",
+    "egg",
+    "butter"
+   ],
+   "prep": "10 min",
+   "cook": "5 min per waffle",
+   "makes": "5 waffles",
+   "press": "Shade 4",
+   "healthy": false,
+   "gear": [
+    "waffle-rack",
+    "waffle-tongs"
+   ],
+   "fix": {
+    "q": "My waffles go soft a minute after they come out.",
+    "a": "Steam gets trapped underneath. Cornstarch makes a crisper shell, and a wire rack lets the steam escape so they stay crunchy."
+   },
+   "key": {
+    "id": "waffle-rack",
+    "why": "A rack is the difference between crispy and soggy."
+   },
+   "healthier": "Use low-fat buttermilk and 4 tbsp butter.",
+   "slug": "extra-crispy-buttermilk-waffles",
+   "img": "/img/waffle/f02.jpg",
+   "badge": "🧇 Shade 4",
+   "chips": [
+    "Prep 10 min",
+    "Cook 5 min per waffle",
+    "5 waffles"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f03",
+   "cat": "classic",
+   "title": "Cloud waffles (whipped egg whites)",
+   "emoji": "☁️",
+   "blurb": "Separate the eggs and whip the whites. The fix for waffles that taste dense.",
+   "ing": [
+    "2 cups flour",
+    "1 tbsp sugar",
+    "2 tsp baking powder",
+    "½ tsp salt",
+    "1¾ cups milk",
+    "3 eggs, separated",
+    "⅓ cup oil",
+    "1 tsp vanilla"
+   ],
+   "steps": [
+    "Turn the dial to 3.",
+    "Whisk the flour, sugar, baking powder and salt. Whisk the milk, egg yolks, oil and vanilla, then stir into the flour.",
+    "Beat the egg whites until they hold soft peaks, about 2 minutes with a hand mixer.",
+    "Fold the whites in gently with a spatula. A few white streaks are fine.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs."
+   ],
+   "tags": [
+    "flour",
+    "sugar",
+    "milk",
+    "egg",
+    "oil"
+   ],
+   "prep": "15 min",
+   "cook": "5 min per waffle",
+   "makes": "5 waffles",
+   "press": "Shade 3",
+   "healthy": false,
+   "gear": [
+    "waffle-mixer",
+    "waffle-tongs"
+   ],
+   "fix": {
+    "q": "Waffles come out dense, not light and fluffy.",
+    "a": "Reviewers say this about every vertical waffle maker. Whipped egg whites add air that baking powder alone can't, and the batter still pours."
+   },
+   "key": {
+    "id": "waffle-mixer",
+    "why": "Whips the whites in 2 minutes instead of 10 by hand."
+   },
+   "healthier": "Use 2% milk and 3 tbsp oil.",
+   "slug": "cloud-waffles-whipped-egg-whites",
+   "img": "/img/waffle/f03.jpg",
+   "badge": "🧇 Shade 3",
+   "chips": [
+    "Prep 15 min",
+    "Cook 5 min per waffle",
+    "5 waffles"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f04",
+   "cat": "classic",
+   "title": "Box-mix waffles that taste homemade",
+   "emoji": "📦",
+   "blurb": "Pancake mix plus three fridge staples. Nobody will know.",
+   "ing": [
+    "2 cups pancake and waffle mix",
+    "1¼ cups milk",
+    "1 egg",
+    "3 tbsp melted butter",
+    "1 tsp vanilla",
+    "1 tsp sugar",
+    "Pinch of cinnamon"
+   ],
+   "steps": [
+    "Turn the dial to 3.",
+    "Whisk everything until smooth. The butter and egg are what make it taste homemade.",
+    "Rest 3 minutes. If it's too thick to pour, add water 1 tablespoon at a time.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs."
+   ],
+   "tags": [
+    "mix",
+    "milk",
+    "egg",
+    "butter"
+   ],
+   "prep": "5 min",
+   "cook": "5 min per waffle",
+   "makes": "4 waffles",
+   "press": "Shade 3",
+   "healthy": false,
+   "gear": [
+    "waffle-tongs"
+   ],
+   "fix": {
+    "q": "Box-mix waffles taste flat.",
+    "a": "Mixes made with just water taste like cardboard. Milk, a real egg, melted butter and vanilla bring back the flavor."
+   },
+   "key": {
+    "id": "waffle-tongs",
+    "why": "Lifts each waffle out without scratching the nonstick."
+   },
+   "healthier": "Use a protein pancake mix and skip the sugar.",
+   "slug": "box-mix-waffles-that-taste-homemade",
+   "img": "/img/waffle/f04.jpg",
+   "badge": "🧇 Shade 3",
+   "chips": [
+    "Prep 5 min",
+    "Cook 5 min per waffle",
+    "4 waffles"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f05",
+   "cat": "classic",
+   "title": "Overnight yeasted waffles",
+   "emoji": "🌙",
+   "blurb": "Mix tonight, cook tomorrow. Yeast makes them light, crisp and a little tangy, like a Brussels café waffle.",
+   "ing": [
+    "2 cups flour",
+    "1 tbsp sugar",
+    "1 tsp salt",
+    "1½ tsp instant yeast",
+    "2 cups warm milk",
+    "½ cup melted butter",
+    "2 eggs (added in the morning)",
+    "¼ tsp baking soda (added in the morning)"
+   ],
+   "steps": [
+    "Tonight: whisk the flour, sugar, salt and yeast. Whisk in the warm milk and butter. Cover with a big bowl (it doubles) and leave it in the fridge overnight.",
+    "Morning: turn the dial to 4.",
+    "Whisk the eggs and baking soda into the bubbly batter.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs."
+   ],
+   "tags": [
+    "flour",
+    "sugar",
+    "milk",
+    "butter",
+    "egg"
+   ],
+   "prep": "10 min",
+   "cook": "5 min per waffle",
+   "wait": "8 hours",
+   "makes": "5 waffles",
+   "press": "Shade 4",
+   "healthy": false,
+   "gear": [
+    "waffle-tongs",
+    "waffle-rack"
+   ],
+   "healthier": "Use half whole-wheat flour. The overnight rest keeps it tender.",
+   "slug": "overnight-yeasted-waffles",
+   "img": "/img/waffle/f05.jpg",
+   "badge": "🧇 Shade 4",
+   "chips": [
+    "Prep 10 min",
+    "Cook 5 min per waffle",
+    "5 waffles"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f06",
+   "cat": "treat",
+   "title": "Double chocolate waffles",
+   "emoji": "🍫",
+   "blurb": "Cocoa in the batter, chocolate on top. Dessert or a very good Saturday.",
+   "ing": [
+    "1¾ cups flour",
+    "⅓ cup cocoa powder",
+    "⅓ cup sugar",
+    "2 tsp baking powder",
+    "½ tsp salt",
+    "1¾ cups milk",
+    "2 eggs",
+    "⅓ cup oil",
+    "1 tsp vanilla",
+    "Chocolate chips and whipped cream, to serve"
+   ],
+   "steps": [
+    "Turn the dial to Specialty. Sugary batters burn on the higher shades.",
+    "Whisk the dry ingredients, then whisk in the milk, eggs, oil and vanilla until smooth.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs.",
+    "Scatter chocolate chips on the hot waffle so they melt. Add whipped cream."
+   ],
+   "tags": [
+    "flour",
+    "cocoa",
+    "sugar",
+    "milk",
+    "egg",
+    "oil",
+    "choc"
+   ],
+   "prep": "10 min",
+   "cook": "5 min per waffle",
+   "makes": "5 waffles",
+   "press": "Specialty",
+   "healthy": false,
+   "gear": [
+    "waffle-tongs"
+   ],
+   "fix": {
+    "q": "Can I put chocolate chips in the batter?",
+    "a": "Not in this machine. The guide says no solid mix-ins: chunks block the spout and burn on the plates. Put them on top of the hot waffle instead."
+   },
+   "key": {
+    "id": "waffle-tongs",
+    "why": "Chocolate waffles are soft when hot. Tongs lift them without tearing."
+   },
+   "healthier": "Cut the sugar to ¼ cup and top with berries instead of chips.",
+   "slug": "double-chocolate-waffles",
+   "img": "/img/waffle/f06.jpg",
+   "badge": "🍫 Specialty",
+   "chips": [
+    "Prep 10 min",
+    "Cook 5 min per waffle",
+    "5 waffles"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f07",
+   "cat": "treat",
+   "title": "Churro waffles",
+   "emoji": "🌀",
+   "blurb": "Cinnamon waffles brushed with butter and rolled in cinnamon sugar. Dip in warm chocolate.",
+   "ing": [
+    "Classic waffle batter (see our Classic Belgian waffles)",
+    "1 tsp cinnamon in the batter",
+    "4 tbsp melted butter",
+    "½ cup sugar + 1 tbsp cinnamon, mixed",
+    "Chocolate sauce, for dipping"
+   ],
+   "steps": [
+    "Turn the dial to 3.",
+    "Make the classic batter and whisk in the cinnamon.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs.",
+    "Brush the hot waffle with butter on both sides, then press it into the cinnamon sugar.",
+    "Cut into strips and dip in warm chocolate."
+   ],
+   "tags": [
+    "flour",
+    "sugar",
+    "milk",
+    "egg",
+    "butter",
+    "cinnamon"
+   ],
+   "prep": "10 min",
+   "cook": "5 min per waffle",
+   "makes": "5 waffles",
+   "press": "Shade 3",
+   "healthy": false,
+   "gear": [
+    "waffle-tongs"
+   ],
+   "healthier": "Skip the butter brush and dust lightly with cinnamon sugar.",
+   "slug": "churro-waffles",
+   "img": "/img/waffle/f07.jpg",
+   "badge": "🍫 Shade 3",
+   "chips": [
+    "Prep 10 min",
+    "Cook 5 min per waffle",
+    "5 waffles"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f08",
+   "cat": "treat",
+   "title": "Banana bread waffles",
+   "emoji": "🍌",
+   "blurb": "Very ripe bananas blended into the batter. Tastes like banana bread, crisp at the edges.",
+   "ing": [
+    "2 very ripe bananas",
+    "1½ cups flour",
+    "¼ cup brown sugar",
+    "2 tsp baking powder",
+    "1 tsp cinnamon",
+    "½ tsp salt",
+    "1¼ cups milk",
+    "2 eggs",
+    "¼ cup melted butter",
+    "1 tsp vanilla"
+   ],
+   "steps": [
+    "Turn the dial to Specialty. Bananas and brown sugar brown fast.",
+    "Blend or mash the bananas until totally smooth. Lumps of banana count as a solid mix-in.",
+    "Whisk in everything else until smooth.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs."
+   ],
+   "tags": [
+    "banana",
+    "flour",
+    "sugar",
+    "milk",
+    "egg",
+    "butter",
+    "cinnamon"
+   ],
+   "prep": "10 min",
+   "cook": "5 min per waffle",
+   "makes": "5 waffles",
+   "press": "Specialty",
+   "healthy": false,
+   "gear": [
+    "waffle-tongs"
+   ],
+   "fix": {
+    "q": "My sweet waffles burn before the middle is done.",
+    "a": "Sugar browns fast. The Specialty setting cooks banana bread, cake-mix and brownie batters more gently, the way the manual recommends."
+   },
+   "key": {
+    "id": "waffle-tongs",
+    "why": "Banana waffles are tender. Lift them, don't pry them."
+   },
+   "healthier": "Skip the brown sugar. Ripe bananas are sweet enough.",
+   "slug": "banana-bread-waffles",
+   "img": "/img/waffle/f08.jpg",
+   "badge": "🍫 Specialty",
+   "chips": [
+    "Prep 10 min",
+    "Cook 5 min per waffle",
+    "5 waffles"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f09",
+   "cat": "treat",
+   "title": "Brownie waffles + ice cream",
+   "emoji": "🍨",
+   "blurb": "A box of brownie mix, waffled. Crisp edges on every bite, then a scoop of ice cream on top.",
+   "ing": [
+    "1 box (18 oz) brownie mix",
+    "The eggs and oil the box asks for",
+    "¼–½ cup milk, to loosen",
+    "Vanilla ice cream (homemade in the Creami is best)"
+   ],
+   "steps": [
+    "Turn the dial to Specialty.",
+    "Make the brownie batter as the box says, then stir in milk until it pours slowly off a spoon. Brownie batter is too thick for the spout as-is.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs.",
+    "Let it sit 2 minutes to firm up. Top with a scoop of ice cream."
+   ],
+   "tags": [
+    "mixbrownie",
+    "egg",
+    "oil",
+    "milk",
+    "icecream"
+   ],
+   "prep": "5 min",
+   "cook": "5 min per waffle",
+   "makes": "4 waffles",
+   "press": "Specialty",
+   "healthy": false,
+   "gear": [
+    "waffle-tongs",
+    "creami-pints"
+   ],
+   "fix": {
+    "q": "Thick batter won't go down the spout.",
+    "a": "The guide's own fix: add liquid 1 tablespoon at a time until it flows. Brownie batter needs a few tablespoons of milk."
+   },
+   "key": {
+    "id": "creami-pints",
+    "why": "Spin a pint of vanilla in the Creami the day before. Warm brownie and homemade soft serve is the best combo on this site."
+   },
+   "healthier": "Serve with Greek yogurt and berries instead of ice cream.",
+   "slug": "brownie-waffles-ice-cream",
+   "img": "/img/waffle/f09.jpg",
+   "badge": "🍫 Specialty",
+   "chips": [
+    "Prep 5 min",
+    "Cook 5 min per waffle",
+    "4 waffles"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f10",
+   "cat": "treat",
+   "title": "Red velvet cake-mix waffles",
+   "emoji": "❤️",
+   "blurb": "Red velvet cake mix, waffled, with a cream cheese drizzle. Birthday breakfast sorted.",
+   "ing": [
+    "1 box red velvet cake mix",
+    "The eggs, oil and water the box asks for",
+    "4 oz cream cheese, soft",
+    "1 cup powdered sugar",
+    "2–3 tbsp milk"
+   ],
+   "steps": [
+    "Turn the dial to Specialty.",
+    "Mix the cake batter as the box says.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs.",
+    "Beat the cream cheese, powdered sugar and milk into a drizzle. Pour over warm waffles."
+   ],
+   "tags": [
+    "mixcake",
+    "egg",
+    "oil",
+    "ccheese"
+   ],
+   "prep": "10 min",
+   "cook": "5 min per waffle",
+   "makes": "6 waffles",
+   "press": "Specialty",
+   "healthy": false,
+   "gear": [
+    "waffle-tongs"
+   ],
+   "healthier": "Skip the drizzle and top with strawberries and yogurt.",
+   "slug": "red-velvet-cake-mix-waffles",
+   "img": "/img/waffle/f10.jpg",
+   "badge": "🍫 Specialty",
+   "chips": [
+    "Prep 10 min",
+    "Cook 5 min per waffle",
+    "6 waffles"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f11",
+   "cat": "treat",
+   "title": "Pumpkin spice waffles",
+   "emoji": "🎃",
+   "blurb": "Canned pumpkin and warm spices. Fall in a waffle.",
+   "ing": [
+    "1¾ cups flour",
+    "¼ cup brown sugar",
+    "2 tsp baking powder",
+    "2 tsp pumpkin pie spice",
+    "½ tsp salt",
+    "1 cup canned pumpkin purée",
+    "1¼ cups milk",
+    "2 eggs",
+    "¼ cup melted butter"
+   ],
+   "steps": [
+    "Turn the dial to 3.",
+    "Whisk the dry ingredients. Whisk the pumpkin, milk, eggs and butter until smooth, then combine.",
+    "Pumpkin batter is thick. Add water 1 tablespoon at a time until it pours.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs."
+   ],
+   "tags": [
+    "flour",
+    "sugar",
+    "pumpkin",
+    "milk",
+    "egg",
+    "butter",
+    "cinnamon"
+   ],
+   "prep": "10 min",
+   "cook": "5 min per waffle",
+   "makes": "5 waffles",
+   "press": "Shade 3",
+   "healthy": false,
+   "gear": [
+    "waffle-tongs"
+   ],
+   "healthier": "Use whole-wheat flour and half the sugar.",
+   "slug": "pumpkin-spice-waffles",
+   "img": "/img/waffle/f11.jpg",
+   "badge": "🍫 Shade 3",
+   "chips": [
+    "Prep 10 min",
+    "Cook 5 min per waffle",
+    "5 waffles"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f12",
+   "cat": "savory",
+   "title": "Garlic-Parmesan waffle bread",
+   "emoji": "🧄",
+   "blurb": "Our take on waffled garlic bread, made for this machine: a savory batter with garlic, herbs and Parmesan. Dunk it in marinara.",
+   "ing": [
+    "2 cups flour",
+    "2 tsp baking powder",
+    "1 tsp garlic powder",
+    "1 tsp Italian herbs",
+    "½ tsp salt",
+    "1¾ cups milk",
+    "2 eggs",
+    "⅓ cup olive oil",
+    "½ cup Parmesan, grated very fine (the powdery kind)",
+    "Marinara, for dipping"
+   ],
+   "steps": [
+    "Turn the dial to 4.",
+    "Whisk the flour, baking powder, garlic powder, herbs and salt. Whisk in the milk, eggs and oil.",
+    "Stir in the Parmesan. It must be powder-fine; shreds count as a solid mix-in.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs.",
+    "Brush with garlic butter if you like, cut into strips and dip in warm marinara."
+   ],
+   "tags": [
+    "flour",
+    "milk",
+    "egg",
+    "oil",
+    "cheese",
+    "garlic",
+    "herbs"
+   ],
+   "prep": "10 min",
+   "cook": "5 min per waffle",
+   "makes": "5 waffles",
+   "press": "Shade 4",
+   "healthy": false,
+   "gear": [
+    "waffle-tongs",
+    "waffle-rack"
+   ],
+   "fix": {
+    "q": "Can I waffle a slice of bread or garlic bread in it?",
+    "a": "Not in this one. The Ninja PRO is vertical: it stays closed, you pour batter into the top, and it only starts when it senses batter. Bread slices can't go in. So we put the garlic bread flavor into the batter."
+   },
+   "key": {
+    "id": "waffle-rack",
+    "why": "Savory waffles stay crisp on a rack for sandwiches later."
+   },
+   "healthier": "Use half whole-wheat flour and skip the garlic butter.",
+   "slug": "garlic-parmesan-waffle-bread",
+   "img": "/img/waffle/f12.jpg",
+   "badge": "🧄 Shade 4",
+   "chips": [
+    "Prep 10 min",
+    "Cook 5 min per waffle",
+    "5 waffles"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f13",
+   "cat": "savory",
+   "title": "Waffle panini with ham, mozzarella and pesto",
+   "emoji": "🥪",
+   "blurb": "Use Garlic-Parmesan waffles as the bread. Slice each one in half through the middle for two thin, crisp slices.",
+   "ing": [
+    "2 Garlic-Parmesan waffles (or Keto sandwich chaffles)",
+    "4 slices ham or turkey",
+    "4 slices mozzarella",
+    "2 tbsp pesto",
+    "Handful of baby spinach or roasted peppers",
+    "1 tsp olive oil"
+   ],
+   "steps": [
+    "Make the waffles first. Let them cool 5 minutes on a rack.",
+    "Slice each 1-inch waffle in half through the middle, like a bagel, to get 2 thin slices.",
+    "Spread pesto on the inside, then layer ham, mozzarella and spinach.",
+    "Toast in an oiled skillet over medium heat with a heavy pan on top, 2–3 minutes a side, until the cheese melts.",
+    "Do this in a skillet, not the waffle maker. It's batter-only."
+   ],
+   "tags": [
+    "cheese",
+    "ham",
+    "herbs"
+   ],
+   "prep": "10 min",
+   "cook": "6 min",
+   "makes": "2 sandwiches",
+   "press": "Shade 4",
+   "badge": "🥪 Shade 4",
+   "healthy": false,
+   "gear": [
+    "waffle-rack",
+    "waffle-tongs"
+   ],
+   "fix": {
+    "q": "Can I press a panini in the waffle maker?",
+    "a": "No. It's a vertical, batter-only machine. Make the waffle bread in it, then press the sandwich in a skillet."
+   },
+   "key": {
+    "id": "waffle-rack",
+    "why": "Cool the waffles on a rack so they slice clean."
+   },
+   "healthier": "Use turkey, part-skim mozzarella and lots of spinach.",
+   "slug": "waffle-panini-with-ham-mozzarella-and-pesto",
+   "img": "/img/waffle/f13.jpg",
+   "chips": [
+    "Prep 10 min",
+    "Cook 6 min",
+    "2 sandwiches"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f14",
+   "cat": "savory",
+   "title": "Chicken and waffles with hot honey",
+   "emoji": "🍗",
+   "blurb": "Crispy chicken on a savory cornmeal waffle with spicy honey. A weekend dinner.",
+   "ing": [
+    "1½ cups flour",
+    "½ cup fine cornmeal",
+    "1 tbsp sugar",
+    "2 tsp baking powder",
+    "½ tsp salt",
+    "1¾ cups buttermilk",
+    "2 eggs",
+    "⅓ cup melted butter",
+    "Crispy chicken tenders (air-fried or store-bought)",
+    "¼ cup honey + 1 tsp hot sauce"
+   ],
+   "steps": [
+    "Turn the dial to 4.",
+    "Whisk the flour, cornmeal, sugar, baking powder and salt. Whisk in the buttermilk, eggs and butter. Thin with water if it won't pour.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs.",
+    "Warm the honey with the hot sauce. Top each waffle with chicken and drizzle."
+   ],
+   "tags": [
+    "flour",
+    "corn",
+    "buttermilk",
+    "egg",
+    "butter",
+    "chicken"
+   ],
+   "prep": "15 min",
+   "cook": "5 min per waffle",
+   "makes": "5 waffles",
+   "press": "Shade 4",
+   "healthy": false,
+   "gear": [
+    "waffle-tongs",
+    "woodfire-thermometer"
+   ],
+   "healthier": "Air-fry the chicken and use less honey.",
+   "slug": "chicken-and-waffles-with-hot-honey",
+   "img": "/img/waffle/f14.jpg",
+   "badge": "🧄 Shade 4",
+   "chips": [
+    "Prep 15 min",
+    "Cook 5 min per waffle",
+    "5 waffles"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f15",
+   "cat": "savory",
+   "title": "Cornbread waffles",
+   "emoji": "🌽",
+   "blurb": "A box of cornbread mix, waffled. Perfect with chili or soup.",
+   "ing": [
+    "1 box (8.5 oz) cornbread mix",
+    "The egg and milk the box asks for",
+    "2–3 tbsp extra milk",
+    "Honey butter, to serve"
+   ],
+   "steps": [
+    "Turn the dial to 3.",
+    "Mix the batter as the box says, then add milk until it pours.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs.",
+    "Serve with chili, or split and spread with honey butter."
+   ],
+   "tags": [
+    "corn",
+    "egg",
+    "milk"
+   ],
+   "prep": "5 min",
+   "cook": "5 min per waffle",
+   "makes": "2–3 waffles",
+   "press": "Shade 3",
+   "healthy": false,
+   "gear": [
+    "waffle-tongs"
+   ],
+   "healthier": "Serve with a bean chili and skip the honey butter.",
+   "slug": "cornbread-waffles",
+   "img": "/img/waffle/f15.jpg",
+   "badge": "🧄 Shade 3",
+   "chips": [
+    "Prep 5 min",
+    "Cook 5 min per waffle",
+    "2–3 waffles"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f16",
+   "cat": "savory",
+   "title": "Sweet potato waffles",
+   "emoji": "🍠",
+   "blurb": "Smooth sweet potato in the batter. Breakfast with maple, or dinner with pulled pork.",
+   "ing": [
+    "1 cup mashed cooked sweet potato",
+    "1½ cups flour",
+    "2 tsp baking powder",
+    "1 tsp cinnamon",
+    "½ tsp salt",
+    "1½ cups milk",
+    "2 eggs",
+    "¼ cup melted butter"
+   ],
+   "steps": [
+    "Turn the dial to 3.",
+    "Blend the sweet potato with the milk and eggs until totally smooth.",
+    "Whisk in the rest. Thin with a little water if it won't pour.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs."
+   ],
+   "tags": [
+    "sweetpot",
+    "flour",
+    "milk",
+    "egg",
+    "butter",
+    "cinnamon"
+   ],
+   "prep": "15 min",
+   "cook": "5 min per waffle",
+   "makes": "5 waffles",
+   "press": "Shade 3",
+   "healthy": true,
+   "gear": [
+    "waffle-tongs",
+    "blender-cups"
+   ],
+   "healthier": "Already a good pick. Use oil instead of butter.",
+   "slug": "sweet-potato-waffles",
+   "img": "/img/waffle/f16.jpg",
+   "badge": "🧄 Shade 3",
+   "chips": [
+    "Prep 15 min",
+    "Cook 5 min per waffle",
+    "5 waffles"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f17",
+   "cat": "light",
+   "title": "Keto sandwich chaffles",
+   "emoji": "🥑",
+   "blurb": "Low-carb bread from your waffle maker. Scaled up from the one-egg recipe so it works in the Ninja, then sliced in half for sandwiches.",
+   "ing": [
+    "4 eggs",
+    "⅔ cup almond flour (or ¼ cup coconut flour)",
+    "¼ cup mayonnaise or sour cream",
+    "1 tsp baking powder",
+    "¼ tsp salt",
+    "1–3 tsp water, if needed"
+   ],
+   "steps": [
+    "Turn the dial to 4. Egg batters need the extra heat to crisp.",
+    "Whisk or blend everything until totally smooth. Coconut flour thickens as it sits, so add water 1 teaspoon at a time until it pours.",
+    "Fill the pour cup to about ¾ cup and pour in one quick pour. This batch makes 2.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs.",
+    "Cool 5 minutes on a rack, then slice each one in half through the middle for 2 sandwich slices."
+   ],
+   "tags": [
+    "egg",
+    "almondflour",
+    "mayo"
+   ],
+   "prep": "5 min",
+   "cook": "5 min per chaffle",
+   "makes": "2 chaffles (4 slices)",
+   "press": "Shade 4",
+   "healthy": true,
+   "gear": [
+    "waffle-almond-flour",
+    "waffle-rack"
+   ],
+   "diet": [
+    "keto",
+    "low-sugar"
+   ],
+   "fix": {
+    "q": "One-egg chaffle recipes don't work in my Ninja.",
+    "a": "One egg makes about ⅓ cup of batter, and the machine needs at least ½ cup to start. This version uses 4 eggs for 2 full chaffles. Skip the shredded cheese most recipes use (it's a solid mix-in) and the mayo keeps it tender instead."
+   },
+   "key": {
+    "id": "waffle-almond-flour",
+    "why": "Fine almond flour makes it taste like bread, not eggs."
+   },
+   "healthier": "Already keto. Use Greek yogurt instead of mayo for more protein.",
+   "slug": "keto-sandwich-chaffles",
+   "img": "/img/waffle/f17.jpg",
+   "badge": "🥑 Shade 4",
+   "chips": [
+    "Prep 5 min",
+    "Cook 5 min per chaffle",
+    "2 chaffles (4 slices)"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f18",
+   "cat": "light",
+   "title": "Cottage cheese protein waffles",
+   "emoji": "💪",
+   "blurb": "About 20 g protein a waffle. Blended smooth, so nobody sees the cottage cheese.",
+   "ing": [
+    "1 cup cottage cheese",
+    "4 eggs",
+    "1 cup rolled oats",
+    "1 scoop (30 g) vanilla protein powder",
+    "1½ tsp baking powder",
+    "½ cup milk",
+    "1 tsp vanilla",
+    "Pinch of salt"
+   ],
+   "steps": [
+    "Turn the dial to 4.",
+    "Blend everything until completely smooth, about 45 seconds. Oat flakes or curds left whole won't pour.",
+    "Rest 5 minutes. If it thickens, blend in a splash of milk.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs."
+   ],
+   "tags": [
+    "cottage",
+    "egg",
+    "oats",
+    "prot",
+    "milk"
+   ],
+   "prep": "5 min",
+   "cook": "5 min per waffle",
+   "makes": "4 waffles",
+   "press": "Shade 4",
+   "healthy": true,
+   "gear": [
+    "waffle-protein-mix",
+    "blender-cups"
+   ],
+   "diet": [
+    "high-protein"
+   ],
+   "macros": {
+    "kcal": 260,
+    "protein": 22,
+    "base": "Cottage cheese + oats"
+   },
+   "fix": {
+    "q": "Protein waffles come out dry and rubbery.",
+    "a": "Too much protein powder and no fat. Cottage cheese and eggs carry the protein and keep it moist, so you only need one scoop of powder."
+   },
+   "key": {
+    "id": "waffle-protein-mix",
+    "why": "No powder at home? A protein pancake mix works in place of the oats and powder."
+   },
+   "healthier": "Already high-protein. Top with berries and Greek yogurt.",
+   "slug": "cottage-cheese-protein-waffles",
+   "img": "/img/waffle/f18.jpg",
+   "badge": "🥑 Shade 4",
+   "chips": [
+    "Prep 5 min",
+    "Cook 5 min per waffle",
+    "4 waffles"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f19",
+   "cat": "light",
+   "title": "Gluten-free waffles that aren't gummy",
+   "emoji": "🌾",
+   "blurb": "A 1:1 gluten-free flour and a 10-minute rest. Crisp outside, tender inside.",
+   "ing": [
+    "2 cups 1:1 gluten-free flour (with xanthan gum)",
+    "2 tbsp sugar",
+    "2 tsp baking powder",
+    "½ tsp salt",
+    "1¾ cups milk",
+    "2 eggs",
+    "⅓ cup oil",
+    "1 tsp vanilla"
+   ],
+   "steps": [
+    "Turn the dial to 4. Gluten-free waffles need a little more heat to crisp.",
+    "Whisk the dry ingredients, then the wet, and combine.",
+    "Rest the batter 10 minutes so the flour soaks up the milk. This is what stops it being gummy.",
+    "Thin with water 1 tablespoon at a time if it won't pour.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs."
+   ],
+   "tags": [
+    "gfflour",
+    "sugar",
+    "milk",
+    "egg",
+    "oil"
+   ],
+   "prep": "15 min",
+   "cook": "5 min per waffle",
+   "makes": "5 waffles",
+   "press": "Shade 4",
+   "healthy": false,
+   "gear": [
+    "waffle-gf-flour",
+    "waffle-rack"
+   ],
+   "fix": {
+    "q": "Gluten-free waffles turn out gummy in the middle.",
+    "a": "Rice flours need time to absorb liquid. Rest the batter 10 minutes, cook one shade darker, and cool on a rack."
+   },
+   "key": {
+    "id": "waffle-gf-flour",
+    "why": "A 1:1 blend with xanthan already in it. No guesswork."
+   },
+   "healthier": "Use oat milk and 1 tbsp sugar.",
+   "slug": "gluten-free-waffles-that-aren-t-gummy",
+   "img": "/img/waffle/f19.jpg",
+   "badge": "🥑 Shade 4",
+   "chips": [
+    "Prep 15 min",
+    "Cook 5 min per waffle",
+    "5 waffles"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f20",
+   "cat": "light",
+   "title": "Vegan oat-milk waffles",
+   "emoji": "🌱",
+   "blurb": "No eggs, no dairy. Flax does the egg's job and oat milk keeps them golden.",
+   "ing": [
+    "2 tbsp ground flaxseed + 5 tbsp water",
+    "2 cups flour",
+    "2 tbsp sugar",
+    "1 tbsp baking powder",
+    "½ tsp salt",
+    "1¾ cups oat milk",
+    "⅓ cup neutral oil",
+    "1 tsp vanilla"
+   ],
+   "steps": [
+    "Stir the flax and water together and wait 5 minutes until it gels.",
+    "Turn the dial to 4. Eggless batter needs extra browning.",
+    "Whisk the dry ingredients. Whisk the oat milk, oil, vanilla and flax gel, then combine.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs."
+   ],
+   "tags": [
+    "flax",
+    "flour",
+    "sugar",
+    "plantmilk",
+    "oil"
+   ],
+   "prep": "10 min",
+   "cook": "5 min per waffle",
+   "makes": "5 waffles",
+   "press": "Shade 4",
+   "healthy": false,
+   "gear": [
+    "waffle-flax",
+    "waffle-tongs"
+   ],
+   "diet": [
+    "vegan",
+    "dairy-free"
+   ],
+   "fix": {
+    "q": "Eggless waffles stick and fall apart.",
+    "a": "Without egg there's nothing to hold them together. A flax gel binds the batter, and the darker shade sets the outside so it releases cleanly."
+   },
+   "key": {
+    "id": "waffle-flax",
+    "why": "Ground flax is the cheapest, easiest egg replacer for waffles."
+   },
+   "healthier": "Use half whole-wheat flour and 1 tbsp sugar.",
+   "slug": "vegan-oat-milk-waffles",
+   "img": "/img/waffle/f20.jpg",
+   "badge": "🥑 Shade 4",
+   "chips": [
+    "Prep 10 min",
+    "Cook 5 min per waffle",
+    "5 waffles"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f21",
+   "cat": "party",
+   "title": "Waffle ice cream sandwiches",
+   "emoji": "🍦",
+   "blurb": "Soft waffles cut into squares around a slab of homemade ice cream. Freeze, then eat.",
+   "ing": [
+    "Classic waffle batter (or a box mix)",
+    "1 pint ice cream, softened 10 minutes",
+    "Sprinkles or mini chips, for the edges"
+   ],
+   "steps": [
+    "Turn the dial to 2 so the waffles stay soft enough to bite.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs.",
+    "Cool the waffles completely. Cut each into 4 squares.",
+    "Spread a thick layer of ice cream between two squares and roll the edges in sprinkles.",
+    "Wrap and freeze for 1 hour."
+   ],
+   "tags": [
+    "flour",
+    "milk",
+    "egg",
+    "icecream"
+   ],
+   "prep": "20 min",
+   "cook": "5 min per waffle",
+   "wait": "1 hour",
+   "makes": "8 sandwiches",
+   "press": "Shade 2",
+   "healthy": false,
+   "gear": [
+    "creami-pints",
+    "waffle-tongs"
+   ],
+   "key": {
+    "id": "creami-pints",
+    "why": "Make the ice cream in the Creami for the full Ninja combo."
+   },
+   "healthier": "Use frozen yogurt and skip the sprinkles.",
+   "slug": "waffle-ice-cream-sandwiches",
+   "img": "/img/waffle/f21.jpg",
+   "badge": "🎉 Shade 2",
+   "chips": [
+    "Prep 20 min",
+    "Cook 5 min per waffle",
+    "8 sandwiches"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "id": "f22",
+   "cat": "party",
+   "title": "Birthday waffle cake",
+   "emoji": "🎂",
+   "blurb": "Five soft waffles stacked with whipped cream and berries. Candles optional, sprinkles not.",
+   "ing": [
+    "5 waffles from Classic Belgian or vanilla cake mix batter",
+    "2 cups heavy cream + 3 tbsp powdered sugar + 1 tsp vanilla, whipped",
+    "2 cups strawberries, sliced",
+    "Sprinkles"
+   ],
+   "steps": [
+    "Turn the dial to 1. Soft waffles stack and slice like cake.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs.",
+    "Cool all 5 waffles completely on a rack, or the cream melts.",
+    "Stack: waffle, whipped cream, berries. Repeat. Finish with cream, berries and sprinkles.",
+    "Chill 30 minutes, then cut with a serrated knife."
+   ],
+   "tags": [
+    "flour",
+    "egg",
+    "milk",
+    "cream",
+    "berry"
+   ],
+   "prep": "30 min",
+   "cook": "25 min",
+   "wait": "30 min",
+   "makes": "8 slices",
+   "press": "Shade 1",
+   "healthy": false,
+   "gear": [
+    "waffle-rack",
+    "waffle-tongs"
+   ],
+   "healthier": "Use Greek yogurt sweetened with honey instead of whipped cream.",
+   "slug": "birthday-waffle-cake",
+   "img": "/img/waffle/f22.jpg",
+   "badge": "🎉 Shade 1",
+   "chips": [
+    "Prep 30 min",
+    "Cook 25 min",
+    "8 slices"
+   ]
+  },
+  {
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [
+    [
+     "Adults only",
+     "The bourbon in the syrup isn't cooked. Not for kids, pregnancy, or anyone who shouldn't drink. Kids get plain maple."
+    ]
+   ],
+   "ben": [],
+   "level": "Easy",
+   "id": "f23",
+   "cat": "party",
+   "title": "Bourbon-maple French toast waffles (21+)",
+   "emoji": "🥃",
+   "blurb": "Cinnamon-vanilla waffles that taste like French toast, with a bourbon maple syrup for the grown-ups.",
+   "ing": [
+    "Classic waffle batter",
+    "1 tsp cinnamon + ¼ tsp nutmeg in the batter",
+    "½ cup pure maple syrup",
+    "2 tbsp bourbon",
+    "Pinch of salt",
+    "Butter, to serve"
+   ],
+   "steps": [
+    "Turn the dial to 3.",
+    "Whisk the cinnamon and nutmeg into the classic batter.",
+    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
+    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs.",
+    "Stir the bourbon and salt into the maple syrup. Don't heat it, or the bourbon flavor fades.",
+    "Top with butter and bourbon maple. Kids get plain maple."
+   ],
+   "tags": [
+    "flour",
+    "milk",
+    "egg",
+    "cinnamon",
+    "maple",
+    "booze"
+   ],
+   "prep": "10 min",
+   "cook": "5 min per waffle",
+   "makes": "5 waffles",
+   "press": "Shade 3",
+   "healthy": false,
+   "adult": true,
+   "gear": [
+    "waffle-maple",
+    "waffle-tongs"
+   ],
+   "key": {
+    "id": "waffle-maple",
+    "why": "Pure maple, not pancake syrup. The bourbon needs real maple to taste right."
+   },
+   "healthier": "Skip the bourbon and use half the syrup.",
+   "slug": "bourbon-maple-french-toast-waffles",
+   "img": "/img/waffle/f23.jpg",
+   "badge": "🎉 Shade 3",
+   "chips": [
+    "Prep 10 min",
+    "Cook 5 min per waffle",
+    "5 waffles"
+   ]
+  }
+ ]
+}

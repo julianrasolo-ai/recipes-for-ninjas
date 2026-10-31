@@ -1356,5 +1356,149 @@
   "w": 800,
   "h": 600,
   "ext": "jpg"
+ },
+ "home/waffle-maker": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004456_33919045-ceae-481f-91f2-02b0ba26e74c.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004456_33919045-ceae-481f-91f2-02b0ba26e74c.png",
+  "size": 560,
+  "ext": "webp"
+ },
+ "waffle/f01": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004828_638339ea-9406-48f8-8f75-ca09cd0cf32f.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004828_638339ea-9406-48f8-8f75-ca09cd0cf32f.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f02": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004829_09f9ed80-2a53-45ce-b959-c1f04c4c9c9e.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004829_09f9ed80-2a53-45ce-b959-c1f04c4c9c9e.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f04": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004829_e1adaf73-f1aa-49bc-a719-76880c22432f.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004829_e1adaf73-f1aa-49bc-a719-76880c22432f.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f05": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004829_1c7c242d-f45f-41c2-b368-977fd9eb41db.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004829_1c7c242d-f45f-41c2-b368-977fd9eb41db.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f07": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004830_8769349d-3012-4533-a843-89cb3bc27a8a.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004830_8769349d-3012-4533-a843-89cb3bc27a8a.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f09": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004830_fe8b7e18-84cf-4090-a246-729921fcb7fc.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004830_fe8b7e18-84cf-4090-a246-729921fcb7fc.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f11": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004830_ea2d0b13-cd86-4824-b9b7-6475ea43c284.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004830_ea2d0b13-cd86-4824-b9b7-6475ea43c284.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f12": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004829_f25c16c6-4651-4f48-aa62-7f09443c8fae.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004829_f25c16c6-4651-4f48-aa62-7f09443c8fae.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f03": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004952_c4396d47-ef31-413e-a621-fbfd97cddcf0.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004952_c4396d47-ef31-413e-a621-fbfd97cddcf0.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f06": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004952_adf6ebe5-01bf-44d6-a820-2a38c5635e9d.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004952_adf6ebe5-01bf-44d6-a820-2a38c5635e9d.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f08": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004952_1cd8a8c0-7d92-461c-8490-ea5210cbda78.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004952_1cd8a8c0-7d92-461c-8490-ea5210cbda78.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f10": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004952_915ad2a1-94e3-42c3-bdd5-f92c4bbeb1a2.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_004952_915ad2a1-94e3-42c3-bdd5-f92c4bbeb1a2.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f13": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005003_5ebccb90-9ac4-408c-a2b5-838da958a83d.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005003_5ebccb90-9ac4-408c-a2b5-838da958a83d.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f14": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005002_479691eb-6563-406c-a676-32a24a2e6389.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005002_479691eb-6563-406c-a676-32a24a2e6389.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f15": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005002_513629f4-6600-4699-8cdb-a5e4cb36cc17.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005002_513629f4-6600-4699-8cdb-a5e4cb36cc17.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f16": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005002_50b7f4e6-afa0-4c54-8810-273e65efaf1b.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005002_50b7f4e6-afa0-4c54-8810-273e65efaf1b.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f17": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005151_39ac2033-0eca-4cd3-bbdc-da609b956115.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005151_39ac2033-0eca-4cd3-bbdc-da609b956115.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f18": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005148_45495e83-badd-4e4d-b700-0b7395e002cd.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005148_45495e83-badd-4e4d-b700-0b7395e002cd.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f19": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005149_de25c1f0-18b8-47ca-b4ac-6864f2a897f3.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005149_de25c1f0-18b8-47ca-b4ac-6864f2a897f3.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f20": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005148_1de2d461-7939-4b27-a8be-98cdffba10eb.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005148_1de2d461-7939-4b27-a8be-98cdffba10eb.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f21": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005148_b3a53acd-8c31-4fe5-87ed-8eda17e59594.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005148_b3a53acd-8c31-4fe5-87ed-8eda17e59594.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f22": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005148_071d5fc7-033f-4bbd-a8bf-5cda0111da25.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005148_071d5fc7-033f-4bbd-a8bf-5cda0111da25.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f23": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005148_6bb97076-8a6a-47f7-aa7d-25e3bb38d162.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_005148_6bb97076-8a6a-47f7-aa7d-25e3bb38d162.png",
+  "size": 600,
+  "ext": "jpg"
  }
 }

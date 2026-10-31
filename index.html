@@ -71,8 +71,8 @@ div.fl{display:grid;place-items:center;font-size:calc(var(--fs)*.7);height:var(-
 /* counter + four machines */
 .counter{position:absolute;left:-5%;right:-5%;bottom:0;height:var(--ch);background:linear-gradient(color-mix(in srgb,#fff 40%,var(--counter)),var(--counter));
   border-top:3px solid color-mix(in srgb,#fff 70%,var(--counter));box-shadow:0 -10px 40px rgba(120,80,40,.08), inset 0 3px 0 var(--edge)}
-.machines{position:absolute;z-index:20;left:0;right:0;bottom:calc(var(--ch) - 2.2vh);display:grid;grid-template-columns:repeat(4,1fr);align-items:end;gap:1vw;padding:0 max(3vw,8px);pointer-events:none}
-@media (min-width:900px){.machines{grid-template-columns:1fr 1fr 1.6fr 1fr 1fr;padding:0 5vw}.machines .gap{display:block}}
+.machines{position:absolute;z-index:20;left:0;right:0;bottom:calc(var(--ch) - 2.2vh);display:grid;grid-template-columns:repeat(5,1fr);align-items:end;gap:1vw;padding:0 max(3vw,8px);pointer-events:none}
+@media (min-width:900px){.machines{grid-template-columns:1fr 1fr 1.2fr 1fr 1fr;padding:0 5vw}}
 .machines .gap{display:none}
 .machine{pointer-events:auto;position:relative;display:flex;flex-direction:column;align-items:center;text-decoration:none;color:var(--ink);outline:none;justify-self:center;width:100%;max-width:230px}
 .machine .m{width:100%;height:auto;aspect-ratio:1;object-fit:contain;object-position:50% 100%;transform-origin:50% 100%;transition:transform .25s cubic-bezier(.3,1.5,.5,1);
@@ -87,7 +87,7 @@ div.fl{display:grid;place-items:center;font-size:calc(var(--fs)*.7);height:var(-
 .label small{font-size:11px;font-weight:800;color:var(--muted)}
 .machine:focus-visible .label{outline:3px solid #2ba8ff;outline-offset:3px}
 .machine:active .label{transform:scale(.96)}
-.c-ice b{color:var(--pink)}.c-juice b{color:var(--mint)}.c-blender b{color:#7a5cff}.c-fire b{color:#e2552b}
+.c-ice b{color:var(--pink)}.c-juice b{color:var(--mint)}.c-blender b{color:#7a5cff}.c-fire b{color:#e2552b}.c-waffle b{color:#c98a12}
 @media (max-width:520px){.label small{display:none}.label{padding:5px 8px}}
 .family{position:absolute;z-index:21;left:0;right:0;bottom:calc(env(safe-area-inset-bottom,0px) + 6px);margin:0;text-align:center;font-size:12px;font-weight:800;color:var(--muted)}
 .family{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 6px;padding:0 10px}
@@ -126,21 +126,23 @@ document.addEventListener('error',function(e){
     <span class="gap" aria-hidden="true"></span>
     <a class="machine c-blender" href="/blender/" data-k="blender" style="--d:.46s"><img class="m" src="/img/home/blender.webp" data-emo="🥤" alt=""><span class="label"><b>Blender</b><small>24 recipes</small></span></a>
     <a class="machine c-fire" href="/wood-fire/" data-k="wood-fire" style="--d:.54s"><img class="m" src="/img/home/grill.webp" data-emo="🔥" alt=""><span class="label"><b>Grill</b><small>24 recipes</small></span></a>
+    <a class="machine c-waffle" href="/waffle/" data-k="waffle" style="--d:.62s"><img class="m" src="/img/home/waffle-maker.webp" data-emo="🧇" alt=""><span class="label"><b>Waffles</b><small>23 recipes</small></span></a>
   </nav>
   <nav class="family" aria-label="Recipes by diet"><a href="/diet/keto/">🥑 Keto</a><a href="/diet/high-protein/">💪 Protein</a><a href="/diet/vegan/">🌱 Vegan</a><a href="/diet/dairy-free/">🥥 Dairy-free</a><a href="/diet/21-plus/">🍸 21+</a><a href="/gear/" class="x">🧰 Accessories</a></nav>
 </main>
 <script>
 (function(){
   /* CDN copies (transparent PNGs) for when the build hasn't downloaded the images, e.g. local preview */
-  var CDN='https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261002_';
+  var BASE='https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/', CDN=BASE+'hf_20261002_';
+  function cdn(v){return v.charAt(0)==='@'?BASE+v.slice(1)+'.png':CDN+v+'.png'} // '@' = full file name from another day
   var SRC={ninja:'015047_1ecb3764-861c-4e1f-a86f-2d8bb558b94c','icecream-machine':'023312_43681c6b-3eda-4263-9ec1-5b785afd6ae6',juicer:'023312_98ba7198-3278-4beb-9680-7ed51e5f99db',
-    blender:'023312_f5c50f42-417a-40db-a7c3-3c62adc7a64b',grill:'194703_1534ab96-f613-47ce-ad72-dc44b0d31ba8',
+    blender:'023312_f5c50f42-417a-40db-a7c3-3c62adc7a64b',grill:'194703_1534ab96-f613-47ce-ad72-dc44b0d31ba8','waffle-maker':'@hf_20261031_004456_33919045-ceae-481f-91f2-02b0ba26e74c',
     strawberry:'023306_3c0041da-81fb-4638-8968-d7c0b2ab2fa6',banana:'023306_71cb8b2a-b92a-4c8c-94b8-06b52efa5362',blueberry:'023306_bc2c0400-01a7-4e84-bf2e-090f70c718f9',
     ice:'023306_c037e700-2921-4a60-878a-55bda902916e',orange:'023306_1820d910-8c14-4666-b607-e8ca3145821c',carrot:'023306_e28c674b-17b1-4b83-9f87-5e51e0d9e1b3',
     apple:'023306_ef141bfd-a3fe-49e7-b5c6-ad10daae6d3c',lemon:'023306_6acf6ff3-6568-48c8-b7f9-c457a5e421f4',pineapple:'023306_9d9e3a00-4885-4066-a1ff-9e549fee2981',
     spinach:'023306_506c20cb-ffde-4160-8106-921e5e8d012e',corn:'023306_0cc91537-d8c7-4786-a6a6-292e524fb848',pepper:'023312_ed92bdf9-f27b-4cdc-989f-6759d90812a1'};
   var EMO={strawberry:'🍓',banana:'🍌',blueberry:'🫐',ice:'🧊',orange:'🍊',carrot:'🥕',apple:'🍏',lemon:'🍋',pineapple:'🍍',spinach:'🥬',corn:'🌽',pepper:'🫑'};
-  document.querySelectorAll('img[src^="/img/home/"]').forEach(function(im){var k=im.getAttribute('src').split('/').pop().replace('.webp','');if(SRC[k])im.dataset.cdn=CDN+SRC[k]+'.png'});
+  document.querySelectorAll('img[src^="/img/home/"]').forEach(function(im){var k=im.getAttribute('src').split('/').pop().replace('.webp','');if(SRC[k])im.dataset.cdn=cdn(SRC[k])});
 
   /* Which ingredients belong to which machine */
   var RING=[['strawberry','creami'],['orange','juicer'],['pineapple','blender'],['corn','wood-fire'],['banana','creami'],['carrot','juicer'],
@@ -149,7 +151,7 @@ document.addEventListener('error',function(e){
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   var items=RING.map(function(p,i){
     var im=document.createElement('img'); im.className='fl'; im.alt=''; im.src='/img/home/'+p[0]+'.webp';
-    im.dataset.cdn=CDN+SRC[p[0]]+'.png'; im.dataset.emo=EMO[p[0]]; im.dataset.k=p[1];
+    im.dataset.cdn=cdn(SRC[p[0]]); im.dataset.emo=EMO[p[0]]; im.dataset.k=p[1];
     ring.appendChild(im);
     return {k:p[1], a:i/RING.length*Math.PI*2, r:i%2?1:.86, spin:(i%3-1)*25, el:function(){return ring.children[i]}, free:true};
   });
