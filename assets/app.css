@@ -241,6 +241,7 @@ body[data-site="blender"]{--bg:#f8f5ff;--line:#e6defa;--muted:#6c6290;--glow1:#f
 [data-c="savory"]{--a:var(--coral);--t:var(--coralt)}
 [data-c="light"]{--a:var(--mint);--t:var(--mintt)}
 [data-c="party"]{--a:var(--grape);--t:var(--grapet)}
+[data-c="bread"]{--a:var(--sky);--t:var(--skyt)}
 .tab.cur[data-c="classic"],[data-c="classic"] .press{color:#22174a}
 body[data-site="waffle"]{--bg:#fff8ec;--line:#f3e2c4;--muted:#7d6a4f;--glow1:#fff1c7;--glow2:#ffe4dc}
 body[data-site="fire"]{--bg:#fbf5ee;--line:#efdfcc;--muted:#7a6656;--glow1:#ffe0cf;--glow2:#fff1c7}

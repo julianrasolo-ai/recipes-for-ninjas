@@ -335,6 +335,15 @@
    "icon": "🍁",
    "note": "Real maple, not pancake syrup. Grade A amber.",
    "url": "https://www.amazon.com/s?k=pure+maple+syrup+grade+a"
+  },
+  {
+   "id": "waffle-freezer-bags",
+   "appliance": "waffle",
+   "rank": 9,
+   "name": "Reusable freezer bags",
+   "icon": "🧊",
+   "note": "Freeze waffle bread slices flat; toast straight from frozen.",
+   "url": "https://www.amazon.com/s?k=reusable+gallon+freezer+bags"
   }
  ],
  "compat": {
