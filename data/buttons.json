@@ -420,21 +420,21 @@
     "items": [
      {
       "k": "shade-1-2",
-      "name": "Shade 1–2",
+      "name": "Shade 1–2 (light)",
       "e": "🌤️",
       "what": "Light brown and a little crispy. Pick this for soft waffles you want to bite, stack or fold, like ice cream sandwiches and waffle cake.",
       "match": "Shade [12]\\b"
      },
      {
       "k": "shade-3",
-      "name": "Shade 3",
+      "name": "Shade 3 (medium)",
       "e": "🧇",
       "what": "Golden brown and crispy. The best place to start for most waffles.",
       "match": "Shade 3"
      },
      {
       "k": "shade-4-5",
-      "name": "Shade 4–5",
+      "name": "Shade 4–5 (dark)",
       "e": "🔥",
       "what": "Dark brown and extra crunchy. Good for buttermilk, savory, keto and gluten-free waffles, which need more heat to crisp up.",
       "match": "Shade [45]"
@@ -492,7 +492,7 @@
       "k": "lock",
       "name": "Lock button and handle",
       "e": "🔓",
-      "what": "When it beeps, press the lock button and open it with the handle. Lift the waffle out with silicone tongs, not a fork or metal."
+      "what": "Before you turn it on, make sure it’s locked standing upright. When it beeps green at the end, push the button on the handle: the waffle maker tips down flat so you can open it. Lift the waffle out with silicone tongs, then lock it upright again for the next one."
      },
      {
       "k": "drip",

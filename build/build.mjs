@@ -95,6 +95,7 @@ for (const a of appliances) {
   for (const r of a.data.recipes) page(r.url, T.recipe(ctx, a, r));
   for (const c of a.data.cats) page(`/${a.key}/category/${c.k}/`, T.category(ctx, a, c));
   if (a.buttons) page(`/${a.key}/buttons/`, T.buttonsPage(ctx, a));
+  if (a.data.custom) page(`/${a.key}/customize/`, T.customizePage(ctx, a));
   if (a.key === "creami") {
     page(`/${a.key}/help/`, T.helpHub(ctx, a, guides));
     for (const g of guides) page(`/${a.key}/help/${g.slug}/`, T.helpPage(ctx, a, g, guides));
@@ -170,6 +171,8 @@ const redirects = [
   "/juice/*  /juicer/  301",
   "/tags/dairy-free/  /diet/dairy-free/  301",
   ...Object.values(products).filter((p) => p.url).map((p) => `/go/${p.id}  ${withTag(p.url)}  302`),
+  // Renamed recipes keep their old links working (r.was = old slugs).
+  ...all.flatMap(({ r, a }) => (r.was || []).map((w) => `/${a.key}/${w}/  ${r.url}  301`)),
 ];
 await writeFile(join(OUT, "_redirects"), redirects.join("\n") + "\n");
 

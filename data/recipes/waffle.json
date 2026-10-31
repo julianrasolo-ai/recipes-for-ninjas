@@ -44,7 +44,11 @@
   "yeast": "Instant yeast",
   "honey": "Honey",
   "seasoning": "Everything-bagel or pizza seasoning",
-  "tomato": "Tomato paste or marinara"
+  "tomato": "Tomato paste or marinara",
+  "lemon": "Lemons",
+  "poppy": "Poppy seeds",
+  "sourcream": "Sour cream",
+  "apple": "Applesauce or apples"
  },
  "groups": [
   [
@@ -82,7 +86,8 @@
     "cheese",
     "mayo",
     "prot",
-    "yogurt"
+    "yogurt",
+    "sourcream"
    ]
   ],
   [
@@ -91,7 +96,9 @@
     "banana",
     "pumpkin",
     "sweetpot",
-    "berry"
+    "berry",
+    "lemon",
+    "apple"
    ]
   ],
   [
@@ -105,7 +112,8 @@
     "maple",
     "honey",
     "seasoning",
-    "tomato"
+    "tomato",
+    "poppy"
    ]
   ],
   [
@@ -176,33 +184,34 @@
    "emoji": "🧇",
    "blurb": "Golden outside, soft inside, with deep square pockets for syrup. The one to learn first.",
    "ing": [
-    "2 cups all-purpose flour",
-    "2 tbsp sugar",
-    "2 tsp baking powder",
-    "½ tsp salt",
-    "1¾ cups milk",
-    "2 eggs",
-    "⅓ cup melted butter or oil",
-    "1 tsp vanilla"
+    "3 eggs",
+    "3 tbsp canola oil",
+    "2 cups whole milk",
+    "2⅓ cups all-purpose flour",
+    "2½ tsp baking powder",
+    "3 tbsp sugar",
+    "2 tsp kosher salt (or 1 tsp table salt)",
+    "Butter and maple syrup, to serve"
    ],
    "steps": [
-    "Turn the dial to 3. The red light means it's heating.",
-    "Whisk the flour, sugar, baking powder and salt in a big bowl. In another bowl whisk the milk, eggs, butter and vanilla.",
-    "Pour the wet into the dry and whisk until just smooth. Rest 5 minutes.",
-    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
-    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs.",
-    "Keep waffles warm on a rack in a 200°F oven while you make the rest."
+    "Whisk the eggs, oil and milk in a small bowl.",
+    "Whisk the flour, baking powder, sugar and salt in a bigger bowl.",
+    "Pour the wet bowl into the dry bowl and whisk until smooth. Let it rest 5 minutes so the baking powder wakes up.",
+    "While it rests, turn the dial to 3. The red light means it's heating; it beeps and turns green when ready.",
+    "Fill the pour cup to the ¾ line and pour it into the top spout. It starts cooking by itself (red light).",
+    "When the green light comes on, open it and lift the waffle out with silicone tongs. Close it and repeat with the rest of the batter.",
+    "Serve warm with butter and syrup."
    ],
    "tags": [
     "flour",
     "sugar",
     "milk",
     "egg",
-    "butter"
+    "oil"
    ],
-   "prep": "10 min",
+   "prep": "5 min",
    "cook": "5 min per waffle",
-   "makes": "5 waffles",
+   "makes": "4–5 waffles",
    "press": "Shade 3",
    "healthy": false,
    "gear": [
@@ -222,9 +231,9 @@
    "img": "/img/waffle/f01.jpg",
    "badge": "🧇 Shade 3",
    "chips": [
-    "Prep 10 min",
+    "Prep 5 min",
     "Cook 5 min per waffle",
-    "5 waffles"
+    "4–5 waffles"
    ]
   },
   {
@@ -1017,43 +1026,54 @@
    "level": "Easy",
    "id": "f15",
    "cat": "savory",
-   "title": "Cornbread waffles",
+   "title": "Cornbread waffles with flavored butters",
    "emoji": "🌽",
-   "blurb": "A box of cornbread mix, waffled. Perfect with chili or soup.",
+   "blurb": "Two boxes of corn muffin mix plus a little flour make a big batch. Serve with honey, herb or chili butter and a drizzle of olive oil.",
    "ing": [
-    "1 box (8.5 oz) cornbread mix",
-    "The egg and milk the box asks for",
-    "2–3 tbsp extra milk",
-    "Honey butter, to serve"
+    "1½ cups whole milk",
+    "2 eggs",
+    "¼ cup canola oil",
+    "2 boxes (8½ oz each) corn muffin mix",
+    "¼ cup all-purpose flour",
+    "Flavored butters (honey, herb or chili), to serve",
+    "Olive oil, to drizzle"
    ],
    "steps": [
-    "Turn the dial to 3.",
-    "Mix the batter as the box says, then add milk until it pours.",
-    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
-    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs.",
-    "Serve with chili, or split and spread with honey butter."
+    "Whisk the milk, eggs and oil in a small bowl.",
+    "Whisk the muffin mix and flour in a bigger bowl. The extra flour helps it hold together in the waffle maker.",
+    "Pour the wet bowl into the dry bowl and whisk until smooth. Let it rest 5 minutes so the baking powder wakes up.",
+    "While it rests, turn the dial to 3. The red light means it's heating; it beeps and turns green when ready.",
+    "Fill the pour cup to the ¾ line and pour it into the top spout. It starts cooking by itself (red light).",
+    "When the green light comes on, open it and lift the waffle out with silicone tongs. Close it and repeat with the rest of the batter.",
+    "Top with a flavored butter and a drizzle of olive oil. Great next to chili."
    ],
    "tags": [
     "corn",
+    "flour",
+    "milk",
     "egg",
-    "milk"
+    "oil",
+    "butter"
    ],
    "prep": "5 min",
    "cook": "5 min per waffle",
-   "makes": "2–3 waffles",
+   "makes": "4–5 waffles",
    "press": "Shade 3",
    "healthy": false,
    "gear": [
     "waffle-tongs"
    ],
    "healthier": "Serve with a bean chili and skip the honey butter.",
-   "slug": "cornbread-waffles",
+   "slug": "cornbread-waffles-with-flavored-butters",
    "img": "/img/waffle/f15.jpg",
    "badge": "🧄 Shade 3",
    "chips": [
     "Prep 5 min",
     "Cook 5 min per waffle",
-    "2–3 waffles"
+    "4–5 waffles"
+   ],
+   "was": [
+    "cornbread-waffles"
    ]
   },
   {
@@ -1386,21 +1406,29 @@
    "level": "Easy",
    "id": "f21",
    "cat": "party",
-   "title": "Waffle ice cream sandwiches",
+   "title": "Waffle sundaes or ice cream sandwiches",
    "emoji": "🍦",
-   "blurb": "Soft waffles cut into squares around a slab of homemade ice cream. Freeze, then eat.",
+   "blurb": "One vanilla waffle batter, two desserts: pile it high as a sundae, or cut into squares for ice cream sandwiches.",
    "ing": [
-    "Classic waffle batter (or a box mix)",
-    "1 pint ice cream, softened 10 minutes",
-    "Sprinkles or mini chips, for the edges"
+    "3 eggs",
+    "3 tbsp canola oil",
+    "2 cups whole milk",
+    "2 tsp vanilla",
+    "2⅓ cups flour",
+    "2½ tsp baking powder",
+    "¼ cup sugar",
+    "2 tsp kosher salt (or 1 tsp table salt)",
+    "Ice cream, whipped cream, sprinkles and hot fudge"
    ],
    "steps": [
-    "Turn the dial to 2 so the waffles stay soft enough to bite.",
-    "When the green light comes on, fill the pour cup between the ¾ line and the top (never more than 1 cup) and pour it into the top spout in one quick pour.",
-    "Wait for the beep and the green light. Press the lock button, open, and lift the waffle out with silicone tongs.",
-    "Cool the waffles completely. Cut each into 4 squares.",
-    "Spread a thick layer of ice cream between two squares and roll the edges in sprinkles.",
-    "Wrap and freeze for 1 hour."
+    "Whisk the eggs, oil, milk and vanilla. In a bigger bowl, whisk the flour, baking powder, sugar and salt.",
+    "Pour the wet bowl into the dry bowl and whisk until smooth. Let it rest 5 minutes so the baking powder wakes up.",
+    "While it rests, turn the dial to 3. The red light means it's heating; it beeps and turns green when ready.",
+    "Fill the pour cup to the ¾ line and pour it into the top spout. It starts cooking by itself (red light).",
+    "When the green light comes on, open it and lift the waffle out with silicone tongs. Close it and repeat with the rest of the batter.",
+    "Let the waffles cool a few minutes.",
+    "Sundae: top a waffle with ice cream, whipped cream, sprinkles and hot fudge.",
+    "Sandwiches: cut each waffle into 4 squares, put a scoop of ice cream on 2 of them, close with the other 2 and roll the edges in sprinkles."
    ],
    "tags": [
     "flour",
@@ -1408,11 +1436,10 @@
     "egg",
     "icecream"
    ],
-   "prep": "20 min",
+   "prep": "5 min",
    "cook": "5 min per waffle",
-   "wait": "1 hour",
-   "makes": "8 sandwiches",
-   "press": "Shade 2",
+   "makes": "4–5 waffles",
+   "press": "Shade 3",
    "healthy": false,
    "gear": [
     "creami-pints",
@@ -1423,13 +1450,16 @@
     "why": "Make the ice cream in the Creami for the full Ninja combo."
    },
    "healthier": "Use frozen yogurt and skip the sprinkles.",
-   "slug": "waffle-ice-cream-sandwiches",
+   "slug": "waffle-sundaes-or-ice-cream-sandwiches",
    "img": "/img/waffle/f21.jpg",
-   "badge": "🎉 Shade 2",
+   "badge": "🎉 Shade 3",
    "chips": [
-    "Prep 20 min",
+    "Prep 5 min",
     "Cook 5 min per waffle",
-    "8 sandwiches"
+    "4–5 waffles"
+   ],
+   "was": [
+    "waffle-ice-cream-sandwiches"
    ]
   },
   {
@@ -1609,6 +1639,9 @@
     "Prep 10 min",
     "Cook 5 min per waffle",
     "4 waffles"
+   ],
+   "was": [
+    "brazilian-cheese-bread-waffles-p-o-de-queijo"
    ]
   },
   {
@@ -2056,6 +2089,418 @@
     "Cook 5 min per waffle",
     "5 waffles"
    ]
+  },
+  {
+   "id": "f32",
+   "cat": "treat",
+   "title": "Lemon poppy seed waffles",
+   "emoji": "🍋",
+   "blurb": "Bright lemon zest and crunchy poppy seeds. Like a lemon muffin, but crisp. Fresh berries on top.",
+   "tags": [
+    "flour",
+    "egg",
+    "oil",
+    "milk",
+    "sugar",
+    "lemon",
+    "poppy"
+   ],
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "healthy": false,
+   "ing": [
+    "2 cups all-purpose flour",
+    "2½ tsp baking powder",
+    "2 tsp kosher salt (or 1 tsp table salt)",
+    "3 tbsp canola oil",
+    "3 eggs",
+    "Zest of 2 lemons",
+    "2 tsp lemon juice",
+    "1 tbsp poppy seeds",
+    "3 tbsp sugar",
+    "2 cups whole milk",
+    "To serve: fresh fruit and whipped cream"
+   ],
+   "steps": [
+    "Whisk the base: flour, baking powder and salt in a big bowl. Whisk the oil and eggs in a small bowl.",
+    "Whisk the flavor into the egg bowl: zest of 2 lemons, 2 tsp lemon juice, 1 tbsp poppy seeds, 3 tbsp sugar, 2 cups whole milk.",
+    "Pour the wet bowl into the dry bowl and whisk until smooth. Let it rest 5 minutes so the baking powder wakes up.",
+    "While it rests, turn the dial to 3. The red light means it's heating; it beeps and turns green when ready.",
+    "Fill the pour cup to the ¾ line and pour it into the top spout. It starts cooking by itself (red light).",
+    "When the green light comes on, open it and lift the waffle out with silicone tongs. Close it and repeat with the rest of the batter.",
+    "Serve with fresh fruit and whipped cream."
+   ],
+   "prep": "10 min",
+   "cook": "5 min per waffle",
+   "makes": "4–5 waffles",
+   "press": "Shade 3",
+   "gear": [
+    "waffle-tongs",
+    "waffle-rack"
+   ],
+   "fix": {
+    "q": "Poppy seeds are seeds. Aren't mix-ins banned?",
+    "a": "Poppy seeds are tiny enough to flow with the batter, and they're in Ninja's own inspiration guide. Bigger things like chips or fruit chunks still go on top."
+   },
+   "key": {
+    "id": "waffle-rack",
+    "why": "Lemon waffles stay crisp on a rack while you make the rest."
+   },
+   "healthier": "Use 2% milk and 2 tbsp sugar.",
+   "slug": "lemon-poppy-seed-waffles",
+   "img": "/img/waffle/f32.jpg",
+   "badge": "🍫 Shade 3",
+   "chips": [
+    "Prep 10 min",
+    "Cook 5 min per waffle",
+    "4–5 waffles"
+   ]
+  },
+  {
+   "id": "f33",
+   "cat": "savory",
+   "title": "Savory herb and sour cream waffles",
+   "emoji": "🌿",
+   "blurb": "Herbs and sour cream in the batter, then more sour cream, fresh herbs and tomatoes on top. Lunch, not dessert.",
+   "tags": [
+    "flour",
+    "egg",
+    "oil",
+    "milk",
+    "sourcream",
+    "herbs",
+    "tomato"
+   ],
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "healthy": false,
+   "ing": [
+    "2 cups all-purpose flour",
+    "2½ tsp baking powder",
+    "2 tsp kosher salt (or 1 tsp table salt)",
+    "3 tbsp canola oil",
+    "3 eggs",
+    "1½ tbsp dried herb seasoning",
+    "1½ cups whole milk",
+    "½ cup sour cream",
+    "To serve: sour cream, fresh herbs and tomatoes"
+   ],
+   "steps": [
+    "Whisk the base: flour, baking powder and salt in a big bowl. Whisk the oil and eggs in a small bowl.",
+    "Whisk the flavor into the egg bowl: 1½ tbsp dried herb seasoning, 1½ cups whole milk, ½ cup sour cream.",
+    "Pour the wet bowl into the dry bowl and whisk until smooth. Let it rest 5 minutes so the baking powder wakes up.",
+    "While it rests, turn the dial to 4. The red light means it's heating; it beeps and turns green when ready.",
+    "Fill the pour cup to the ¾ line and pour it into the top spout. It starts cooking by itself (red light).",
+    "When the green light comes on, open it and lift the waffle out with silicone tongs. Close it and repeat with the rest of the batter.",
+    "Serve with sour cream, fresh herbs and tomatoes."
+   ],
+   "prep": "10 min",
+   "cook": "5 min per waffle",
+   "makes": "4–5 waffles",
+   "press": "Shade 4",
+   "gear": [
+    "waffle-tongs",
+    "waffle-rack"
+   ],
+   "healthier": "Use Greek yogurt instead of sour cream, in and on top.",
+   "slug": "savory-herb-and-sour-cream-waffles",
+   "img": "/img/waffle/f33.jpg",
+   "badge": "🧄 Shade 4",
+   "chips": [
+    "Prep 10 min",
+    "Cook 5 min per waffle",
+    "4–5 waffles"
+   ]
+  },
+  {
+   "id": "f34",
+   "cat": "classic",
+   "title": "Apple cinnamon waffles",
+   "emoji": "🍎",
+   "blurb": "Applesauce makes these soft, sweet and lower in fat. Top with fresh apple slices and maple.",
+   "tags": [
+    "flour",
+    "egg",
+    "oil",
+    "milk",
+    "apple",
+    "cinnamon"
+   ],
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "healthy": true,
+   "ing": [
+    "2 cups all-purpose flour",
+    "2½ tsp baking powder",
+    "2 tsp kosher salt (or 1 tsp table salt)",
+    "3 tbsp canola oil",
+    "3 eggs",
+    "1 cup applesauce",
+    "2 tsp cinnamon",
+    "1 cup whole milk",
+    "To serve: fresh apple slices, maple syrup and butter"
+   ],
+   "steps": [
+    "Whisk the base: flour, baking powder and salt in a big bowl. Whisk the oil and eggs in a small bowl.",
+    "Whisk the flavor into the egg bowl: 1 cup applesauce, 2 tsp cinnamon, 1 cup whole milk.",
+    "Pour the wet bowl into the dry bowl and whisk until smooth. Let it rest 5 minutes so the baking powder wakes up.",
+    "While it rests, turn the dial to 3. The red light means it's heating; it beeps and turns green when ready.",
+    "Fill the pour cup to the ¾ line and pour it into the top spout. It starts cooking by itself (red light).",
+    "When the green light comes on, open it and lift the waffle out with silicone tongs. Close it and repeat with the rest of the batter.",
+    "Serve with fresh apple slices, maple syrup and butter."
+   ],
+   "prep": "10 min",
+   "cook": "5 min per waffle",
+   "makes": "4–5 waffles",
+   "press": "Shade 3",
+   "gear": [
+    "waffle-tongs",
+    "waffle-rack"
+   ],
+   "fix": {
+    "q": "Can I put apple pieces in the batter?",
+    "a": "Chunks are solid mix-ins. Applesauce gives all the apple flavor and keeps the batter pourable. Put fresh slices on top."
+   },
+   "key": {
+    "id": "waffle-maple",
+    "why": "Real maple and cinnamon apples, a fall breakfast."
+   },
+   "healthier": "Already a lighter pick: no added sugar.",
+   "slug": "apple-cinnamon-waffles",
+   "img": "/img/waffle/f34.jpg",
+   "badge": "🧇 Shade 3",
+   "chips": [
+    "Prep 10 min",
+    "Cook 5 min per waffle",
+    "4–5 waffles"
+   ]
+  },
+  {
+   "id": "f35",
+   "cat": "treat",
+   "title": "Box-mix banana bread waffles",
+   "emoji": "🍌",
+   "blurb": "The 5-minute shortcut: a box of banana bread mix, waffled on the Specialty setting. Sliced banana and powdered sugar on top.",
+   "ing": [
+    "1 box (14 oz) banana bread mix",
+    "The eggs, oil and water the box asks for",
+    "Sliced banana and powdered sugar, to serve"
+   ],
+   "steps": [
+    "Mix the batter the way the box says, then let it rest 5 minutes.",
+    "While it rests, turn the dial to Specialty. Banana bread mix is sugary and burns on the higher shades. It beeps and turns green when ready.",
+    "Fill the pour cup to the ¾ line and pour it into the top spout. It starts cooking by itself.",
+    "When the green light comes on, lift the waffle out with silicone tongs. Close it and repeat.",
+    "Top with sliced banana and a dusting of powdered sugar."
+   ],
+   "tags": [
+    "banana",
+    "egg",
+    "oil"
+   ],
+   "prep": "5 min",
+   "cook": "about 2½ min per waffle",
+   "makes": "4–5 waffles",
+   "press": "Specialty",
+   "badge": "🍫 Specialty",
+   "healthy": false,
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "gear": [
+    "waffle-tongs"
+   ],
+   "healthier": "Make our from-scratch Banana bread waffles with very ripe bananas and less sugar.",
+   "slug": "box-mix-banana-bread-waffles",
+   "img": "/img/waffle/f35.jpg",
+   "chips": [
+    "Prep 5 min",
+    "Cook about 2½ min per waffle",
+    "4–5 waffles"
+   ]
+  },
+  {
+   "id": "f36",
+   "cat": "party",
+   "title": "Cake-mix layered waffle cake",
+   "emoji": "🍰",
+   "blurb": "The shortcut birthday cake: one box of cake mix, one jar of frosting, five waffle layers. Ready in 30 minutes.",
+   "ing": [
+    "1 box (about 15 oz) cake mix, any flavor",
+    "The eggs, oil and water the box asks for",
+    "1 jar (16 oz) frosting",
+    "Sprinkles, to decorate"
+   ],
+   "steps": [
+    "Mix the cake batter the way the box says. Let it rest 5 minutes.",
+    "While it rests, turn the dial to Specialty (or Shade 1). Cake mix is sugary; gentle heat keeps the layers soft and pale.",
+    "Fill the pour cup to the ¾ line and pour it into the top spout. It starts cooking by itself.",
+    "When the green light comes on, lift the waffle out with silicone tongs. Close it and repeat until the batter is gone.",
+    "Cool every layer completely on a rack. Warm waffles melt frosting.",
+    "Spread frosting on each layer and stack. Frost the top and finish with sprinkles."
+   ],
+   "tags": [
+    "mixcake",
+    "egg",
+    "oil"
+   ],
+   "prep": "5 min",
+   "cook": "about 1½ min per waffle",
+   "wait": "20 min",
+   "makes": "1 cake (4–5 layers)",
+   "press": "Specialty",
+   "badge": "🎉 Specialty",
+   "healthy": false,
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "notes": [],
+   "ben": [],
+   "level": "Easy",
+   "gear": [
+    "waffle-rack",
+    "waffle-tongs"
+   ],
+   "key": {
+    "id": "waffle-rack",
+    "why": "Cool the layers on a rack or the frosting slides off."
+   },
+   "healthier": "Use half the frosting and add fresh berries between the layers.",
+   "slug": "cake-mix-layered-waffle-cake",
+   "img": "/img/waffle/f36.jpg",
+   "chips": [
+    "Prep 5 min",
+    "Cook about 1½ min per waffle",
+    "1 cake (4–5 layers)"
+   ]
   }
- ]
+ ],
+ "custom": {
+  "base": {
+   "name": "Waffle base",
+   "ing": [
+    "2 cups all-purpose flour",
+    "2½ tsp baking powder",
+    "2 tsp kosher salt (or 1 tsp table salt)",
+    "3 tbsp canola oil",
+    "3 eggs"
+   ],
+   "makes": "4–5 waffles"
+  },
+  "flavors": [
+   {
+    "k": "chocolate",
+    "n": "Chocolate",
+    "e": "🍫",
+    "mix": [
+     "½ cup cocoa powder",
+     "¼ cup sugar",
+     "1 tsp vanilla",
+     "2 cups whole milk"
+    ],
+    "top": "Chocolate sauce and whipped cream",
+    "shade": "Specialty",
+    "r": "f06"
+   },
+   {
+    "k": "red-velvet",
+    "n": "Red velvet",
+    "e": "❤️",
+    "mix": [
+     "1 tbsp cocoa powder",
+     "1 tbsp red food coloring",
+     "3 tbsp sugar",
+     "1 tsp vanilla",
+     "2 cups whole milk"
+    ],
+    "top": "Cream cheese icing",
+    "shade": "Specialty",
+    "r": "f10"
+   },
+   {
+    "k": "lemon-poppy",
+    "n": "Lemon poppy seed",
+    "e": "🍋",
+    "mix": [
+     "Zest of 2 lemons",
+     "2 tsp lemon juice",
+     "1 tbsp poppy seeds",
+     "3 tbsp sugar",
+     "2 cups whole milk"
+    ],
+    "top": "Fresh fruit and whipped cream",
+    "shade": "3",
+    "r": "f32"
+   },
+   {
+    "k": "savory-herb",
+    "n": "Savory herb",
+    "e": "🌿",
+    "mix": [
+     "1½ tbsp dried herb seasoning",
+     "1½ cups whole milk",
+     "½ cup sour cream"
+    ],
+    "top": "Sour cream, fresh herbs and tomatoes",
+    "shade": "4",
+    "r": "f33"
+   },
+   {
+    "k": "churro",
+    "n": "Churro",
+    "e": "🌀",
+    "mix": [
+     "2 tsp cinnamon",
+     "3 tbsp sugar",
+     "1 tsp vanilla",
+     "2 cups whole milk"
+    ],
+    "top": "Toss in cinnamon sugar, then maple syrup and butter",
+    "shade": "3",
+    "r": "f07"
+   },
+   {
+    "k": "pumpkin",
+    "n": "Pumpkin spice",
+    "e": "🎃",
+    "mix": [
+     "½ cup pumpkin purée",
+     "2 tsp pumpkin pie spice",
+     "3 tbsp sugar",
+     "1½ cups whole milk"
+    ],
+    "top": "Maple syrup and butter",
+    "shade": "3",
+    "r": "f11"
+   },
+   {
+    "k": "apple",
+    "n": "Apple cinnamon",
+    "e": "🍎",
+    "mix": [
+     "1 cup applesauce",
+     "2 tsp cinnamon",
+     "1 cup whole milk"
+    ],
+    "top": "Fresh apple slices, maple syrup and butter",
+    "shade": "3",
+    "r": "f34"
+   }
+  ]
+ }
 }

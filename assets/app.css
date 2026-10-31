@@ -448,3 +448,14 @@ dialog.pop{max-width:520px}
 .btncard details{margin-top:10px;font-size:14px}
 .btncard summary{cursor:pointer;font-weight:800;color:var(--grape)}
 .btncard ul{margin:6px 0 0;padding-left:18px}
+
+/* Waffle flavor builder */
+.flavgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.flav{display:flex;flex-direction:column;gap:4px;padding:14px;border-radius:18px;background:var(--card);box-shadow:var(--shadow);border:3px solid transparent;cursor:pointer}
+.flav:has(input:checked){border-color:var(--a,var(--sun))}
+.flav input{position:absolute;opacity:0}
+.flav .fe{font-size:28px}
+.flav b{font:600 18px "Fredoka",sans-serif}
+.flav small{color:var(--muted);font-weight:700;font-size:13px;line-height:1.35}
+.flav .ft{color:var(--ink)}
+.flav a{font-weight:800;font-size:13px;color:var(--a,var(--grape))}

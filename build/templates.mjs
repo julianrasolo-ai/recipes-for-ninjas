@@ -257,6 +257,7 @@ ${grid(list.map((r) => ({ a, r })))}
     </div>
   </div>
   ${(() => { const ds = DIETS.filter((d) => D.recipes.some((r) => (r.diets || []).includes(d.k))); return ds.length ? `<div class="bens dietrow"><span class="lbl">Diet:</span>${ds.map((d) => `<a class="bchip" href="${dietUrl(d.k)}#${a.key}">${d.e} ${esc(d.short)}</a>`).join("")}</div>` : ""; })()}
+  ${a.data.custom ? `<p class="btnhelp"><a href="/${a.key}/customize/">🎨 Customize your waffle: one base, 7 flavors →</a></p>` : ""}
   ${a.buttons ? `<p class="btnhelp"><a href="/${a.key}/buttons/">🎛️ New to your ${esc(a.device)}? What each button does →</a></p>` : ""}
   ${hasBen ? `<div class="bens" id="bens" aria-label="Filter by benefit"><span class="lbl">I want:</span>${(D.bens || []).filter((b) => D.recipes.some((r) => (r.ben || []).includes(b[0]))).map((b) => `<button class="bchip" type="button" data-b="${b[0]}" aria-pressed="false">${b[1]} ${esc(b[2])}</button>`).join("")}</div>` : ""}
   <nav class="nav" aria-label="Menu sections"><div class="navrow" id="navrow" style="--n:${D.cats.length}">${D.cats.map((c) => `<button class="tab" type="button" data-c="${c.k}" data-t="${c.k}" aria-label="${esc(c.n)}"><span class="te">${c.e}</span><span>${esc(c.s || c.n)}</span></button>`).join("")}</div></nav>
@@ -395,6 +396,31 @@ export function buttonsPage(ctx, a) {
   ${B.groups.map((g) => `<section class="sec"><h2 class="h3">${esc(g.h)}</h2><div class="btngrid">${g.items.map(card).join("")}</div></section>`).join("")}
   <p class="disc">Plain-words summary of the owner's guide. Your model's panel may differ a little; the manual that came with it wins.</p>
   <p><a class="btn" href="${a.url}">See all ${esc(a.name.toLowerCase())} recipes →</a></p>` });
+}
+/* Base + flavor builder (waffles): one base, pick a flavor, get one combined list. Works without JS as plain cards. */
+export function customizePage(ctx, a) {
+  const C = a.data.custom, byId = Object.fromEntries(a.data.recipes.map((r) => [r.id, r]));
+  const cards = C.flavors.map((f, i) => `<label class="flav" data-k="${f.k}"><input type="radio" name="flav" value="${f.k}"${i ? "" : " checked"}><span class="fe">${f.e}</span><b>${esc(f.n)}</b>
+    <small>${f.mix.map(esc).join(" · ")}</small><small class="ft">Top with: ${esc(f.top)} · ${f.shade === "Specialty" ? "Specialty" : "Shade " + f.shade}</small>
+    ${byId[f.r] ? `<a href="${byId[f.r].url}">Full recipe →</a>` : ""}</label>`).join("");
+  return listing(ctx, { title: "Customize your waffle: one base, 7 flavors", desc: `Make one waffle base, then mix in chocolate, red velvet, lemon poppy seed, savory herb, churro, pumpkin spice or apple cinnamon. For the ${a.device}.`, path: `/${a.key}/customize/`,
+    crumbs: `<a href="/">Home</a> › <a href="${a.url}">${esc(a.name)}</a> › Customize`, h1: "🧇 Customize your waffle", lead: "Make the base, pick a flavor, and we'll build your shopping list. Each batch makes 4 to 5 waffles.", heading: `${a.emoji} ${esc(a.name)}`,
+    inner: `<section class="sec"><h2 class="h3">1. The base</h2><ul class="ingl">${C.base.ing.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></section>
+  <section class="sec"><h2 class="h3">2. Pick a flavor</h2><div class="flavgrid" id="flavs">${cards}</div></section>
+  <section class="sec" id="combo"><h2 class="h3">3. Your batter</h2><ul class="ingl" id="clist"></ul>
+  <ol class="steps"><li><span>Whisk the flour, baking powder and salt in a big bowl.</span></li><li><span>Whisk the eggs and oil with your flavor (milk, sugar and the rest) in a small bowl.</span></li>
+  <li><span>Pour the wet into the dry, whisk until smooth, and rest 5 minutes.</span></li><li><span id="cshade">Turn the dial to your shade. When it beeps green, pour ¾ cup into the top spout.</span></li>
+  <li><span>When it beeps green again, lift the waffle out with silicone tongs and repeat.</span></li></ol>
+  <div class="row noprint"><button class="btn" id="ccp" type="button">Copy shopping list</button><span class="status" id="ccs" aria-live="polite"></span></div></section>
+  <p class="disc">Based on the flavor ideas in the waffle maker's recipe booklet, written in our own words.</p>`,
+    scripts: [`<script>(function(){var C=${json(C)},L=document.getElementById('clist'),S=document.getElementById('cshade');
+function cur(){var c=document.querySelector('#flavs input:checked');return C.flavors.filter(function(f){return f.k===(c&&c.value)})[0]||C.flavors[0]}
+function e(t){return String(t).replace(/[&<>]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+function paint(){var f=cur();L.innerHTML=C.base.ing.concat(f.mix).map(function(x){return '<li>'+e(x)+'</li>'}).join('')+'<li><b>Top with:</b> '+e(f.top)+'</li>';
+S.textContent='Turn the dial to '+(f.shade==='Specialty'?'Specialty':'Shade '+f.shade)+'. When it beeps green, pour ¾ cup into the top spout.'}
+document.getElementById('flavs').addEventListener('change',paint);paint();
+document.getElementById('ccp').addEventListener('click',function(){var f=cur(),t=f.n+' waffles\\n'+C.base.ing.concat(f.mix).map(function(x){return '- '+x}).join('\\n');
+var st=document.getElementById('ccs');try{navigator.clipboard.writeText(t).then(function(){st.textContent='Copied'},function(){st.textContent='Could not copy here'})}catch(x){st.textContent='Could not copy here'}});})();</script>`] });
 }
 export function search(ctx) {
   return listing(ctx, { title: "Search", desc: "Search every recipe across all Ninja machines.", path: "/search/", h1: "🔍 Search every recipe",

@@ -1548,5 +1548,35 @@
   "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_011354_bb56d3ed-8b70-493a-ba68-dfcbc5602a50.png",
   "size": 600,
   "ext": "jpg"
+ },
+ "waffle/f32": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_012317_844f532e-61df-444c-8c42-4ad7120795fc.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_012317_844f532e-61df-444c-8c42-4ad7120795fc.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f33": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_012317_2814ad8a-81d4-4e36-b734-bad75c46872d.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_012317_2814ad8a-81d4-4e36-b734-bad75c46872d.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f34": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_012317_bb538b4b-3662-49cf-93d4-aa0a103bc79d.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_012317_bb538b4b-3662-49cf-93d4-aa0a103bc79d.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f35": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_012317_004a5fa6-b030-4c78-9ba3-f980c42520b4.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_012317_004a5fa6-b030-4c78-9ba3-f980c42520b4.png",
+  "size": 600,
+  "ext": "jpg"
+ },
+ "waffle/f36": {
+  "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_012317_c5eca103-0e4a-485c-ad32-f597aa7c6620.png",
+  "min": "https://d8j0ntlcm91z4.cloudfront.net/user_3BSJ0wwhgjMymvG33oR0jOHcLjf/hf_20261031_012317_c5eca103-0e4a-485c-ad32-f597aa7c6620.png",
+  "size": 600,
+  "ext": "jpg"
  }
 }
