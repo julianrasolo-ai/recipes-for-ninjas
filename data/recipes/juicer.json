@@ -688,7 +688,13 @@
    "img": "/img/juice/j10.jpg",
    "listTitle": "You need",
    "level": "Easy",
-   "notes": [],
+   "notes": [
+    [
+     "Turn it into ice cream",
+     "Got a Creami? 1 cup of this juice becomes a dairy-free creamsicle soft serve.",
+     "/creami/juicer-to-creami-carrot-orange-creamsicle/"
+    ]
+   ],
    "press": "Black filter · less pulp",
    "chips": [
     "Prep 5 min",

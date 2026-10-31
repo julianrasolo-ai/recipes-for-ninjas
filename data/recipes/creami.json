@@ -7657,6 +7657,82 @@
     "Spin 2 min",
     "1 pint"
    ]
+  },
+  {
+   "id": "r122",
+   "cat": "fruit",
+   "title": "Juicer-to-Creami carrot orange creamsicle",
+   "emoji": "🥕",
+   "level": "Easy",
+   "blurb": "Press fresh carrot, orange and a little ginger in the juicer, then spin it into a creamy, dairy-free creamsicle soft serve. Two Ninjas, one dessert.",
+   "ing": [
+    "3 medium carrots",
+    "2 oranges, peeled",
+    "½ inch fresh ginger (optional)",
+    "½ cup canned coconut cream (stir the can first)",
+    "3 tbsp sugar or maple syrup",
+    "1 tbsp instant vanilla pudding mix",
+    "1 tsp vanilla",
+    "Pinch of salt"
+   ],
+   "steps": [
+    "Juicer: fit the black filter (less pulp makes smoother ice cream). Cut the carrots into 2-inch pieces and juice the carrots, oranges and ginger, alternating hard and soft. You need 1 cup of juice; drink any extra.",
+    "Whisk the sugar, pudding mix and salt into the juice until dissolved. Whisk in the coconut cream and vanilla.",
+    "Pour into the pint up to the max line. Lid on, freeze flat for 24 hours.",
+    "Press Soft Serve, then Fruit Whip. Want it scoopable? Press Scoop, then Sorbet instead.",
+    "Crumbly? Add 1 tbsp orange juice and press Re-Spin. Swirl into cones with the handle."
+   ],
+   "tags": [
+    "coco",
+    "pud",
+    "sweet"
+   ],
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "spin": "2 min",
+   "cook": "2 min",
+   "wait": "24 hours",
+   "makes": "1 pint",
+   "press": "Soft Serve, then Fruit Whip",
+   "badge": "🍦 Swirl",
+   "healthy": true,
+   "dfree": true,
+   "diet": [
+    "dairy-free",
+    "vegan"
+   ],
+   "gear": [
+    "juicer-brush",
+    "creami-coconut-cream",
+    "creami-pints"
+   ],
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "ben": [],
+   "notes": [
+    [
+     "Made with two machines",
+     "Juice it in the Ninja NeverClog, spin it in the Ninja Swirl. Any juice from our juicer section works the same way: 1 cup fresh juice + ½ cup coconut cream + sweetener + 1 tbsp pudding mix."
+    ]
+   ],
+   "fix": {
+    "q": "Fresh-juice ice cream comes out icy, like a slushie.",
+    "a": "Juice is mostly water. Coconut cream adds the fat, sugar keeps it soft, and a spoon of pudding mix holds it together, so it spins creamy instead of icy. A low-pulp filter matters too: pulp freezes into gritty bits."
+   },
+   "key": {
+    "id": "creami-coconut-cream",
+    "why": "The fat that turns juice into ice cream, and keeps it dairy-free."
+   },
+   "healthier": "Use 2 tbsp maple syrup and light coconut milk. Expect one extra Re-Spin.",
+   "slug": "juicer-to-creami-carrot-orange-creamsicle",
+   "img": "/img/ice/r122.jpg",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ]
   }
  ]
 }

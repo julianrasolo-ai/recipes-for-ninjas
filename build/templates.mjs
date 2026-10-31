@@ -326,7 +326,7 @@ export function recipe(ctx, a, r) {
     ${ings}
     ${adSlot(site, "recipe-in-content", "incontent")}
     ${gated ? `<div class="gate"><div class="gate-blur" aria-hidden="true">${steps}</div><div class="gate-cta"><b>🔒 Members-only recipe</b><p>Join to unlock the steps.</p>${site.members.joinUrl ? `<a class="btn" href="${esc(site.members.joinUrl)}">Join</a>` : ""}</div></div>` : steps}
-    ${r.notes.map(([k, v]) => `<p class="note"><b>${esc(k)}:</b> ${esc(v)}</p>`).join("")}
+    ${r.notes.map(([k, v, u]) => `<p class="note"><b>${esc(k)}:</b> ${esc(v)}${u ? ` <a href="${esc(u)}">See the recipe →</a>` : ""}</p>`).join("")}
     ${r.healthier ? `<p class="note healthier"><b>🌿 Make it healthier:</b> ${esc(r.healthier)}</p>` : ""}
     ${(r.ben || []).length ? '<p class="disclaim">Benefit tags are general nutrition info, not medical advice.</p>' : ""}
     ${a.key === "creami" ? helpLinks(a, ctx.guides) : ""}
