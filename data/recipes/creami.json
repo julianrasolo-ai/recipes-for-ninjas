@@ -7733,6 +7733,81 @@
     "Spin 2 min",
     "1 pint"
    ]
+  },
+  {
+   "id": "r123",
+   "cat": "yo",
+   "title": "Thanksgiving apple, strawberry & cranberry soft serve",
+   "emoji": "🦃",
+   "level": "Easy",
+   "blurb": "The kids’ two favorites, apple sorbet and strawberry froyo, made into one soft serve, with cranberry for Thanksgiving. Swirl it into cones and finish with toasted pecans and maple.",
+   "ing": [
+    "¾ cup unsweetened applesauce",
+    "¾ cup vanilla Greek yogurt",
+    "¼ cup strawberries, blended smooth",
+    "3 tbsp whole-berry cranberry sauce",
+    "2 tbsp maple syrup",
+    "1 tsp vanilla extract",
+    "⅛ tsp guar gum (or 1 tbsp instant vanilla pudding mix)",
+    "Pecan topping: ¼ cup chopped pecans, toasted 3–4 minutes in a dry pan, plus a drizzle of maple syrup (crushed gingersnaps optional)"
+   ],
+   "steps": [
+    "Stir the guar gum into the maple syrup first so it can’t clump. Use only ⅛ tsp: more turns it gummy.",
+    "Blend or whisk in everything else (not the toppings) until smooth, about 30 seconds.",
+    "Pour into the pint, staying under the max line. Lid on, freeze flat for 24 hours.",
+    "Press Soft Serve, then Frozen Yogurt.",
+    "Put the dispense lid on and pull the handle to swirl it into cones or cups. Turn the cone as you pull.",
+    "Top with the toasted pecans and a drizzle of maple. Toppings go on after: Mix-In isn’t for soft serve."
+   ],
+   "tags": [
+    "apple",
+    "yog",
+    "berry",
+    "sweet",
+    "nuts"
+   ],
+   "prep": "10 min",
+   "freeze": "24 hours",
+   "spin": "2 min",
+   "cook": "2 min",
+   "wait": "24 hours",
+   "makes": "1 pint",
+   "press": "Soft Serve, then Frozen Yogurt",
+   "badge": "🍦 Swirl",
+   "healthy": true,
+   "dfree": false,
+   "gear": [
+    "creami-xanthan",
+    "creami-pints",
+    "creami-extra-lids"
+   ],
+   "video": null,
+   "members": false,
+   "listTitle": "You need",
+   "ben": [],
+   "notes": [
+    [
+     "Make it the day before",
+     "It needs a full 24 hours in the freezer, so freeze it Wednesday for Thanksgiving dessert."
+    ]
+   ],
+   "fix": {
+    "q": "Fruit soft serve comes out icy and won’t swirl from the handle.",
+    "a": "Applesauce is mostly water. Greek yogurt adds body and a pinch of guar gum (or a spoon of pudding mix) holds the water, so it dispenses in smooth ribbons instead of ice chips."
+   },
+   "key": {
+    "id": "creami-xanthan",
+    "why": "A pinch of guar or xanthan gum is what makes fruit soft serve swirl. One bag lasts for years."
+   },
+   "healthier": "Use fresh cranberries blended with the strawberries instead of cranberry sauce, and plain Greek yogurt.",
+   "slug": "thanksgiving-apple-strawberry-cranberry-soft-serve",
+   "img": "/img/ice/r123.jpg",
+   "chips": [
+    "Prep 10 min",
+    "Freeze 24 hours",
+    "Spin 2 min",
+    "1 pint"
+   ]
   }
  ]
 }
